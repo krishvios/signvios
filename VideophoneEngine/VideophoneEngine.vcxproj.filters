@@ -1,0 +1,2007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\pm">
+      <UniqueIdentifier>{287f1522-4499-4b88-a61b-c1df59324b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{c2077ebc-0b49-4b8b-8f13-221205ac3081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Http">
+      <UniqueIdentifier>{b81a99fb-9843-4dad-9ca6-4e0d46de32c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os">
+      <UniqueIdentifier>{920a9073-8218-4da5-ac9e-d25f5107cf59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xmlmgr">
+      <UniqueIdentifier>{a7168370-083c-4cd5-abc9-99bde72aacc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform">
+      <UniqueIdentifier>{d3ef0e65-fa70-41e9-a291-07a12fda9785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\ntouch-pc">
+      <UniqueIdentifier>{8fe9bd27-710b-44a8-8346-946c77d4e318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common">
+      <UniqueIdentifier>{bd390eeb-dad0-401f-9b78-2a4c7064e64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\video">
+      <UniqueIdentifier>{c073d810-9eb3-444a-939c-b19c1284588a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cci">
+      <UniqueIdentifier>{ee0bf1b7-3027-4222-8263-8d9cb3a08516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr">
+      <UniqueIdentifier>{94d538dc-d7bf-4b18-86fa-dc21b9edce15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks">
+      <UniqueIdentifier>{15ca00b0-77a8-4d6d-8324-81cc9c7eb60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\AudioPlayback">
+      <UniqueIdentifier>{55026373-fd8d-4847-bdad-57274b51ada7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\AudioRecord">
+      <UniqueIdentifier>{1f6c6851-5728-4985-827f-c3a34b3f9ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\DataCommon">
+      <UniqueIdentifier>{a67ef53c-5ffb-4f09-a0b1-9e4bc87e2b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\VideoPlayback">
+      <UniqueIdentifier>{95805c16-5e44-4343-8313-f7a4dfd0d436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\VideoRecord">
+      <UniqueIdentifier>{b3a1adc2-649d-4829-aa80-f411859de671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\Nat">
+      <UniqueIdentifier>{84d12ea3-a2c3-46ed-8505-c058a0408046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vrcl">
+      <UniqueIdentifier>{cfc87fae-320c-4432-9036-6cf288a3227b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\contacts">
+      <UniqueIdentifier>{1dbd8762-828d-4372-9f53-5c160df272dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BlockListMgr">
+      <UniqueIdentifier>{5efb6e9a-1758-49b5-8d0e-7f4be6a3e517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MsgMgr">
+      <UniqueIdentifier>{641a16d4-a078-4c25-bbc2-4002f42333c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{75de1d77-9a24-4d92-bf28-58e8ce34f47d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32">
+      <UniqueIdentifier>{0e552303-54a0-4825-b947-c6ad1ccb7143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\ffmpeg">
+      <UniqueIdentifier>{9ca42be1-8f95-49e9-ae3a-c73b46eb32cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\ffmpeg\include">
+      <UniqueIdentifier>{9582a9e7-e344-4e56-a97b-f73a96e1d62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\ffmpeg\include\libavcodec">
+      <UniqueIdentifier>{19e329d6-5b5d-4ee4-a2b4-445ecea637e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\ffmpeg\include\libswscale">
+      <UniqueIdentifier>{47718706-9f10-422e-9052-61c8dd62bc06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\x264">
+      <UniqueIdentifier>{5f5106bf-6a06-45ae-815c-34a1ce453af7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\x264\include">
+      <UniqueIdentifier>{6b6baeca-be4e-49e1-b0ea-817ef1cca626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\libupnp">
+      <UniqueIdentifier>{084dc551-e82b-4ca4-b9b9-217af44024c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RingGroupMgr">
+      <UniqueIdentifier>{f04335da-c7cd-4922-9fcf-369e715cc322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\audio">
+      <UniqueIdentifier>{55e1ad1e-6686-4b45-8bb2-8d78b453406e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImageMgr">
+      <UniqueIdentifier>{92a526c1-1a9d-4af2-907b-cf769052e3d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\TextPlayback">
+      <UniqueIdentifier>{d6cfaf22-5b71-41d0-9fb5-300a7247609c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\TextRecord">
+      <UniqueIdentifier>{ef731fda-00d0-4129-8df5-6d6d6edea551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CallHistoryMgr">
+      <UniqueIdentifier>{c7bff372-a05f-4b83-996b-c8eb27c7ecb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RegistrationMgr">
+      <UniqueIdentifier>{9a672219-a7d4-4afd-8114-4fbe409c8950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\network">
+      <UniqueIdentifier>{f75dabc4-7381-40d4-b1d2-79abbc9cdc15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\platform">
+      <UniqueIdentifier>{13760cd6-0cb2-461c-b882-f4fd802e3957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserAccountMgr">
+      <UniqueIdentifier>{59042579-f379-4c8a-8fa1-f50562f7d474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\services">
+      <UniqueIdentifier>{2214d47c-fef4-42bd-8a0f-f8f6d0ebb2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services\Conference">
+      <UniqueIdentifier>{e4697efe-44a4-4608-8ea4-3a93badf2074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services\Core">
+      <UniqueIdentifier>{fd9b4a04-d094-4ebe-99ee-5a6b8b29b5e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services\Message">
+      <UniqueIdentifier>{999546be-08ce-4122-8c49-397fb7249518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services\RemoteLogger">
+      <UniqueIdentifier>{975eaf9c-5a00-4b77-9a68-1af83f78e8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services\StateNotify">
+      <UniqueIdentifier>{3fa059f1-ca60-4a8e-9cfd-d7900a2f24db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services\ServiceOutage">
+      <UniqueIdentifier>{533f3649-9367-43cb-bc40-d9937e1b9718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Serialization">
+      <UniqueIdentifier>{e8d975fa-30c9-4f5b-a08e-665cdec071c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EndpointMonitor">
+      <UniqueIdentifier>{176a5a97-435a-4cdc-b02c-4f56de436121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\Session">
+      <UniqueIdentifier>{019e725a-6839-493b-803f-33dbceb32331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\fileplay">
+      <UniqueIdentifier>{be9cb013-1bc7-469a-8578-f7bd5c22e622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\fileplay\MPEG4">
+      <UniqueIdentifier>{65035e47-56cf-4566-ae40-27784f314efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\fileplay\MPEG4\Atoms">
+      <UniqueIdentifier>{09880045-e281-442c-a755-75362dab54a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\fileplay\MPEG4\Toolbox">
+      <UniqueIdentifier>{c7608bce-69eb-4fcf-899d-d358a8a10e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\Sip">
+      <UniqueIdentifier>{69875663-563c-4a04-b0ae-9c449cfeddd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\ntouch-pc\Video">
+      <UniqueIdentifier>{1f01bce3-df9b-4627-9907-5b0bf13200fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\ntouch-pc\Audio">
+      <UniqueIdentifier>{14663bad-c1b5-4c2e-82f1-5b133598f88c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\posix">
+      <UniqueIdentifier>{1a0e834d-665d-47dd-8110-682a15549810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\posix\dirent">
+      <UniqueIdentifier>{3bc203ec-42f3-4c51-8fdd-a8a9f14fe9de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\x265">
+      <UniqueIdentifier>{437a122a-9ff9-4097-919f-e4bb72524657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\win32\x265\include">
+      <UniqueIdentifier>{6f5d3a14-fbde-4d90-8453-50de128f31fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pm\CstiPropertySender.cpp">
+      <Filter>Source Files\pm</Filter>
+    </ClCompile>
+    <ClCompile Include="pm\PropertyListItem.cpp">
+      <Filter>Source Files\pm</Filter>
+    </ClCompile>
+    <ClCompile Include="pm\PropertyManager.cpp">
+      <Filter>Source Files\pm</Filter>
+    </ClCompile>
+    <ClCompile Include="common\cmPropertyNameDef.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiExtendedEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiHostNameResolver.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiItemId.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiOsTask.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiOsTaskMQ.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiTask.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiUniversalEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiAssert.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiDebugTools.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiError.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiGUID.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiSysUtilizationInfo.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiTools.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiTrace.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="http\CstiHTTPService.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\CstiHTTPTask.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\CstiURLResolve.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\stiHTTPServiceTools.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\stiSSLTools.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOS.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Msg.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Mutex.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Net.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Signal.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Task.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Wd.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlmgr\XMLList.cpp">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlmgr\XMLListItem.cpp">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlmgr\XMLManager.cpp">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlmgr\XMLValue.cpp">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiAudibleRinger.cpp">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiPlatformInterface.cpp">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiStatusLED.cpp">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiFFMpegContext.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiFFMpegDecoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiVideoEncoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiX264Encoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="cci\CstiCCI.cpp">
+      <Filter>Source Files\cci</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiCall.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiCallInfo.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiCallStorage.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiConferenceManager.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiProtocolCall.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiProtocolManager.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiRoutingAddress.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipCall.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipCallLeg.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipManager.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipRegistration.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiTunnelManager.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\stiSipTools.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\stiSystemInfo.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlayback.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlaybackRead.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\AudioRecord\CstiAudioRecord.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiDataTaskCommonP.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiRtpHeaderLength.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiSyncManager.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RTCPFlowControl.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RtpPayloadAddon.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlayback.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlaybackRead.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\CstiVideoRecord.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Nat\CstiIceManager.cpp">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Nat\CstiIceSession.cpp">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClCompile>
+    <ClCompile Include="vrcl\CstiCircularBuffer.cpp">
+      <Filter>Source Files\vrcl</Filter>
+    </ClCompile>
+    <ClCompile Include="vrcl\CstiVRCLServer.cpp">
+      <Filter>Source Files\vrcl</Filter>
+    </ClCompile>
+    <ClCompile Include="vrcl\CstiXML.cpp">
+      <Filter>Source Files\vrcl</Filter>
+    </ClCompile>
+    <ClCompile Include="vrcl\CstiXMLCircularBuffer.cpp">
+      <Filter>Source Files\vrcl</Filter>
+    </ClCompile>
+    <ClCompile Include="vrcl\stiClientValidate.cpp">
+      <Filter>Source Files\vrcl</Filter>
+    </ClCompile>
+    <ClCompile Include="vrcl\stiVRCLCommon.cpp">
+      <Filter>Source Files\vrcl</Filter>
+    </ClCompile>
+    <ClCompile Include="contacts\ContactListItem.cpp">
+      <Filter>Source Files\contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="contacts\ContactManager.cpp">
+      <Filter>Source Files\contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockListMgr\CstiBlockListItem.cpp">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockListMgr\CstiBlockListManager.cpp">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockListMgr\CstiBlockListMgrResponse.cpp">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgMgr\CstiMessageInfo.cpp">
+      <Filter>Source Files\MsgMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgMgr\CstiMessageManager.cpp">
+      <Filter>Source Files\MsgMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\attr.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\document.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\element.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixml.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixmlmembuf.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixmlparser.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\namedNodeMap.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\node.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\nodeList.c">
+      <Filter>Source Files\Libraries\libupnp</Filter>
+    </ClCompile>
+    <ClCompile Include="RingGroupMgr\CstiRingGroupManager.cpp">
+      <Filter>Source Files\RingGroupMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="RingGroupMgr\CstiRingGroupMgrResponse.cpp">
+      <Filter>Source Files\RingGroupMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\audio\CstiAudioBridge.cpp">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageMgr\CstiImageDownloadService.cpp">
+      <Filter>Source Files\ImageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageMgr\CstiImageManager.cpp">
+      <Filter>Source Files\ImageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\utf8EncodeDecode.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\TextRecord\CstiTextRecord.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\TextRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlayback.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlaybackRead.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiBase64.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipResolver.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\stiSipStatistics.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiX265Encoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiIpAddress.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiRemoteLogEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiMessages.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiPhoneNumberValidator.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiRegEx.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryItem.cpp">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryList.cpp">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryManager.cpp">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryMgrResponse.cpp">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistrationMgr\CstiRegistrationManager.cpp">
+      <Filter>Source Files\RegistrationMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistrationMgr\CstiRegistrationListItem.cpp">
+      <Filter>Source Files\RegistrationMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistrationMgr\CstiRegistrationList.cpp">
+      <Filter>Source Files\RegistrationMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiTimer.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiWatchDog.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiEventQueue.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\RateHistoryManager.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\RecordFlowControl.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\PlaybackFlowControl.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiAesEncryptionContext.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiRtpSession.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiEventTimer.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiString.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="http\HttpClient.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="contacts\FavoriteList.cpp">
+      <Filter>Source Files\contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\audio\FFAudioDecoder.cpp">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiNetwork.cpp">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClCompile>
+    <ClCompile Include="common\OptString.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\VideoPlaybackFrame.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\BaseVideoInput.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\BaseVideoOutput.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\audio\BaseAudioInput.cpp">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\audio\BaseAudioOutput.cpp">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\network\BaseNetwork.cpp">
+      <Filter>Source Files\Platform\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\platform\BasePlatform.cpp">
+      <Filter>Source Files\Platform\common\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="common\TimeAccumulator.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAccountMgr\UserAccountManager.cpp">
+      <Filter>Source Files\UserAccountMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAccountMgr\UserAccountListItem.cpp">
+      <Filter>Source Files\UserAccountMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DhvClient.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiVPService.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiVPServiceRequest.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiVPServiceResponse.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Conference\CstiConferenceRequest.cpp">
+      <Filter>Source Files\services\Conference</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Conference\CstiConferenceResponse.cpp">
+      <Filter>Source Files\services\Conference</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Conference\CstiConferenceService.cpp">
+      <Filter>Source Files\services\Conference</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiCoreRequest.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiCoreResponse.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiCoreService.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Message\CstiMessageRequest.cpp">
+      <Filter>Source Files\services\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Message\CstiMessageResponse.cpp">
+      <Filter>Source Files\services\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Message\CstiMessageService.cpp">
+      <Filter>Source Files\services\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="services\RemoteLogger\CstiRemoteLoggerRequest.cpp">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="services\RemoteLogger\CstiRemoteLoggerService.cpp">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="services\StateNotify\CstiStateNotifyRequest.cpp">
+      <Filter>Source Files\services\StateNotify</Filter>
+    </ClCompile>
+    <ClCompile Include="services\StateNotify\CstiStateNotifyResponse.cpp">
+      <Filter>Source Files\services\StateNotify</Filter>
+    </ClCompile>
+    <ClCompile Include="services\StateNotify\CstiStateNotifyService.cpp">
+      <Filter>Source Files\services\StateNotify</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiCallList.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiCallListItem.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiContactList.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiContactListItem.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiDirectoryResolveResult.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiFavorite.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiPhoneNumberList.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\CstiPhoneNumberListItem.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Core\OfflineCore.cpp">
+      <Filter>Source Files\services\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiList.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiListItem.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Message\CstiMessageList.cpp">
+      <Filter>Source Files\services\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="services\Message\CstiMessageListItem.cpp">
+      <Filter>Source Files\services\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="services\ServiceOutage\ServiceOutageClient.cpp">
+      <Filter>Source Files\services\ServiceOutage</Filter>
+    </ClCompile>
+    <ClCompile Include="common\FileEncryption.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\JsonFileSerializer.cpp">
+      <Filter>Source Files\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\SDESKey.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Random.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="EndpointMonitor\EndpointMonitor.cpp">
+      <Filter>Source Files\EndpointMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="common\SelfSignedCert.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\DtlsContext.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="http\SslCertificateHandler.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RtpSender.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RtxSender.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\Packetization.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Session\CstiSdp.cpp">
+      <Filter>Source Files\ConfMgr\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Session\stiPayloadTypes.cpp">
+      <Filter>Source Files\ConfMgr\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Sip\ContactHeader.cpp">
+      <Filter>Source Files\ConfMgr\Sip</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Sip\Message.cpp">
+      <Filter>Source Files\ConfMgr\Sip</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Sip\Transaction.cpp">
+      <Filter>Source Files\ConfMgr\Sip</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\CFilePlay.cpp">
+      <Filter>Source Files\Platform\common\fileplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CDataTransferHandler.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CFileDataHandler.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CServerDataHandler.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CVMCircularBuffer.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\DataHandler.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Common.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Handle.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Media.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Movie.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Optimize.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Parser.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Signals.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Track.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\Atom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\CttsAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\DinfAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\DrefAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\ElstAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\FtypAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\FullAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\HdlrAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\HmhdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MdatAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MdhdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MdiaAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MinfAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MoovAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MvhdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\NmhdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\SmhdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StblAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StcoAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StscAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StsdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StssAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StszAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\SttsAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\TkhdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\TrakAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\TrefAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UdtaAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UnknownAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UrlAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UrnAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\VmhdAtom.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Toolbox\SMMemory.cpp">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Toolbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\AvVideoDecoder.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiNativeVideoLink.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiVideoInput.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiVideoOutput.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\IntelVideoDecoder.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\IntelWorkerFrame.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiAudioInput.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiAudioOutput.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\CstiNativeAudioLink.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\AvWorkerFrame.cpp">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="vrcl\ExternalConferenceData.cpp">
+      <Filter>Source Files\vrcl</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\win32\posix\dirent\dirent.c">
+      <Filter>Source Files\Libraries\win32\posix\dirent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pm\CstiPropertySender.h">
+      <Filter>Source Files\pm</Filter>
+    </ClInclude>
+    <ClInclude Include="pm\PropertyListItem.h">
+      <Filter>Source Files\pm</Filter>
+    </ClInclude>
+    <ClInclude Include="pm\PropertyManager.h">
+      <Filter>Source Files\pm</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CFifo.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\cmPropertyNameDef.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiExtendedEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiHostNameResolver.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiItemId.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiOsTask.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiOsTaskMQ.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiTask.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiUniversalEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiAssert.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiDebugTools.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiDefs.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiDelegate.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiError.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiEventMap.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiGUID.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiMem.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiProductCompatibility.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiSVX.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiSysUtilizationInfo.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiTaskInfo.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiTools.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiTrace.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="http\CstiHTTPService.h">
+      <Filter>Source Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\CstiHTTPTask.h">
+      <Filter>Source Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\CstiURLResolve.h">
+      <Filter>Source Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\stiHTTPServiceTools.h">
+      <Filter>Source Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\stiSSLTools.h">
+      <Filter>Source Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOS.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSMsg.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSMutex.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSNet.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSSignal.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSTask.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWd.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Msg.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stioswin32mutex.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Net.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Signal.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Task.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Wd.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlmgr\XMLList.h">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlmgr\XMLListItem.h">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlmgr\XMLManager.h">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlmgr\XMLValue.h">
+      <Filter>Source Files\xmlmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\AudioControl.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiAudibleRinger.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiAudioInput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiAudioOutput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiLightRing.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiStatusLED.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiVideoInput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiVideoOutput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiAudibleRinger.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiPlatformInterface.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiStatusLED.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiFFMpegContext.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiFFMpegDecoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiVideoEncoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiX264Encoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\IstiVideoEncoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="cci\CstiCCI.h">
+      <Filter>Source Files\cci</Filter>
+    </ClInclude>
+    <ClInclude Include="cci\IstiVideophoneEngine.h">
+      <Filter>Source Files\cci</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiCallInfo.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiCallStorage.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiConferenceManager.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiProtocolCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiProtocolManager.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiRoutingAddress.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipCallLeg.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipManager.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipRegistration.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiTunnelManager.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\ICallInfo.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\IstiCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiConfDefs.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSipTools.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSystemInfo.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\AudioRecord\CstiAudioRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiAudioPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiDataTaskCommonP.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiPacketQueue.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiRtpHeaderLength.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiSyncManager.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiVideoFrame.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiVideoPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RTCPFlowControl.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpPayloadAddon.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\CstiVideoRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Nat\CstiIceManager.h">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Nat\CstiIceSession.h">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\CstiCircularBuffer.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\CstiVRCLServer.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\CstiXML.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\CstiXMLCircularBuffer.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\IstiVRCLServer.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\stiClientValidate.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\stiVRCLCommon.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="contacts\ContactListItem.h">
+      <Filter>Source Files\contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="contacts\ContactManager.h">
+      <Filter>Source Files\contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="contacts\IstiContact.h">
+      <Filter>Source Files\contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="contacts\IstiContactManager.h">
+      <Filter>Source Files\contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockListMgr\CstiBlockListItem.h">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockListMgr\CstiBlockListManager.h">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockListMgr\CstiBlockListMgrResponse.h">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockListMgr\IstiBlockListManager.h">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockListMgr\IstiBlockListManager2.h">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockListMgr\IstiBlockListMgrResponse.h">
+      <Filter>Source Files\BlockListMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgMgr\CstiMessageInfo.h">
+      <Filter>Source Files\MsgMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgMgr\CstiMessageManager.h">
+      <Filter>Source Files\MsgMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgMgr\IstiMessageManager.h">
+      <Filter>Source Files\MsgMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\avcodec.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\avfft.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\dxva2.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\vaapi.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\vda.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\vdpau.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\version.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\xvmc.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libswscale\swscale.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libswscale</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libswscale\version.h">
+      <Filter>Source Files\Libraries\win32\ffmpeg\include\libswscale</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\x264\include\x264.h">
+      <Filter>Source Files\Libraries\win32\x264\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\x264\include\x264_config.h">
+      <Filter>Source Files\Libraries\win32\x264\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RingGroupMgr\CstiRingGroupManager.h">
+      <Filter>Source Files\RingGroupMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RingGroupMgr\CstiRingGroupMgrResponse.h">
+      <Filter>Source Files\RingGroupMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RingGroupMgr\IstiRingGroupManager.h">
+      <Filter>Source Files\RingGroupMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RingGroupMgr\IstiRingGroupMgrResponse.h">
+      <Filter>Source Files\RingGroupMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="smiConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\CstiAudioBridge.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageMgr\CstiImageDownloadService.h">
+      <Filter>Source Files\ImageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageMgr\CstiImageManager.h">
+      <Filter>Source Files\ImageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageMgr\IstiImageManager.h">
+      <Filter>Source Files\ImageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiTextPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\utf8EncodeDecode.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\TextRecord\CstiTextRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\TextRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiBase64.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipResolver.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSipStatistics.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiX265Encoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiIpAddress.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiRemoteLogEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiMessages.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\IstiVideoDecoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiPhoneNumberValidator.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiRegEx.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryItem.h">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryList.h">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryManager.h">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryMgrResponse.h">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CallHistoryMgr\IstiCallHistoryManager.h">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CallHistoryMgr\IstiCallHistoryMgrResponse.h">
+      <Filter>Source Files\CallHistoryMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistrationMgr\CstiRegistrationManager.h">
+      <Filter>Source Files\RegistrationMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistrationMgr\CstiRegistrationListItem.h">
+      <Filter>Source Files\RegistrationMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistrationMgr\CstiRegistrationList.h">
+      <Filter>Source Files\RegistrationMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiTimer.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiWatchDog.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiEventQueue.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiSignal.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\RateHistoryManager.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\RecordFlowControl.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\PlaybackFlowControl.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSipConstants.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiAesEncryptionContext.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiRtpSession.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\stiRtpChannelDefs.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiEventTimer.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiString.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\VideoFrame.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="http\HttpClient.h">
+      <Filter>Source Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="contacts\FavoriteList.h">
+      <Filter>Source Files\contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\AudioStructures.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\FFAudioDecoder.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\IAudioDecoder.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiPlatform.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiNetwork.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiNetwork.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="common\OptString.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\AgentHistoryItem.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\VideoPlaybackFrame.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\BaseVideoInput.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformVideoInput.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformVideoOutput.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformAudioInput.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformAudioOutput.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\BaseVideoOutput.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ISignal.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\BaseAudioInput.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\BaseAudioOutput.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\network\BaseNetwork.h">
+      <Filter>Source Files\Platform\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\platform\BasePlatform.h">
+      <Filter>Source Files\Platform\common\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="common\TimeAccumulator.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAccountMgr\UserAccountManager.h">
+      <Filter>Source Files\UserAccountMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAccountMgr\UserAccountListItem.h">
+      <Filter>Source Files\UserAccountMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAccountMgr\IUserAccountManager.h">
+      <Filter>Source Files\UserAccountMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DhvClient.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiVPService.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiVPServiceRequest.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiVPServiceResponse.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\stiCoreRequestDefines.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\VPServiceRequestContext.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Conference\CstiConferenceRequest.h">
+      <Filter>Source Files\services\Conference</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Conference\CstiConferenceResponse.h">
+      <Filter>Source Files\services\Conference</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Conference\CstiConferenceService.h">
+      <Filter>Source Files\services\Conference</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiCoreRequest.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiCoreResponse.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiCoreService.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Message\CstiMessageRequest.h">
+      <Filter>Source Files\services\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Message\CstiMessageResponse.h">
+      <Filter>Source Files\services\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Message\CstiMessageService.h">
+      <Filter>Source Files\services\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="services\RemoteLogger\CstiRemoteLoggerRequest.h">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="services\RemoteLogger\CstiRemoteLoggerService.h">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="services\StateNotify\CstiStateNotifyRequest.h">
+      <Filter>Source Files\services\StateNotify</Filter>
+    </ClInclude>
+    <ClInclude Include="services\StateNotify\CstiStateNotifyResponse.h">
+      <Filter>Source Files\services\StateNotify</Filter>
+    </ClInclude>
+    <ClInclude Include="services\StateNotify\CstiStateNotifyService.h">
+      <Filter>Source Files\services\StateNotify</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\Address.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\ClientAuthenticateResult.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiCallList.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiCallListItem.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiContactList.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiContactListItem.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiDirectoryResolveResult.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiFavorite.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiPhoneNumberList.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiPhoneNumberListItem.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\CstiUserAccountInfo.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\OfflineCore.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\SstiFavoriteList.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Core\SstiSettingItem.h">
+      <Filter>Source Files\services\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiList.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiListItem.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Message\CstiMessageList.h">
+      <Filter>Source Files\services\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="services\Message\CstiMessageListItem.h">
+      <Filter>Source Files\services\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="services\ServiceOutage\ServiceOutageClient.h">
+      <Filter>Source Files\services\ServiceOutage</Filter>
+    </ClInclude>
+    <ClInclude Include="services\ServiceOutage\ServiceOutageMessage.h">
+      <Filter>Source Files\services\ServiceOutage</Filter>
+    </ClInclude>
+    <ClInclude Include="services\ServiceCallbackContext.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\ServiceResponse.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="common\FileEncryption.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\JsonFileSerializer.h">
+      <Filter>Source Files\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\SerializedProperty.h">
+      <Filter>Source Files\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\ISerializable.h">
+      <Filter>Source Files\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\ISerializer.h">
+      <Filter>Source Files\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\ICameraInformation.h">
+      <Filter>Source Files\Platform\ntouch-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\SDESKey.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Random.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="EndpointMonitor\EndpointMonitor.h">
+      <Filter>Source Files\EndpointMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\JsonSerializer.h">
+      <Filter>Source Files\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SelfSignedCert.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\DtlsContext.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="http\SslCertificateHandler.h">
+      <Filter>Source Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\RadvisionLogging.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpSender.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpSendQueue.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtxSender.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\Packetization.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Session\CstiMediaTransports.h">
+      <Filter>Source Files\ConfMgr\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Session\CstiSdp.h">
+      <Filter>Source Files\ConfMgr\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Session\MediaStream.h">
+      <Filter>Source Files\ConfMgr\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Session\stiPayloadTypes.h">
+      <Filter>Source Files\ConfMgr\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Session\videoDefs.h">
+      <Filter>Source Files\ConfMgr\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Sip\ContactHeader.h">
+      <Filter>Source Files\ConfMgr\Sip</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Sip\Message.h">
+      <Filter>Source Files\ConfMgr\Sip</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Sip\Transaction.h">
+      <Filter>Source Files\ConfMgr\Sip</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\CFilePlay.h">
+      <Filter>Source Files\Platform\common\fileplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CDataHandler.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CDataTransferHandler.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CFileDataHandler.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CServerDataHandler.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CVMCircularBuffer.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\DataHandler.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Common.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Media.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Parser.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Signals.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Track.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\SorensonMP4.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\Atom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\CttsAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\DinfAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\DrefAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\ElstAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\FtypAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\FullAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\HdlrAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\HmhdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\IodsAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MdatAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MdhdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MdiaAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MinfAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MoovAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MvhdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\NmhdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\SmhdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StblAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StcoAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StscAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StsdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StssAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StszAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\SttsAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\TkhdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\TrakAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\TrefAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UdtaAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UnknownAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UrlAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UrnAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\VmhdAtom.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SMCommon.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SMMemory.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SMTypes.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SorensonErrors.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SorensonTypes.h">
+      <Filter>Source Files\Platform\common\fileplay\MPEG4\Toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiMessageViewer.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\AvVideoDecoder.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiNativeVideoLink.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiVideoInput.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiVideoOutput.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IntelVideoDecoder.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IntelWorkerFrame.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiAudioInput.h">
+      <Filter>Source Files\Platform\ntouch-pc\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiAudioOutput.h">
+      <Filter>Source Files\Platform\ntouch-pc\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\CstiNativeAudioLink.h">
+      <Filter>Source Files\Platform\ntouch-pc\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IVideoDecoder.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IVideoDisplayFrame.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\AvWorkerFrame.h">
+      <Filter>Source Files\Platform\ntouch-pc\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\IVRCLCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="vrcl\ExternalConferenceData.h">
+      <Filter>Source Files\vrcl</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\posix\dirent\dirent.h">
+      <Filter>Source Files\Libraries\win32\posix\dirent</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\x265\include\x265.h">
+      <Filter>Source Files\Libraries\win32\x265\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\win32\x265\include\x265_config.h">
+      <Filter>Source Files\Libraries\win32\x265\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

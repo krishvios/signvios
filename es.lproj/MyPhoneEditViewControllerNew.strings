@@ -1,0 +1,60 @@
+/* Class = "UILabel"; text = "Manage myPhone Group"; ObjectID = "30"; */
+"30.text" = "Gestionar Grupo myPhone";
+
+/* Class = "UILabel"; text = "Phone1"; ObjectID = "74"; */
+"74.text" = "Phone1";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "75"; */
+"75.text" = "Estado";
+
+/* Class = "UILabel"; text = "myPhone Number:"; ObjectID = "79"; */
+"79.text" = "Número de myPhone:";
+
+/* Class = "UILabel"; text = "Loading..."; ObjectID = "82"; */
+"82.text" = "Cargando...";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "109"; */
+"109.text" = "Estado";
+
+/* Class = "UILabel"; text = "Phone2"; ObjectID = "111"; */
+"111.text" = "Phone2";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "114"; */
+"114.text" = "Estado";
+
+/* Class = "UILabel"; text = "Phone3"; ObjectID = "116"; */
+"116.text" = "Phone3";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "119"; */
+"119.text" = "Estado";
+
+/* Class = "UILabel"; text = "Phone4"; ObjectID = "121"; */
+"121.text" = "Phone4";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "124"; */
+"124.text" = "Estado";
+
+/* Class = "UILabel"; text = "Phone5"; ObjectID = "126"; */
+"126.text" = "Phone5";
+
+/* Class = "UILabel"; text = "Add Phone"; ObjectID = "153"; */
+"153.text" = "Añadir Teléfono";
+
+/* Class = "UILabel"; text = "Add Phone"; ObjectID = "154"; */
+"154.text" = "Añadir Teléfono";
+
+/* Class = "UILabel"; text = "Add Phone"; ObjectID = "155"; */
+"155.text" = "Añadir Teléfono";
+
+/* Class = "UILabel"; text = "Add Phone"; ObjectID = "156"; */
+"156.text" = "Añadir Teléfono";
+
+/* Class = "UILabel"; text = "Add Phone"; ObjectID = "157"; */
+"157.text" = "Añadir Teléfono";
+
+/* Class = "UIButton"; normalTitle = "Call CC"; ObjectID = "189"; */
+"189.normalTitle" = "Llamar a atención a cliente";
+
+/* Class = "UILabel"; text = "If you need help managing your myPhone Group, select Call CC."; ObjectID = "190"; */
+"190.text" = "Si necesita ayuda para administrar su grupo myPhone, llame a atención al cliente.";
+

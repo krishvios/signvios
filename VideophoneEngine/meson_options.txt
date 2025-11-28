@@ -1,0 +1,37 @@
+option('application',
+  type : 'combo',
+  choices : [
+    'ntouchvp2',
+    'registrarloadtest'
+  ],
+  value : 'ntouchvp2',
+  description : 'application to build'
+)
+
+option('device',
+  type : 'combo',
+  choices : [
+    'ntouch_vp',
+    'ntouch_vp2',
+    'ntouch_mac',
+    'ntouch_pc',
+    'regloadtest',
+    'x86',
+  ],
+  value : 'x86',
+  description : 'device to build'
+)
+
+option('subdevice',
+  type : 'combo',
+  choices : [
+    'mpu',
+    'rcu',
+  ],
+  value : 'mpu',
+  description : 'subdevice to build'
+)
+
+option('rv_logging', type : 'boolean', value : false, description : 'builds with Radvision logging enabled')
+option('rv_logging_output', type : 'boolean', value : false, description : 'enables Radvision logging output')
+option('ntouch_vp2_rcu_capture_app', type : 'boolean', value : false, description : 'builds rcu app for capturing raw frames and disables mpu reboot')

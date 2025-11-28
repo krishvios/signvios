@@ -1,0 +1,32 @@
+pipeline {
+	agent any
+	stages {
+		stage('Build Engine') {
+			when {
+				changeRequest()
+			}
+			steps {
+				sh '''#!/bin/bash
+				MAXJOBS=`expr $(nproc) / 2`
+				export builddir=Build/ntouch_x86/debug
+				make -j$MAXJOBS APPLICATION=APP_NTOUCH_VP2 BUILD_DIR=$builddir SMI_CONFIG_PATH=$PWD MODE=debug COVERAGE=true
+				'''
+			}
+		}
+		
+		stage ('Test Engine') {
+			steps {
+				lock('UnitTestVideophone') {
+					sh 'export builddir=Build/ntouch_x86/debug; cd Tests; mkdir ./data; mkdir ./data/pm; mkdir ./data/networking; ./Coverage.sh'
+					xunit thresholds: [failed(failureNewThreshold: '0', failureThreshold: '0', unstableNewThreshold: '0', unstableThreshold: '0'), skipped(failureNewThreshold: '0', failureThreshold: '0', unstableNewThreshold: '0', unstableThreshold: '0')], tools: [CppUnit(deleteOutputFiles: true, failIfNotNew: true, pattern: 'Tests/VideophoneEngineTests.xml', skipNoTestFiles: true, stopProcessingIfError: true)]
+					publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, keepAll: false, reportDir: 'Tests/coverage_report', reportFiles: 'index.html', reportName: 'Code Coverage', reportTitles: ''])
+				}
+			}
+		}
+	}
+	post {
+		always {
+			cleanWs notFailBuild: true
+		}
+	}
+}

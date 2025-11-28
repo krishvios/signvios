@@ -1,0 +1,59 @@
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence.
+# They will be requested to review when someone opens a pull request.
+*       @bcroxall @malcium
+
+# Engine Modules used by the hold server
+/ConfMgr/ @bcroxall @steves09 @tpeterson2
+/common/ @bcroxall @steves09 @tpeterson2
+/Libraries/Radvision @bcroxall @steves09 @tpeterson2
+/Libraries/os/ @bcroxall @steves09 @tpeterson2
+
+# Other Engine Modules
+/FilePlay @dfrye47 @bcroxall
+/MPEG4 @dfrye47 @bcroxall
+/MsgMgr @dfrye47 @bcroxall
+
+# Platform subdirectories and files
+
+#PC
+/Platform/ntouch-pc/  @avanlent @IanaSanduta
+/VideophoneEngine.vcxproj*	@avanlent @IanaSanduta
+/Jenkinsfile @avanlent @IanaSanduta
+/Libraries/Acme/Acme.vcxproj @avanlent @IanaSanduta
+/Libraries/Radvision/Radvision.vcxproj @avanlent @IanaSanduta
+/Libraries/Radvision/packages.config @avanlent @IanaSanduta
+/Tests/WindowsTests/* @avanlent @IanaSanduta
+/Tests/WindowsTests.sln @avanlent @IanaSanduta
+
+#MAC
+/Platform/ntouch-mac/  @kselman @malcium @ngerhardt
+
+#iOS
+/Platform/ntouch-ios/ @kselman
+/Platform/ntouch-apple/ @kselman @malcium @ngerhardt
+
+#Android
+/Platform/ntouch-android/ @fmaluendap @AjimenezFF @KVenenga
+**/Android.mk @fmaluendap @AjimenezFF @KVenenga
+/Libraries/android/ @fmaluendap @AjimenezFF @KVenenga
+
+#Media Server
+/Platform/mediaserver/  @austinlangston
+/MediaServerVideophoneEngine.vcxproj* @austinlangston
+
+#Hold Server
+/Platform/holdserver/ @steves09 @tpeterson2
+/HoldServerVideophoneEngine.vcxproj* @steves09 @tpeterson2
+
+#Videophone
+/Platform/ntouch-vp/ @bcroxall @jlarsen45 @TheNageek @MLong-Sorenson
+/meson.* @bcroxall @jlarsen45 @TheNageek @MLong-Sorenson
+**/Makefile @bcroxall @jlarsen45
+**/Rules.mk @bcroxall @jlarsen45 @TheNageek @MLong-Sorenson
+/Jenkinsfile.linux* @bcroxall @jlarsen45
+/VideophoneEngine.files @bcroxall @jlarsen45
+/VideophoneEngine.creator @bcroxall @jlarsen45
+/VideophoneEngine.config @bcroxall @jlarsen45

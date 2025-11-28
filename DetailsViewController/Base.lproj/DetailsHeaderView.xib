@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsHeaderView" customModule="ntouch" customModuleProvider="target">
+            <connections>
+                <outlet property="callButton" destination="DDU-6O-Lp6" id="XMA-Rw-I8r"/>
+                <outlet property="callLabel" destination="vic-nx-xhv" id="ADr-Eg-5sM"/>
+                <outlet property="favoriteButton" destination="UUU-Vg-P0Z" id="KPt-dQ-6q9"/>
+                <outlet property="favoriteLabel" destination="dbW-4f-uid" id="AGn-gL-WBn"/>
+                <outlet property="imageMaxSizeConstraint" destination="VGP-fu-FAF" id="BDu-1d-fxZ"/>
+                <outlet property="imageMinSizeConstraint" destination="oNQ-gD-dgF" id="suP-iG-RD7"/>
+                <outlet property="imageView" destination="Mxg-pY-0c8" id="ehE-bp-sx6"/>
+                <outlet property="separatorHeight" destination="c82-sq-bHZ" id="y9r-eH-hlC"/>
+                <outlet property="separatorView" destination="EyB-8y-2NX" id="6He-bo-Ln9"/>
+                <outlet property="signmailButton" destination="rgf-Bf-nEn" id="ok8-2S-fof"/>
+                <outlet property="signmailLabel" destination="56a-oO-dcP" id="Gvs-qD-DSU"/>
+                <outlet property="subtitleLabel" destination="UEA-a1-wr0" id="YTM-aw-Ywv"/>
+                <outlet property="titleLabel" destination="Vx0-Jc-Ppu" id="mPo-u3-6Tf"/>
+                <outlet property="topInsetScalesWithImage" destination="6eG-J5-z8r" id="ANw-OW-zS5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="257"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="avatar_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-pY-0c8" customClass="RoundedImageView" customModule="ntouch" customModuleProvider="target">
+                    <rect key="frame" x="123.5" y="44" width="92" height="92"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Mxg-pY-0c8" secondAttribute="height" multiplier="1:1" priority="999" id="JYl-TO-hHR"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" priority="999" constant="80" id="VGP-fu-FAF"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="40" id="oNQ-gD-dgF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="999" text="John Doe" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx0-Jc-Ppu">
+                    <rect key="frame" x="118" y="146" width="103.5" height="30"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="999" text="Sorenson Communications" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEA-a1-wr0">
+                    <rect key="frame" x="94" y="176" width="151.5" height="14.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="QBn-9I-0Cg">
+                    <rect key="frame" x="61.5" y="198.5" width="216" height="50.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="NQB-91-nU8" customClass="ForwardTouchesStackView" customModule="ntouch" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="50.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDU-6O-Lp6" customClass="RoundedButton" customModule="ntouch" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="999" constant="32" id="P9U-6c-Z2K"/>
+                                        <constraint firstAttribute="width" secondItem="DDU-6O-Lp6" secondAttribute="height" multiplier="1:1" priority="999" id="qGf-Kx-ftc"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="icon-phone"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.40248129399999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="call:" destination="-1" eventType="primaryActionTriggered" id="EQ1-Qn-jPF"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="999" text="call" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vic-nx-xhv">
+                                    <rect key="frame" x="7.5" y="37" width="18.5" height="13.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="PAp-2h-Onp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <connections>
+                                <outlet property="reciever" destination="DDU-6O-Lp6" id="fDf-Jr-SBa"/>
+                            </connections>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bS8-r6-SNS" customClass="ForwardTouchesStackView" customModule="ntouch" customModuleProvider="target">
+                            <rect key="frame" x="84.5" y="0.0" width="43.5" height="50.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-Bf-nEn" customClass="RoundedButton" customModule="ntouch" customModuleProvider="target">
+                                    <rect key="frame" x="6" y="0.0" width="32" height="32"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="999" constant="32" id="nGY-wd-Wq3"/>
+                                        <constraint firstAttribute="width" secondItem="rgf-Bf-nEn" secondAttribute="height" multiplier="1:1" priority="999" id="r0n-Uu-ErO"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="SolidDirectSignMailNavBar"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.40248129399999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="signmail:" destination="-1" eventType="primaryActionTriggered" id="qtf-3H-ekq"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="999" text="signmail" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="56a-oO-dcP">
+                                    <rect key="frame" x="0.0" y="37" width="43.5" height="13.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="z1t-1z-jiB"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <connections>
+                                <outlet property="reciever" destination="rgf-Bf-nEn" id="CZ1-Y7-auQ"/>
+                            </connections>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oAc-mU-xic" customClass="ForwardTouchesStackView" customModule="ntouch" customModuleProvider="target">
+                            <rect key="frame" x="176" y="0.0" width="40" height="50.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUU-Vg-P0Z" customClass="RoundedButton" customModule="ntouch" customModuleProvider="target">
+                                    <rect key="frame" x="4" y="0.0" width="32" height="32"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="UUU-Vg-P0Z" secondAttribute="height" multiplier="1:1" priority="999" id="AdS-ol-4C9"/>
+                                        <constraint firstAttribute="height" priority="999" constant="32" id="Rgq-CC-f6S"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="icon-star"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.40248129399999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="favorite:" destination="-1" eventType="primaryActionTriggered" id="TqV-FP-noB"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="999" text="favorite" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dbW-4f-uid">
+                                    <rect key="frame" x="0.0" y="37" width="40" height="13.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="9m9-92-wRM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <connections>
+                                <outlet property="reciever" destination="UUU-Vg-P0Z" id="hQp-uF-Mjb"/>
+                            </connections>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="200" identifier="Stack view doesn't expand when empty" id="0ON-OZ-LqG"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyB-8y-2NX" userLabel="Separator">
+                    <rect key="frame" x="0.0" y="256.5" width="339" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="999" constant="0.5" id="c82-sq-bHZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EyB-8y-2NX" secondAttribute="bottom" priority="999" id="28I-Pq-SD8"/>
+                <constraint firstItem="Mxg-pY-0c8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="999" id="6eG-J5-z8r"/>
+                <constraint firstItem="QBn-9I-0Cg" firstAttribute="top" secondItem="UEA-a1-wr0" secondAttribute="bottom" priority="999" constant="8" id="E3P-wa-z7p"/>
+                <constraint firstItem="Mxg-pY-0c8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Hxw-7L-n36"/>
+                <constraint firstItem="UEA-a1-wr0" firstAttribute="top" secondItem="Vx0-Jc-Ppu" secondAttribute="bottom" priority="999" id="Lwj-KH-VUk"/>
+                <constraint firstItem="UEA-a1-wr0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="X53-3a-ohc"/>
+                <constraint firstItem="EyB-8y-2NX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zv7-1r-cYc"/>
+                <constraint firstAttribute="trailing" secondItem="EyB-8y-2NX" secondAttribute="trailing" id="iZE-zO-ibd"/>
+                <constraint firstItem="Vx0-Jc-Ppu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lNF-Uo-YBe"/>
+                <constraint firstItem="Vx0-Jc-Ppu" firstAttribute="top" secondItem="Mxg-pY-0c8" secondAttribute="bottom" priority="999" constant="10" id="p4Y-xh-PdP"/>
+                <constraint firstItem="QBn-9I-0Cg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qEX-o2-PcR"/>
+                <constraint firstAttribute="bottom" secondItem="QBn-9I-0Cg" secondAttribute="bottom" priority="999" constant="8" id="s4M-vb-rXn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="81.884057971014499" y="-135.60267857142856"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Mxg-pY-0c8">
+            <size key="intrinsicContentSize" width="122.5" height="123"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="SolidDirectSignMailNavBar" width="35" height="18"/>
+        <image name="avatar_default.png" width="122.5" height="123"/>
+        <image name="icon-phone" width="34" height="34"/>
+        <image name="icon-star" width="45" height="45"/>
+    </resources>
+</document>

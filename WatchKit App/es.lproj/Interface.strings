@@ -1,0 +1,51 @@
+/* Class = "WKInterfaceLabel"; text = "Loading..."; ObjectID = "6fq-26-fK4"; */
+"6fq-26-fK4.text" = "Cargando...";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "7gZ-1B-zGw"; */
+"7gZ-1B-zGw.text" = "Etiqueta de alerta";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "303-tW-1Yf"; */
+"303-tW-1Yf.text" = "Etiqueta";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "EOP-bX-eIR"; */
+"EOP-bX-eIR.text" = "Etiqueta de alerta";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "hOq-H2-Q7q"; */
+"hOq-H2-Q7q.text" = "Etiqueta de alerta";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "IdU-wH-bcW"; */
+"IdU-wH-bcW.text" = "Etiqueta de alerta";
+
+/* Class = "WKInterfaceLabel"; text = "Loading..."; ObjectID = "IVd-kn-cFb"; */
+"IVd-kn-cFb.text" = "Cargando...";
+
+/* Class = "WKInterfaceLabel"; text = "Call History"; ObjectID = "KGk-JU-BOl"; */
+"KGk-JU-BOl.text" = "Historial de llamadas";
+
+/* Class = "WKInterfaceButton"; title = "Call History"; ObjectID = "LrF-es-CaZ"; */
+"LrF-es-CaZ.title" = "Historial de llamadas";
+
+/* Class = "WKInterfaceLabel"; text = "Downloading..."; ObjectID = "qba-uI-d00"; */
+"qba-uI-d00.text" = "Descargando...";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "QSD-Gg-hY4"; */
+"QSD-Gg-hY4.text" = "Etiqueta";
+
+/* Class = "WKInterfaceController"; title = "SignMail"; ObjectID = "tdF-i9-7xe"; */
+"tdF-i9-7xe.title" = "SignMail";
+
+/* Class = "WKInterfaceButton"; title = "SignMail"; ObjectID = "Voq-iX-z1V"; */
+"Voq-iX-z1V.title" = "SignMail";
+
+/* Class = "WKInterfaceLabel"; text = "SignMail"; ObjectID = "wwc-vj-4TP"; */
+"wwc-vj-4TP.text" = "SignMail";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "xmJ-TA-oSg"; */
+"xmJ-TA-oSg.text" = "Etiqueta";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "YMA-Gd-Qqs"; */
+"YMA-Gd-Qqs.text" = "Etiqueta";
+
+/* Class = "WKInterfaceLabel"; text = "Downloading..."; ObjectID = "YNH-pZ-57f"; */
+"YNH-pZ-57f.text" = "Descargando...";
+

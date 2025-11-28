@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>INStartVideoCallIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Videollamada a Andrew usando ntouch</string>
+				<string>Videollamada al celular de Andrew usando ntouch</string>
+			</array>
+		</dict>
+		<dict>
+			<key>IntentName</key>
+			<string>INStartAudioCallIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Llamar a Andrew usando ntouch</string>
+				<string>Llame a la casa de Andrew usando ntouch</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

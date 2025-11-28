@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9B761448-AE21-4614-8DF3-B57F62C5E9BA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WindowsTests</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <VpeDir>$(ProjectDir)..\..\</VpeDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWSTESTS_EXPORTS;_WINDOWS;_USRDLL;HAVE_STRUCT_TIMESPEC;APPLICATION=APP_NTOUCH_PC;_CRT_SECURE_NO_WARNINGS;STATIC_DATA=".";WIN32;_DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(VpeDir)BlockListMgr;$(VpeDir)CallHistoryMgr;$(VpeDir)cci;$(VpeDir)common;$(VpeDir)contacts;$(VpeDir)ConfMgr;$(VpeDir)FilePlay;$(VpeDir)http;$(VpeDir)ImageMgr;$(VpeDir)Libraries\Linux\libupnp-1.6.2\ixml\inc;$(VpeDir)Libraries\observer_ptr;$(VpeDir)Libraries\win32\pthreads;$(VpeDir)MsgMgr;$(VpeDir)Platform;$(VpeDir)pm;$(VpeDir)os;$(VpeDir)services;$(VpeDir)RegistrationMgr;$(VpeDir)RingGroupMgr;$(VpeDir)vrcl;$(VpeDir)xmlmgr</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(VpeDir)smiConfig.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VpeDir)Libraries\win32\pthreads\Release</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWSTESTS_EXPORTS;_WINDOWS;_USRDLL;HAVE_STRUCT_TIMESPEC;APPLICATION=APP_NTOUCH_PC;_CRT_SECURE_NO_WARNINGS;STATIC_DATA=".";_DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(VpeDir)BlockListMgr;$(VpeDir)CallHistoryMgr;$(VpeDir)cci;$(VpeDir)common;$(VpeDir)contacts;$(VpeDir)ConfMgr;$(VpeDir)FilePlay;$(VpeDir)http;$(VpeDir)ImageMgr;$(VpeDir)Libraries\Linux\libupnp-1.6.2\ixml\inc;$(VpeDir)Libraries\observer_ptr;$(VpeDir)Libraries\win32\pthreads;$(VpeDir)MsgMgr;$(VpeDir)Platform;$(VpeDir)pm;$(VpeDir)os;$(VpeDir)services;$(VpeDir)RegistrationMgr;$(VpeDir)RingGroupMgr;$(VpeDir)vrcl;$(VpeDir)xmlmgr</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(VpeDir)smiConfig.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VpeDir)Libraries\win32\pthreads\Release</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWSTESTS_EXPORTS;_WINDOWS;_USRDLL;HAVE_STRUCT_TIMESPEC;APPLICATION=APP_NTOUCH_PC;_CRT_SECURE_NO_WARNINGS;STATIC_DATA=".";WIN32;NDEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(VpeDir)BlockListMgr;$(VpeDir)CallHistoryMgr;$(VpeDir)cci;$(VpeDir)common;$(VpeDir)contacts;$(VpeDir)ConfMgr;$(VpeDir)FilePlay;$(VpeDir)http;$(VpeDir)ImageMgr;$(VpeDir)Libraries\Linux\libupnp-1.6.2\ixml\inc;$(VpeDir)Libraries\observer_ptr;$(VpeDir)Libraries\win32\pthreads;$(VpeDir)MsgMgr;$(VpeDir)Platform;$(VpeDir)pm;$(VpeDir)os;$(VpeDir)services;$(VpeDir)RegistrationMgr;$(VpeDir)RingGroupMgr;$(VpeDir)vrcl;$(VpeDir)xmlmgr</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(VpeDir)smiConfig.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VpeDir)Libraries\win32\pthreads\Release</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWSTESTS_EXPORTS;_WINDOWS;_USRDLL;HAVE_STRUCT_TIMESPEC;APPLICATION=APP_NTOUCH_PC;_CRT_SECURE_NO_WARNINGS;STATIC_DATA=".";NDEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(VpeDir)BlockListMgr;$(VpeDir)CallHistoryMgr;$(VpeDir)cci;$(VpeDir)common;$(VpeDir)contacts;$(VpeDir)ConfMgr;$(VpeDir)FilePlay;$(VpeDir)http;$(VpeDir)ImageMgr;$(VpeDir)Libraries\Linux\libupnp-1.6.2\ixml\inc;$(VpeDir)Libraries\observer_ptr;$(VpeDir)Libraries\win32\pthreads;$(VpeDir)MsgMgr;$(VpeDir)Platform;$(VpeDir)pm;$(VpeDir)os;$(VpeDir)services;$(VpeDir)RegistrationMgr;$(VpeDir)RingGroupMgr;$(VpeDir)vrcl;$(VpeDir)xmlmgr</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(VpeDir)smiConfig.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VpeDir)Libraries\win32\pthreads\Release</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CstiListTest.h" />
+    <ClInclude Include="..\SignalTest.h" />
+    <ClInclude Include="..\StringsTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VideophoneEngine.vcxproj">
+      <Project>{7859f7d8-2080-4a14-a638-0432280c211d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CstiListTest.cpp" />
+    <ClCompile Include="..\SignalTest.cpp" />
+    <ClCompile Include="..\StringsTest.cpp" />
+    <ClCompile Include="..\Test.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets" Condition="Exists('..\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets')" />
+    <Import Project="..\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets" Condition="Exists('..\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets')" />
+    <Import Project="..\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets" Condition="Exists('..\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets')" />
+    <Import Project="..\packages\boost.1.72.0.0\build\boost.targets" Condition="Exists('..\packages\boost.1.72.0.0\build\boost.targets')" />
+    <Import Project="..\packages\Sorenson.cppunit.1.0.0.7\build\native\Sorenson.cppunit.targets" Condition="Exists('..\packages\Sorenson.cppunit.1.0.0.7\build\native\Sorenson.cppunit.targets')" />
+    <Import Project="..\packages\Sorenson.Radvision.v142.2.7.21.8\build\native\Sorenson.Radvision.v142.targets" Condition="Exists('..\packages\Sorenson.Radvision.v142.2.7.21.8\build\native\Sorenson.Radvision.v142.targets')" />
+    <Import Project="..\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets" Condition="Exists('..\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets'))" />
+    <Error Condition="!Exists('..\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets'))" />
+    <Error Condition="!Exists('..\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets'))" />
+    <Error Condition="!Exists('..\packages\boost.1.72.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.72.0.0\build\boost.targets'))" />
+    <Error Condition="!Exists('..\packages\Sorenson.cppunit.1.0.0.7\build\native\Sorenson.cppunit.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Sorenson.cppunit.1.0.0.7\build\native\Sorenson.cppunit.targets'))" />
+    <Error Condition="!Exists('..\packages\Sorenson.Radvision.v142.2.7.21.8\build\native\Sorenson.Radvision.v142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Sorenson.Radvision.v142.2.7.21.8\build\native\Sorenson.Radvision.v142.targets'))" />
+    <Error Condition="!Exists('..\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets'))" />
+  </Target>
+</Project>

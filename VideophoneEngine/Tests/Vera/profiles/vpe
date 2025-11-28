@@ -1,0 +1,32 @@
+#!/usr/bin/tclsh
+
+set rules {
+    F001
+
+    SVRS001
+    SVRS002
+	SVRS003
+	SVRS004
+	SVRS005
+	SVRS006
+	SVRS007
+	SVRS008
+	SVRS009
+	SVRS010
+	
+    L003
+    L005
+
+    T003
+    T004
+    T005
+    T006
+    T007
+    T008
+    T009
+    T010
+    T011
+    T017
+    T018
+    T019
+}

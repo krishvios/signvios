@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{c2077ebc-0b49-4b8b-8f13-221205ac3081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os">
+      <UniqueIdentifier>{920a9073-8218-4da5-ac9e-d25f5107cf59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform">
+      <UniqueIdentifier>{d3ef0e65-fa70-41e9-a291-07a12fda9785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common">
+      <UniqueIdentifier>{bd390eeb-dad0-401f-9b78-2a4c7064e64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\video">
+      <UniqueIdentifier>{c073d810-9eb3-444a-939c-b19c1284588a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr">
+      <UniqueIdentifier>{94d538dc-d7bf-4b18-86fa-dc21b9edce15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks">
+      <UniqueIdentifier>{15ca00b0-77a8-4d6d-8324-81cc9c7eb60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\AudioPlayback">
+      <UniqueIdentifier>{55026373-fd8d-4847-bdad-57274b51ada7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\AudioRecord">
+      <UniqueIdentifier>{1f6c6851-5728-4985-827f-c3a34b3f9ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\DataCommon">
+      <UniqueIdentifier>{a67ef53c-5ffb-4f09-a0b1-9e4bc87e2b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\VideoPlayback">
+      <UniqueIdentifier>{95805c16-5e44-4343-8313-f7a4dfd0d436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\VideoRecord">
+      <UniqueIdentifier>{b3a1adc2-649d-4829-aa80-f411859de671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\Nat">
+      <UniqueIdentifier>{84d12ea3-a2c3-46ed-8505-c058a0408046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\audio">
+      <UniqueIdentifier>{55e1ad1e-6686-4b45-8bb2-8d78b453406e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\TextPlayback">
+      <UniqueIdentifier>{d6cfaf22-5b71-41d0-9fb5-300a7247609c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConfMgr\DataTasks\TextRecord">
+      <UniqueIdentifier>{ef731fda-00d0-4129-8df5-6d6d6edea551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\ntouch-PC">
+      <UniqueIdentifier>{056db6ed-efeb-4a4c-9cbe-47631bf4c4cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\common\platform">
+      <UniqueIdentifier>{a42f8362-c081-4fc7-a23b-15b6d1574e57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\dhv-common">
+      <UniqueIdentifier>{7b38f09f-cfb3-49c2-aa7f-b4049eca1548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\dhv-pc">
+      <UniqueIdentifier>{96ba4763-ddb3-4c79-9d1b-ef6e52c70114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\http">
+      <UniqueIdentifier>{90075b84-dbc8-4ced-9748-09808228b08a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services">
+      <UniqueIdentifier>{ba006734-8b6e-411b-aa71-0618e5ef5f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\services\RemoteLogger">
+      <UniqueIdentifier>{f57cf8df-72ba-44ab-b71d-2edeb4d44e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{3e8657ac-7220-45a5-b373-254f2551c7a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\ixml">
+      <UniqueIdentifier>{c2456ebb-5002-479b-be59-03d740866359}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\cmPropertyNameDef.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiExtendedEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiHostNameResolver.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiItemId.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiOsTask.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiOsTaskMQ.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiTask.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiUniversalEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiAssert.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiDebugTools.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiError.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiGUID.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiSysUtilizationInfo.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiTools.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiTrace.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOS.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Cond.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Msg.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Mutex.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Net.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Signal.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Task.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="os\stiOSWin32Wd.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiFFMpegContext.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiFFMpegDecoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiH263FFMpegEncoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiVideoEncoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\CstiX264Encoder.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiCall.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiCallInfo.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiCallStorage.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiConferenceManager.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiProtocolCall.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiProtocolManager.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiRoutingAddress.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipCall.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipCallLeg.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipManager.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipRegistration.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\stiPayloadTypes.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\stiSipTools.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\stiSystemInfo.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlayback.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlaybackRead.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\AudioRecord\CstiAudioRecord.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiDataTaskCommonP.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiRtpHeaderLength.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiSyncManager.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RTCPFlowControl.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RtpPayloadAddon.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlayback.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlaybackRead.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\CstiVideoRecord.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Nat\CstiIceManager.cpp">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\Nat\CstiIceSession.cpp">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\audio\CstiAudioBridge.cpp">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\utf8EncodeDecode.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlayback.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlaybackRead.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\TextRecord\CstiTextRecord.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\TextRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiBase64.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSipResolver.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiIpAddress.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\stiRemoteLogEvent.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiRegEx.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\stiSipStatistics.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiAesEncryptionContext.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiRtpSession.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\CstiSdp.cpp">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiEventQueue.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiTimer.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\RateHistoryManager.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\RecordFlowControl.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\PlaybackFlowControl.cpp">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiWatchDog.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiString.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiEventTimer.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CstiPhoneNumberValidator.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\OptString.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\dhv-common\DhvEngine.cpp">
+      <Filter>Source Files\Platform\dhv-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\dhv-pc\CstiPlatform.cpp">
+      <Filter>Source Files\Platform\dhv-pc</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\dhv-pc\CstiVideoInput.cpp">
+      <Filter>Source Files\Platform\dhv-pc</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\dhv-pc\CstiVideoOutput.cpp">
+      <Filter>Source Files\Platform\dhv-pc</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\BaseVideoInput.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\BaseVideoOutput.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\video\VideoPlaybackFrame.cpp">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\audio\BaseAudioInput.cpp">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\audio\BaseAudioOutput.cpp">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\AvVideoDecoder.cpp">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ntouch-pc\VideoDisplayFrame.cpp">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\common\platform\BasePlatform.cpp">
+      <Filter>Source Files\Platform\common\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="http\stiSSLTools.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\dhv-common\CstiAudioInput.cpp">
+      <Filter>Source Files\Platform\dhv-common</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\dhv-common\CstiAudioOutput.cpp">
+      <Filter>Source Files\Platform\dhv-common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\TimeAccumulator.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiList.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiListItem.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiVPService.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiVPServiceRequest.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\CstiVPServiceResponse.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="services\RemoteLogger\CstiRemoteLoggerRequest.cpp">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="services\RemoteLogger\CstiRemoteLoggerService.cpp">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\attr.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\document.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\element.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixml.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixmlmembuf.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixmlparser.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\namedNodeMap.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\node.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\nodeList.c">
+      <Filter>Source Files\Libraries\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="http\CstiHTTPTask.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\CstiHTTPService.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\CstiURLResolve.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\stiHTTPServiceTools.cpp">
+      <Filter>Source Files\http</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\CFifo.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\cmPropertyNameDef.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\cmSharedPropertyNameDef.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiExtendedEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiHostNameResolver.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiItemId.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiOsTask.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiOsTaskMQ.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiTask.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiUniversalEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiAssert.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiDebugMacros.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiDebugTools.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiDefs.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiDelegate.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiError.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiEventMap.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiGUID.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiMem.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiProductCompatibility.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiSVX.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiSysUtilizationInfo.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiTaskInfo.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiTools.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiTrace.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOS.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSCond.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSMsg.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSMutex.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSNet.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSPipe.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSSignal.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSTask.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWd.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Cond.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Msg.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stioswin32mutex.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Net.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Signal.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Task.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="os\stiOSWin32Wd.h">
+      <Filter>Source Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\AudioControl.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiAudioInput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiAudioOutput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiVideoInput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiVideoOutput.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiFFMpegContext.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiFFMpegDecoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiH263FFMpegEncoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiVideoEncoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\CstiX264Encoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\IstiVideoEncoder.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiCallInfo.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiCallStorage.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiConferenceManager.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiProtocolCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiProtocolManager.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiRoutingAddress.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipCallLeg.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipManager.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipRegistration.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\ICallInfo.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\IstiCall.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiConfDefs.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiPayloadTypes.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSipTools.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSystemInfo.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\AudioRecord\CstiAudioRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\AudioRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiDataTaskCommonP.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiRtpHeaderLength.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiSyncManager.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiVideoFrame.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RTCPFlowControl.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpPayloadAddon.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\CstiVideoRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Nat\CstiIceManager.h">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\Nat\CstiIceSession.h">
+      <Filter>Source Files\ConfMgr\Nat</Filter>
+    </ClInclude>
+    <ClInclude Include="smiConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\CstiAudioBridge.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\utf8EncodeDecode.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\TextPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\TextRecord\CstiTextRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\TextRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiBase64.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSipResolver.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiIpAddress.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiRemoteLogEvent.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiRegEx.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSipStatistics.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiAesEncryptionContext.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiRtpSession.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\stiRtpChannelDefs.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\stiSipConstants.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stiMessages.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\CstiSdp.h">
+      <Filter>Source Files\ConfMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiEventQueue.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiTimer.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\RateHistoryManager.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\RecordFlowControl.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\PlaybackFlowControl.h">
+      <Filter>Source Files\ConfMgr\DataTasks\VideoPlayback</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiWatchDog.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiString.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiEventTimer.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CstiPhoneNumberValidator.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiAudioPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiPacketQueue.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiTextPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiVideoPacket.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaPlayback.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaPlaybackRead.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaRecord.h">
+      <Filter>Source Files\ConfMgr\DataTasks\DataCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="common\OptString.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\dhv-common\DhvEngine.h">
+      <Filter>Source Files\Platform\dhv-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\dhv-common\IDhvEngine.h">
+      <Filter>Source Files\Platform\dhv-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\dhv-pc\CstiPlatform.h">
+      <Filter>Source Files\Platform\dhv-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\dhv-pc\CstiVideoInput.h">
+      <Filter>Source Files\Platform\dhv-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\dhv-pc\CstiVideoOutput.h">
+      <Filter>Source Files\Platform\dhv-pc</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\BaseVideoInput.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\BaseVideoOutput.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\video\VideoPlaybackFrame.h">
+      <Filter>Source Files\Platform\common\video</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\BaseAudioInput.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\audio\BaseAudioOutput.h">
+      <Filter>Source Files\Platform\common\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\IstiVideoPlaybackFrame.h">
+      <Filter>Source Files\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\AvVideoDecoder.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformAudioInput.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformAudioOutput.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformVideoInput.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IPlatformVideoOutput.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IVideoDecoder.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\IVideoDisplayFrame.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ntouch-pc\VideoDisplayFrame.h">
+      <Filter>Source Files\Platform\ntouch-PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\common\platform\BasePlatform.h">
+      <Filter>Source Files\Platform\common\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ICallBlocked.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="http\stiSSLTools.h">
+      <Filter>Source Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\dhv-common\CstiAudioOutput.h">
+      <Filter>Source Files\Platform\dhv-common</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\dhv-common\CstiAudioInput.h">
+      <Filter>Source Files\Platform\dhv-common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\TimeAccumulator.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiList.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiListItem.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiVPService.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiVPServiceRequest.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\CstiVPServiceResponse.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\ServiceCallbackContext.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\ServiceResponse.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\stiCoreRequestDefines.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\VPServiceRequestContext.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="services\RemoteLogger\CstiRemoteLoggerRequest.h">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="services\RemoteLogger\CstiRemoteLoggerService.h">
+      <Filter>Source Files\services\RemoteLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="http\CstiHTTPTask.h">
+      <Filter>Source Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\CstiHTTPService.h">
+      <Filter>Source Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\CstiURLResolve.h">
+      <Filter>Source Files\http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\stiHTTPServiceTools.h">
+      <Filter>Source Files\http</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libraries\win32\ffmpeg\bin\avcodec-54.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Libraries\win32\ffmpeg\bin\avformat-54.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Libraries\win32\ffmpeg\bin\avutil-51.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Libraries\win32\ffmpeg\bin\swscale-2.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Libraries\win32\x264\bin\libx264.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

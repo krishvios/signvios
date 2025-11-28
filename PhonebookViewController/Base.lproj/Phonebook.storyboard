@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zl2-sE-dKr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xkI-yv-WpZ">
+            <objects>
+                <navigationController storyboardIdentifier="PhonebookNavController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zl2-sE-dKr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Pyw-XY-bhx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DTL-Lu-dMc" kind="relationship" relationship="rootViewController" id="Jw2-zb-01m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89R-MJ-ERY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-928" y="189"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="Y47-ec-Nhc">
+            <objects>
+                <tableViewController storyboardIdentifier="PhonebookViewController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DTL-Lu-dMc" customClass="PhonebookViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="-1" id="eC2-5u-tUn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="DTL-Lu-dMc" id="CDS-U8-VYw"/>
+                            <outlet property="delegate" destination="DTL-Lu-dMc" id="NYh-kq-ab8"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="PhonebookTab" id="7Qj-Lt-Vrc"/>
+                    <navigationItem key="navigationItem" title="Contacts" largeTitleDisplayMode="always" id="2f3-JI-dXJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sectionBar" destination="TSn-8P-7RF" id="Etg-AB-YHz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpL-Pz-5sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" id="TSn-8P-7RF">
+                    <rect key="frame" x="0.0" y="-1" width="151" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Favorites" width="75"/>
+                        <segment title="Contacts" width="75"/>
+                    </segments>
+                    <connections>
+                        <action selector="sectionDidChange" destination="DTL-Lu-dMc" eventType="valueChanged" id="HIb-pO-DUG"/>
+                    </connections>
+                </segmentedControl>
+            </objects>
+            <point key="canvasLocation" x="-186" y="189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PhonebookTab" width="24" height="25"/>
+    </resources>
+</document>

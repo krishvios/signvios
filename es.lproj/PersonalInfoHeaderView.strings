@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "Firstname Lastname"; ObjectID = "3"; */
+"3.text" = "Firstname Lastname";
+
+/* Class = "UILabel"; text = "(000) 111-2222"; ObjectID = "10"; */
+"10.text" = "(000) 111-2222";
+
+/* Class = "UILabel"; text = "(000) 111-3333"; ObjectID = "11"; */
+"11.text" = "(000) 111-3333";
+
+/* Class = "UILabel"; text = "Edit"; ObjectID = "hDM-2p-6uu"; */
+"hDM-2p-6uu.text" = "Editar";
+

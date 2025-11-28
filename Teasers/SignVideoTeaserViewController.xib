@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignVideoTeaserViewController" customModule="ntouch" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="8vd-iK-K0X" id="QrS-Cy-Y81"/>
+                <outlet property="videoView" destination="baQ-dm-y3y" id="X1K-mn-v3i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baQ-dm-y3y">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vd-iK-K0X">
+                            <rect key="frame" x="46.666666666666657" y="715" width="300" height="34"/>
+                            <color key="backgroundColor" red="0.47843140360000003" green="0.84705877299999999" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="9PT-fo-RvK"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.047058824450000002" green="0.090196087960000004" blue="0.082352943720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="continueButton:" destination="-1" eventType="touchUpInside" id="Lma-qw-gJY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8vd-iK-K0X" secondAttribute="bottom" constant="10" id="E0b-bl-3SL"/>
+                        <constraint firstItem="8vd-iK-K0X" firstAttribute="centerX" secondItem="baQ-dm-y3y" secondAttribute="centerX" id="hpl-c5-8QK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="baQ-dm-y3y" secondAttribute="trailing" id="1pB-EN-Blv"/>
+                <constraint firstItem="baQ-dm-y3y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9Du-2d-K4l"/>
+                <constraint firstItem="baQ-dm-y3y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HNa-OF-11J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="baQ-dm-y3y" secondAttribute="bottom" id="nhx-LC-yfT"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+</document>

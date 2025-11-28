@@ -1,0 +1,18 @@
+/* Class = "UILabel"; text = "Edit"; ObjectID = "5"; */
+"5.text" = "Editar";
+
+/* Class = "UILabel"; text = "Play"; ObjectID = "6"; */
+"6.text" = "Reproducir";
+
+/* Class = "UISegmentedControl"; 7.segmentTitles[0] = "Sorenson"; ObjectID = "7"; */
+"7.segmentTitles[0]" = "Sorenson";
+
+/* Class = "UISegmentedControl"; 7.segmentTitles[1] = "Personal"; ObjectID = "7"; */
+"7.segmentTitles[1]" = "Personal";
+
+/* Class = "UISegmentedControl"; 7.segmentTitles[2] = "No Greeting"; ObjectID = "7"; */
+"7.segmentTitles[2]" = "Sin saludo";
+
+/* Class = "UILabel"; text = "SignMail Greeting Type"; ObjectID = "8"; */
+"8.text" = "Tipo de saludo de SignMail";
+

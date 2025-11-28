@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>videoPrivacyEnabled</key>
+	<false/>
+	<key>SCIDefaultGVCRotateHelpCount</key>
+	<integer>0</integer>
+	<key>SCIDefaultAutoSignIn</key>
+	<true/>
+	<key>SCIDefaultSavePIN</key>
+	<true/>
+	<key>SCIDefaultMyRumbleFlasher</key>
+	<integer>0</integer>
+	<key>SCIDefaultMyRumblePattern</key>
+	<integer>1</integer>
+	<key>SCIDefaultAudioPrivacy</key>
+	<true/>
+	<key>SCIDefaultVCOMode</key>
+	<false/>
+	<key>SCIDefaultVCOToggleState</key>
+	<false/>
+	<key>SCIDefaultVibrateOnRing</key>
+	<true/>
+	<key>SCIDefaultSignMailScope</key>
+	<integer>0</integer>
+	<key>SCIDefaultSignMailSort</key>
+	<integer>0</integer>
+	<key>SCIDefaultRecentsScope</key>
+	<integer>0</integer>
+	<key>SCIDefaultENSServer</key>
+	<string>ens.sorenson.com</string>
+	<key>SCIDefaultPulseEnable</key>
+	<true/>
+</dict>
+</plist>

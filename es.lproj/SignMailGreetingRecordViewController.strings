@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Record"; ObjectID = "67"; */
+"67.normalTitle" = "Registro";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "68"; */
+"68.normalTitle" = "Detener";
+
+/* Class = "UISegmentedControl"; 79.segmentTitles[0] = "Video Only"; ObjectID = "79"; */
+"79.segmentTitles[0]" = "Solo Video";
+
+/* Class = "UISegmentedControl"; 79.segmentTitles[1] = "Video With Text"; ObjectID = "79"; */
+"79.segmentTitles[1]" = "Vídeo Con Texto";
+
+/* Class = "UISegmentedControl"; 79.segmentTitles[2] = "Text Only"; ObjectID = "79"; */
+"79.segmentTitles[2]" = "Solo Texto";

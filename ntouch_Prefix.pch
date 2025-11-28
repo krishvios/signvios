@@ -1,0 +1,71 @@
+//
+// Prefix header for all source files of the 'ntouch' target in the 'ntouch' project
+//
+
+#include <string.h>
+#include <stdio.h>
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iPhone SDK 4.0 and later."
+#endif
+
+#define APPLICATION APP_NTOUCH_IOS
+
+#include "smiConfig.h"
+
+#define stiUSA_T35_COUNTRY_CODE 0xB5             // T-35 USA Country Code
+#define stiUSA_T35_EXTENSION 0x00                  // T-35 USA Extension
+#define stiMFG_CODE 0x5356                          // Sorenson's Mfg Code
+#define IPV6_ENABLED
+
+#ifndef smiSW_VERSION_NUMBER
+#define smiSW_VERSION_NUMBER "2.0"
+#endif
+
+#define RV_TOOL_TYPE RV_TOOL_TYPE_GNU
+#define RV_TOOL_VERSION RV_TOOL_GNU_4_2
+#define RV_OS_TYPE RV_OS_TYPE_IPHONE
+#define RV_OS_VERSION RV_OS_IPHONE_4
+#define RV_ARCH_ENDIAN RV_ARCH_LITTLE_ENDIAN
+#define RV_ARCH_BITS RV_ARCH_BITS_32
+#define RV_SOCKET_USE_SHADOWS 1
+#define RV_SOCKET_HAS_BACKGROUND 1
+#define RV_DNS_ENHANCED_FEATURES_SUPPORT
+#define RV_ICE_FORKING_SUPPORTED
+#define RV_NET_USE_TUNNELING 1
+//#define stiDISABLE_H323
+#define stiDISABLE_CAMERA_CONTROL
+#define SIP_DEBUG
+#define RV_SIP_STATISTICS_ENABLED
+#define RTCPFB_ADD_ON
+#define RTCPXR_ADD_ON
+#define SRTP_ADD_ON
+
+// Acme TSM SDK
+#define TSC_LINUX 1
+#define TSC_IOS 1
+#define TSC_UIP 1
+#define TSC_OPENSSL 1
+#define TSC_ENCODER 1
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#include "SCIDebug.h"
+
+// Fix swift generated header errors by forward declarations
+#ifdef __OBJC__
+@protocol CXProviderDelegate;
+#endif
+
+
+#define kMaxDownloadsAtOnce 3
+#define kBranding YES
+#define kBarStyle UIBarStyleDefault
+#define iPad NO // (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) // master switch for "Plan C" UI exploration
+#define iPadB (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) // master switch for "Plan B" UI exploration
+#define kPopoverSize CGSizeMake(320, 800)
+#endif

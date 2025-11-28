@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "740F1302-BEA9-460B-AD40-964CEB362B16",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "environmentVariableEntries" : [
+      {
+        "key" : "DEBUG",
+        "value" : "1"
+      }
+    ],
+    "mainThreadCheckerEnabled" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ntouch.xcodeproj",
+      "identifier" : "8A734FD310F43FD90064F32A",
+      "name" : "ntouch"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ntouch.xcodeproj",
+        "identifier" : "649D4F6F2345521A00DEF2D6",
+        "name" : "ntouch-UITests"
+      }
+    }
+  ],
+  "version" : 1
+}

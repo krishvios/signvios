@@ -1,0 +1,33 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Surround files
+.MySCMServerInfo
+
+# Klocwork files
+.kwlp
+.kwps
+
+# Eclipse files
+.metadata
+
+
+Build
+!/UI/ntouch_rcu/framework/alg/src/aewb_ti/lib/*.a
+!UI/ntouch_rcu/framework/alg/src/aewb_ap/lib/*.a
+!UI/ntouch_rcu/Vocal/libvocal_frc_arm9.a
+*.d
+
+UI/apploader/apploader_res_yuv.cpp
+

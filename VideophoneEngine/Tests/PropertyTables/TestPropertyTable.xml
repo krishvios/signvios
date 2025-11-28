@@ -1,0 +1,132 @@
+<root>
+	<!--
+		Place values here that need to have a default
+		when the system starts up.
+	-->
+
+	<!--  The following values are defaults for Persistent Data -->
+    <cmSignMailEnabled type="int">0</cmSignMailEnabled>
+	<cmAudioPlaybackVolume type="int">50</cmAudioPlaybackVolume>
+	<cmAudioRecordEchoMode type="enum">1</cmAudioRecordEchoMode>      <!-- Default to esmdAUDIO_ECHO_OFF -->
+	<cmAudioRecordMuteMode type="enum">1</cmAudioRecordMuteMode>		<!-- Default to estiOFF -->
+	<cmAudioRecordVolume type="int">50</cmAudioRecordVolume>
+	<cmAutoBandwidthDetection type="enum">1</cmAutoBandwidthDetection><!-- Default to estiON -->
+	<cmCallAutoReject type="enum">0</cmCallAutoReject>				<!-- Default to estiOFF -->
+	<cmCallAutoVideoPrivacy type="enum">0</cmCallAutoVideoPrivacy>	<!-- Default to estiOFF -->
+	<cmCallLocalE164Alias type="string"></cmCallLocalE164Alias>		<!-- Default to empty -->
+	<cmCallLocalEmailAddress type="string"></cmCallLocalEmailAddress>	<!-- Default to empty -->
+	<cmCallLocalH323IdAlias type="string"></cmCallLocalH323IdAlias>	<!-- Default to empty -->
+	<cmCallLocalIpAddress type ="string">127.0.0.1</cmCallLocalIpAddress>
+	<cmCallLowFrmRateThrshldH264 type="int">128000</cmCallLowFrmRateThrshldH264>
+	<cmCallLowFrmRateThrshldH263 type="int">180000</cmCallLowFrmRateThrshldH263>
+	<cmCallMaxRecvSpeed type="int">256000</cmCallMaxRecvSpeed>
+	<cmCallMaxSendSpeed type="int">256000</cmCallMaxSendSpeed>
+	<cmCallNatOptions type="enum">3</cmCallNatOptions>				<!-- Default to un32NAT_OPTIONS_LOCAL_DETECT | un32NAT_OPTIONS_REMOTE_DETECT -->
+	<cmCallPreferredAudioCodec type="enum">2</cmCallPreferredAudioCodec>	<!-- Default to estiAUDIO_G711_MULAW -->
+	<cmCallPreferredVideoCodec type="enum">0</cmCallPreferredVideoCodec>  <!-- Let the CM decide -->
+	<cmCallState type="enum">1</cmCallState>                           <!-- Default to estiSTATE_INVALID -->
+	<cmCameraAllowRemoteToControl type="enum">1</cmCameraAllowRemoteToControl>    <!-- Default to estiTRUE -->
+	<cmGatekeeperIpAddress type="string"></cmGatekeeperIpAddress>		<!-- Default to empty -->
+	<cmGatekeeperSwitch type="enum">0</cmGatekeeperSwitch><!-- Default to estiOFF (off=0, on=1) -->
+	<cmHandsetStatus type="enum">0</cmHandsetStatus>                  <!-- Default to estiON_HOOK -->
+	<cmIrRepeatFrequency type="int">120</cmIrRepeatFrequency>
+	<cmLocalName type="string"></cmLocalName>							<!-- Default to empty -->
+	<cmLocalUserId type="string"></cmLocalUserId>						<!-- Default to empty -->
+	<cmSipPhoneNumber type="string"></cmSipPhoneNumber>				<!-- Default to empty -->
+	<cmSipProxyIpAddress type="string"></cmSipProxyIpAddress>			<!-- Default to empty -->
+	<cmSipProxyPassword type="string"></cmSipProxyPassword>			<!-- Default to empty -->
+	<cmSipProxyPort type="int">5060</cmSipProxyPort>
+	<cmSipProxyUsername type="string"></cmSipProxyUsername>			<!-- Default to empty -->
+	<cmSipTransport type="enum">0</cmSipTransport>					<!-- Default to estiSIP_TRANS_UDP -->
+
+	<BlockListEnabled type="int">1</BlockListEnabled>
+
+	<!-- cmVideoRecordBrightness = SVX_BT_DEFAULT_BRIGHTNESS + 128 -->
+	<!-- cmVideoRecordContrast = SVX_BT_DEFAULT_CONTRAST -->
+	<!-- cmVideoRecordHue = SVX_BT_DEFAULT_HUE + 128 -->
+	<!-- cmVideoRecordSaturation = SVX_BT_DEFAULT_SATURATION -->
+	<cmVideoRecordMaxQuantization type="int">10</cmVideoRecordMaxQuantization>
+	<cmVideoRecordMaxRefreshes type="int">10</cmVideoRecordMaxRefreshes>
+	<cmVideoRecordMuteMode type="enum">0</cmVideoRecordMuteMode>		<!-- Default to estiOFF -->
+	<cmVideoRecordRefreshesRate type="enum">0</cmVideoRecordRefreshesRate>	<!-- Default to estiHIGH_RATE -->
+	<cmVideoRecordSizeCols type="int">352</cmVideoRecordSizeCols>		<!-- Default to SIF -->
+	<cmVideoRecordSizeRows type="int">240</cmVideoRecordSizeRows>		<!-- Default to SIF -->
+	<cmVrsUseVco type="enum">0</cmVrsUseVco>                          <!-- Default to estiFALSE -->
+
+	<!-- Default step size for pan/tilt/zoom.  3 is fast and smooth, 2 is slower, 5 is too fast -->
+	<cmCameraStepSize type="int">2</cmCameraStepSize>
+	<cmCoreServiceUseSSL type="int">1</cmCoreServiceUseSSL>
+
+	<!-- Properties used in conjunction with CoreService -->
+	<cmHeartbeatDelay type="int">300</cmHeartbeatDelay>
+<cmCoreServiceUrl1 type="string">http://core1.qa-c.svrs.net/VPServices/CoreRequest.aspx</cmCoreServiceUrl1>
+<cmCoreServiceAltUrl1 type="string">http://core1.qa-c.svrs.net/VPServices/CoreRequest.aspx</cmCoreServiceAltUrl1>
+<cmStateNotifyServiceUrl1 type="string">http://statenotify1.qa-c.svrs.net/VPServices/StateNotifyRequest.aspx</cmStateNotifyServiceUrl1>
+<cmStateNotifyServiceAltUrl1 type="string">http://statenotify1.qa-c.svrs.net/VPServices/StateNotifyRequest.aspx</cmStateNotifyServiceAltUrl1>
+<cmMessageServiceUrl1 type="string">http://message1.qa-c.svrs.net/VPServices/MessageRequest.aspx</cmMessageServiceUrl1>
+<cmMessageServiceAltUrl1 type="string">http://message1.qa-c.svrs.net/VPServices/MessageRequest.aspx</cmMessageServiceAltUrl1>
+<ConferenceServiceUrl1 type="string">http://conference1.qa-c.svrs.net/VPServices/ConferenceRequest.aspx</ConferenceServiceUrl1>
+<ConferenceServiceAltUrl1 type="string">http://core1.qa-c.svrs.net/VPServices/ConferenceRequest.aspx</ConferenceServiceAltUrl1>
+<RemoteLoggerServiceUrl1 type="string">http://logger1.qa.svrs.net/RemoteLoggerServices/RemoteLoggerRequest.aspx</RemoteLoggerServiceUrl1>
+<RemoteLoggerServiceAltUrl1 type="string">http://logger1.qa.svrs.net/RemoteLoggerServices/RemoteLoggerRequest.aspx</RemoteLoggerServiceAltUrl1>
+<SipAgentDomainOverride type="string">a.ci-qa-c.svrs.net</SipAgentDomainOverride>
+<SipAgentDomainAltOverride type="string">a.ci-qa-c.svrs.net</SipAgentDomainAltOverride>
+<SipPrivateDomainOverride type="string">s.ci-qa-c.svrs.net</SipPrivateDomainOverride>
+<SipPrivateDomainAltOverride type="string">s.ci-qa-c.svrs.net</SipPrivateDomainAltOverride>
+<SipPublicDomainAltOverride type="string">dummy</SipPublicDomainAltOverride>
+<cmVrsServer type="string">209.169.226.175</cmVrsServer>
+
+	<!-- Default properties for the UI -->
+	<uiNetHostname type="string">VP200</uiNetHostname>
+	<!-- Default for UI mode estiSTANDARD_MODE-->
+	<cmLocalInterfaceMode type="enum">0</cmLocalInterfaceMode>
+	<uiScreenSaverDelay type="int">10</uiScreenSaverDelay>
+	<uiUpdateHourStart type="int">0</uiUpdateHourStart>
+	<uiUpdateHourEnd type="int">5</uiUpdateHourEnd>
+	<uiAutoHideSeconds type="int">5</uiAutoHideSeconds>
+	<uiDisableAudio type="int">1</uiDisableAudio>                     <!-- Default to 1, audio is disabled -->
+	<!--<uiAutoRejectIncoming type="int">0</uiAutoRejectIncoming>-->                      <!-- Default to 0, do not auto reject incoming calls while in a call -->
+	<!--<uiAutoHideIncomingAlert type="int">1</uiAutoHideIncomingAlert>-->                <!-- Default to 1, the incoming alert will auto hide -->
+	<!--<uiIncomingAlertAutoHideSeconds type="int">10</uiIncomingAlertAutoHideSeconds>--> <!-- Default to 10, incoming alert will hide in 10 seconds -->
+	<!--<uiIncomingAlertSize type="enum">1</uiIncomingAlertSize>-->                       <!-- Default to 1, 0 = large, 1 = medium, 2 = small -->
+	<cmVideoServer type="string">video.sorensonvrs.com</cmVideoServer>
+	<uiSorensonServicesInfoVideo type="string">SorensonServicesInfo</uiSorensonServicesInfoVideo>
+	<uiDialCompetitorVideo type="string">DialCompetitor</uiDialCompetitorVideo>
+	<uiServiceChangeConfirmVideo type="string">ServiceChangeConfirm</uiServiceChangeConfirmVideo>
+	<uiCameraAllowRmtCtrl type="int">1</uiCameraAllowRmtCtrl>
+	<NetUseDHCP type="int">0</NetUseDHCP>
+	<NetIPAddress type="string">10.20.130.18</NetIPAddress>
+	<NetSubnetMask type="string">255.255.255.0</NetSubnetMask>
+	<NetGateway type="string">10.20.130.1</NetGateway>
+	<NetDNSHostName type="string"></NetDNSHostName>
+	<DNSNameServerAddr1 type="string">10.20.35.16</DNSNameServerAddr1>
+	<DNSNameServerAddr2 type="string"></DNSNameServerAddr2>
+<CoreServiceSSLFailOver type="int">1</CoreServiceSSLFailOver>
+<StateNotifySSLFailOver type="int">1</StateNotifySSLFailOver>
+<MessageServiceSSLFailOver type="int">1</MessageServiceSSLFailOver>
+<RemoteLoggerServiceSSLFailOver type="int">1</RemoteLoggerServiceSSLFailOver>
+<cmPlayerControlsEnabled type="int">1</cmPlayerControlsEnabled>
+<RelayLanguageEnabled type="int">1</RelayLanguageEnabled>
+<NATTraversalH323 type="int">0</NATTraversalH323>
+<NATTraversalSIP type="int">1</NATTraversalSIP>
+<SIPNatTransport type="int">1</SIPNatTransport>
+<uiDefUserPhone type="string">18011114444</uiDefUserPhone>
+<uiDefUserPassword type="string">1234</uiDefUserPassword>
+
+
+<!-- Properties for ports that should not conflict with other softphones running -->
+<MacAddress type="string">00:00:00:00:00:FE</MacAddress>
+<InstanceGUID type="string">58d91f14-07fa-1001-872d-B8CA3A95C974</InstanceGUID>
+<SecondStaticListenPortEnabled type="int">1</SecondStaticListenPortEnabled>
+<SecondStaticListenPort type="int">49154</SecondStaticListenPort>
+<SecondStaticSipListenPortEnabled type="int">1</SecondStaticSipListenPortEnabled>
+<SecondStaticSipListenPort type="int">50062</SecondStaticSipListenPort>
+<AltSipTlsListenPortEnabled type="int">1</AltSipTlsListenPortEnabled>
+<AltSipTlsListenPort type="int">50063</AltSipTlsListenPort>
+<cmControlPortBase type="int">55328</cmControlPortBase>
+<cmControlPortRange type="int">12</cmControlPortRange>
+<cmChannelPortBase type="int">55328</cmChannelPortBase>
+<cmChannelPortRange type="int">12</cmChannelPortRange>
+<cmVrclPort type="int">15326</cmVrclPort>
+
+</root>

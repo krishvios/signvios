@@ -1,0 +1,2187 @@
+/* (No Comment) */
+" has disconnected" = " se ha desconectado";
+
+/* (No Comment) */
+"%@ did not answer your call." = "%@ no respondió a su llamada.";
+
+/* (No Comment) */
+"%@® Mobile for iOS version %@" = "%@® Móvil para la versión de iOS  %@";
+
+/* (No Comment) */
+"%lu contacts were imported." = "Se importaron %lu contactos.";
+
+/* No comment provided by engineer. */
+"`key` must not to be nil" = "`clave` no debe ser nil";
+
+/* Class = "UILabel"; text = "The following Sorenson user would like to add your phone to their myPhone Group:"; ObjectID = "7"; */
+"7.text" = "Al siguiente usuario de Sorenson le gustaría agregar su teléfono a su grupo myPhone:";
+
+/* Class = "UILabel"; text = "Do you want to add your phone to the myPhone Group?"; ObjectID = "19"; */
+"19.text" = "¿Desea agregar su teléfono a myPhone Group?";
+
+/* 911 Location Info */
+"911 Location Info" = "Información de Ubicación del 911";
+
+/* (No Comment) */
+"911 Location Info Changed" = "Información de Ubicación 911 Cambiada";
+
+/* (No Comment) */
+"911 Location Information" = "Información de Ubicación del 911";
+
+/* (No Comment) */
+"911.loc.address.abort" = "La dirección de este videoteléfono ahora no es válida.\n\nDebe ingresar la dirección correcta de este videoteléfono para usarla en llamadas de emergencia al 911.\n\nSeleccione Reanudar para continuar ingresando una dirección.";
+
+/* (No Comment) */
+"911.loc.address.rejected" = "Corrija esta dirección y luego toque el botón Enviar.";
+
+/* (No Comment) */
+"911.loc.city.blank" = "Tu ciudad no puede estar en blanco.";
+
+/* (No Comment) */
+"911.loc.city.invalid.chars" = "Tu ciudad contiene caracteres no válidos.";
+
+/* (No Comment) */
+"911.loc.error.connect" = "No se puede conectar al servidor, inténtelo de nuevo más tarde.";
+
+/* (No Comment) */
+"911.loc.PO.box.notallowed" = "Las direcciones de los apartados postales no están permitidas en la dirección de emergencia. Actualice con la dirección de la calle solo para los servicios de emergencia.";
+
+/* (No Comment) */
+"911.loc.section.bottom" = "Todos los dispositivos VRS deben registrar una dirección para los servicios de emergencia 911.\n\nEstado de la Dirección: %@";
+
+/* (No Comment) */
+"911.loc.state.blank" = "Tu estado no puede estar en blanco.";
+
+/* (No Comment) */
+"911.loc.street.blank" = "La dirección de su calle no puede estar en blanco.";
+
+/* (No Comment) */
+"911.loc.street.L1.invalid" = "La línea 1 de la dirección de su calle contiene caracteres no válidos.";
+
+/* (No Comment) */
+"911.loc.street.L2.invalid" = "La línea 2 de la dirección de su calle contiene caracteres no válidos.";
+
+/* (No Comment) */
+"911.loc.zipcode.invalid" = "Su código postal debe tener el formato ##### o #####-####";
+
+/* (No Comment) */
+"911.notification.title" = "Su información de ubicación del 911 puede haber cambiado. Acepte o rechace esta actualización.";
+
+/* (No Comment) */
+"Accept" = "Aceptar";
+
+/* (No Comment) */
+"Accepting" = "Aceptando";
+
+/* login history */
+"Account History" = "Historial de la Cuenta";
+
+/* (No Comment) */
+"Account Information" = "Información de la Cuenta";
+
+/* (No Comment) */
+"account.loggedin.other.device.title" = "Usted ha sido desconectado. Se ha iniciado sesión en su cuenta ntouch® en otro dispositivo.";
+
+/* (No Comment) */
+"account.password.changed.title" = "Su contraseña ha cambiado. Inicie sesión con su nueva contraseña para evitar llamadas perdidas.";
+
+/* (No Comment) */
+"account.phone.number.changed.msg" = "Su número de teléfono de ntouch Mobile ha cambiado. tu nuevo número es ";
+
+/* (No Comment) */
+"account.phone.number.changed.title" = "ntouch® Mobile";
+
+/* (No Comment) */
+"Active" = "Activo";
+
+/* (No Comment) */
+"Add Call" = "Agregar Llamada";
+
+/* contacts */
+"Add Contact" = "Agregar Contacto";
+
+/* (No Comment) */
+"Add Phone" = "Añadir Teléfono";
+
+/* (No Comment) */
+"Add Phone Error" = "Error al Agregar Teléfono";
+
+/* (No Comment) */
+"Add Phone to Group" = "Agregar teléfono al grupo";
+
+/* (No Comment) */
+"Add Saved Text" = "Agregar Texto Guardado";
+
+/* (No Comment) */
+"Add to Existing Contact" = "Agregar a un Contacto Existente";
+
+/* (No Comment) */
+"Add To Existing Contact" = "Agregar a un Contacto Existente";
+
+/* (No Comment) */
+"Add To Favorites" = "Agregar a Los Favoritos";
+
+/* (No Comment) */
+"Add to myPhone Group" = "Agregar al Grupo myPhone";
+
+/* (No Comment) */
+"Address Rejected" = "Dirección Rechazada";
+
+/* (No Comment) */
+"Agreement.Message" = "Si rechaza el acuerdo, no podra realizar ni recibir llamadas. ¿Esta seguro que quiere rechazar el acuerdo?";
+
+/* (No Comment) */
+"Allow" = "Permitir";
+
+/* (No Comment) */
+"anonymous" = "anónima";
+
+/* (No Comment) */
+"Anonymous" = "Anónima";
+
+/* (No Comment) */
+"Answer Call" = "Responder Llamada";
+
+/* (No Comment) */
+"Answered Call" = "Llamada Contestada";
+
+/* login alerts & button */
+"Apply Now" = "Aplica Ya";
+
+/* login create new account button */
+"Create New Account" = "Crear nueva cuenta";
+
+/* login apply online button */
+"Apply Online" = "Aplicar en línea";
+
+/* (No Comment) */
+"Are you sure?" = "¿Está seguro?";
+
+/* (No Comment) */
+"at" = "en";
+
+/* (No Comment) */
+"Attention" = "Atención";
+
+/* (No Comment) */
+"Audio will be disabled." = "El Audio se desactivará.";
+
+/* (No Comment) */
+"Auto" = "Auto";
+
+/* (No Comment) */
+"Auto-answer" = "Respuesta Automática";
+
+/* (No Comment) */
+"Auto-answer after %@ rings." = "Respuesta automática después de %@ timbres.";
+
+/* (No Comment) */
+"Auto-answer Disabled." = "Respuesta automática Deshabilitada.";
+
+/* (No Comment) */
+"Best" = "Muy Bueno";
+
+/* (No Comment) */
+"Best (most data)" = "Muy Bueno (la mayoría de los datos)";
+
+/* (No Comment) */
+"Better" = "Mejor";
+
+/* (No Comment) */
+"Better (more data)" = "Mejor (más datos)";
+
+/* (No Comment) */
+"Birthday" = "Cumpleaños";
+
+/* (No Comment) */
+"Birthday Invalid" = "Cumpleaños inválida";
+
+/* (No Comment) */
+"Bitrate: " = "Tasa de Bits:";
+
+/* (No Comment) */
+"Block" = "Bloquear";
+
+/* (No Comment) */
+"Block Anonymous Callers" = "Bloquear Llamadas Desconocido";
+
+/* (No Comment) */
+"Block Caller" = "Bloquear Llamada";
+
+/* (No Comment) */
+"Block Contact" = "Bloquear Contacto";
+
+/* (No Comment) */
+"Blocked Call" = "Llamada Bloqueada";
+
+/* (No Comment) */
+"BLOCKED CALL" = "LLAMADA BLOQUEADA";
+
+/* (No Comment) */
+"Blocked Number" = "Número Bloqueado";
+
+/* blocked numbers */
+"Blocked Numbers" = "Números Bloqueados";
+
+/* (No Comment) */
+"blocked.add.alreadyBlocked.err" = "El número que intentas bloquear ya ha sido bloqueado.";
+
+/* (No Comment) */
+"blocked.add.error.msg" = "El número de teléfono que intentaste bloquear no se puede bloquear.";
+
+/* (No Comment) */
+"blocked.add.error.title" = "El número no se puede bloquear.";
+
+/* (No Comment) */
+"blocked.contact.confirm.message" = "%1$@ está actualmente asociado a su contacto %2$@ como el número de teléfono %3$@. ¿Está seguro de que desea bloquearlo?";
+
+/* (No Comment) */
+"blocked.contact.confirm.title" = "¿Bloquear el número de teléfono de %2$@ de %1$@?";
+
+/* (No Comment) */
+"blocked.count" = "%lu Bloqueados";
+
+/* (No Comment) */
+"blocked.delete.confirm" = "¿Está seguro de que desea eliminar este número bloqueado?";
+
+/* blocked - error */
+"blocked.delete.err" = "Este número bloqueado no se puede eliminar en este momento. Por favor, inténtelo de nuevo más tarde.";
+
+/* (No Comment) */
+"blocked.delete.error.msg" = "Se produjo un error al eliminar este elemento de la lista bloqueada.";
+
+/* (No Comment) */
+"blocked.delete.error.title" = "Error al eliminar el elemento bloqueado";
+
+/* (No Comment) */
+"blocked.edit.error.msg" = "Se produjo un error al editar este elemento de la lista bloqueada.";
+
+/* (No Comment) */
+"blocked.edit.error.title" = "Vuelva a editar el elemento.";
+
+/* (No Comment) */
+"blocked.fixed.err" = "Este contacto incorporado no se puede bloquear.";
+
+/* (No Comment) */
+"blocked.full.err" = "Ha alcanzado el límite de números que se pueden bloquear. Si desea bloquear cualquier número adicional, primero debe desbloquear un número diferente.";
+
+/* (No Comment) */
+"blocked.full.err.title" = "No se pueden bloquear más números.";
+
+/* (No Comment) */
+"blocked.myphone.err" = "%@ está en su grupo myPhone y no se puede bloquear. ";
+
+/* (No Comment) */
+"Build Version" = "Versión de Compilación";
+
+/* (No Comment) */
+"Call" = "Llamar";
+
+/* contacts search */
+"Call " = "Llamar ";
+
+/* button */
+"Call 911" = "Llama al 911";
+
+/* Support button on Login UI*/
+"ready.to.call.help" = "¿Listo para pedir ayuda?";
+
+/* button, label */
+"Call Customer Care" = "Llamar a atención al cliente";
+
+/* (No Comment) */
+"Call Directly" = "Llamar Directamente";
+
+/* call ended statuses, alerts */
+"Call Disconnected" = "Llamada Desconectada";
+
+/* call history */
+"Call History" = "Historial de Llamadas";
+
+/* (No Comment) */
+"Call In Progress" = "Llamada En Progreso";
+
+/* (No Comment) */
+"CALL IN PROGRESS" = "LLAMADA EN PROGRESO";
+
+/* (No Comment) */
+"Call Is Not Encrypted" = "La Llamada no Está Cifrada";
+
+/* (No Comment) */
+"Call Requires Encryption" = "La Llamada Requiere Cifrado";
+
+/* (No Comment) */
+"Call Waiting Enabled" = "Llamada en Espera Habilitada";
+
+/* (No Comment) */
+"Call With Encryption" = "Llamada Con Cifrado";
+
+/* (No Comment) */
+"call.auth" = "Autenticando...";
+
+/* (No Comment) */
+"call.calling" = "Llamando...";
+
+/* (No Comment) */
+"call.conf.alert.AES128" = "Esta llamada está encriptada con encriptación AES de 128 bits.";
+
+/* (No Comment) */
+"call.conf.alert.AES256" = "Esta llamada está encriptada con encriptación AES de 256 bits.";
+
+/* (No Comment) */
+"call.conf.alert.none" = "El cifrado no está disponible para esta llamada.";
+
+/* (No Comment) */
+"call.connect" = "Conectando...";
+
+/* (No Comment) */
+"call.dialing" = "Discada...";
+
+/* (No Comment) */
+"call.end.anonymousCallNotAllowed" = "Esta llamada no se puede conectar porque no se muestra el identificador de llamadas. Desactive Ocultar mi identificador de llamadas en la ajustes e intente llamar de nuevo.";
+
+/* (No Comment) */
+"call.end.anonymousDirectSignMailNotAllowed" = "Este mensaje no se puede entregar porque no se muestra el identificador de llamadas. Desactive Ocultar mi identificador de llamadas en la ajustes e intente enviarlo de nuevo.";
+
+/* (No Comment) */
+"call.end.dialByNumberDisallowed" = "El servicio premium (marcar por número de teléfono) no está habilitado en este teléfono.";
+
+/* (No Comment) */
+"call.end.dialingSelf" = "Se ha hecho un intento de marcar uno mismo.";
+
+/* (No Comment) */
+"call.end.directoryFindFailed" = "No se puede completar su llamada en este momento, inténtelo de nuevo más tarde.";
+
+/* (No Comment) */
+"call.end.directSignMailUnavailable" = "Este número no puede recibir mensajes de SignMail.";
+
+/* (No Comment) */
+"call.end.lostConnection" = "Por favor, compruebe su conexión a Internet e intente llamar de nuevo.";
+
+/* (No Comment) */
+"call.end.noAssociatedPhone" = "No hay identificación de teléfono Actual o Asociada para el registro de usuario actual.";
+
+/* (No Comment) */
+"call.end.noP2PExtensions.skipSM.0" = "Las extensiones no son compatibles con las llamadas punto a punto.";
+
+/* (No Comment) */
+"call.end.noP2PExtensions.skipSM.1" = "Las extensiones no son compatibles con los mensajes de SignMail.";
+
+/* (No Comment) */
+"call.end.notFoundInDirectory.skipSM.0" = "No se pudo realizar la llamada porque el sistema remoto no figuraba en el directorio.";
+
+/* (No Comment) */
+"call.end.notFoundInDirectory.skipSM.1" = "No se pudo enviar el mensaje porque el sistema remoto no figuraba en el directorio.";
+
+/* (No Comment) */
+"call.end.reason.encryption.required" = "Lo sentimos, no se pudo conectar la llamada. El videoteléfono al que está llamando requiere encriptación.";
+
+/* (No Comment) */
+"call.end.reason.security.inadequate" = "El videoteléfono al que está llamando no admite llamadas encriptadas. Cambie la ajustes de encriptación o comuníquese con su administrador de IT.";
+
+/* call end reasons */
+"call.end.remote.busy.skipSM" = "Su mensaje no puede ser enviado en este momento.";
+
+/* (No Comment) */
+"call.end.remoteSystemBlocked.skipSM.0" = "El sistema remoto ha sido bloqueado para recibir llamadas.";
+
+/* (No Comment) */
+"call.end.remoteSystemBlocked.skipSM.1" = "El sistema remoto ha sido bloqueado para recibir mensajes.";
+
+/* (No Comment) */
+"call.end.remoteSystemOutOfNetwork" = "El sistema remoto está fuera de la red.";
+
+/* (No Comment) */
+"call.end.remoteSystemUnregistered" = "El sistema remoto no está registrado con el servicio de registro.";
+
+/* (No Comment) */
+"call.end.transferFailed" = "No se pudo transferir su llamada al número de teléfono especificado.";
+
+/* (No Comment) */
+"call.end.vrsCallNotAllowed" = "Su cuenta no puede hacer llamadas de VRS.";
+
+/* (No Comment) */
+"call.ended" = "La llamada ha terminado.";
+
+/* (No Comment) */
+"call.err.callAlreadyInProgress" = "Ya hay una llamada en curso a este número.";
+
+/* (No Comment) */
+"call.err.callDisconnected" = "La llamada ya se ha desconectado";
+
+/* "call.err.callNotCreated" = ""; */
+"call.err.callFiltered" = "La llamada entrante fue bloqueada por la lista de llamadas bloqueadas de iOS o por No Molestar de iOS";
+
+/* (No Comment) */
+"call.err.callNotInHoldableState" = "La llamada actual no se puede retener.";
+
+/* (No Comment) */
+"call.err.callNotInTransferableState" = "Esta llamada no se puede transferir actualmente.";
+
+/* (No Comment) */
+"call.err.callsNotInJoinableState" = "Estas llamadas no se pueden unir actualmente.";
+
+/* (No Comment) */
+"call.err.callTimedOut" = "La llamada se agotó mientras se conectaba, intente su llamada nuevamente.";
+
+/* (No Comment) */
+"call.err.cannotDialSelf" = "No puede llamar a su propio número de teléfono de Sorenson desde este dispositivo.";
+
+/* (No Comment) */
+"call.err.cannotJoinCallWithItself" = "No puede unirse a una llamada consigo misma.";
+
+/* (No Comment) */
+"call.err.endOfBackgroundTime" = "La aplicación no pudo continuar ejecutándose en segundo plano.";
+
+/* (No Comment) */
+"call.err.failedDeliverSignMail" = "No se pudo entregar su SignMail. El archivo de video se perdió. Para grabar un nuevo video de SignMail, intente su llamada nuevamente.";
+
+/* (No Comment) */
+"call.err.failedToAnswer" = "La llamada no pudo ser respondida en este momento.";
+
+/* (No Comment) */
+"call.err.failedToEnd" = "La llamada no pudo ser rechazada en este momento.";
+
+/* (No Comment) */
+"call.err.failedToHold" = "La llamada no se pudo realizar en este momento.";
+
+/* (No Comment) */
+"call.err.failedToJoin" = "Las llamadas no se pudieron unir en este momento.";
+
+/* (No Comment) */
+"call.err.failedToRecordSignMail" = "Hubo un problema al grabar su SignMail.";
+
+/* (No Comment) */
+"call.err.failedToResume" = "La llamada no se pudo reanudar en este momento.";
+
+/* (No Comment) */
+"call.err.failedToTransfer" = "La llamada no se pudo transferir en este momento.";
+
+/* (No Comment) */
+"call.err.featureDisabled" = "Pídale al Servicio de Atención al Cliente de Sorenson que habilite esta función.";
+
+/* (No Comment) */
+"call.err.invalidDialString" = "Numero de telefono invalido.";
+
+/* (No Comment) */
+"call.err.mailboxFull" = "Lo siento, ese buzón está lleno.";
+
+/* (No Comment) */
+"call.err.maxCallsExceeded" = "Ya hay demasiadas llamadas en curso. Permita que todas las llamadas se desconecten antes de marcar otro número.";
+
+/* (No Comment) */
+"call.err.notAvailableInPublicMode" = "Esta característica no está disponible en modo público.";
+
+/* (No Comment) */
+"call.err.onlyOneActiveCallAllowed" = "Hay demasiadas llamadas activas.";
+
+/* (No Comment) */
+"call.err.requiresAuthentication" = "Debe iniciar sesión para marcar este número.";
+
+/* (No Comment) */
+"call.err.requiresBlockCallerIdDisabled" = "Deshabilitar \"Ocultar mi Identificador de Llamadas\" para grabar este SignMail.";
+
+/* (No Comment) */
+"call.err.requiresCallCIR" = "Llame al Servicio de Atención al Cliente de Sorenson para hablar sobre la reactivación de su servicio.";
+
+/* (No Comment) */
+"call.err.requiresCallObject" = "Por favor, inténtelo de nuevo más tarde.";
+
+/* (No Comment) */
+"call.err.requiresCanHoldCall" = "La llamada actual no se puede poner en espera";
+
+/* (No Comment) */
+"call.err.requiresEulaAcceptance" = "Se debe aceptar el acuerdo de usuario.";
+
+/* CallError descriptions */
+"call.err.requiresNetworkConnection" = "Debe tener acceso a la red para realizar una llamada.";
+
+/* CallError SIP registration not yet complete */
+"call.err.requiresSipRegistration" = "Reconectando con el servidor, no se puede realizar la llamada en este momento.";
+
+/* call states */
+"call.incoming" = "Llamada Entrante...";
+
+/* (No Comment) */
+"call.select.phone" = "Seleccione un telefono a llamar";
+
+/* (No Comment) */
+"call.state.alert.awaiting.redirect" = "El número de teléfono que marcó se cambió a %@. Para redirigir su llamada a este nuevo número, seleccione \"Continuar\". De lo contrario, seleccione \"Colgar\" para finalizar esta llamada.";
+
+/* (No Comment) */
+"call.state.alert.awaiting.self.cert" = "Al hacer clic en el botón \"Aceptar\", certifica que tiene una discapacidad auditiva o del habla y necesita VRS para poder comunicarse con otras personas. Comprende que el costo de las llamadas de VRS se paga con contribuciones de otras telecomunicaciones. usuarios al Fondo TRS.\n\nAl hacer clic en el botón \"Aceptar\", también certifica que es elegible para usar VRS.";
+
+/* (No Comment) */
+"call.state.alert.awaiting.vrs.prompt" = "Si estaba marcando una llamada SVRS, seleccione \"SVRS\" para realizar la llamada. Seleccione \"Colgar\" si desea intentar volver a marcar una llamada punto a punto.";
+
+/* (No Comment) */
+"call.wait" = "Espere por favor...";
+
+/* (No Comment) */
+"Caller ID" = "Identificador de Llamadas";
+
+/* Error message displayed if the camera is unavailable when the user goes to the image capture screen */
+"Camera is unavailable" = "La cámara no está disponible";
+
+/* (No Comment) */
+"Can't Accept Address" = "No Se puede Aceptar la Dirección";
+
+/* (No Comment) */
+"Can't Import" = "No se Puede Importar";
+
+/* (No Comment) */
+"Can't import contacts." = "No se pueden importar contactos.";
+
+/* (No Comment) */
+"Can't Paste" = "No se puede pegar";
+
+/* (No Comment) */
+"Can't Provision Address" = "No se Puede Proporcionar la Dirección";
+
+/* (No Comment) */
+"can't.send.signmail.yourself" = "Lo siento, no puedes enviarte un SignMail a ti mismo.";
+
+/* (No Comment) */
+"Can’t Add Contact" = "No Se Puede Agregar Contacto";
+
+/* (No Comment) */
+"Can’t Log In" = "No Puedo Iniciar Sesión";
+
+/* (No Comment) */
+"Can’t Play Video" = "No se puede Reproducir el Video";
+
+/* buttons */
+"Cancel" = "Cancelar";
+
+/* (No Comment) */
+"Cannot Log In" = "No Puedes Ingresar";
+
+/* SignMail */
+"Cannot send SignMail" = "No se puede enviar SignMail";
+
+/* (No Comment) */
+"Cell" = "Móvil";
+
+/* (No Comment) */
+"Cellular Video Quality" = "Calidad de Video Celular";
+
+/* (No Comment) */
+"Change Description" = "Cambiar Descripción";
+
+/* (No Comment) */
+"Change Password" = "Cambia la Contraseña";
+
+/* (No Comment) */
+"change.pass.conf.notmatch" = "Los campos Nuevo y Confirmar Contraseña no coinciden.";
+
+/* (No Comment) */
+"change.pass.new.15.chars" = "El campo Nueva Contraseña puede contener solo 15 caracteres.";
+
+/* (No Comment) */
+"change.pass.new.blank" = "El campo Nueva Contraseña no puede estar en blanco.";
+
+/* (No Comment) */
+"change.pass.new.saved" = "La nueva contraseña que ingresó ha sido guardada.";
+
+/* (No Comment) */
+"change.pass.new.standard.chars" = "Solo se pueden usar letras, números y signos de puntuación estándar.";
+
+/* (No Comment) */
+"change.pass.old.incorrect" = "La Contraseña Anterior era incorrecta.";
+
+/* (No Comment) */
+"change.pass.problem" = "Hubo un problema al cambiar su contraseña.";
+
+/* (No Comment) */
+"Channels" = "Canales";
+
+/* (No Comment) */
+"Choose Photo" = "Escoge Foto";
+
+/* (No Comment) */
+"City" = "Ciudad";
+
+/* button */
+"Clear All" = "Limpiar Todo";
+
+/* (No Comment) */
+"Clear All Call History" = "Borrar Todo el Historial de Llamadas";
+
+/* (No Comment) */
+"Clear All Missed Calls" = "Borrar Todas las Llamadas Perdidas";
+
+/* (No Comment) */
+"Clear Listed Calls" = "Borrar Llamadas Enumeradas";
+
+/* (No Comment) */
+"Close" = "Cerca";
+
+/* themes - theme names */
+"Color Theme" = "Tema de Color";
+
+/* (No Comment) */
+"Company Name" = "Nombre de Empresa";
+
+/* (No Comment) */
+"Complete" = "Completo";
+
+/* (No Comment) */
+"Confirm Password" = "Confirmar Contraseña";
+
+/* title */
+"Confirm SignMail Send" = "Confirmar Envío de SignMail";
+
+/* (No Comment) */
+"Connecting" = "Conectando";
+
+/* (No Comment) */
+"Connecting to Server" = "Conectando al Servidor";
+
+/* (No Comment) */
+"Contact cannot be blocked." = "No se puede bloquear el contacto.";
+
+/* (No Comment) */
+"Contact Photos" = "Fotos de Contacto";
+
+/* (No Comment) */
+"contact.choose.num.call" = "Elija un número para llamar";
+
+/* (No Comment) */
+"contact.choose.num.fav" = "Elige un número a favorito";
+
+/* (No Comment) */
+"contact.choose.num.rem.fav" = "Elija un número para eliminar de favoritos";
+
+/* (No Comment) */
+"contact.choose.num.signmail" = "Elija un número para enviar un SignMail";
+
+/* (No Comment) */
+"contact.delete.error.msg" = "Ocurrió un error al eliminar este contacto.";
+
+/* (No Comment) */
+"contact.delete.error.title" = "Error al eliminar contactot";
+
+/* Core Errors */
+"contact.edit.error.msg" = "Ocurrió un error al editar este contacto.";
+
+/* (No Comment) */
+"contact.edit.error.title" = "Edite el contacto de nuevo.";
+
+/* (No Comment) */
+"Contacts" = "Contactos";
+
+/* (No Comment) */
+"CONTACTS" = "CONTACTOS";
+
+/* Contacts - Settings - SCI notifs */
+"Contacts imported." = "Contactos importados.";
+
+/* (No Comment) */
+"contacts.block.all.list.full" = "Ha alcanzado el límite de números que se pueden bloquear. Si desea bloquear cualquier número adicional, primero debe desbloquear un número diferente.";
+
+/* (No Comment) */
+"contacts.delete.confirm" = "¿Está seguro de que desea eliminar este contacto?";
+
+/* (No Comment) */
+"contacts.dsource.corp.authenticationFailed" = "Su %@ nombre de usuario o contraseña es incorrecto. Vuelva a intentarlo o comuníquese con su representante de ventas de Sorenson.";
+
+/* (No Comment) */
+"contacts.dsource.corp.error" = "Hubo un problema al cargar su directorio %@. Comuníquese con su representante de ventas de Sorenson.";
+
+/* (No Comment) */
+"contacts.dsource.device.nopermission" = "ntouch no tiene permiso para acceder a los contactos de su dispositivo";
+
+/* (No Comment) */
+"contacts.dsource.fav.empty" = "¿Quieres crear un nuevo favorito?\n Haz clic en \"Añadir a favoritos\" mientras miras un contacto.";
+
+/* (No Comment) */
+"contacts.edit.updateContact.null" = "Algo salió mal. Verifica tu conexión e inténtalo de nuevo.";
+
+/* (No Comment) */
+"contacts.search.privacy.policy.alert" = "ntouch puede compartir su ubicación cuando realiza búsquedas en Yelp. Hemos actualizado nuestra política de privacidad para reflejar esta nueva característica. Para habilitar el uso compartido de la ubicación para esta y todas las futuras búsquedas en Yelp, presione \"Permitir\".";
+
+/* (No Comment) */
+"contacts.search.yelp.location" = "Debe habilitar los servicios de ubicación para buscar en Yelp.";
+
+/* (No Comment) */
+"contacts.search.yelp.location.restricted" = "ntouch no puede acceder a su ubicación, que es necesaria para buscar en Yelp.";
+
+/* (No Comment) */
+"contacts.settings.duplicate.contact" = "Este contacto ya existe en sus Contactos de Sorenson.";
+
+/* (No Comment) */
+"contacts.settings.import.video.header" = "Ingrese la información del videoteléfono del que desea importar contactos.";
+
+/* (No Comment) */
+"contacts.settings.no.network" = "No se puede conectar a la red. Verifique su conexión e intente nuevamente.";
+
+/* (No Comment) */
+"contacts.settings.no.valid.numbers" = "No hay números de teléfono válidos para importar.";
+
+/* (No Comment) */
+"contacts.settings.sci.import.error" = "Por favor, verifique el número de teléfono y la contraseña.";
+
+/* (No Comment) */
+"contacts.settings.sci.invalid.creds" = "Su %@ nombre de usuario o contraseña es incorrecto. Vuelva a intentarlo o comuníquese con su representante de ventas de Sorenson.";
+
+/* (No Comment) */
+"contacts.settings.sci.no.DAP.server" = "Hubo un problema al cargar su directorio %@. Comuníquese con su representante de ventas de Sorenson.";
+
+/* (No Comment) */
+"Continue" = "Continuar";
+
+/* (No Comment) */
+"core.offline.error.msg" = "ntouch no puede guardar los cambios en este momento. Por favor, inténtelo de nuevo más tarde.";
+
+/* (No Comment) */
+"core.offline.error.title" = "No se pueden guardar cambios o configuraciones";
+
+/* (No Comment) */
+"CoreError3" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+
+/* (No Comment) */
+"CoreError4" = "The phone number you entered is already in use. Please enter a different phone number.";
+
+/* (No Comment) */
+"CoreError5" = "The phone number you entered is already in use. Please enter a different phone number.";
+
+/* (No Comment) */
+"CoreError6" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+
+/* (No Comment) */
+"CoreError7" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+
+/* (No Comment) */
+"CoreError12" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+
+/* (No Comment) */
+"CoreError14" = "There was a problem setting up your SignMail account. Please contact SVRS Technical Support or try again later.";
+
+/* (No Comment) */
+"CoreError27" = "An error occurred while communicating with the number server. If this problem persists, please contact technical support.";
+
+/* (No Comment) */
+"CoreError28" = "There is a problem with the account associated with this videophone. The videophone will now restart and will not be able to make or receive calls. Please contact Sorenson Technical Support for help to correct the problem.";
+
+/* (No Comment) */
+"CoreError29" = "There is a problem with the account associated with this videophone. The videophone will now restart and will not be able to make or receive calls. Please contact Sorenson Technical Support for help to correct the problem.";
+
+/* (No Comment) */
+"CoreError4294967291" = "An error occurred while submitting your address. Please submit your address later.";
+
+/* (No Comment) */
+"CORPORATE CONTACTS" = "CONTACTOS CORPORATIVOS";
+
+/* (No Comment) */
+"Could not transfer call." = "No se pudo transferir la llamada.";
+
+/* (No Comment) */
+"Couldn't Join Calls" = "No se Pudo Unir a las Llamadas";
+
+/* (No Comment) */
+"Create New Contact" = "Crear Nuevo Contacto";
+
+/* (No Comment) */
+"Creating Group" = "Crear grupo";
+
+/* (No Comment) */
+"Custom Greeting" = "Saludo Personalizado";
+
+/* (No Comment) */
+"Customer Care" = "Atención al Cliente";
+
+/* (No Comment) */
+"Dark (default)" = "Oscuro (defecto)";
+
+/* (No Comment) */
+"Debug Logging" = "Registro de Depuración";
+
+/* (No Comment) */
+"Decline Call" = "Rechazar Llamada";
+
+/* (No Comment) */
+"Delete" = "Borrar";
+
+/* button */
+"Delete All SignMails" = "Eliminar Todos Los SignMails";
+
+/* (No Comment) */
+"Delete Blocked" = "Eliminar Bloqueada";
+
+/* contacts - composite details */
+"Delete Contact" = "Borrar Contacto";
+
+/* (No Comment) */
+"Delete SignMail" = "Eliminar SignMail";
+
+/* (No Comment) */
+"Delete:" = "Borrar:";
+
+/* (No Comment) */
+"Deleted all contacts" = "Eliminó todos los contactos";
+
+/* (No Comment) */
+"Description" = "Descripción";
+
+/* (No Comment) */
+"Device" = "Dispositivo";
+
+/* (No Comment) */
+"Device Contacts" = "Contactos del Dispositivo";
+
+/* (No Comment) */
+"DEVICE CONTACTS" = "CONTACTOS DEL DISPOSITIVO";
+
+/* (No Comment) */
+"Device Settings" = "Ajustes de Dispositivo";
+
+/* Call Options section title in Settings*/
+"Call Options" = "Opciones de llamadas";
+
+/* menu */
+"Dial" = "Marcar";
+
+/* (No Comment) */
+"Dialing By IP" = "Marcar por IP";
+
+/* (No Comment) */
+"Dialpad" = "Teclado";
+
+/* (No Comment) */
+"Directory Login Failed" = "Error en el Inicio de Sesión en el Directorio";
+
+/* (No Comment) */
+"Directory Server Unavailable" = "Servidor de Directorio no Disponible";
+
+/* (No Comment) */
+"Disabled" = "Desactivado";
+
+/* (No Comment) */
+"Disabled toolbar auto hide" = "Ocultar automáticamente la barra de herramientas deshabilitada";
+
+/* (No Comment) */
+"Do Not Disturb" = "No Molestar";
+
+/* (No Comment) */
+"Do Not Disturb (Reject Incoming Calls)" = "No Molestar (Rechazar Llamadas Entrantes)";
+
+/* (No Comment) */
+"do.not.disturb.calls" = "No molestar. No estás recibiendo llamadas.";
+
+/* (No Comment) */
+"Don't Allow" = "No Permitir";
+
+/* Similar to iOS system buttons,
+ "Done" is "OK" in Spanish localization. */
+"Done" = "OK";
+
+/* (No Comment) */
+"Duplicate Contact" = "Contacto Duplicado";
+
+/* (No Comment) */
+"duplicate.mac.detected.msg" = "ntouch detectó que puede estar ejecutándose en un nuevo hardware. Reinicie ntouch e inicie sesión nuevamente para actualizar la información del dispositivo.";
+
+/* (No Comment) */
+"Edit Phone" = "Editar Teléfono";
+
+/* (No Comment) */
+"Edit Photo" = "Editar Foto";
+
+/* (No Comment) */
+"email" = "correo electrónico";
+
+/* (No Comment) */
+"Email address" = "Dirección de correo electrónico";
+
+/* Fixed contact names */
+"Emergency" = "Emergencia";
+
+/* (No Comment) */
+"Emergency Address Error" = "Error de Dirección de Emergencia";
+
+/* (No Comment) */
+"Enable Pulse Notifications" = "Habilitar Notificaciones de Pulso";
+
+/* (No Comment) */
+"Enable Spanish Features" = "Habilitar Funciones en Español";
+
+/* (No Comment) */
+"Enabled" = "Activado";
+
+/* (No Comment) */
+"Enabled internet searches" = "Búsquedas en Internet habilitadas";
+
+/* (No Comment) */
+"Enabled toolbar auto hide" = "Ocultar automáticamente la barra de herramientas habilitada";
+
+/* (No Comment) */
+"Encrypt My Calls" = "Cifrar Mis Llamadas";
+
+/* (No Comment) */
+"End Wavello" = "Fin Wavello";
+
+/* (No Comment) */
+"Enter login information" = "Ingrese la información de inicio de sesión";
+
+/* (No Comment) */
+"Enter text here." = "Ingrese texto aquí.";
+
+/* (No Comment) */
+"Enter your myPhone password:" = "Ingrese su contraseña de mi teléfono:";
+
+/* (No Comment) */
+"Error" = "Error";
+
+/* (No Comment) */
+"Error Connecting" = "Error al Conectar";
+
+/* (No Comment) */
+"Error connecting to server." = "Error al conectarse al servidor.";
+
+/* Title for error alert button */
+"Error Has Occured" = "Ha ocurrido un error";
+
+/* (No Comment) */
+"Error Removing myPhone Member" = "Error al Eliminar el Miembro de myPhone";
+
+/* (No Comment) */
+"Error saving address." = "Error al guardar la dirección.";
+
+/* (No Comment) */
+"Error updating favorites" = "Error al actualizar favoritos";
+
+/* (No Comment) */
+"Everyone" = "Todos";
+
+/* (No Comment) */
+"example: Kitchen, Joe's Phone, etc." = "ejemplo: Cocina, Teléfono de Joe, etc.";
+
+/* button */
+"Exit" = "Salida";
+
+/* (No Comment) */
+"Export Contacts to Device" = "Exportar Contactos al Dispositivo";
+
+/* (No Comment) */
+"Export Successful" = "Exportación Exitosa";
+
+/* (No Comment) */
+"Failed to make call" = "Error al hacer la llamada";
+
+/* (No Comment) */
+"Favorites" = "Favoritos";
+
+/* (No Comment) */
+"Favorites Full" = "Favoritas Completas";
+
+/* (No Comment) */
+"favorites.full.error.msg" = "Se ha alcanzado el número máximo de favoritos permitidos.";
+
+/* FCC Registration */
+"FCC Registration" = "FCC Registro";
+
+/* (No Comment) */
+"fcc.error.invalid.bday" = "Por favor ingrese su cumpleaños correcto.";
+
+/* (No Comment) */
+"fcc.error.invalid.ssn.msg" = "Ingrese los últimos cuatro dígitos de su Número de Seguro Social (SSN) o seleccione \"No tengo un SSN\"";
+
+/* (No Comment) */
+"fcc.logout.message" = "Por favor complete el formulario. Si prefiere no hacerlo, puede cerrar la sesión. ¿Quieres cerrar sesión ahora?";
+
+/* (No Comment) */
+"fcc.network.error.msg" = "Debe tener acceso a la red para enviar sus datos.";
+
+/* (No Comment) */
+"FCC.notification.title" = "FCC Registro de usuario requerido.";
+
+/* (No Comment) */
+"fcc.prompt.lastfour" = "Últimos cuatro dígitos de su SSN";
+
+/* (No Comment) */
+"fcc.submit.error.msg" = "No se pudo guardar el SSN y el cumpleaños. Comuníquese con Atención al cliente.";
+
+/* (No Comment) */
+"fcc.submit.error.title" = "El SSN y el cumpleaños no se guardaron.";
+
+/* (No Comment) */
+"from" = "desde";
+
+/* (No Comment) */
+"Good" = "Bien";
+
+/* (No Comment) */
+"Good (least data)" = "Bien (menos datos)";
+
+/* (No Comment) */
+"Greeting" = "Saludo";
+
+/* (No Comment) */
+"Greeting Recorded" = "Saludo Grabado";
+
+/* (No Comment) */
+"Greeting Text Too Long" = "Texto de saludo demasiado largo";
+
+/* single word */
+"Heartbeat" = "Latido del corazón";
+
+/* (No Comment) */
+"Help" = "Ayudar";
+
+/* (No Comment) */
+"help.guide.url" = "https://www.sorensonvrs.com/user_guide";
+
+/* (No Comment) */
+"Hide Account Info" = "Ocultar Información de la Cuenta";
+
+/* (No Comment) */
+"Hide My Caller ID" = "Ocultar Mi Identificador de Llamadas";
+
+/* (No Comment) */
+"High Contrast" = "Alto Contraste";
+
+/* (No Comment) */
+"History" = "Historia";
+
+/* phone labels */
+"home" = "casa";
+
+/* (No Comment) */
+"Home" = "Casa";
+
+/* (No Comment) */
+"home: %@" = "casa: %@";
+
+/* (No Comment) */
+"HUD Disabled" = "HUD Deshabilitado";
+
+/* (No Comment) */
+"HUD Enabled" = "HUD Habilitado";
+
+/* This statement must match quote above. */
+"I do not have a SSN" = "No tengo un SSN";
+
+/* (No Comment) */
+"Image Error" = "Error de Imagen";
+
+/* (No Comment) */
+"Importing..." = "Importando...";
+
+/* Contacts - Settings */
+"Import Cancelled" = "Importación Cancelada";
+
+/* (No Comment) */
+"Import cancelled." = "Importación cancelada.";
+
+/* (No Comment) */
+"Import completed." = "Importación completada.";
+
+/* contact details - destructiveActions */
+"Import Contact" = "Importar Contacto";
+
+/* (No Comment) */
+"Import Contact from Device" = "Importar Contacto desde Dispositivo";
+
+/* (No Comment) */
+"Import From Videophone Account" = "Importar desde Cuenta de Videoteléfono";
+
+/* (No Comment) */
+"Import Photos" = "Importar Fotos";
+
+/* (No Comment) */
+"Import Photos From Contacts" = "Importar Fotos de Contactos";
+
+/* (No Comment) */
+"Import Photos From Sorenson" = "Importar Fotos de Sorenson";
+
+/* (No Comment) */
+"Import Videophone Contacts" = "Importar Contactos de Videoteléfono";
+
+/* (No Comment) */
+"Import/Export Contacts" = "Importar/Exportar Contactos";
+
+/* (No Comment) */
+"Imported %zu contact photo." = "Foto de %zu contactos importada.";
+
+/* (No Comment) */
+"Imported %zu contact photos." = "Se importaron %zu fotos de contacto.";
+
+/* (No Comment) */
+"INCOMING CALL" = "LLAMADA ENTRANTE";
+
+/* (No Comment) */
+"Incoming call from " = "Llamada entrante de ";
+
+/* (No Comment) */
+"Info was not saved." = "La información no se guardó.";
+
+/* (No Comment) */
+"Information" = "Información";
+
+/* (No Comment) */
+"Integrated Calling Enabled" = "Llamadas Integradas Habilitadas";
+
+/* (No Comment) */
+"Invalid City" = "Ciudad inválida";
+
+/* (No Comment) */
+"Invalid Email Address" = "Dirección de Correo Electrónico No Válida";
+
+/* (No Comment) */
+"Invalid Password" = "Contraseña Invalida";
+
+/* login input */
+"Invalid Phone Number" = "Numero de Telefono Invalido";
+
+/* (No Comment) */
+"Invalid SSN" = "SSN no válido";
+
+/* (No Comment) */
+"Invalid State" = "Estado Inválido";
+
+/* (No Comment) */
+"Invalid Street Address" = "Dirección de Calle no Válida";
+
+/* (No Comment) */
+"Invalid ZIP Code" = "Código Postal No Válido";
+
+/* (No Comment) */
+"Join Calls" = "Unirse a las Llamadas";
+
+// language slider
+"Spanish" = "Español";
+"English" = "Inglés";
+"Spanish Call" = "Llamar en español";
+"English Call" = "Llamar en inglés";
+
+/* dial codes */
+"Key Codes Enabled" = "Códigos Clave Habilitados";
+
+/* (No Comment) */
+"Learn More" = "Aprende más";
+
+/* (No Comment) */
+"Light" = "Ligero";
+
+/* (No Comment) */
+"Loading" = "Cargando";
+
+/* (No Comment) */
+"Loading..." = "Cargando...";
+
+/* (No Comment) */
+"Local Number" = "Número local";
+
+/* (No Comment) */
+"Log Out" = "Cerrar Sesión";
+
+/* (No Comment) */
+"Logged Out" = "Desconectado";
+
+/* log in screen */
+"Logging In" = "Iniciando sesión";
+
+/* calls */
+"Logging in..." = "Iniciando sesión...";
+
+/* (No Comment) */
+"Login" = "Acceso";
+
+/* login service */
+"Login Failed" = "Error de Inicio de Sesion";
+
+/* (No Comment) */
+"login.err.endpointMatchError" = "Los tipos de puntos finales no coinciden";
+
+/* (No Comment) */
+"login.err.generic" = "No se puede iniciar sesión, inténtelo de nuevo.";
+
+/* (No Comment) */
+"login.err.isLoggingOut" = "Actualmente está siendo desconectado. Vuelva a intentarlo más tarde.";
+
+/* (No Comment) */
+"login.err.number.blank" = "Tu número de teléfono no puede estar en blanco.";
+
+/* (No Comment) */
+"login.err.number.digits" = "Tu número de teléfono asignado debe tener 10 u 11 dígitos.";
+
+/* (No Comment) */
+"login.err.offlineAuthentication" = "ntouch no puede conectarse en este momento. Verifique su conexión e intente nuevamente.";
+
+/* (No Comment) */
+"login.err.password.blank" = "Tu contraseña no puede estar en blanco.";
+
+/* (No Comment) */
+"login.err.usernameOrPasswordInvalid" = "El número de teléfono y/o la contraseña son incorrectos.";
+
+/* (No Comment) */
+"Logout" = "Cerrar sesión";
+
+/* (No Comment) */
+"Logout now?" = "¿Cerrar sesión ahora?";
+
+/* call conferencing */
+"Make Another Call" = "Hacer Otra Llamada";
+
+/* (No Comment) */
+"Manage Pulse Devices" = "Administrar Dispositivos de Pulso";
+
+/* (No Comment) */
+"Max custom shared texts" = "Máximo de textos compartidos personalizados";
+
+/* (No Comment) */
+"max.allowed.contacts.reached" = "Se ha alcanzado el número máximo de contactos permitidos";
+
+
+/* (No Comment) */
+"Microphone Privacy" = "Privacidad del Micrófono";
+
+/* (No Comment) */
+"Missed Call" = "Llamada Perdida";
+
+/* (No Comment) */
+"MISSED CALL" = "LLAMADA PERDIDA";
+
+/* (No Comment) */
+"Missed call from %@" = "Llamada perdida de %@";
+
+/* (No Comment) */
+"Missing email address" = "Dirección de correo electrónico faltante";
+
+/* (No Comment) */
+"mobile" = "móvil";
+
+/* (No Comment) */
+"mobile: %@" = "móvil: %@";
+
+/* myPhone */
+"myPhone" = "myPhone";
+
+/* (No Comment) */
+"myPhone Group Error" = "Error de Grupo myPhone";
+
+/* (No Comment) */
+"myPhone Member Error" = "Error de Miembro de myPhone";
+
+/* (No Comment) */
+"myPhone Number" = "Número de myPhone";
+
+/* (No Comment) */
+"myPhone Password" = "Contraseña de myPhone";
+
+/* (No Comment) */
+"myPhone.auth.err" = "Error de Autenticación de myPhone";
+
+/* (No Comment) */
+"myphone.customercare.msg" = "Debe seleccionar Llamar a atención al cliente para crear su grupo myPhone.";
+
+/* (No Comment) */
+"myPhone.edit.err.2" = "La contraseña que ingresó es incorrecta. (2)";
+
+/* (No Comment) */
+"myPhone.edit.err.73" = "No es miembro de un grupo myPhone. (73)";
+
+/* (No Comment) */
+"myPhone.edit.err.74" = "Error al agregar el teléfono a este grupo. Verifique que el teléfono haya iniciado sesión y no sea miembro de otro grupo. (74)";
+
+/* (No Comment) */
+"myPhone.edit.err.75" = "Error al agregar el teléfono al grupo myPhone. (75)";
+
+/* (No Comment) */
+"myPhone.edit.err.81" = "El campo de descripción debe tener de 1 a 50 caracteres. (81)";
+
+/* (No Comment) */
+"myPhone.edit.err.82" = "No se pudo encontrar el número de teléfono que ingresó. (82)";
+
+/* (No Comment) */
+"myPhone.edit.err.86" = "Error al eliminar el teléfono del Grupo myPhone. (86)";
+
+/* (No Comment) */
+"myPhone.edit.err.87" = "El número de teléfono que ingresó no es miembro de su Grupo myPhone. (87)";
+
+/* (No Comment) */
+"myPhone.edit.err.91" = "No puede eliminar al último miembro de un Grupo myPhone. (91)";
+
+/* (No Comment) */
+"myPhone.edit.err.99" = "Error al autenticar myPhone Group. (99)";
+
+/* (No Comment) */
+"myPhone.edit.err.100" = "Usted no es miembro de este grupo myPhone. (100)";
+
+/* (No Comment) */
+"myPhone.edit.err.102" = "Debe ingresar un número de teléfono válido. (102)";
+
+/* (No Comment) */
+"myPhone.edit.err.103" = "Error al guardar la información del miembro de myPhone. (103)";
+
+/* (No Comment) */
+"myPhone.edit.err.105" = "No puede eliminar al creador de un Grupo myPhone. (105)";
+
+/* (No Comment) */
+"myPhone.edit.remove.confirm" = "¿Eliminar este teléfono de su grupo myPhone?";
+
+/* (No Comment) */
+"myphone.error.create.title" = "Error al crear el grupo myPhone";
+
+/* (No Comment) */
+"myphone.error.description.msg" = "La descripción del teléfono que ingresó no es válida. (62)";
+
+/* (No Comment) */
+"myphone.error.password.match.msg" = "Las contraseñas no coinciden.";
+
+/* (No Comment) */
+"myphone.error.password.msg" = "La contraseña que ingresó no es válida. (63)";
+
+/* (No Comment) */
+"myphone.group.phone.removed.msg" = "Este teléfono ha sido eliminado del grupo myPhone.";
+
+/* (No Comment) */
+"myphone.group.phone.removed.title" = "Teléfono eliminado de myPhone Group";
+
+/* (No Comment) */
+"myphone.group.welcome.msg" = "Se ha creado su grupo myPhone. Podrá utilizar este número de teléfono en todos sus teléfonos Sorenson. Su contraseña se ha restablecido a la contraseña de grupo de myPhone. A continuación, vaya a sus teléfonos para agregarlos a su grupo.";
+
+/* myPhone Invite/Remove */
+"myphone.group.welcome.title" = "¡Bienvenido a Sorenson myPhone!";
+
+/* (No Comment) */
+"myphone.phone.select.problem" = "Hubo un problema al seleccionar este teléfono";
+
+/* (No Comment) */
+"myphone.setup.msg" = "Para comenzar, ingrese la información a continuación. Luego seleccione Crear grupo. Si necesita ayuda para crear su grupo, seleccione Llamar a atención al cliente.";
+
+/* (No Comment) */
+"myphone.welcome.msg" = "Cree un grupo myPhone para usar este número de teléfono en todos sus teléfonos Sorenson.";
+
+/* (No Comment) */
+"myphone.welcome.title" = "¡Bienvenido a Sorenson myPhone!";
+
+/* (No Comment) */
+"Name" = "Nombre";
+
+/* (No Comment) */
+"Name cannot be blank." = "El nombre no puede estar en blanco.";
+
+/* (No Comment) */
+"Needs Verification" = "Necesita Verificación";
+
+/* notifs - customer care */
+"Network Error" = "Error de Red";
+
+/* (No Comment) */
+"Network not available." = "Red No Disponible.";
+
+/* (No Comment) */
+"Network Settings" = "Ajustes de La Red";
+
+/* (No Comment) */
+"Network Speed" = "Velocidad de Red";
+
+/* (No Comment) */
+"Network Speed too low for Audio" = "Velocidad de Red demasiado baja para Audio";
+
+/* (No Comment) */
+"Network Tunneling" = "Tunelización de red";
+
+/* (No Comment) */
+"New Password" = "Nueva Contraseña";
+
+/* (No Comment) */
+"New Password Saved" = "Nueva Contraseña Guardada";
+
+/* (No Comment) */
+"No" = "No";
+
+/* (No Comment) */
+"No Caller ID" = "No Identificado";
+
+/* (No Comment) */
+"No Camera was found." = "No se Encontró Ninguna Cámara.";
+
+/* (No Comment) */
+"No Contact Found" = "Ningún Contacto Encontrado";
+
+/* (No Comment) */
+"No contacts" = "Sin contactos";
+
+/* (No Comment) */
+"No Greeting Text" = "Sin texto de saludo";
+
+/* (No Comment) */
+"No Internet Connection" = "Sin Conexión a Internet";
+
+/* (No Comment) */
+"No more numbers can be blocked." = "No se pueden bloquear más números.";
+
+/* contact details */
+"No Name" = "Sin Nombre";
+
+/* (No Comment) */
+"No Photo Library Found." = "No se ha Encontrado Ninguna Biblioteca de Fotos.";
+
+/* (No Comment) */
+"No results found" = "No se han encontrado resultados";
+
+/* (No Comment) */
+"No saved accounts." = "No hay cuentas guardadas.";
+
+/* (No Comment) */
+"none" = "ninguna";
+
+/* (No Comment) */
+"None" = "Ninguna";
+
+/* (No Comment) */
+"Not available." = "No disponible.";
+
+/* (No Comment) */
+"Not logged in" = "Sin iniciar sesión";
+
+/* (No Comment) */
+"Not Set" = "No Establecido";
+
+/* (No Comment) */
+"Not Submitted" = "No Enviado";
+
+/* (No Comment) */
+"Notifications" = "Notificaciones";
+
+/* (No Comment) */
+"notifs.customer.care.msg" = "Llame a Atención al Cliente de Sorenson para actualizar su información. ";
+
+/* (No Comment) */
+"Notify me for SignMail" = "Notificarme para SignMail";
+
+/* (No Comment) */
+"nTouch needs access to your camera." = "nTouch necesita acceso a su cámara.";
+
+/* (No Comment) */
+"ntouch® Mobile" = "Móvil ntouch®";
+
+/* (No Comment) */
+"Number already blocked." = "Número ya bloqueado.";
+
+/* (No Comment) */
+"Number cannot be blocked" = "No se puede bloquear el número";
+
+/* (No Comment) */
+"nVP IP Address" = "Dirección IP de nVP";
+
+/* (No Comment) */
+"OK" = "Aceptar";
+
+/* change password */
+"Old Password" = "Contraseña Anterior";
+
+/* settings - help */
+"Online Help" = "Ayuda en Linea";
+
+/* (No Comment) */
+"Open Settings" = "Ajustes Abierta";
+
+/* (No Comment) */
+"optional" = "opcional";
+
+/* (No Comment) */
+"Other private space" = "Otro espacio privado";
+
+/* (No Comment) */
+"Other shared space" = "Otro espacio compartido";
+
+/* (No Comment) */
+"other.private.space.detail" = "(Cualquier espacio de acceso restringido utilizado principalmente por un individuo, no cubierto previamente por otras categorías)";
+
+/* (No Comment) */
+"other.shared.space.detail" = "(Cualquier espacio de acceso restringido utilizado principalmente por múltiples usuarios, no cubierto previamente por otras categorías)";
+
+/* (No Comment) */
+"Outgoing Call" = "Llamada Saliente";
+
+/* (No Comment) */
+"OUTGOING CALL" = "LLAMADA SALIENTE";
+
+/* (No Comment) */
+"Password" = "Contraseña";
+
+/* SCIAccountManager */
+"Password Changed" = "Contraseña Cambiada";
+
+/* (No Comment) */
+"Pause" = "Pausa";
+
+/* (No Comment) */
+"Pending" = "Pendiente";
+
+/* (No Comment) */
+"Personal" = "Personal";
+
+/* (No Comment) */
+"Personal Information" = "Informacion Personal";
+
+/* (No Comment) */
+"personal.info.contact.not.found" = "La aplicación Contactos no contiene un registro para su número de teléfono: %@";
+
+/* (No Comment) */
+"personal.info.image.error" = "Hubo un error al seleccionar su imagen.";
+
+/* (No Comment) */
+"personal.info.require.login" = "Debe iniciar sesión para cambiar su contraseña.";
+
+/* (No Comment) */
+"personal.info.save.email.incalid" = "La dirección de correo electrónico que ingresó no es válida. Ingrese una dirección de correo electrónico válida.";
+
+/* (No Comment) */
+"personal.info.save.email.long" = "Su dirección de correo electrónico no debe tener más de 255 caracteres.";
+
+/* (No Comment) */
+"personal.info.save.email.missing" = "Se requiere una dirección de correo electrónico para recibir notificaciones de nuevos correos electrónicos. Ingrese una dirección de correo electrónico.";
+
+/* (No Comment) */
+"personal.info.save.failed" = "No se pudo guardar su información de contacto. Vuelva a intentarlo más tarde.";
+
+/* (No Comment) */
+"personal.info.save.unsaved.changes" = "Tiene cambios sin guardar, ¿quiere guardarlos ahora?";
+
+/* (No Comment) */
+"phone" = "teléfono";
+
+/* (No Comment) */
+"Phone" = "Teléfono";
+
+/* (No Comment) */
+"Phone Description" = "Descripción del teléfono";
+
+/* (No Comment) */
+"Phone Number" = "Número de Teléfono";
+
+/* (No Comment) */
+"Phone number cannot be blank." = "El número de teléfono no puede estar en blanco.";
+
+/* (No Comment) */
+"Phone number not available" = "Número de teléfono no disponible";
+
+/* (No Comment) */
+"Phonebook" = "Directorio Telefónico";
+
+/* (No Comment) */
+"Photo Change Error" = "Error de Cambio de Foto";
+
+/* Error message displayed if the camera returns invalid picture data (unlikely) */
+"Picture data failed" = "Los datos de la imagen fallaron";
+
+/* (No Comment) */
+"Play" = "Jugar";
+
+/* (No Comment) */
+"Play SignMail greeting after" = "Reproducir saludo de SignMail";
+
+/* (No Comment) */
+"Please accept or reject this update." = "Acepte o rechace esta actualización.";
+
+/* (No Comment) */
+"Please enter a phone number first." = "Ingrese un número de teléfono primero.";
+
+/* (No Comment) */
+"Please review the provider agreement." = "Por favor revise el acuerdo de proveedor.";
+
+/* (No Comment) */
+"Preparing to Record" = "Preparando para Grabar";
+
+/* (No Comment) */
+"Preview" = "Preestrenar";
+
+/* (No Comment) */
+"carceral.facility" = "Centro penitenciario/Prisión";
+
+/* (No Comment) */
+"carceral.facility.detail" = "(Centro o instalación penitenciaria o de reclusión y servicios de apoyo asociados)";
+
+/* (No Comment) */
+"restricted" = "Restringido";
+
+/* (No Comment) */
+"restricted.detail" = "(Ubicación no revelada o restringida de otro modo)";
+
+/* (No Comment) */
+"Private living space" = "espacio de vida privado";
+
+/* (No Comment) */
+"Private workspace" = "espacio de trabajo privado";
+
+/* (No Comment) */
+"private.living.space.detail" = "(Habitación individual dentro de un centro de vida asistida, habitación de un paciente en un hospital)";
+
+/* (No Comment) */
+"private.workspace.detail" = "(Oficina o cubículo del individuo)";
+
+/* (No Comment) */
+"Problem connecting call" = "Problema al conectar la llamada";
+
+/* (No Comment) */
+"Profile Settings" = "Ajustes de Perfil";
+
+/* (No Comment) */
+"Pulseu2122 Settings" = "Ajustes de Pulsou2122";
+
+/* (No Comment) */
+"Record" = "Registro";
+
+/* button */
+"Record Again" = "Grabar de Nuevo";
+
+/* (No Comment) */
+"Record Greeting" = "Grabar Saludo";
+
+/* (No Comment) */
+"Reject" = "Rechazar";
+
+/* contact details - constructiveActions */
+"Remove Favorite" = "Eliminar Favorito";
+
+/* (No Comment) */
+"Remove Phone" = "Quitar Teléfono";
+
+/* (No Comment) */
+"Remove Photo" = "Quitar Foto";
+
+/* (No Comment) */
+"Return Call" = "Devolver la Llamada";
+
+/* (No Comment) */
+"required" = "requerida";
+
+/* (No Comment) */
+"Resume" = "Reanudar";
+
+/* (No Comment) */
+"Reviews" = "Reseñas";
+
+/* (No Comment) */
+"Ring" = "Timbre";
+
+/* (No Comment) */
+"Rings" = "Timbre";
+
+/* (No Comment) */
+"Save" = "Guardar";
+
+/* (No Comment) */
+"Save Contact To My Device" = "Guardar Contacto En Mi Dispositivo";
+
+/* share saved text */
+"Saved Text" = "Texto Guardado";
+
+/* (No Comment) */
+"sci.am.password.changed" = "Inicie sesión con su nueva contraseña para evitar llamadas perdidas.";
+
+/* call recents */
+"Search" = "Búsqueda";
+
+/* (No Comment) */
+"Search Contacts & Yelp" = "Buscar Contactos y Yelp";
+
+/* (No Comment) */
+"Search Results" = "Resultados de la Búsqueda";
+
+/* Settings */
+"Search Settings" = "Buscar Ajustes";
+
+/* (No Comment) */
+"Search Yelp" = "Buscar en Yelp";
+
+/* (No Comment) */
+"Searching..." = "Buscando...";
+
+/* (No Comment) */
+"Select account to use." = "Seleccione la cuenta para usar.";
+
+/* button */
+"Send" = "Enviar";
+
+/* (No Comment) */
+"Send\nSignMail" = "Enviar\nSignMail";
+
+/* (No Comment) */
+"Send a SignMail" = "Enviar un SignMail";
+
+/* (No Comment) */
+"Send SignMail" = "Enviar SignMail";
+
+/* (No Comment) */
+"Sending" = "Enviando";
+
+/* (No Comment) */
+"Sending heartbeat request" = "Enviando solicitud de latido";
+
+/* (No Comment) */
+"Set Bitrate" = "Establecer Tasa de Bits";
+
+/* (No Comment) */
+"Setting Codecs to Defaults." = "Ajustes de Códecs a los Valores Predeterminados.";
+
+/* (No Comment) */
+"Setting.Decode.Codec" = "Ajustes del Códec de Decodificación en %@.";
+
+/* (No Comment) */
+"Setting.Encode.Codec" = "Ajustes del Códec de Codificación en %@.";
+
+/* codecs */
+"Setting.Encode.Decode.Codec" = "Ajustes del Códec de Codificación y Decodificación en %@.";
+
+/* (No Comment) */
+"Settings" = "Ajustes";
+
+/* (No Comment) */
+"settings.main.autoRejectCallsSwitch" = "No recibirá notificaciones de Llamadas Perdidas por llamadas rechazadas.";
+
+/* (No Comment) */
+"settings.main.footer" = "Sorenson %@ Número:\n%@\n\n%@ para la versión de iOS %@ (%@)\n\nTodas las marcas comerciales mencionadas aquí son propiedad de sus respectivos dueños.\n\nEste producto puede estar cubierto por una o más patentes enumeradas en http://www.sorenson.com/patents.";
+
+/* (No Comment) */
+"settings.main.micophone.noaccess" = "El acceso al micrófono no está permitido para ntouch. Permita que ntouch use el micrófono en Ajustes para habilitar Usar Voz.";
+
+/* (No Comment) */
+"settings.main.myPhone.must.agreement" = "Debe haber aceptado el acuerdo del proveedor para ver la ajustes de myPhone.";
+
+/* (No Comment) */
+"settings.main.myPhone.notloggedin" = "Debe iniciar sesión para ver la ajustes de myPhone.";
+
+/* (No Comment) */
+"settings.main.shared.app.ntouch" = "Usemos ntouch la próxima vez que chateemos. ¡Hasta pronto! www.sorenson.com/ntouchmobile";
+
+/* (No Comment) */
+"settings.main.shared.app.wavello" = "¡Con Wavello de Sorenson Relay, ahora podemos ver a familiares y amigos sordos mientras chateamos! Visite www.sorenson.com/getwavello";
+
+/* (No Comment) */
+"settings.main.speed.192" = "Ajustes de Velocidad de Red aumentada a 192 kbps para Audio";
+
+/* (No Comment) */
+"settings.search.audioRow" = "Audio Usar Voz Micrófono";
+
+/* (No Comment) */
+"settings.search.autoRejectCallsRow" = "DND No Molestar Rechazar Llamadas Entrantes";
+
+/* (No Comment) */
+"settings.search.blockAnonymousCallers" = "Bloquear Llamadas Anónimas Identificador de Llamadas";
+
+/* (No Comment) */
+"settings.search.blockCallerIDRow" = "Ocultar Bloquear Mi Identificador de Llamadas Anónimo";
+
+/* (No Comment) */
+"settings.search.blockedNumbers" = "Bloque Números Bloqueados Llamador";
+
+/* (No Comment) */
+"settings.search.callKitRow" = "Llamadas Integradas Kit de Llamada";
+
+/* (No Comment) */
+"settings.search.callWaitingRow" = "Llamada en Espera";
+
+/* (No Comment) */
+"settings.search.cellularVideoQualityRow" = "Calidad de Video Celular Tasa de Bits Velocidad Bien Más Bien Mejor Datos";
+
+/* (No Comment) */
+"settings.search.colorTheme" = "Tema de Color Alto Contraste Modo Oscuro Ligero";
+
+/* (No Comment) */
+"settings.search.enableSpanishFeatures" = "Características Funciones Español";
+
+/* (No Comment) */
+"settings.search.helpRow" = "Ayuda Servicio de Atención al Cliente Tecnología CIR Apoyo Técnico Guía del Usuario Preguntas Frecuentes";
+
+/* (No Comment) */
+"settings.search.importContactsRow" = "Importar Exportar Dispositivo Fotos Contactos LDAP Directorio Corporativo";
+
+/* (No Comment) */
+"settings.search.myPhoneSettingsRow" = "grupo myPhone";
+
+/* (No Comment) */
+"settings.search.networkSpeedReadOnlyRow" = "Velocidad de Red Auto";
+
+/* (No Comment) */
+"settings.search.networkSpeedRow" = "Velocidad de Red Legado";
+
+/* Settings - search rows */
+"settings.search.personalInfoRow" = "Informacion personal Teléfono myPhone Número Local Notificar FirmarCorreo Contacto Foto de Perfil Cuota";
+
+/* (No Comment) */
+"settings.search.pulseEnableRow" = "Notificaciones de Pulso";
+
+/* (No Comment) */
+"settings.search.pulseManageDevicesRow" = "Administrar Dispositivos de Pulso Par Escanear";
+
+/* (No Comment) */
+"settings.search.ringsBeforeGreetingRow" = "Suena SignMail Antes del Conteo de Saludo";
+
+/* (No Comment) */
+"settings.search.secureCallModeRow" = "Cifrado AES de 256 bits";
+
+/* (No Comment) */
+"settings.search.setupEmergencyRow" = "Ubicación de Emergencia 911";
+
+/* (No Comment) */
+"settings.search.shareTextRow" = "Compartir Texto Guardado Compartir Texto";
+
+/* (No Comment) */
+"settings.search.signMailGreetingTypeRow" = "SignMail Saludo PSMG Video Solo Sorenson No";
+
+/* (No Comment) */
+"settings.search.tunnelingRow" = "Red de Túneles";
+
+/* (No Comment) */
+"settings.search.vcoRow" = "Audio Usar Voz Con VRS Micrófono";
+
+/* (No Comment) */
+"Share Location" = "Comparte Ubicacion";
+
+/* (No Comment) */
+"Share only with contacts in my Phonebook" = "Compartir solo con contactos en mi Agenda";
+
+/* Personal Info */
+"Share Profile Photo" = "Compartir Foto de Perfil";
+
+/* (No Comment) */
+"Share with everyone" = "Compartir con todos";
+
+/* (No Comment) */
+"Share Your Location" = "Comparte Tu Ubicación";
+
+/* (No Comment) */
+"share.save.text.max.text.reached" = "Has alcanzado el número máximo permitido de textos compartidos personalizados. Debes eliminar uno antes de agregar otro.";
+
+/* (No Comment) */
+"Shared living space" = "espacio de vida compartido";
+
+/* Device Location UI */
+"Shared workspace" = "espacio de trabajo compartido";
+
+/* (No Comment) */
+"shared.living.space.detail" = "(Sala común del dormitorio, refugio de emergencia o para personas sin hogar, sala común del hogar grupal)";
+
+/* (No Comment) */
+"shared.workspace.detail" = "(Sala de conferencias, sala de descanso, mostrador de recepción)";
+
+/* (No Comment) */
+"Show Account Info" = "Mostrar Información de la Cuenta";
+
+/* (No Comment) */
+"show change greeting type view." = "mostrar vista de cambio de tipo de saludo.";
+
+/* (No Comment) */
+"Show Contact Photos" = "Mostrar Fotos de Contacto";
+
+/* (No Comment) */
+"SignMail" = "SignMail";
+
+/* (No Comment) */
+"SIGNMAIL" = "SIGNMAIL";
+
+/* (No Comment) */
+"SignMail from %@" = "SignMail desde %@";
+
+/* SignMail - greeting settings */
+"SignMail Greeting" = "Saludo de SignMail";
+
+/* (No Comment) */
+"SignMail Message" = "Mensaje SignMail";
+
+/* (No Comment) */
+"signmail.compose.nonetwork" = "Debe tener acceso a la red para enviar un SignMail.";
+
+/* (No Comment) */
+"signmail.delete.confirm" = "¿Está seguro de que desea eliminar este SignMail?";
+
+/* (No Comment) */
+"signmail.err.characteristics" = "No se pudieron cargar las características de grabación. Por favor, inténtelo de nuevo más tarde.";
+
+/* (No Comment) */
+"signmail.err.missingText" = "Debe ingresar texto para un saludo de video y texto.";
+
+/* (No Comment) */
+"signmail.err.record" = "No se puede grabar el saludo";
+
+/* (No Comment) */
+"signmail.err.textTooLong" = "El texto de saludo ingresado es demasiado largo, acorte su mensaje. ";
+
+/* (No Comment) */
+"signmail.err.upload" = "No se puede cargar tu saludo.";
+
+/* (No Comment) */
+"signmail.select.phone" = "Seleccione un numero para enviar un SignMail";
+
+/* (No Comment) */
+"signmail.video.failed" = "La solicitud para reproducir el video falló. Vuelva a intentarlo más tarde.";
+
+/* (No Comment) */
+"Something went wrong." = "Algo Salió Mal.";
+
+/* contacts datasource */
+"SORENSON CONTACTS" = "CONTACTOS DE SORENSON";
+
+/* (No Comment) */
+"Sorry!" = "¡Lo Siento!";
+
+/* (No Comment) */
+"Spanish VRS" = "VRS Español";
+
+/* (No Comment) */
+"Speed Changed" = "Velocidad Cambiada";
+
+/* (No Comment) */
+"State" = "Estado";
+
+/* (No Comment) */
+"Status: %@" = "Estado: %@";
+
+/* (No Comment) */
+"Street 1" = "Calle 1";
+
+/* (No Comment) */
+"Street 2" = "Calle 2";
+
+/* (No Comment) */
+"Submit" = "Entregar";
+
+/* (No Comment) */
+"Submitted" = "Enviado";
+
+/* (No Comment) */
+"Supplied email too long." = "Correo electrónico proporcionado demasiado largo.";
+
+/* (No Comment) */
+"Support" = "Apoyo";
+
+/* (No Comment) */
+"Switch Calls" = "Cambiar Llamadas";
+
+/* contacts - PhotoActionSheet */
+"Take Photo" = "Tomar Foto";
+
+/* (No Comment) */
+"Technical Support" = "Apoyo técnico";
+
+/* (No Comment) */
+"Text Only" = "Solo Texto";
+
+/* (No Comment) */
+"The user's bound endpoint type group does not match the endpoint's" = "Endpoint types do not match!";
+
+/* (No Comment) */
+"Today" = "Hoy Dia";
+
+/* (No Comment) */
+"Toggling HUD" = "Alternar HUD";
+
+/* (No Comment) */
+"toll-free" = "gratuita";
+
+/* (No Comment) */
+"trace.file.removed.log.disabled" = "Se eliminó el archivo de seguimiento y se inhabilitó el registro.";
+
+/* (No Comment) */
+"Transfer Call" = "Transferir Llamada";
+
+/* (No Comment) */
+"Tunneling Enabled" = "Tunelización Habilitada";
+
+/* (No Comment) */
+"Tunneling OFF" = "Tunelización Desactivada";
+
+/* (No Comment) */
+"Tunneling ON" = "Tunelización Activada";
+
+/* (No Comment) */
+"Tunnelling Toggle" = "Cambio de Túnel";
+
+/* (No Comment) */
+"Unable to Add Contact" = "No Se Puede Agregar Contacto";
+
+/* (No Comment) */
+"Unable to establish network tunnel." = "No se puede establecer el túnel de red.";
+
+/* (No Comment) */
+"Unable to Login" = "Incapaz de Iniciar Sesión";
+
+/* blocked - add - error */
+"Unable to Save" = "No se puede guardar";
+
+/* (No Comment) */
+"unable.remove.trace.conf" = "No se pudo eliminar trace.conf, es posible que no exista %@";
+
+/* (No Comment) */
+"Unblock Caller" = "Desbloquear Llamada";
+
+/* (No Comment) */
+"Unblock Contact" = "Desbloquear Contacto";
+
+/* (No Comment) */
+"Unknown" = "Desconocido";
+
+/* (No Comment) */
+"Unknown Caller" = "Llamada Desconocida";
+
+/* (No Comment) */
+"Unsaved Changes" = "Cambios no Guardados";
+
+/* (No Comment) */
+"Update Device Info" = "Actualizar información del dispositivo";
+
+/* (No Comment) */
+"Update Login Information" = "Actualizar Información de Inicio de Sesión";
+
+/* (No Comment) */
+"update.ntouch.title" = "Actualice la aplicación ntouch Mobile para evitar llamadas perdidas.";
+
+/* SignMail - greeting settings error */
+"Upload Error" = "Error al Subir";
+
+/* (No Comment) */
+"Uploading" = "Cargando";
+
+/* SignMail - recording */
+"Uploading..." = "Subiendo...";
+
+/* (No Comment) */
+"Use Device Contact Photo" = "Usar Foto de Contacto del Dispositivo";
+
+/* (No Comment) */
+"Use Sorenson Photo" = "Usar la Foto de Sorenson";
+
+/* (No Comment) */
+"Use Toll-Free number" = "Usar número gratuito";
+
+/* (No Comment) */
+"Use voice" = "Usar voz";
+
+/* (No Comment) */
+"Use voice for VRS calls" = "Usar voz para llamadas VRS";
+
+/* (No Comment) */
+"User Guides" = "Guías de usuario";
+
+/* (No Comment) */
+"Username" = "Nombre de Usuario";
+
+/* (No Comment) */
+"Username cannot be blank." = "Nombre de usuario no puede estar en blanco.";
+
+/* (No Comment) */
+"valid.phone.number.not.copied" = "No se copió previamente un número de teléfono válido";
+
+/* camera background */
+"Video and audio privacy enabled" = "Privacidad de video y audio habilitada";
+
+/* (No Comment) */
+"Video Center" = "Centro de Videos";
+
+/* (No Comment) */
+"Video Center ●" = "Centro de Videos ●";
+
+/* (No Comment) */
+"Video privacy enabled" = "Privacidad de video habilitada";
+
+/* (No Comment) */
+"Video Unavailable" = "Vídeo No Disponible";
+
+/* video center */
+"videocenter.video.failed" = "La solicitud para descargar el video falló. Vuelva a intentarlo más tarde.";
+
+/* (No Comment) */
+"View" = "Ver";
+
+/* (No Comment) */
+"View Call History" = "Ver Historial de Llamadas ";
+
+/* (No Comment) */
+"View Updated Privacy Policy" = "Ver Política de Privacidad Actualizada";
+
+/* (No Comment) */
+"See more on Yelp" = "Ver más en Yelp";
+
+/* (No Comment) */
+"Visit your privacy settings." = "Visita tu ajustes de privacidad.";
+
+/* (No Comment) */
+"VRCL Disabled" = "VRCL Deshabilitado";
+
+/* (No Comment) */
+"VRCL Enabled" = "VRCL Habilitado";
+
+/* (No Comment) */
+"VRS Public Eligibility" = "Elegibilidad Pública de VRS";
+
+/* (No Comment) */
+"Warning" = "Advertencia";
+
+/* (No Comment) */
+"work" = "trabajo";
+
+/* (No Comment) */
+"Work" = "Trabajo";
+
+/* (No Comment) */
+"Work-issued mobile device" = "Dispositivo móvil emitido por el trabajo";
+
+/* (No Comment) */
+"work-issued.device.detail" = "(Dispositivo móvil emitido por la Entidad)";
+
+/* (No Comment) */
+"work: %@" = "trabajo: %@";
+
+/* (No Comment) */
+"YELP RESULTS" = "RESULTADOS YELP";
+
+/* (No Comment) */
+"Yelp search failed: %@" = "Falló la búsqueda en Yelp: %@";
+
+/* (No Comment) */
+"Yes" = "Si";
+
+/* (No Comment) */
+"Yesterday" = "Ayer";
+
+/* (No Comment) */
+"You cannot block %@." = "o puede bloquear a %@.";
+
+/* (No Comment) */
+"You don't have any calls." = "No tienes ninguna llamada.";
+
+/* (No Comment) */
+"You don't have any missed calls." = "No tienes llamadas perdidas.";
+
+/* (No Comment) */
+"You don't have any SignMails." = "No tienes ningún SignMails.";
+
+/* Notifications */
+"You have a missed call from " = "Tienes una llamada perdida de ";
+
+/* (No Comment) */
+"Your call is encrypted." = "Su llamada está encriptada.";
+
+/* (No Comment) */
+"Your call was not answered." = "Su llamada no fue respondida.";
+
+/* (No Comment) */
+"Your call with " = "Tu llamada con ";
+
+/* (No Comment) */
+"ZIP Code" = "Código Postal";
+
+// MARK: Spanish VRS contact save
+
+"Spanish Contact?" = "¿Contacto español?";
+"Would you like to save %@ as a Spanish contact?" ="¿Te gustaría guardar a %@ como contacto español?";
+"Not now" = "no ahora";
+
+// MARK: Teaser view controller
+"Continue to ntouch" = "Continuar en ntouch";
+
+// MARK: SignVideoUpdateRequiredViewController
+"update.required.title" = "¡ntouch ahora es Sorenson SignVideo!";
+"update.required.body.bold" = "La aplicación móvil ntouch ya no está disponible. ";
+"update.required.body.regular" = "Toca el botón amarillo 'Actualizar ahora' para instalar Sorenson SignVideo™ y asegúrate de buscar el nuevo ícono en la pantalla de tu teléfono. (Si guardaste tu contraseña, tu número de teléfono y contraseña se transferirán automáticamente.)";
+"update.required.now.button" = "Actualizar ahora";
+"update.required.cc.button" = "Llamar a soporte";
+"update.required.911.button" = "Llamar al 911";
+"update.required.911.alert.title" = "¿Estás seguro que quieres llamar al 911?";
+"update.required.911.alert.cancel.button" = "Cancelar";
+"update.required.911.alert.confirm.button" = "Llamar al 911 Emergencia";

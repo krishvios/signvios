@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeCell" customModule="ntouch" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.20422534644603729" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="EpisodeCell" id="2" customClass="EpisodeCell" customModule="ntouch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="V3u-o3-ZwC">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Title" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                        <rect key="frame" x="35" y="6" width="206" height="18.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Subtitle" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                        <rect key="frame" x="35" y="30.5" width="204" height="16.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="30 of 60 min." textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                        <rect key="frame" x="244" y="32" width="95" height="16.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="dan-46-FCq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" image="Blue13.png" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                        <rect key="frame" x="10" y="21" width="13" height="13"/>
+                    </imageView>
+                    <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                        <rect key="frame" x="246" y="16" width="93" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="nxg-xD-7jv"/>
+                        </constraints>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="12" firstAttribute="leading" secondItem="V3u-o3-ZwC" secondAttribute="leading" constant="10" id="0OT-lO-SJb"/>
+                    <constraint firstAttribute="trailing" secondItem="22" secondAttribute="trailing" constant="14" id="0br-hu-XA0"/>
+                    <constraint firstItem="20" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="14" id="1SP-TS-xdg"/>
+                    <constraint firstAttribute="bottom" secondItem="20" secondAttribute="bottom" constant="6" id="DEj-NL-txu"/>
+                    <constraint firstItem="22" firstAttribute="leading" secondItem="3" secondAttribute="trailing" constant="5" id="Ezj-xF-vNP"/>
+                    <constraint firstItem="3" firstAttribute="leading" secondItem="12" secondAttribute="leading" constant="25" id="O3C-Zo-gxp"/>
+                    <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="14" id="Uk9-3o-xql"/>
+                    <constraint firstItem="4" firstAttribute="leading" secondItem="V3u-o3-ZwC" secondAttribute="leading" constant="35" id="WOe-OJ-IbQ"/>
+                    <constraint firstItem="3" firstAttribute="top" secondItem="V3u-o3-ZwC" secondAttribute="top" constant="6" id="XhW-mT-aR3"/>
+                    <constraint firstItem="4" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="6" id="YvQ-td-l2x"/>
+                    <constraint firstItem="20" firstAttribute="leading" secondItem="4" secondAttribute="trailing" constant="5" id="Zae-jf-yNY"/>
+                    <constraint firstItem="22" firstAttribute="top" secondItem="V3u-o3-ZwC" secondAttribute="top" constant="16" id="cps-d9-BF8"/>
+                    <constraint firstAttribute="bottom" secondItem="4" secondAttribute="bottom" constant="7.5" id="jf3-XP-SRT"/>
+                    <constraint firstItem="12" firstAttribute="centerY" secondItem="V3u-o3-ZwC" secondAttribute="centerY" id="rNj-gj-JiM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="episodeSubTitle" destination="4" id="44"/>
+                <outlet property="episodeTitle" destination="3" id="43"/>
+                <outlet property="progressLabel" destination="20" id="45"/>
+                <outlet property="progressView" destination="22" id="46"/>
+                <outlet property="statusImage" destination="12" id="47"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="33.816964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Blue13.png" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+file(GLOB_RECURSE srcs RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *)
+list(REMOVE_ITEM srcs CMakeLists.txt)
+install(FILES ${srcs} DESTINATION lib/vera++/profiles)
+execute_process(COMMAND chmod 755 "${CMAKE_CURRENT_SOURCE_DIR}/boost")
+execute_process(COMMAND chmod 755 "${CMAKE_CURRENT_SOURCE_DIR}/default")
+execute_process(COMMAND chmod 755 "${CMAKE_CURRENT_SOURCE_DIR}/full")

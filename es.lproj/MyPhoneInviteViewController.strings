@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "myPhone"; ObjectID = "4"; */
+"4.text" = "myPhone";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "5"; */
+"5.normalTitle" = "sí";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "6"; */
+"6.normalTitle" = "No";
+
+/* Class = "UILabel"; text = "The following Sorenson user would like to add your phone to their myPhone Group:"; ObjectID = "7"; */
+"7.text" = "Al siguiente usuario de Sorenson le gustaría agregar su teléfono a su grupo myPhone:";
+
+/* Class = "UILabel"; text = "From Name"; ObjectID = "9"; */
+"9.text" = "De Nombre";
+
+/* Class = "UILabel"; text = "(000) 000-0000"; ObjectID = "10"; */
+"10.text" = "(000) 000-0000";
+
+/* Class = "UILabel"; text = "Do you want to add your phone to the myPhone Group?"; ObjectID = "19"; */
+"19.text" = "¿Desea agregar su teléfono a myPhone Group?";
+
+/* Class = "UILabel"; text = "(000) 000-0000"; ObjectID = "20"; */
+"20.text" = "(000) 000-0000";

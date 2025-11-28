@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gDI-s1-r8A">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="D2m-Eg-Ieo">
+            <objects>
+                <tabBarController id="gDI-s1-r8A" customClass="ntouchTabBarController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4Zh-F3-Czc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="delegate" destination="zQj-ra-4ej" id="WGo-dH-xbK"/>
+                        <segue destination="Gv9-oD-osV" kind="relationship" relationship="viewControllers" id="dLn-Fz-5AY"/>
+                        <segue destination="Kl6-pY-D6G" kind="relationship" relationship="viewControllers" id="Gf7-uC-CKa"/>
+                        <segue destination="ziu-Am-jGB" kind="relationship" relationship="viewControllers" id="uBO-j6-Kyw"/>
+                        <segue destination="kEh-pq-ESL" kind="relationship" relationship="viewControllers" id="q0m-QE-Hoz"/>
+                        <segue destination="mnM-aa-UE4" kind="relationship" relationship="viewControllers" id="s8z-ZO-qgx"/>
+                        <segue destination="TuC-mi-hxg" kind="relationship" relationship="viewControllers" id="5uV-xs-ke4"/>
+                        <segue destination="4pf-mj-ggD" kind="relationship" relationship="viewControllers" id="mpi-1r-pzz"/>
+                        <segue destination="PaP-wB-IdZ" kind="relationship" relationship="viewControllers" id="lGs-UE-1Cz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qof-lc-H6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="zQj-ra-4ej" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="tabBarController" destination="gDI-s1-r8A" id="ycb-hX-VN1"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="226" y="450"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="ie1-l5-JCL">
+            <objects>
+                <tableViewController title="Contacts" id="qmS-pI-U8t" customClass="PhonebookViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="T2U-Lp-aGt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="qmS-pI-U8t" id="kyK-fp-s5H"/>
+                            <outlet property="delegate" destination="qmS-pI-U8t" id="sn4-T2-Fta"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Phonebook" id="olQ-9v-lfz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHv-wF-MKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="2242"/>
+        </scene>
+        <!--Call History-->
+        <scene sceneID="Fud-sv-UpN">
+            <objects>
+                <tableViewController title="Call History" id="ouW-gb-PvU" customClass="SCIRecentsViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="B32-9e-w68">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" showsScopeBar="YES" id="aso-el-47P">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <textInputTraits key="textInputTraits" textContentType="name"/>
+                            <scopeButtonTitles>
+                                <string>All</string>
+                                <string>Missed</string>
+                                <string>Incoming</string>
+                                <string>Outgoing</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="ouW-gb-PvU" id="kmB-ej-HQL"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="ntouch.SCIRecentsTableViewCell" rowHeight="88" id="Bo6-s2-jEc" customClass="SCIRecentsTableViewCell" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84" width="375" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bo6-s2-jEc" id="6rl-np-Bh1">
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="87.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="juF-sE-lQf">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="87.666666666666671"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OutgoingCallIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="FNQ-Ix-wYm" userLabel="Call Indicator">
+                                                    <rect key="frame" x="0.0" y="36.333333333333336" width="15" height="15"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="Mg3-Bz-3hR"/>
+                                                        <constraint firstAttribute="height" constant="15" id="vbd-Ac-4We"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wy1-Yp-Ick" customClass="RoundContactImageView" customModule="ntouch" customModuleProvider="target">
+                                                    <rect key="frame" x="23" y="6.6666666666666643" width="74.666666666666671" height="74.666666666666686"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Wy1-Yp-Ick" secondAttribute="height" multiplier="1:1" id="iDL-lY-H26"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aq8-yV-j6m">
+                                                    <rect key="frame" x="105.66666666666667" y="39" width="10" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="OKi-r6-ozE"/>
+                                                        <constraint firstAttribute="width" constant="10" id="Qc6-gx-H5C"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-UK-xuo">
+                                                    <rect key="frame" x="123.66666666666667" y="5.6666666666666643" width="203.33333333333331" height="76.666666666666686"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dan-fU-jr0" userLabel="Name" customClass="RecentsContactNameLabel" customModule="ntouch" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="24"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 (932) 333-1111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-aV-FMh" userLabel="Phone" customClass="RecentsPhoneTypeLabel" customModule="ntouch" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="30" width="128" height="20.333333333333329"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td1-fP-ZNx" userLabel="Date">
+                                                            <rect key="frame" x="0.0" y="56.333333333333336" width="75.666666666666671" height="20.333333333333336"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="juF-sE-lQf" firstAttribute="top" secondItem="6rl-np-Bh1" secondAttribute="top" id="0iu-xn-hfZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="juF-sE-lQf" secondAttribute="bottom" id="Dhy-fH-zzA"/>
+                                        <constraint firstItem="juF-sE-lQf" firstAttribute="leading" secondItem="6rl-np-Bh1" secondAttribute="leading" id="GfX-XA-RSw"/>
+                                        <constraint firstAttribute="trailing" secondItem="juF-sE-lQf" secondAttribute="trailing" id="feu-dO-Exc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.73333333329999995" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="callImageView" destination="Wy1-Yp-Ick" id="Mgn-eU-90k"/>
+                                    <outlet property="callIndicator" destination="FNQ-Ix-wYm" id="V4B-Zx-FdD"/>
+                                    <outlet property="contactName" destination="Dan-fU-jr0" id="epK-cv-lBA"/>
+                                    <outlet property="contactPhoneType" destination="uN7-aV-FMh" id="KCK-uN-pm4"/>
+                                    <outlet property="date" destination="td1-fP-ZNx" id="EOp-5P-seP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ouW-gb-PvU" id="0AB-v9-5e2"/>
+                            <outlet property="delegate" destination="ouW-gb-PvU" id="hDa-SR-SIO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Call History" id="bX8-Oc-cn2"/>
+                    <connections>
+                        <outlet property="searchBar" destination="aso-el-47P" id="Cgm-6r-HmV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA4-oq-SJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9a-WU-bvy" customClass="SVRSView" customModule="ntouch" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vyP-G1-B0K">
+                            <rect key="frame" x="112.66666666666669" y="8" width="150" height="30"/>
+                            <segments>
+                                <segment title="All"/>
+                                <segment title="Missed"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="vyP-G1-B0K" firstAttribute="top" secondItem="X9a-WU-bvy" secondAttribute="top" constant="8" id="2zf-Oa-yxx"/>
+                        <constraint firstItem="vyP-G1-B0K" firstAttribute="width" relation="greaterThanOrEqual" secondItem="X9a-WU-bvy" secondAttribute="width" multiplier="0.4" id="4LZ-5z-c3m"/>
+                        <constraint firstAttribute="bottom" secondItem="vyP-G1-B0K" secondAttribute="bottom" constant="8" id="UaM-b6-utS"/>
+                        <constraint firstAttribute="height" constant="45" id="eFg-AK-iK8"/>
+                        <constraint firstItem="vyP-G1-B0K" firstAttribute="centerX" secondItem="X9a-WU-bvy" secondAttribute="centerX" id="vmy-Kb-Xy8"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="668" y="1522.9064039408868"/>
+        </scene>
+        <!--SignMail-->
+        <scene sceneID="lh0-6t-LI8">
+            <objects>
+                <tableViewController title="SignMail" id="jro-vz-gE9" customClass="MessageViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="S0m-DJ-7HB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="jro-vz-gE9" id="OEx-Pp-gkF"/>
+                            <outlet property="delegate" destination="jro-vz-gE9" id="uXR-eg-78w"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="T9T-jb-Zx8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkF-Me-VwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="2266"/>
+        </scene>
+        <!--Video Center-->
+        <scene sceneID="miP-E6-y70">
+            <objects>
+                <tableViewController title="Video Center" id="zTP-Wb-Nl3" customClass="VideoCenterViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3LQ-fy-bDI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="zTP-Wb-Nl3" id="2yr-pe-1k2"/>
+                            <outlet property="delegate" destination="zTP-Wb-Nl3" id="rew-Uj-n3h"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="l7E-XP-H2u"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zl-qH-uB9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180" y="1539.9014778325125"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="3OS-Em-6xc">
+            <objects>
+                <tableViewController title="Search" id="yOo-h7-bKZ" customClass="YelpSearchViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="tbW-RQ-kka">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="yOo-h7-bKZ" id="QSN-X3-pIl"/>
+                            <outlet property="delegate" destination="yOo-h7-bKZ" id="IOW-LD-HmY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Etr-1S-x3t"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6W-a6-6hY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455.2" y="1563.5467980295566"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="q56-4Q-VRe">
+            <objects>
+                <tableViewController title="Favorites" id="bGh-Xk-quL" customClass="SCIFavoritesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="rip-AY-QQH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="bGh-Xk-quL" id="yHD-4O-TYE"/>
+                            <outlet property="delegate" destination="bGh-Xk-quL" id="bXj-Xj-9Lw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Dpw-DV-EwL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dxh-jb-wj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="2241"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="i8y-jk-0bN">
+            <objects>
+                <tableViewController title="Settings" id="uf0-O3-4d9" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9dz-ip-neA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="uf0-O3-4d9" id="Djl-Lf-6Kn"/>
+                            <outlet property="delegate" destination="uf0-O3-4d9" id="ffl-hG-XAL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1V2-Ma-qMy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dy5-eT-14S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="2239"/>
+        </scene>
+        <!--Phonebook-->
+        <scene sceneID="ei6-0Z-faQ">
+            <objects>
+                <navigationController title="Phonebook" automaticallyAdjustsScrollViewInsets="NO" id="Kl6-pY-D6G" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="8JQ-p1-Kch"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bra-MB-AVf">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nOA-0p-7rg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="qmS-pI-U8t" kind="relationship" relationship="rootViewController" id="aHs-Px-QcB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2i-uZ-SjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1462" y="2215"/>
+        </scene>
+        <!--Sci Recents Navigation Controller-->
+        <scene sceneID="aGT-ao-NGe">
+            <objects>
+                <navigationController storyboardIdentifier="SCIRecentsViewController" automaticallyAdjustsScrollViewInsets="NO" id="ziu-Am-jGB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="09P-Yj-lte"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pwa-4c-0H4">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ouW-gb-PvU" kind="relationship" relationship="rootViewController" id="nqE-DK-GAF"/>
+                    </connections>
+                </navigationController>
+                <customObject id="3Nj-28-eNl" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="sciRecentsNavigationController" destination="ziu-Am-jGB" id="y0L-1e-yHy"/>
+                    </connections>
+                </customObject>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbC-Wk-pN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="1522.9064039408868"/>
+        </scene>
+        <!--Message Navigation Controller-->
+        <scene sceneID="Sdj-JE-vnJ">
+            <objects>
+                <navigationController storyboardIdentifier="MessageViewController" automaticallyAdjustsScrollViewInsets="NO" id="kEh-pq-ESL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SignMail" image="Envelope" id="ZnB-4C-qdi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aRw-25-AAI">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jro-vz-gE9" kind="relationship" relationship="rootViewController" id="kkl-KT-YDq"/>
+                    </connections>
+                </navigationController>
+                <customObject id="cV2-BR-CuU" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="messageNavigationController" destination="kEh-pq-ESL" id="kSS-Se-mn9"/>
+                    </connections>
+                </customObject>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLg-63-Oec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="2214"/>
+        </scene>
+        <!--Yelp Search-->
+        <scene sceneID="RqC-wJ-psE">
+            <objects>
+                <navigationController title="Yelp Search" automaticallyAdjustsScrollViewInsets="NO" id="TuC-mi-hxg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="xvP-SF-qnJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q9U-sJ-VpY">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yOo-h7-bKZ" kind="relationship" relationship="rootViewController" id="q6S-fz-wZF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyG-1t-H1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1431.2" y="1524.384236453202"/>
+        </scene>
+        <!--Video Center-->
+        <scene sceneID="87o-gi-qKf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mnM-aa-UE4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video Center" image="VideoFilmStrip" id="9jY-vb-B9k"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ntX-b5-UQZ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zTP-Wb-Nl3" kind="relationship" relationship="rootViewController" id="Ool-fv-kPs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrk-NM-KXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2143.1999999999998" y="1523.6453201970444"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="pfi-tH-ou5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PaP-wB-IdZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="navbar_settings.png" id="2CQ-kc-7CS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3SL-wB-OQU">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uf0-O3-4d9" kind="relationship" relationship="rootViewController" id="UKr-sL-jec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xe2-Hm-JIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="2203"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="sDS-66-DeX">
+            <objects>
+                <navigationController title="Favorites" automaticallyAdjustsScrollViewInsets="NO" id="4pf-mj-ggD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="34b-f7-1HB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FVr-oP-7P2">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bGh-Xk-quL" kind="relationship" relationship="rootViewController" id="sH6-Xq-XwC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2WH-0b-BME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="2215"/>
+        </scene>
+        <!--Keypad View Controller-->
+        <scene sceneID="1IR-3A-Sko">
+            <objects>
+                <viewController storyboardIdentifier="nTouchKeypadViewController" id="4ir-6j-Ton" customClass="SCIKeypadViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xNu-CI-Kvn"/>
+                        <viewControllerLayoutGuide type="bottom" id="KZ0-TF-cLA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mDc-eK-Dce">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hm8-Xi-HB4" customClass="VideoCameraBackgroundView" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jG-Am-HI2" userLabel="Visual Effect View w/Blur">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uBk-VA-Y5U" userLabel="Inner View">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-Xh-hB4">
+                                            <rect key="frame" x="361" y="344.66666666666669" width="4" height="40"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="bWQ-m6-Oqh"/>
+                                                <constraint firstAttribute="height" constant="40" id="kyU-7W-nIE"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksTobounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="700" axis="vertical" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xdg-lq-JEr" userLabel="Top Display Wrapper">
+                                            <rect key="frame" x="0.0" y="19.999999999999993" width="375" height="109.33333333333331"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" verticalCompressionResistancePriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="qa6-a5-MMd" userLabel="Top Padding View">
+                                                    <rect key="frame" x="35.666666666666657" y="0.0" width="304" height="25"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" priority="750" constant="25" id="fOI-L0-bxn"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="J8F-hV-vPQ" userLabel="Phone Number Row">
+                                                    <rect key="frame" x="0.0" y="30.666666666666664" width="375" height="41.999999999999993"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="center" horizontalHuggingPriority="252" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aG-xn-VOI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="42"/>
+                                                            <accessibility key="accessibilityConfiguration" label="Add Contact"/>
+                                                            <state key="normal" image="icon-add-contact">
+                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="addContactTapped" destination="4ir-6j-Ton" eventType="touchUpInside" id="Ygj-En-aqi"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="800" text="1 (932) 333-1234" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="24" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VUe-br-MXz">
+                                                            <rect key="frame" x="43" y="0.0" width="289" height="42"/>
+                                                            <accessibility key="accessibilityConfiguration" label="Phone Number"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="center" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-kS-elN">
+                                                            <rect key="frame" x="332" y="0.0" width="43" height="42"/>
+                                                            <accessibility key="accessibilityConfiguration" label="Backspace"/>
+                                                            <state key="normal" image="icon-clear"/>
+                                                            <connections>
+                                                                <action selector="backspaceButtonTapped" destination="4ir-6j-Ton" eventType="touchUpInside" id="RuO-zi-G98"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="9aG-xn-VOI" firstAttribute="width" secondItem="FdW-kS-elN" secondAttribute="width" id="cLn-Ho-qEd"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="800" text="Kevin Selman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="nMr-r4-Ptc">
+                                                    <rect key="frame" x="111.66666666666667" y="78" width="151.66666666666663" height="31.333333333333329"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="J8F-hV-vPQ" secondAttribute="trailing" id="Fv0-nx-poX"/>
+                                                <constraint firstItem="J8F-hV-vPQ" firstAttribute="leading" secondItem="xdg-lq-JEr" secondAttribute="leading" id="XIg-Q3-wke"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="775" verticalCompressionResistancePriority="775" translatesAutoresizingMaskIntoConstraints="NO" id="c3O-5Z-FS4" userLabel="NumPad Wrapper">
+                                            <rect key="frame" x="37.666666666666657" y="129.33333333333331" width="300" height="546.66666666666674"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" distribution="equalCentering" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="R3T-sx-WgL" userLabel="Number Pad">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="546.66666666666663"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="bKU-w9-ocp" userLabel="NumPad Top Padding View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="0.0"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" priority="250" constant="45" id="wSx-8h-uc7"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uFh-Oh-Yv2" userLabel="First Row">
+                                                            <rect key="frame" x="0.0" y="59.666666666666657" width="300" height="83"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPj-hI-E4S" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="JPj-hI-E4S" secondAttribute="height" multiplier="1:1" id="WqE-Ns-glB"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="1">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="1"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="mww-xY-YGK"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwc-IY-1Fc" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="108.33333333333334" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="PSI-fe-r7F"/>
+                                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="83" id="Yf6-QE-G7Q"/>
+                                                                        <constraint firstAttribute="width" secondItem="lwc-IY-1Fc" secondAttribute="height" multiplier="1:1" id="j3r-0Q-PnY"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="2">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="A B C"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="2"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="LoR-9F-Zx0"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaj-jt-T3a" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="217" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="vaj-jt-T3a" secondAttribute="height" multiplier="1:1" id="zAh-Kl-Sqf"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="3">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="D E F"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="3"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="bDl-hz-HHA"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="75" id="2LB-Jw-BWC"/>
+                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="83" id="FT4-va-oho"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="2L0-Hp-7jd" userLabel="Second Row">
+                                                            <rect key="frame" x="0.0" y="160.66666666666666" width="300" height="83"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP1-Hx-2Mu" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="zP1-Hx-2Mu" secondAttribute="height" multiplier="1:1" id="HLh-ou-c84"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="4">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="G H I"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="4"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="Sov-DW-WlB"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-7U-zb3" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="108.33333333333334" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="ieg-7U-zb3" secondAttribute="height" multiplier="1:1" id="6iJ-of-X0d"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="5">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="J K L"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="5"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="K8A-Ep-EVN"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY0-8c-REW" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="217" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="oY0-8c-REW" secondAttribute="height" multiplier="1:1" id="9xJ-KS-7WZ"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="6">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="M N O"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="6"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="Efl-9X-tGk"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mwr-Jc-duu" userLabel="Third Row">
+                                                            <rect key="frame" x="0.0" y="261.66666666666663" width="300" height="83"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zix-RF-Hpt" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="zix-RF-Hpt" secondAttribute="height" multiplier="1:1" id="EdH-Ve-Rgf"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="7">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="P Q R S"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="7"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="hVn-yX-OGP"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5o-hP-Ls0" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="108.33333333333334" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="R5o-hP-Ls0" secondAttribute="height" multiplier="1:1" id="6k5-Bq-dYY"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="8">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="T U V"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="8"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="5Z4-dA-eP9"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoT-lO-y1I" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="217" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="HoT-lO-y1I" secondAttribute="height" multiplier="1:1" id="HPG-mf-V7s"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="9">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="W X Y Z"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="9"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="sFK-t9-6Fc"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="C2X-Bb-aBq" userLabel="Fourth Row">
+                                                            <rect key="frame" x="0.0" y="362.66666666666663" width="300" height="83"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq2-ZL-5gq" customClass="CircularKeypadToggleButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="lq2-ZL-5gq" secondAttribute="height" multiplier="1:1" id="l6Y-GR-fhf"/>
+                                                                    </constraints>
+                                                                    <state key="normal">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.1017010195" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="toggledOnImage" value="MicrophoneKeypadOn"/>
+                                                                        <userDefinedRuntimeAttribute type="image" keyPath="toggledOffImage" value="MicrophoneKeypadOff"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="microphoneButtonTapped" destination="4ir-6j-Ton" eventType="touchUpInside" id="yBK-nl-9Vj"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q64-L0-qqv" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="108.33333333333334" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.98900658139999997" green="0.96208178389999999" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="q64-L0-qqv" secondAttribute="height" multiplier="1:1" id="G97-dR-ouu"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" title="0">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="+"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="tappedValue" value="0"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="digitButtonTappedWithSender:" destination="4ir-6j-Ton" eventType="touchUpInside" id="6MB-Zd-TIQ"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPQ-He-Lxz" customClass="CircularKeypadToggleButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="217" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="MPQ-He-Lxz" secondAttribute="height" multiplier="1:1" id="u4D-lA-ogE"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="English">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="toggledOnSubTitle" value="SVRS"/>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <integer key="value" value="0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="toggledOffSubTitle" value="SVRS"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="toggledOnTitle" value="Español"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="toggledOffTitle" value="English"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="languageButtonTapped" destination="4ir-6j-Ton" eventType="touchUpInside" id="9sA-j2-7MA"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3EA-20-1XO" userLabel="Fifth Row">
+                                                            <rect key="frame" x="0.0" y="463.66666666666663" width="300" height="83"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFS-nU-7g7" userLabel="Video Button" customClass="CircularKeypadButton" customModule="ntouch" customModuleProvider="target">
+                                                                    <rect key="frame" x="108.33333333333334" y="0.0" width="83" height="83"/>
+                                                                    <color key="backgroundColor" red="0.99215686270000003" green="0.68235294120000001" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="mFS-nU-7g7" secondAttribute="height" multiplier="1:1" id="RE1-G0-QUb"/>
+                                                                    </constraints>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                                                                    <state key="normal" image="icon-video">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="2"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="actionButtonTapped" destination="4ir-6j-Ton" eventType="touchUpInside" id="r5m-i5-6i4"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="mwr-Jc-duu" firstAttribute="height" secondItem="uFh-Oh-Yv2" secondAttribute="height" id="4hM-Ps-sSc"/>
+                                                        <constraint firstItem="3EA-20-1XO" firstAttribute="height" secondItem="uFh-Oh-Yv2" secondAttribute="height" id="6I0-m7-XVg"/>
+                                                        <constraint firstItem="C2X-Bb-aBq" firstAttribute="height" secondItem="uFh-Oh-Yv2" secondAttribute="height" id="CtQ-FE-bbe"/>
+                                                        <constraint firstItem="2L0-Hp-7jd" firstAttribute="height" secondItem="uFh-Oh-Yv2" secondAttribute="height" id="MIg-WI-gJp"/>
+                                                        <constraint firstItem="bKU-w9-ocp" firstAttribute="height" relation="lessThanOrEqual" secondItem="uFh-Oh-Yv2" secondAttribute="height" multiplier="0.001" id="wCe-se-TyG"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="R3T-sx-WgL" secondAttribute="bottom" id="Pjj-QW-hD7"/>
+                                                <constraint firstItem="R3T-sx-WgL" firstAttribute="top" secondItem="c3O-5Z-FS4" secondAttribute="top" id="T0G-st-fwZ"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="700" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8A-BN-B4b" userLabel="Bottom Display Wrapper">
+                                            <rect key="frame" x="0.0" y="686" width="375" height="43"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1 (932) 333-1111" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLc-w6-2RQ">
+                                                    <rect key="frame" x="131" y="0.0" width="113" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="S8y-Xh-hB4" firstAttribute="centerY" secondItem="uBk-VA-Y5U" secondAttribute="centerY" id="6cF-ez-tP1"/>
+                                        <constraint firstAttribute="trailing" secondItem="S8y-Xh-hB4" secondAttribute="trailing" constant="10" id="A0E-Lq-UOG"/>
+                                        <constraint firstItem="H8A-BN-B4b" firstAttribute="top" secondItem="c3O-5Z-FS4" secondAttribute="bottom" constant="10" id="Abg-Ae-lqi"/>
+                                        <constraint firstAttribute="trailing" secondItem="H8A-BN-B4b" secondAttribute="trailing" id="Bby-0K-UoZ"/>
+                                        <constraint firstItem="xdg-lq-JEr" firstAttribute="leading" secondItem="uBk-VA-Y5U" secondAttribute="leading" id="EAZ-yS-fAt"/>
+                                        <constraint firstItem="xdg-lq-JEr" firstAttribute="top" secondItem="uBk-VA-Y5U" secondAttribute="top" constant="20" id="QZU-JI-Cqf"/>
+                                        <constraint firstItem="H8A-BN-B4b" firstAttribute="leading" secondItem="uBk-VA-Y5U" secondAttribute="leading" id="Wgd-gQ-d8h"/>
+                                        <constraint firstAttribute="bottom" secondItem="H8A-BN-B4b" secondAttribute="bottom" id="fNw-JE-Rz5"/>
+                                        <constraint firstAttribute="trailing" secondItem="xdg-lq-JEr" secondAttribute="trailing" id="nH7-dw-Cpk"/>
+                                        <constraint firstItem="c3O-5Z-FS4" firstAttribute="top" secondItem="xdg-lq-JEr" secondAttribute="bottom" id="slE-8Y-J8C"/>
+                                        <constraint firstItem="c3O-5Z-FS4" firstAttribute="centerX" secondItem="uBk-VA-Y5U" secondAttribute="centerX" id="vKF-tj-KpX"/>
+                                    </constraints>
+                                </view>
+                                <gestureRecognizers/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lwc-IY-1Fc" firstAttribute="width" secondItem="mDc-eK-Dce" secondAttribute="width" multiplier="0.5" priority="998" id="F5P-xR-F3S"/>
+                            <constraint firstItem="Hm8-Xi-HB4" firstAttribute="leading" secondItem="mDc-eK-Dce" secondAttribute="leading" id="IlJ-eH-G31"/>
+                            <constraint firstItem="3jG-Am-HI2" firstAttribute="leading" secondItem="mDc-eK-Dce" secondAttribute="leading" id="P1b-gP-D9o"/>
+                            <constraint firstItem="Hm8-Xi-HB4" firstAttribute="top" secondItem="xNu-CI-Kvn" secondAttribute="bottom" id="Tlh-aR-WS1"/>
+                            <constraint firstItem="R3T-sx-WgL" firstAttribute="width" secondItem="mDc-eK-Dce" secondAttribute="width" multiplier="0.8" id="WZw-xK-zD7"/>
+                            <constraint firstItem="c3O-5Z-FS4" firstAttribute="height" secondItem="mDc-eK-Dce" secondAttribute="height" multiplier="0.75" id="YcK-JP-TK1"/>
+                            <constraint firstAttribute="trailing" secondItem="3jG-Am-HI2" secondAttribute="trailing" id="adQ-3H-RlS"/>
+                            <constraint firstAttribute="bottom" secondItem="3jG-Am-HI2" secondAttribute="bottom" id="eBT-YV-MEx"/>
+                            <constraint firstAttribute="trailing" secondItem="Hm8-Xi-HB4" secondAttribute="trailing" id="luc-jy-fmO"/>
+                            <constraint firstItem="VUe-br-MXz" firstAttribute="width" secondItem="mDc-eK-Dce" secondAttribute="width" multiplier="0.77" id="lxW-B2-gm3"/>
+                            <constraint firstItem="3jG-Am-HI2" firstAttribute="top" secondItem="mDc-eK-Dce" secondAttribute="top" id="r6v-Wu-d1l"/>
+                            <constraint firstItem="KZ0-TF-cLA" firstAttribute="top" secondItem="Hm8-Xi-HB4" secondAttribute="bottom" id="uhx-Xf-gw2"/>
+                            <constraint firstItem="xdg-lq-JEr" firstAttribute="height" secondItem="mDc-eK-Dce" secondAttribute="height" multiplier="0.15" id="v1Z-EN-tfc"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="GiO-z2-2eC"/>
+                    <connections>
+                        <outlet property="actionButton" destination="mFS-nU-7g7" id="icP-4q-mRU"/>
+                        <outlet property="addContactButton" destination="9aG-xn-VOI" id="xj2-Nu-uMZ"/>
+                        <outlet property="backspaceButton" destination="FdW-kS-elN" id="98z-wM-P8K"/>
+                        <outlet property="cameraBackgroundView" destination="Hm8-Xi-HB4" id="hQc-If-ZoL"/>
+                        <outlet property="contactNameLabel" destination="nMr-r4-Ptc" id="qjB-Gg-LXo"/>
+                        <outlet property="inputDisplayField" destination="VUe-br-MXz" id="q3U-BM-Ezz"/>
+                        <outlet property="languageButton" destination="MPQ-He-Lxz" id="VRO-Tt-fhH"/>
+                        <outlet property="microphoneButton" destination="lq2-ZL-5gq" id="Mw0-Xh-mjM"/>
+                        <outlet property="userPhoneNumberLabel" destination="gLc-w6-2RQ" id="NCz-oc-zyF"/>
+                        <outlet property="visualEffectView" destination="3jG-Am-HI2" id="65o-45-AyY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a32-Sq-tgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1407" y="1359"/>
+        </scene>
+        <!--Dial-->
+        <scene sceneID="DZl-T2-HPQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Gv9-oD-osV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dial" image="Keypad" id="KaX-ip-9kD"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gV8-bB-vD4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4ir-6j-Ton" kind="relationship" relationship="rootViewController" id="yt5-gz-3Pm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5k-2i-UV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1407.2" y="1358.8669950738918"/>
+        </scene>
+        <!--Camera Background View Controller-->
+        <scene sceneID="VoQ-Us-bI7">
+            <objects>
+                <viewController id="aNS-Te-6Mk" customClass="CameraBackgroundViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGl-tg-yPr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wz3-fS-9jg" customClass="VideoCameraBackgroundView" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLo-u1-ek8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="ab3-S2-h5g"/>
+                                        </constraints>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <exclude reference="ab3-S2-h5g"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="gDI-s1-r8A" kind="embed" identifier="TabBarEmbed" id="uIF-bh-ErC"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="yLo-u1-ek8" firstAttribute="leading" secondItem="wz3-fS-9jg" secondAttribute="leading" id="3Eb-TM-BZl"/>
+                                    <constraint firstAttribute="trailing" secondItem="yLo-u1-ek8" secondAttribute="trailing" id="anc-wS-4t8"/>
+                                    <constraint firstAttribute="bottom" secondItem="yLo-u1-ek8" secondAttribute="bottom" id="cQf-vH-15g"/>
+                                    <constraint firstItem="yLo-u1-ek8" firstAttribute="top" secondItem="wz3-fS-9jg" secondAttribute="top" id="ocN-lo-7z1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="anc-wS-4t8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="anc-wS-4t8"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wz3-fS-9jg" secondAttribute="bottom" id="7iU-Yv-vXX"/>
+                            <constraint firstItem="0cC-aY-ias" firstAttribute="trailing" secondItem="wz3-fS-9jg" secondAttribute="trailing" id="Jnu-3b-QSV"/>
+                            <constraint firstItem="wz3-fS-9jg" firstAttribute="top" secondItem="xGl-tg-yPr" secondAttribute="top" id="o5y-FK-qb8"/>
+                            <constraint firstItem="wz3-fS-9jg" firstAttribute="leading" secondItem="0cC-aY-ias" secondAttribute="leading" id="ywO-35-R1T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0cC-aY-ias"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kpz-8B-Pit"/>
+                    <connections>
+                        <outlet property="cameraBackgroundView" destination="wz3-fS-9jg" id="yy2-vc-1qG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OG-F9-auD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.6953125" y="-816.40625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NRm-cc-uvp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cR0-Wn-mUy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B5g-dq-uZX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aNS-Te-6Mk" kind="relationship" relationship="rootViewController" id="fK4-s7-toA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qay-cl-fia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="-816"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Envelope" width="30" height="30"/>
+        <image name="Keypad" width="67.5" height="67.5"/>
+        <image name="MicrophoneKeypadOff" width="33" height="33"/>
+        <image name="MicrophoneKeypadOn" width="33" height="33"/>
+        <image name="OutgoingCallIcon.png" width="11" height="11"/>
+        <image name="VideoFilmStrip" width="30" height="30"/>
+        <image name="icon-add-contact" width="18" height="19"/>
+        <image name="icon-clear" width="21" height="17"/>
+        <image name="icon-video" width="73" height="73"/>
+        <image name="navbar_settings.png" width="30" height="30"/>
+    </resources>
+</document>

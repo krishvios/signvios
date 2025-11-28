@@ -1,0 +1,47 @@
+<root>
+	<!--
+		Place values here that need to have a default
+		when the system starts up. 
+	-->
+	
+	<!--  The following values are defaults for Persistent Data -->
+	<cmAudioPlaybackVolume type="int">50</cmAudioPlaybackVolume>
+	<cmAudioRecordEchoMode type="enum">1</cmAudioRecordEchoMode>      <!-- Default to esmdAUDIO_ECHO_OFF -->
+	<cmAudioRecordMuteMode type="enum">1</cmAudioRecordMuteMode>		<!-- Default to estiOFF -->
+	<cmAudioRecordVolume type="int">50</cmAudioRecordVolume>
+	<cmAutoBandwidthDetection type="enum">1</cmAutoBandwidthDetection><!-- Default to estiON -->
+	<cmCallAutoReject type="enum">0</cmCallAutoReject>				<!-- Default to estiOFF -->
+	<cmCallAutoVideoPrivacy type="enum">0</cmCallAutoVideoPrivacy>	<!-- Default to estiOFF -->
+	<cmCallLocalE164Alias type="string"></cmCallLocalE164Alias>		<!-- Default to empty -->
+	<cmCallLocalEmailAddress type="string"></cmCallLocalEmailAddress>	<!-- Default to empty -->
+	<cmCallLocalH323IdAlias type="string"></cmCallLocalH323IdAlias>	<!-- Default to empty -->
+	<cmCallLocalIpAddress type ="string">127.0.0.1</cmCallLocalIpAddress>
+	<cmCallLowFrmRateThrshldH264 type="int">128000</cmCallLowFrmRateThrshldH264>
+	<cmCallLowFrmRateThrshldH263 type="int">180000</cmCallLowFrmRateThrshldH263>
+	<cmCallMaxRecvSpeed type="int">256000</cmCallMaxRecvSpeed>
+	<cmCallMaxSendSpeed type="int">256000</cmCallMaxSendSpeed>
+	<cmCallNatOptions type="enum">3</cmCallNatOptions>				<!-- Default to un32NAT_OPTIONS_LOCAL_DETECT | un32NAT_OPTIONS_REMOTE_DETECT -->
+	<cmCallState type="enum">1</cmCallState>                           <!-- Default to estiSTATE_INVALID -->
+	<cmCameraAllowRemoteToControl type="enum">1</cmCameraAllowRemoteToControl>    <!-- Default to estiTRUE -->
+	<cmControlPortBase type="int">15328</cmControlPortBase>
+	<cmControlPortRange type="int">12</cmControlPortRange>
+	<cmChannelPortBase type="int">15328</cmChannelPortBase>
+	<cmChannelPortRange type="int">12</cmChannelPortRange>
+	<cmGatekeeperIpAddress type="string"></cmGatekeeperIpAddress>		<!-- Default to empty -->
+	<cmGatekeeperSwitch type="enum">0</cmGatekeeperSwitch><!-- Default to estiOFF (off=0, on=1) -->
+	<cmHandsetStatus type="enum">0</cmHandsetStatus>                  <!-- Default to estiON_HOOK -->
+	<cmIrRepeatFrequency type="int">120</cmIrRepeatFrequency>
+	<cmLocalName type="string"></cmLocalName>							<!-- Default to empty -->
+	<cmLocalUserId type="string"></cmLocalUserId>						<!-- Default to empty -->
+	<NATTraversalH323 type="int">0</NATTraversalH323>
+	<NATTraversalSIP type="int">0</NATTraversalSIP>
+	
+	
+	<!-- Default step size for pan/tilt/zoom.  3 is fast and smooth, 2 is slower, 5 is too fast -->
+	<cmCameraStepSize type="int">2</cmCameraStepSize>
+
+	<!-- Default Zoom for MfgTest -->
+	<cmVideoSource1HorzZoom type="int">1271</cmVideoSource1HorzZoom>
+	<cmVideoSource1VertZoom type="int">847</cmVideoSource1VertZoom>
+
+</root>

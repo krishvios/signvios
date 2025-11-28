@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C93DF091157D98F00BA351B /* TestVP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DF081157D98F00BA351B /* TestVP.cpp */; };
+		3C93DFF91157E69100BA351B /* CstiCallList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFC21157E69100BA351B /* CstiCallList.cpp */; };
+		3C93DFFA1157E69100BA351B /* CstiCallListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFC41157E69100BA351B /* CstiCallListItem.cpp */; };
+		3C93DFFB1157E69100BA351B /* CstiCoreRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFC61157E69100BA351B /* CstiCoreRequest.cpp */; };
+		3C93DFFC1157E69100BA351B /* CstiCoreResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFC81157E69100BA351B /* CstiCoreResponse.cpp */; };
+		3C93DFFD1157E69100BA351B /* CstiCoreService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFCA1157E69100BA351B /* CstiCoreService.cpp */; };
+		3C93DFFE1157E69100BA351B /* CstiDirectoryResolveResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFCC1157E69100BA351B /* CstiDirectoryResolveResult.cpp */; };
+		3C93DFFF1157E69100BA351B /* CstiList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFCE1157E69100BA351B /* CstiList.cpp */; };
+		3C93E0001157E69100BA351B /* CstiListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFD01157E69100BA351B /* CstiListItem.cpp */; };
+		3C93E0011157E69100BA351B /* CstiMessageList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFD21157E69100BA351B /* CstiMessageList.cpp */; };
+		3C93E0021157E69100BA351B /* CstiMessageListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFD41157E69100BA351B /* CstiMessageListItem.cpp */; };
+		3C93E0031157E69100BA351B /* CstiMessageRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFD61157E69100BA351B /* CstiMessageRequest.cpp */; };
+		3C93E0041157E69100BA351B /* CstiMessageResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFD81157E69100BA351B /* CstiMessageResponse.cpp */; };
+		3C93E0051157E69100BA351B /* CstiMessageService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFDA1157E69100BA351B /* CstiMessageService.cpp */; };
+		3C93E0061157E69100BA351B /* CstiPhoneNumberList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFDC1157E69100BA351B /* CstiPhoneNumberList.cpp */; };
+		3C93E0071157E69100BA351B /* CstiPhoneNumberListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFDE1157E69100BA351B /* CstiPhoneNumberListItem.cpp */; };
+		3C93E0081157E69100BA351B /* CstiSettingItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFE01157E69100BA351B /* CstiSettingItem.cpp */; };
+		3C93E0091157E69100BA351B /* CstiSettingList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFE21157E69100BA351B /* CstiSettingList.cpp */; };
+		3C93E00A1157E69100BA351B /* CstiStateNotifyRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFE41157E69100BA351B /* CstiStateNotifyRequest.cpp */; };
+		3C93E00B1157E69100BA351B /* CstiStateNotifyResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFE61157E69100BA351B /* CstiStateNotifyResponse.cpp */; };
+		3C93E00C1157E69100BA351B /* CstiStateNotifyService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFE81157E69100BA351B /* CstiStateNotifyService.cpp */; };
+		3C93E00D1157E69100BA351B /* CstiString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFEA1157E69100BA351B /* CstiString.cpp */; };
+		3C93E00E1157E69100BA351B /* CstiUserAccountInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFEC1157E69100BA351B /* CstiUserAccountInfo.cpp */; };
+		3C93E00F1157E69100BA351B /* CstiVPService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFEE1157E69100BA351B /* CstiVPService.cpp */; };
+		3C93E0101157E69100BA351B /* CstiVPServiceRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DFF01157E69100BA351B /* CstiVPServiceRequest.cpp */; };
+		3C93E1051157E6D100BA351B /* cmPropertyNameDef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E02A1157E6D100BA351B /* cmPropertyNameDef.cpp */; };
+		3C93E1061157E6D100BA351B /* CstiAppEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E02D1157E6D100BA351B /* CstiAppEvent.cpp */; };
+		3C93E1071157E6D100BA351B /* CstiErrorEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E02F1157E6D100BA351B /* CstiErrorEvent.cpp */; };
+		3C93E1081157E6D100BA351B /* CstiEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0311157E6D100BA351B /* CstiEvent.cpp */; };
+		3C93E1091157E6D100BA351B /* CstiExtendedEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0331157E6D100BA351B /* CstiExtendedEvent.cpp */; };
+		3C93E10A1157E6D100BA351B /* CstiOsTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0351157E6D100BA351B /* CstiOsTask.cpp */; };
+		3C93E10B1157E6D100BA351B /* CstiOsTaskMQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0371157E6D100BA351B /* CstiOsTaskMQ.cpp */; };
+		3C93E10C1157E6D100BA351B /* CstiOsTaskP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0391157E6D100BA351B /* CstiOsTaskP.cpp */; };
+		3C93E10D1157E6D100BA351B /* CstiTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E03B1157E6D100BA351B /* CstiTask.cpp */; };
+		3C93E10E1157E6D100BA351B /* CstiUniversalEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E03D1157E6D100BA351B /* CstiUniversalEvent.cpp */; };
+		3C93E1111157E6D100BA351B /* stiAssert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0421157E6D100BA351B /* stiAssert.cpp */; };
+		3C93E1121157E6D100BA351B /* stiDebugTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0451157E6D100BA351B /* stiDebugTools.cpp */; };
+		3C93E1131157E6D100BA351B /* stiError.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0491157E6D100BA351B /* stiError.c */; };
+		3C93E1141157E6D100BA351B /* stiHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E04C1157E6D100BA351B /* stiHeap.cpp */; };
+		3C93E1151157E6D100BA351B /* stiSystemDefaults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0521157E6D100BA351B /* stiSystemDefaults.cpp */; };
+		3C93E1171157E6D100BA351B /* stiTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0571157E6D100BA351B /* stiTools.cpp */; };
+		3C93E1181157E6D100BA351B /* stiTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0591157E6D100BA351B /* stiTrace.cpp */; };
+		3C93E1191157E6D100BA351B /* stiUdpTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E05B1157E6D100BA351B /* stiUdpTrace.cpp */; };
+		3C93E1351157E6D100BA351B /* CstiHTTPService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0981157E6D100BA351B /* CstiHTTPService.cpp */; };
+		3C93E1361157E6D100BA351B /* CstiHTTPTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E09A1157E6D100BA351B /* CstiHTTPTask.cpp */; };
+		3C93E1371157E6D100BA351B /* CstiURLResolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E09C1157E6D100BA351B /* CstiURLResolve.cpp */; };
+		3C93E1391157E6D100BA351B /* stiHTTPServiceTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E09F1157E6D100BA351B /* stiHTTPServiceTools.cpp */; };
+		3C93E13A1157E6D100BA351B /* stiSSLTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0A11157E6D100BA351B /* stiSSLTools.cpp */; };
+		3C93E13F1157E6D100BA351B /* stiOS.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0AD1157E6D100BA351B /* stiOS.c */; };
+		3C93E1411157E6D100BA351B /* stiOSLinux.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0B21157E6D100BA351B /* stiOSLinux.c */; };
+		3C93E1421157E6D100BA351B /* stiOSLinuxCond.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0B41157E6D100BA351B /* stiOSLinuxCond.c */; };
+		3C93E1441157E6D100BA351B /* stiOSLinuxMsg.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0B81157E6D100BA351B /* stiOSLinuxMsg.c */; };
+		3C93E1451157E6D100BA351B /* stiOSLinuxMutex.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0BA1157E6D100BA351B /* stiOSLinuxMutex.c */; };
+		3C93E1461157E6D100BA351B /* stiOSMacOSXNet.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0BC1157E6D100BA351B /* stiOSMacOSXNet.c */; };
+		3C93E1471157E6D100BA351B /* stiOSLinuxPipe.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0BE1157E6D100BA351B /* stiOSLinuxPipe.c */; };
+		3C93E1481157E6D100BA351B /* stiOSLinuxSem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0BF1157E6D100BA351B /* stiOSLinuxSem.c */; };
+		3C93E1491157E6D100BA351B /* stiOSLinuxTask.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0C11157E6D100BA351B /* stiOSLinuxTask.c */; };
+		3C93E14A1157E6D100BA351B /* stiOSLinuxWd.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0C31157E6D100BA351B /* stiOSLinuxWd.c */; };
+		3C93E14B1157E6D100BA351B /* stiOSMsg.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0C51157E6D100BA351B /* stiOSMsg.c */; };
+		3C93E14C1157E6D100BA351B /* stiOSNet.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0C81157E6D100BA351B /* stiOSNet.c */; };
+		3C93E14D1157E6D100BA351B /* stiOSSem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0CB1157E6D100BA351B /* stiOSSem.c */; };
+		3C93E1591157E6D100BA351B /* CstiPropertySender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0E51157E6D100BA351B /* CstiPropertySender.cpp */; };
+		3C93E15C1157E6D100BA351B /* PropertyListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0F11157E6D100BA351B /* PropertyListItem.cpp */; };
+		3C93E15D1157E6D100BA351B /* PropertyManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0F31157E6D100BA351B /* PropertyManager.cpp */; };
+		3C93E15F1157E6D100BA351B /* XMLList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0F81157E6D100BA351B /* XMLList.cpp */; };
+		3C93E1601157E6D100BA351B /* XMLListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0FA1157E6D100BA351B /* XMLListItem.cpp */; };
+		3C93E1611157E6D100BA351B /* XMLManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0FC1157E6D100BA351B /* XMLManager.cpp */; };
+		3C93E1621157E6D100BA351B /* XMLValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E0FE1157E6D100BA351B /* XMLValue.cpp */; };
+		3C93E1C31157E7BA00BA351B /* attr.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E1831157E7BA00BA351B /* attr.c */; };
+		3C93E1C41157E7BA00BA351B /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E1841157E7BA00BA351B /* document.c */; };
+		3C93E1C51157E7BA00BA351B /* element.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E1851157E7BA00BA351B /* element.c */; };
+		3C93E1C61157E7BA00BA351B /* ixml.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E18A1157E7BA00BA351B /* ixml.c */; };
+		3C93E1C71157E7BA00BA351B /* ixmlmembuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E18B1157E7BA00BA351B /* ixmlmembuf.c */; };
+		3C93E1C81157E7BA00BA351B /* ixmlparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E18C1157E7BA00BA351B /* ixmlparser.c */; };
+		3C93E1C91157E7BA00BA351B /* namedNodeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E18D1157E7BA00BA351B /* namedNodeMap.c */; };
+		3C93E1CA1157E7BA00BA351B /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E18E1157E7BA00BA351B /* node.c */; };
+		3C93E1CB1157E7BA00BA351B /* nodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C93E18F1157E7BA00BA351B /* nodeList.c */; };
+		3C93E4B9115823F600BA351B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C93E4B8115823F600BA351B /* IOKit.framework */; };
+		3C93E5B31158242D00BA351B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C93E5B21158242D00BA351B /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C93DF081157D98F00BA351B /* TestVP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestVP.cpp; sourceTree = "<group>"; };
+		3C93DFC21157E69100BA351B /* CstiCallList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiCallList.cpp; sourceTree = "<group>"; };
+		3C93DFC31157E69100BA351B /* CstiCallList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiCallList.h; sourceTree = "<group>"; };
+		3C93DFC41157E69100BA351B /* CstiCallListItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiCallListItem.cpp; sourceTree = "<group>"; };
+		3C93DFC51157E69100BA351B /* CstiCallListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiCallListItem.h; sourceTree = "<group>"; };
+		3C93DFC61157E69100BA351B /* CstiCoreRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiCoreRequest.cpp; sourceTree = "<group>"; };
+		3C93DFC71157E69100BA351B /* CstiCoreRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiCoreRequest.h; sourceTree = "<group>"; };
+		3C93DFC81157E69100BA351B /* CstiCoreResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiCoreResponse.cpp; sourceTree = "<group>"; };
+		3C93DFC91157E69100BA351B /* CstiCoreResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiCoreResponse.h; sourceTree = "<group>"; };
+		3C93DFCA1157E69100BA351B /* CstiCoreService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiCoreService.cpp; sourceTree = "<group>"; };
+		3C93DFCB1157E69100BA351B /* CstiCoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiCoreService.h; sourceTree = "<group>"; };
+		3C93DFCC1157E69100BA351B /* CstiDirectoryResolveResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiDirectoryResolveResult.cpp; sourceTree = "<group>"; };
+		3C93DFCD1157E69100BA351B /* CstiDirectoryResolveResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiDirectoryResolveResult.h; sourceTree = "<group>"; };
+		3C93DFCE1157E69100BA351B /* CstiList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiList.cpp; sourceTree = "<group>"; };
+		3C93DFCF1157E69100BA351B /* CstiList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiList.h; sourceTree = "<group>"; };
+		3C93DFD01157E69100BA351B /* CstiListItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiListItem.cpp; sourceTree = "<group>"; };
+		3C93DFD11157E69100BA351B /* CstiListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiListItem.h; sourceTree = "<group>"; };
+		3C93DFD21157E69100BA351B /* CstiMessageList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiMessageList.cpp; sourceTree = "<group>"; };
+		3C93DFD31157E69100BA351B /* CstiMessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiMessageList.h; sourceTree = "<group>"; };
+		3C93DFD41157E69100BA351B /* CstiMessageListItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiMessageListItem.cpp; sourceTree = "<group>"; };
+		3C93DFD51157E69100BA351B /* CstiMessageListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiMessageListItem.h; sourceTree = "<group>"; };
+		3C93DFD61157E69100BA351B /* CstiMessageRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiMessageRequest.cpp; sourceTree = "<group>"; };
+		3C93DFD71157E69100BA351B /* CstiMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiMessageRequest.h; sourceTree = "<group>"; };
+		3C93DFD81157E69100BA351B /* CstiMessageResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiMessageResponse.cpp; sourceTree = "<group>"; };
+		3C93DFD91157E69100BA351B /* CstiMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiMessageResponse.h; sourceTree = "<group>"; };
+		3C93DFDA1157E69100BA351B /* CstiMessageService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiMessageService.cpp; sourceTree = "<group>"; };
+		3C93DFDB1157E69100BA351B /* CstiMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiMessageService.h; sourceTree = "<group>"; };
+		3C93DFDC1157E69100BA351B /* CstiPhoneNumberList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiPhoneNumberList.cpp; sourceTree = "<group>"; };
+		3C93DFDD1157E69100BA351B /* CstiPhoneNumberList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiPhoneNumberList.h; sourceTree = "<group>"; };
+		3C93DFDE1157E69100BA351B /* CstiPhoneNumberListItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiPhoneNumberListItem.cpp; sourceTree = "<group>"; };
+		3C93DFDF1157E69100BA351B /* CstiPhoneNumberListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiPhoneNumberListItem.h; sourceTree = "<group>"; };
+		3C93DFE01157E69100BA351B /* CstiSettingItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiSettingItem.cpp; sourceTree = "<group>"; };
+		3C93DFE11157E69100BA351B /* CstiSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiSettingItem.h; sourceTree = "<group>"; };
+		3C93DFE21157E69100BA351B /* CstiSettingList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiSettingList.cpp; sourceTree = "<group>"; };
+		3C93DFE31157E69100BA351B /* CstiSettingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiSettingList.h; sourceTree = "<group>"; };
+		3C93DFE41157E69100BA351B /* CstiStateNotifyRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiStateNotifyRequest.cpp; sourceTree = "<group>"; };
+		3C93DFE51157E69100BA351B /* CstiStateNotifyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiStateNotifyRequest.h; sourceTree = "<group>"; };
+		3C93DFE61157E69100BA351B /* CstiStateNotifyResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiStateNotifyResponse.cpp; sourceTree = "<group>"; };
+		3C93DFE71157E69100BA351B /* CstiStateNotifyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiStateNotifyResponse.h; sourceTree = "<group>"; };
+		3C93DFE81157E69100BA351B /* CstiStateNotifyService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiStateNotifyService.cpp; sourceTree = "<group>"; };
+		3C93DFE91157E69100BA351B /* CstiStateNotifyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiStateNotifyService.h; sourceTree = "<group>"; };
+		3C93DFEA1157E69100BA351B /* CstiString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiString.cpp; sourceTree = "<group>"; };
+		3C93DFEB1157E69100BA351B /* CstiString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiString.h; sourceTree = "<group>"; };
+		3C93DFEC1157E69100BA351B /* CstiUserAccountInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiUserAccountInfo.cpp; sourceTree = "<group>"; };
+		3C93DFED1157E69100BA351B /* CstiUserAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiUserAccountInfo.h; sourceTree = "<group>"; };
+		3C93DFEE1157E69100BA351B /* CstiVPService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiVPService.cpp; sourceTree = "<group>"; };
+		3C93DFEF1157E69100BA351B /* CstiVPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiVPService.h; sourceTree = "<group>"; };
+		3C93DFF01157E69100BA351B /* CstiVPServiceRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiVPServiceRequest.cpp; sourceTree = "<group>"; };
+		3C93DFF11157E69100BA351B /* CstiVPServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiVPServiceRequest.h; sourceTree = "<group>"; };
+		3C93DFF41157E69100BA351B /* stiCoreRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiCoreRequestDefines.h; sourceTree = "<group>"; };
+		3C93E02A1157E6D100BA351B /* cmPropertyNameDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cmPropertyNameDef.cpp; sourceTree = "<group>"; };
+		3C93E02B1157E6D100BA351B /* cmPropertyNameDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmPropertyNameDef.h; sourceTree = "<group>"; };
+		3C93E02C1157E6D100BA351B /* cmSharedPropertyNameDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmSharedPropertyNameDef.h; sourceTree = "<group>"; };
+		3C93E02D1157E6D100BA351B /* CstiAppEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiAppEvent.cpp; sourceTree = "<group>"; };
+		3C93E02E1157E6D100BA351B /* CstiAppEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiAppEvent.h; sourceTree = "<group>"; };
+		3C93E02F1157E6D100BA351B /* CstiErrorEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiErrorEvent.cpp; sourceTree = "<group>"; };
+		3C93E0301157E6D100BA351B /* CstiErrorEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiErrorEvent.h; sourceTree = "<group>"; };
+		3C93E0311157E6D100BA351B /* CstiEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiEvent.cpp; sourceTree = "<group>"; };
+		3C93E0321157E6D100BA351B /* CstiEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiEvent.h; sourceTree = "<group>"; };
+		3C93E0331157E6D100BA351B /* CstiExtendedEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiExtendedEvent.cpp; sourceTree = "<group>"; };
+		3C93E0341157E6D100BA351B /* CstiExtendedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiExtendedEvent.h; sourceTree = "<group>"; };
+		3C93E0351157E6D100BA351B /* CstiOsTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiOsTask.cpp; sourceTree = "<group>"; };
+		3C93E0361157E6D100BA351B /* CstiOsTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiOsTask.h; sourceTree = "<group>"; };
+		3C93E0371157E6D100BA351B /* CstiOsTaskMQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiOsTaskMQ.cpp; sourceTree = "<group>"; };
+		3C93E0381157E6D100BA351B /* CstiOsTaskMQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiOsTaskMQ.h; sourceTree = "<group>"; };
+		3C93E0391157E6D100BA351B /* CstiOsTaskP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiOsTaskP.cpp; sourceTree = "<group>"; };
+		3C93E03A1157E6D100BA351B /* CstiOsTaskP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiOsTaskP.h; sourceTree = "<group>"; };
+		3C93E03B1157E6D100BA351B /* CstiTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiTask.cpp; sourceTree = "<group>"; };
+		3C93E03C1157E6D100BA351B /* CstiTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiTask.h; sourceTree = "<group>"; };
+		3C93E03D1157E6D100BA351B /* CstiUniversalEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiUniversalEvent.cpp; sourceTree = "<group>"; };
+		3C93E03E1157E6D100BA351B /* CstiUniversalEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiUniversalEvent.h; sourceTree = "<group>"; };
+		3C93E0421157E6D100BA351B /* stiAssert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiAssert.cpp; sourceTree = "<group>"; };
+		3C93E0431157E6D100BA351B /* stiAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiAssert.h; sourceTree = "<group>"; };
+		3C93E0441157E6D100BA351B /* stiDebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiDebugMacros.h; sourceTree = "<group>"; };
+		3C93E0451157E6D100BA351B /* stiDebugTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiDebugTools.cpp; sourceTree = "<group>"; };
+		3C93E0461157E6D100BA351B /* stiDebugTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiDebugTools.h; sourceTree = "<group>"; };
+		3C93E0471157E6D100BA351B /* stiDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiDefs.h; sourceTree = "<group>"; };
+		3C93E0481157E6D100BA351B /* stiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiDelegate.h; sourceTree = "<group>"; };
+		3C93E0491157E6D100BA351B /* stiError.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiError.c; sourceTree = "<group>"; };
+		3C93E04A1157E6D100BA351B /* stiError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiError.h; sourceTree = "<group>"; };
+		3C93E04B1157E6D100BA351B /* stiEventMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiEventMap.h; sourceTree = "<group>"; };
+		3C93E04C1157E6D100BA351B /* stiHeap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiHeap.cpp; sourceTree = "<group>"; };
+		3C93E04D1157E6D100BA351B /* stiHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiHeap.h; sourceTree = "<group>"; };
+		3C93E04E1157E6D100BA351B /* stiKauriError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiKauriError.h; sourceTree = "<group>"; };
+		3C93E04F1157E6D100BA351B /* stiMem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiMem.h; sourceTree = "<group>"; };
+		3C93E0501157E6D100BA351B /* stiProductCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiProductCompatibility.h; sourceTree = "<group>"; };
+		3C93E0511157E6D100BA351B /* stiSVX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiSVX.h; sourceTree = "<group>"; };
+		3C93E0521157E6D100BA351B /* stiSystemDefaults.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiSystemDefaults.cpp; sourceTree = "<group>"; };
+		3C93E0531157E6D100BA351B /* stiSystemDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiSystemDefaults.h; sourceTree = "<group>"; };
+		3C93E0561157E6D100BA351B /* stiTaskInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiTaskInfo.h; sourceTree = "<group>"; };
+		3C93E0571157E6D100BA351B /* stiTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiTools.cpp; sourceTree = "<group>"; };
+		3C93E0581157E6D100BA351B /* stiTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiTools.h; sourceTree = "<group>"; };
+		3C93E0591157E6D100BA351B /* stiTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiTrace.cpp; sourceTree = "<group>"; };
+		3C93E05A1157E6D100BA351B /* stiTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiTrace.h; sourceTree = "<group>"; };
+		3C93E05B1157E6D100BA351B /* stiUdpTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiUdpTrace.cpp; sourceTree = "<group>"; };
+		3C93E05C1157E6D100BA351B /* stiUdpTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiUdpTrace.h; sourceTree = "<group>"; };
+		3C93E0981157E6D100BA351B /* CstiHTTPService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiHTTPService.cpp; sourceTree = "<group>"; };
+		3C93E0991157E6D100BA351B /* CstiHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiHTTPService.h; sourceTree = "<group>"; };
+		3C93E09A1157E6D100BA351B /* CstiHTTPTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiHTTPTask.cpp; sourceTree = "<group>"; };
+		3C93E09B1157E6D100BA351B /* CstiHTTPTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiHTTPTask.h; sourceTree = "<group>"; };
+		3C93E09C1157E6D100BA351B /* CstiURLResolve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiURLResolve.cpp; sourceTree = "<group>"; };
+		3C93E09D1157E6D100BA351B /* CstiURLResolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiURLResolve.h; sourceTree = "<group>"; };
+		3C93E09F1157E6D100BA351B /* stiHTTPServiceTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiHTTPServiceTools.cpp; sourceTree = "<group>"; };
+		3C93E0A01157E6D100BA351B /* stiHTTPServiceTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiHTTPServiceTools.h; sourceTree = "<group>"; };
+		3C93E0A11157E6D100BA351B /* stiSSLTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stiSSLTools.cpp; sourceTree = "<group>"; };
+		3C93E0A21157E6D100BA351B /* stiSSLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiSSLTools.h; sourceTree = "<group>"; };
+		3C93E0AD1157E6D100BA351B /* stiOS.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOS.c; sourceTree = "<group>"; };
+		3C93E0AE1157E6D100BA351B /* stiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOS.h; sourceTree = "<group>"; };
+		3C93E0AF1157E6D100BA351B /* stiOSCond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSCond.h; sourceTree = "<group>"; };
+		3C93E0B21157E6D100BA351B /* stiOSLinux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinux.c; sourceTree = "<group>"; };
+		3C93E0B31157E6D100BA351B /* stiOSLinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSLinux.h; sourceTree = "<group>"; };
+		3C93E0B41157E6D100BA351B /* stiOSLinuxCond.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinuxCond.c; sourceTree = "<group>"; };
+		3C93E0B51157E6D100BA351B /* stiOSLinuxCond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSLinuxCond.h; sourceTree = "<group>"; };
+		3C93E0B81157E6D100BA351B /* stiOSLinuxMsg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinuxMsg.c; sourceTree = "<group>"; };
+		3C93E0B91157E6D100BA351B /* stiOSLinuxMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSLinuxMsg.h; sourceTree = "<group>"; };
+		3C93E0BA1157E6D100BA351B /* stiOSLinuxMutex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinuxMutex.c; sourceTree = "<group>"; };
+		3C93E0BB1157E6D100BA351B /* stiOSLinuxMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSLinuxMutex.h; sourceTree = "<group>"; };
+		3C93E0BC1157E6D100BA351B /* stiOSMacOSXNet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSMacOSXNet.c; sourceTree = "<group>"; };
+		3C93E0BD1157E6D100BA351B /* stiOSMacOSXNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSMacOSXNet.h; sourceTree = "<group>"; };
+		3C93E0BE1157E6D100BA351B /* stiOSLinuxPipe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinuxPipe.c; sourceTree = "<group>"; };
+		3C93E0BF1157E6D100BA351B /* stiOSLinuxSem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinuxSem.c; sourceTree = "<group>"; };
+		3C93E0C01157E6D100BA351B /* stiOSLinuxSem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSLinuxSem.h; sourceTree = "<group>"; };
+		3C93E0C11157E6D100BA351B /* stiOSLinuxTask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinuxTask.c; sourceTree = "<group>"; };
+		3C93E0C21157E6D100BA351B /* stiOSLinuxTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSLinuxTask.h; sourceTree = "<group>"; };
+		3C93E0C31157E6D100BA351B /* stiOSLinuxWd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSLinuxWd.c; sourceTree = "<group>"; };
+		3C93E0C41157E6D100BA351B /* stiOSLinuxWd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSLinuxWd.h; sourceTree = "<group>"; };
+		3C93E0C51157E6D100BA351B /* stiOSMsg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSMsg.c; sourceTree = "<group>"; };
+		3C93E0C61157E6D100BA351B /* stiOSMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSMsg.h; sourceTree = "<group>"; };
+		3C93E0C71157E6D100BA351B /* stiOSMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSMutex.h; sourceTree = "<group>"; };
+		3C93E0C81157E6D100BA351B /* stiOSNet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSNet.c; sourceTree = "<group>"; };
+		3C93E0C91157E6D100BA351B /* stiOSNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSNet.h; sourceTree = "<group>"; };
+		3C93E0CA1157E6D100BA351B /* stiOSPipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSPipe.h; sourceTree = "<group>"; };
+		3C93E0CB1157E6D100BA351B /* stiOSSem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stiOSSem.c; sourceTree = "<group>"; };
+		3C93E0CC1157E6D100BA351B /* stiOSSem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSSem.h; sourceTree = "<group>"; };
+		3C93E0CF1157E6D100BA351B /* stiOSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSTask.h; sourceTree = "<group>"; };
+		3C93E0D01157E6D100BA351B /* stiOSWd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stiOSWd.h; sourceTree = "<group>"; };
+		3C93E0E51157E6D100BA351B /* CstiPropertySender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CstiPropertySender.cpp; sourceTree = "<group>"; };
+		3C93E0E61157E6D100BA351B /* CstiPropertySender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstiPropertySender.h; sourceTree = "<group>"; };
+		3C93E0F11157E6D100BA351B /* PropertyListItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropertyListItem.cpp; sourceTree = "<group>"; };
+		3C93E0F21157E6D100BA351B /* PropertyListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListItem.h; sourceTree = "<group>"; };
+		3C93E0F31157E6D100BA351B /* PropertyManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropertyManager.cpp; sourceTree = "<group>"; };
+		3C93E0F41157E6D100BA351B /* PropertyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyManager.h; sourceTree = "<group>"; };
+		3C93E0F81157E6D100BA351B /* XMLList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMLList.cpp; sourceTree = "<group>"; };
+		3C93E0F91157E6D100BA351B /* XMLList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLList.h; sourceTree = "<group>"; };
+		3C93E0FA1157E6D100BA351B /* XMLListItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMLListItem.cpp; sourceTree = "<group>"; };
+		3C93E0FB1157E6D100BA351B /* XMLListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLListItem.h; sourceTree = "<group>"; };
+		3C93E0FC1157E6D100BA351B /* XMLManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMLManager.cpp; sourceTree = "<group>"; };
+		3C93E0FD1157E6D100BA351B /* XMLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLManager.h; sourceTree = "<group>"; };
+		3C93E0FE1157E6D100BA351B /* XMLValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMLValue.cpp; sourceTree = "<group>"; };
+		3C93E0FF1157E6D100BA351B /* XMLValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLValue.h; sourceTree = "<group>"; };
+		3C93E17E1157E7BA00BA351B /* ixml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixml.h; sourceTree = "<group>"; };
+		3C93E1831157E7BA00BA351B /* attr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attr.c; sourceTree = "<group>"; };
+		3C93E1841157E7BA00BA351B /* document.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = document.c; sourceTree = "<group>"; };
+		3C93E1851157E7BA00BA351B /* element.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = element.c; sourceTree = "<group>"; };
+		3C93E1881157E7BA00BA351B /* ixmlmembuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixmlmembuf.h; sourceTree = "<group>"; };
+		3C93E1891157E7BA00BA351B /* ixmlparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixmlparser.h; sourceTree = "<group>"; };
+		3C93E18A1157E7BA00BA351B /* ixml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ixml.c; sourceTree = "<group>"; };
+		3C93E18B1157E7BA00BA351B /* ixmlmembuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ixmlmembuf.c; sourceTree = "<group>"; };
+		3C93E18C1157E7BA00BA351B /* ixmlparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ixmlparser.c; sourceTree = "<group>"; };
+		3C93E18D1157E7BA00BA351B /* namedNodeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = namedNodeMap.c; sourceTree = "<group>"; };
+		3C93E18E1157E7BA00BA351B /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		3C93E18F1157E7BA00BA351B /* nodeList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nodeList.c; sourceTree = "<group>"; };
+		3C93E1E41157E89500BA351B /* smiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smiConfig.h; path = ../../smiConfig.h; sourceTree = SOURCE_ROOT; };
+		3C93E4B8115823F600BA351B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		3C93E5B21158242D00BA351B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8DD76F6C0486A84900D96B5E /* TestOSX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestOSX; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C93E4B9115823F600BA351B /* IOKit.framework in Frameworks */,
+				3C93E5B31158242D00BA351B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* TestOSX */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E5031158241E00BA351B /* Frameworks */,
+				3C93E1631157E6D900BA351B /* VideophoneEngine */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = TestOSX;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3C93DF081157D98F00BA351B /* TestVP.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* TestOSX */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C93DFC01157E69100BA351B /* CoreServices */ = {
+			isa = PBXGroup;
+			children = (
+				3C93DFC21157E69100BA351B /* CstiCallList.cpp */,
+				3C93DFC31157E69100BA351B /* CstiCallList.h */,
+				3C93DFC41157E69100BA351B /* CstiCallListItem.cpp */,
+				3C93DFC51157E69100BA351B /* CstiCallListItem.h */,
+				3C93DFC61157E69100BA351B /* CstiCoreRequest.cpp */,
+				3C93DFC71157E69100BA351B /* CstiCoreRequest.h */,
+				3C93DFC81157E69100BA351B /* CstiCoreResponse.cpp */,
+				3C93DFC91157E69100BA351B /* CstiCoreResponse.h */,
+				3C93DFCA1157E69100BA351B /* CstiCoreService.cpp */,
+				3C93DFCB1157E69100BA351B /* CstiCoreService.h */,
+				3C93DFCC1157E69100BA351B /* CstiDirectoryResolveResult.cpp */,
+				3C93DFCD1157E69100BA351B /* CstiDirectoryResolveResult.h */,
+				3C93DFCE1157E69100BA351B /* CstiList.cpp */,
+				3C93DFCF1157E69100BA351B /* CstiList.h */,
+				3C93DFD01157E69100BA351B /* CstiListItem.cpp */,
+				3C93DFD11157E69100BA351B /* CstiListItem.h */,
+				3C93DFD21157E69100BA351B /* CstiMessageList.cpp */,
+				3C93DFD31157E69100BA351B /* CstiMessageList.h */,
+				3C93DFD41157E69100BA351B /* CstiMessageListItem.cpp */,
+				3C93DFD51157E69100BA351B /* CstiMessageListItem.h */,
+				3C93DFD61157E69100BA351B /* CstiMessageRequest.cpp */,
+				3C93DFD71157E69100BA351B /* CstiMessageRequest.h */,
+				3C93DFD81157E69100BA351B /* CstiMessageResponse.cpp */,
+				3C93DFD91157E69100BA351B /* CstiMessageResponse.h */,
+				3C93DFDA1157E69100BA351B /* CstiMessageService.cpp */,
+				3C93DFDB1157E69100BA351B /* CstiMessageService.h */,
+				3C93DFDC1157E69100BA351B /* CstiPhoneNumberList.cpp */,
+				3C93DFDD1157E69100BA351B /* CstiPhoneNumberList.h */,
+				3C93DFDE1157E69100BA351B /* CstiPhoneNumberListItem.cpp */,
+				3C93DFDF1157E69100BA351B /* CstiPhoneNumberListItem.h */,
+				3C93DFE01157E69100BA351B /* CstiSettingItem.cpp */,
+				3C93DFE11157E69100BA351B /* CstiSettingItem.h */,
+				3C93DFE21157E69100BA351B /* CstiSettingList.cpp */,
+				3C93DFE31157E69100BA351B /* CstiSettingList.h */,
+				3C93DFE41157E69100BA351B /* CstiStateNotifyRequest.cpp */,
+				3C93DFE51157E69100BA351B /* CstiStateNotifyRequest.h */,
+				3C93DFE61157E69100BA351B /* CstiStateNotifyResponse.cpp */,
+				3C93DFE71157E69100BA351B /* CstiStateNotifyResponse.h */,
+				3C93DFE81157E69100BA351B /* CstiStateNotifyService.cpp */,
+				3C93DFE91157E69100BA351B /* CstiStateNotifyService.h */,
+				3C93DFEA1157E69100BA351B /* CstiString.cpp */,
+				3C93DFEB1157E69100BA351B /* CstiString.h */,
+				3C93DFEC1157E69100BA351B /* CstiUserAccountInfo.cpp */,
+				3C93DFED1157E69100BA351B /* CstiUserAccountInfo.h */,
+				3C93DFEE1157E69100BA351B /* CstiVPService.cpp */,
+				3C93DFEF1157E69100BA351B /* CstiVPService.h */,
+				3C93DFF01157E69100BA351B /* CstiVPServiceRequest.cpp */,
+				3C93DFF11157E69100BA351B /* CstiVPServiceRequest.h */,
+				3C93DFF41157E69100BA351B /* stiCoreRequestDefines.h */,
+			);
+			name = CoreServices;
+			path = ../CoreServices;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C93E0281157E6D100BA351B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E02A1157E6D100BA351B /* cmPropertyNameDef.cpp */,
+				3C93E02B1157E6D100BA351B /* cmPropertyNameDef.h */,
+				3C93E02C1157E6D100BA351B /* cmSharedPropertyNameDef.h */,
+				3C93E02D1157E6D100BA351B /* CstiAppEvent.cpp */,
+				3C93E02E1157E6D100BA351B /* CstiAppEvent.h */,
+				3C93E02F1157E6D100BA351B /* CstiErrorEvent.cpp */,
+				3C93E0301157E6D100BA351B /* CstiErrorEvent.h */,
+				3C93E0311157E6D100BA351B /* CstiEvent.cpp */,
+				3C93E0321157E6D100BA351B /* CstiEvent.h */,
+				3C93E0331157E6D100BA351B /* CstiExtendedEvent.cpp */,
+				3C93E0341157E6D100BA351B /* CstiExtendedEvent.h */,
+				3C93E0351157E6D100BA351B /* CstiOsTask.cpp */,
+				3C93E0361157E6D100BA351B /* CstiOsTask.h */,
+				3C93E0371157E6D100BA351B /* CstiOsTaskMQ.cpp */,
+				3C93E0381157E6D100BA351B /* CstiOsTaskMQ.h */,
+				3C93E0391157E6D100BA351B /* CstiOsTaskP.cpp */,
+				3C93E03A1157E6D100BA351B /* CstiOsTaskP.h */,
+				3C93E03B1157E6D100BA351B /* CstiTask.cpp */,
+				3C93E03C1157E6D100BA351B /* CstiTask.h */,
+				3C93E03D1157E6D100BA351B /* CstiUniversalEvent.cpp */,
+				3C93E03E1157E6D100BA351B /* CstiUniversalEvent.h */,
+				3C93E0421157E6D100BA351B /* stiAssert.cpp */,
+				3C93E0431157E6D100BA351B /* stiAssert.h */,
+				3C93E0441157E6D100BA351B /* stiDebugMacros.h */,
+				3C93E0451157E6D100BA351B /* stiDebugTools.cpp */,
+				3C93E0461157E6D100BA351B /* stiDebugTools.h */,
+				3C93E0471157E6D100BA351B /* stiDefs.h */,
+				3C93E0481157E6D100BA351B /* stiDelegate.h */,
+				3C93E0491157E6D100BA351B /* stiError.c */,
+				3C93E04A1157E6D100BA351B /* stiError.h */,
+				3C93E04B1157E6D100BA351B /* stiEventMap.h */,
+				3C93E04C1157E6D100BA351B /* stiHeap.cpp */,
+				3C93E04D1157E6D100BA351B /* stiHeap.h */,
+				3C93E04E1157E6D100BA351B /* stiKauriError.h */,
+				3C93E04F1157E6D100BA351B /* stiMem.h */,
+				3C93E0501157E6D100BA351B /* stiProductCompatibility.h */,
+				3C93E0511157E6D100BA351B /* stiSVX.h */,
+				3C93E0521157E6D100BA351B /* stiSystemDefaults.cpp */,
+				3C93E0531157E6D100BA351B /* stiSystemDefaults.h */,
+				3C93E0561157E6D100BA351B /* stiTaskInfo.h */,
+				3C93E0571157E6D100BA351B /* stiTools.cpp */,
+				3C93E0581157E6D100BA351B /* stiTools.h */,
+				3C93E0591157E6D100BA351B /* stiTrace.cpp */,
+				3C93E05A1157E6D100BA351B /* stiTrace.h */,
+				3C93E05B1157E6D100BA351B /* stiUdpTrace.cpp */,
+				3C93E05C1157E6D100BA351B /* stiUdpTrace.h */,
+			);
+			name = common;
+			path = ../common;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C93E0961157E6D100BA351B /* http */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E0981157E6D100BA351B /* CstiHTTPService.cpp */,
+				3C93E0991157E6D100BA351B /* CstiHTTPService.h */,
+				3C93E09A1157E6D100BA351B /* CstiHTTPTask.cpp */,
+				3C93E09B1157E6D100BA351B /* CstiHTTPTask.h */,
+				3C93E09C1157E6D100BA351B /* CstiURLResolve.cpp */,
+				3C93E09D1157E6D100BA351B /* CstiURLResolve.h */,
+				3C93E09F1157E6D100BA351B /* stiHTTPServiceTools.cpp */,
+				3C93E0A01157E6D100BA351B /* stiHTTPServiceTools.h */,
+				3C93E0A11157E6D100BA351B /* stiSSLTools.cpp */,
+				3C93E0A21157E6D100BA351B /* stiSSLTools.h */,
+			);
+			name = http;
+			path = ../http;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C93E0A31157E6D100BA351B /* os */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E0AD1157E6D100BA351B /* stiOS.c */,
+				3C93E0AE1157E6D100BA351B /* stiOS.h */,
+				3C93E0AF1157E6D100BA351B /* stiOSCond.h */,
+				3C93E0B21157E6D100BA351B /* stiOSLinux.c */,
+				3C93E0B31157E6D100BA351B /* stiOSLinux.h */,
+				3C93E0B41157E6D100BA351B /* stiOSLinuxCond.c */,
+				3C93E0B51157E6D100BA351B /* stiOSLinuxCond.h */,
+				3C93E0B81157E6D100BA351B /* stiOSLinuxMsg.c */,
+				3C93E0B91157E6D100BA351B /* stiOSLinuxMsg.h */,
+				3C93E0BA1157E6D100BA351B /* stiOSLinuxMutex.c */,
+				3C93E0BB1157E6D100BA351B /* stiOSLinuxMutex.h */,
+				3C93E0BC1157E6D100BA351B /* stiOSMacOSXNet.c */,
+				3C93E0BD1157E6D100BA351B /* stiOSMacOSXNet.h */,
+				3C93E0BE1157E6D100BA351B /* stiOSLinuxPipe.c */,
+				3C93E0BF1157E6D100BA351B /* stiOSLinuxSem.c */,
+				3C93E0C01157E6D100BA351B /* stiOSLinuxSem.h */,
+				3C93E0C11157E6D100BA351B /* stiOSLinuxTask.c */,
+				3C93E0C21157E6D100BA351B /* stiOSLinuxTask.h */,
+				3C93E0C31157E6D100BA351B /* stiOSLinuxWd.c */,
+				3C93E0C41157E6D100BA351B /* stiOSLinuxWd.h */,
+				3C93E0C51157E6D100BA351B /* stiOSMsg.c */,
+				3C93E0C61157E6D100BA351B /* stiOSMsg.h */,
+				3C93E0C71157E6D100BA351B /* stiOSMutex.h */,
+				3C93E0C81157E6D100BA351B /* stiOSNet.c */,
+				3C93E0C91157E6D100BA351B /* stiOSNet.h */,
+				3C93E0CA1157E6D100BA351B /* stiOSPipe.h */,
+				3C93E0CB1157E6D100BA351B /* stiOSSem.c */,
+				3C93E0CC1157E6D100BA351B /* stiOSSem.h */,
+				3C93E0CF1157E6D100BA351B /* stiOSTask.h */,
+				3C93E0D01157E6D100BA351B /* stiOSWd.h */,
+			);
+			name = os;
+			path = ../os;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C93E0E31157E6D100BA351B /* pm */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E0E51157E6D100BA351B /* CstiPropertySender.cpp */,
+				3C93E0E61157E6D100BA351B /* CstiPropertySender.h */,
+				3C93E0F11157E6D100BA351B /* PropertyListItem.cpp */,
+				3C93E0F21157E6D100BA351B /* PropertyListItem.h */,
+				3C93E0F31157E6D100BA351B /* PropertyManager.cpp */,
+				3C93E0F41157E6D100BA351B /* PropertyManager.h */,
+			);
+			name = pm;
+			path = ../pm;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C93E0F51157E6D100BA351B /* xmlmgr */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E0F81157E6D100BA351B /* XMLList.cpp */,
+				3C93E0F91157E6D100BA351B /* XMLList.h */,
+				3C93E0FA1157E6D100BA351B /* XMLListItem.cpp */,
+				3C93E0FB1157E6D100BA351B /* XMLListItem.h */,
+				3C93E0FC1157E6D100BA351B /* XMLManager.cpp */,
+				3C93E0FD1157E6D100BA351B /* XMLManager.h */,
+				3C93E0FE1157E6D100BA351B /* XMLValue.cpp */,
+				3C93E0FF1157E6D100BA351B /* XMLValue.h */,
+			);
+			name = xmlmgr;
+			path = ../xmlmgr;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C93E1631157E6D900BA351B /* VideophoneEngine */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E1E41157E89500BA351B /* smiConfig.h */,
+				3C93E1721157E7BA00BA351B /* ixml */,
+				3C93E0961157E6D100BA351B /* http */,
+				3C93E0A31157E6D100BA351B /* os */,
+				3C93E0E31157E6D100BA351B /* pm */,
+				3C93E0F51157E6D100BA351B /* xmlmgr */,
+				3C93DFC01157E69100BA351B /* CoreServices */,
+				3C93E0281157E6D100BA351B /* common */,
+			);
+			name = VideophoneEngine;
+			sourceTree = "<group>";
+		};
+		3C93E1721157E7BA00BA351B /* ixml */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E17C1157E7BA00BA351B /* inc */,
+				3C93E1811157E7BA00BA351B /* src */,
+			);
+			name = ixml;
+			path = "../libupnp-1.6.2/ixml";
+			sourceTree = SOURCE_ROOT;
+		};
+		3C93E17C1157E7BA00BA351B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E17E1157E7BA00BA351B /* ixml.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		3C93E1811157E7BA00BA351B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E1831157E7BA00BA351B /* attr.c */,
+				3C93E1841157E7BA00BA351B /* document.c */,
+				3C93E1851157E7BA00BA351B /* element.c */,
+				3C93E1861157E7BA00BA351B /* inc */,
+				3C93E18A1157E7BA00BA351B /* ixml.c */,
+				3C93E18B1157E7BA00BA351B /* ixmlmembuf.c */,
+				3C93E18C1157E7BA00BA351B /* ixmlparser.c */,
+				3C93E18D1157E7BA00BA351B /* namedNodeMap.c */,
+				3C93E18E1157E7BA00BA351B /* node.c */,
+				3C93E18F1157E7BA00BA351B /* nodeList.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		3C93E1861157E7BA00BA351B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E1881157E7BA00BA351B /* ixmlmembuf.h */,
+				3C93E1891157E7BA00BA351B /* ixmlparser.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		3C93E5031158241E00BA351B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C93E4B8115823F600BA351B /* IOKit.framework */,
+				3C93E5B21158242D00BA351B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* TestOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "TestOSX" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestOSX;
+			productInstallPath = "$(HOME)/bin";
+			productName = TestOSX;
+			productReference = 8DD76F6C0486A84900D96B5E /* TestOSX */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "TestOSX" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* TestOSX */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* TestOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C93DF091157D98F00BA351B /* TestVP.cpp in Sources */,
+				3C93DFF91157E69100BA351B /* CstiCallList.cpp in Sources */,
+				3C93DFFA1157E69100BA351B /* CstiCallListItem.cpp in Sources */,
+				3C93DFFB1157E69100BA351B /* CstiCoreRequest.cpp in Sources */,
+				3C93DFFC1157E69100BA351B /* CstiCoreResponse.cpp in Sources */,
+				3C93DFFD1157E69100BA351B /* CstiCoreService.cpp in Sources */,
+				3C93DFFE1157E69100BA351B /* CstiDirectoryResolveResult.cpp in Sources */,
+				3C93DFFF1157E69100BA351B /* CstiList.cpp in Sources */,
+				3C93E0001157E69100BA351B /* CstiListItem.cpp in Sources */,
+				3C93E0011157E69100BA351B /* CstiMessageList.cpp in Sources */,
+				3C93E0021157E69100BA351B /* CstiMessageListItem.cpp in Sources */,
+				3C93E0031157E69100BA351B /* CstiMessageRequest.cpp in Sources */,
+				3C93E0041157E69100BA351B /* CstiMessageResponse.cpp in Sources */,
+				3C93E0051157E69100BA351B /* CstiMessageService.cpp in Sources */,
+				3C93E0061157E69100BA351B /* CstiPhoneNumberList.cpp in Sources */,
+				3C93E0071157E69100BA351B /* CstiPhoneNumberListItem.cpp in Sources */,
+				3C93E0081157E69100BA351B /* CstiSettingItem.cpp in Sources */,
+				3C93E0091157E69100BA351B /* CstiSettingList.cpp in Sources */,
+				3C93E00A1157E69100BA351B /* CstiStateNotifyRequest.cpp in Sources */,
+				3C93E00B1157E69100BA351B /* CstiStateNotifyResponse.cpp in Sources */,
+				3C93E00C1157E69100BA351B /* CstiStateNotifyService.cpp in Sources */,
+				3C93E00D1157E69100BA351B /* CstiString.cpp in Sources */,
+				3C93E00E1157E69100BA351B /* CstiUserAccountInfo.cpp in Sources */,
+				3C93E00F1157E69100BA351B /* CstiVPService.cpp in Sources */,
+				3C93E0101157E69100BA351B /* CstiVPServiceRequest.cpp in Sources */,
+				3C93E1051157E6D100BA351B /* cmPropertyNameDef.cpp in Sources */,
+				3C93E1061157E6D100BA351B /* CstiAppEvent.cpp in Sources */,
+				3C93E1071157E6D100BA351B /* CstiErrorEvent.cpp in Sources */,
+				3C93E1081157E6D100BA351B /* CstiEvent.cpp in Sources */,
+				3C93E1091157E6D100BA351B /* CstiExtendedEvent.cpp in Sources */,
+				3C93E10A1157E6D100BA351B /* CstiOsTask.cpp in Sources */,
+				3C93E10B1157E6D100BA351B /* CstiOsTaskMQ.cpp in Sources */,
+				3C93E10C1157E6D100BA351B /* CstiOsTaskP.cpp in Sources */,
+				3C93E10D1157E6D100BA351B /* CstiTask.cpp in Sources */,
+				3C93E10E1157E6D100BA351B /* CstiUniversalEvent.cpp in Sources */,
+				3C93E1111157E6D100BA351B /* stiAssert.cpp in Sources */,
+				3C93E1121157E6D100BA351B /* stiDebugTools.cpp in Sources */,
+				3C93E1131157E6D100BA351B /* stiError.c in Sources */,
+				3C93E1141157E6D100BA351B /* stiHeap.cpp in Sources */,
+				3C93E1151157E6D100BA351B /* stiSystemDefaults.cpp in Sources */,
+				3C93E1171157E6D100BA351B /* stiTools.cpp in Sources */,
+				3C93E1181157E6D100BA351B /* stiTrace.cpp in Sources */,
+				3C93E1191157E6D100BA351B /* stiUdpTrace.cpp in Sources */,
+				3C93E1351157E6D100BA351B /* CstiHTTPService.cpp in Sources */,
+				3C93E1361157E6D100BA351B /* CstiHTTPTask.cpp in Sources */,
+				3C93E1371157E6D100BA351B /* CstiURLResolve.cpp in Sources */,
+				3C93E1391157E6D100BA351B /* stiHTTPServiceTools.cpp in Sources */,
+				3C93E13A1157E6D100BA351B /* stiSSLTools.cpp in Sources */,
+				3C93E13F1157E6D100BA351B /* stiOS.c in Sources */,
+				3C93E1411157E6D100BA351B /* stiOSLinux.c in Sources */,
+				3C93E1421157E6D100BA351B /* stiOSLinuxCond.c in Sources */,
+				3C93E1441157E6D100BA351B /* stiOSLinuxMsg.c in Sources */,
+				3C93E1451157E6D100BA351B /* stiOSLinuxMutex.c in Sources */,
+				3C93E1461157E6D100BA351B /* stiOSMacOSXNet.c in Sources */,
+				3C93E1471157E6D100BA351B /* stiOSLinuxPipe.c in Sources */,
+				3C93E1481157E6D100BA351B /* stiOSLinuxSem.c in Sources */,
+				3C93E1491157E6D100BA351B /* stiOSLinuxTask.c in Sources */,
+				3C93E14A1157E6D100BA351B /* stiOSLinuxWd.c in Sources */,
+				3C93E14B1157E6D100BA351B /* stiOSMsg.c in Sources */,
+				3C93E14C1157E6D100BA351B /* stiOSNet.c in Sources */,
+				3C93E14D1157E6D100BA351B /* stiOSSem.c in Sources */,
+				3C93E1591157E6D100BA351B /* CstiPropertySender.cpp in Sources */,
+				3C93E15C1157E6D100BA351B /* PropertyListItem.cpp in Sources */,
+				3C93E15D1157E6D100BA351B /* PropertyManager.cpp in Sources */,
+				3C93E15F1157E6D100BA351B /* XMLList.cpp in Sources */,
+				3C93E1601157E6D100BA351B /* XMLListItem.cpp in Sources */,
+				3C93E1611157E6D100BA351B /* XMLManager.cpp in Sources */,
+				3C93E1621157E6D100BA351B /* XMLValue.cpp in Sources */,
+				3C93E1C31157E7BA00BA351B /* attr.c in Sources */,
+				3C93E1C41157E7BA00BA351B /* document.c in Sources */,
+				3C93E1C51157E7BA00BA351B /* element.c in Sources */,
+				3C93E1C61157E7BA00BA351B /* ixml.c in Sources */,
+				3C93E1C71157E7BA00BA351B /* ixmlmembuf.c in Sources */,
+				3C93E1C81157E7BA00BA351B /* ixmlparser.c in Sources */,
+				3C93E1C91157E7BA00BA351B /* namedNodeMap.c in Sources */,
+				3C93E1CA1157E7BA00BA351B /* node.c in Sources */,
+				3C93E1CB1157E7BA00BA351B /* nodeList.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = TestOSX;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = TestOSX;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = ../../smiConfig.h;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "../**";
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = ../../smiConfig.h;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "../**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "TestOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "TestOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

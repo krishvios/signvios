@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickerTableViewCell" rowHeight="60" id="3UJ-5H-F21" customClass="PickerTableViewCell" customModule="ntouch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="559" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3UJ-5H-F21" id="AcZ-Nq-FQV">
+                <rect key="frame" x="0.0" y="0.0" width="559" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zxL-oW-R0Z">
+                        <rect key="frame" x="20" y="8" width="519" height="83.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vej-mP-whK" customClass="RoundedImageView" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="12" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="gWc-EH-sxf"/>
+                                    <constraint firstAttribute="width" secondItem="Vej-mP-whK" secondAttribute="height" multiplier="1:1" id="q9o-dV-Nap"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rWU-MU-ybs">
+                                <rect key="frame" x="75" y="0.0" width="444" height="83.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-eh-lSU">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsk-UK-V1Y">
+                                        <rect key="frame" x="0.0" y="42" width="50" height="41.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zxL-oW-R0Z" firstAttribute="leading" secondItem="AcZ-Nq-FQV" secondAttribute="leadingMargin" id="U1L-50-tQF"/>
+                    <constraint firstItem="zxL-oW-R0Z" firstAttribute="top" secondItem="AcZ-Nq-FQV" secondAttribute="top" constant="8" id="j5E-aE-AKV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zxL-oW-R0Z" secondAttribute="trailing" id="vSd-Lj-IUK"/>
+                    <constraint firstAttribute="bottom" secondItem="zxL-oW-R0Z" secondAttribute="bottom" constant="8" id="z6e-kI-Sto"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="Fsk-UK-V1Y" id="GUM-Dr-trB"/>
+                <outlet property="nameLabel" destination="eu9-eh-lSU" id="8yu-ya-w6h"/>
+                <outlet property="photo" destination="Vej-mP-whK" id="VSG-sO-feg"/>
+            </connections>
+            <point key="canvasLocation" x="200.80000000000001" y="273.4632683658171"/>
+        </tableViewCell>
+    </objects>
+</document>

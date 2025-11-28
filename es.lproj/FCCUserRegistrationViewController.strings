@@ -1,0 +1,15 @@
+/* Class = "UILabel"; text = "First Last"; ObjectID = "41"; */
+"41.text" = "First Last";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "42"; */
+"42.text" = "Nombre:";
+
+/* Class = "UILabel"; text = "Local Number:"; ObjectID = "43"; */
+"43.text" = "Número local:";
+
+/* Class = "UILabel"; text = "(000) 111-2222"; ObjectID = "44"; */
+"44.text" = "(000) 111-2222";
+
+/* Class = "UILabel"; text = "VRS providers are required to collect customer data for the FCC User Registration Database.  Our records indicate that we are missing your birthday and the last four digits of your social security number.  Failing to provide the required data, or supplying inaccurate data, will result in being denied video relay service.  If you do not have a social security number, please call Customer Care."; ObjectID = "57"; */
+"57.text" = "Los proveedores de VRS deben recopilar datos de clientes para la base de datos de registro de usuarios de la FCC. Nuestros registros indican que nos falta su cumpleaños y los últimos cuatro dígitos de su número de seguro social. Si no proporciona los datos requeridos o proporciona datos inexactos, se le negará el servicio de retransmisión de video. Si no tiene un número de seguro social, llame a Atención al cliente.";
+

@@ -1,0 +1,36 @@
+/* Class = "UILabel"; text = "0:00"; ObjectID = "275-Vk-p4x"; */
+"275-Vk-p4x.text" = "0:00";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "ITj-xD-w1Q"; */
+"ITj-xD-w1Q.text" = "Título";
+
+/* Class = "UITableViewController"; title = "SignMail"; ObjectID = "jro-vz-gE9"; */
+"jro-vz-gE9.title" = "SignMail";
+
+/* Class = "UINavigationController"; title = "SignMail"; ObjectID = "kEh-pq-ESL"; */
+"kEh-pq-ESL.title" = "SignMail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "NWD-hS-ohh"; */
+"NWD-hS-ohh.text" = "Título";
+
+/* Class = "UILabel"; text = "Date can be extrememly long and wrap to a second line"; ObjectID = "pxH-Cs-8zb"; */
+"pxH-Cs-8zb.text" = "Date can be extrememly long and wrap to a second line";
+
+/* Class = "UITextView"; text = "0"; ObjectID = "Ste-gQ-NPb"; */
+"Ste-gQ-NPb.text" = "0";
+
+/* Class = "UINavigationItem"; title = "SignMail"; ObjectID = "T9T-jb-Zx8"; */
+"T9T-jb-Zx8.title" = "SignMail";
+
+/* Class = "UISegmentedControl"; uUm-zf-nb1.segmentTitles[0] = "SignMail"; ObjectID = "uUm-zf-nb1"; */
+"uUm-zf-nb1.segmentTitles[0]" = "SignMail";
+
+/* Class = "UISegmentedControl"; uUm-zf-nb1.segmentTitles[1] = "Video Center"; ObjectID = "uUm-zf-nb1"; */
+"uUm-zf-nb1.segmentTitles[1]" = "Centro de Videos";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "zIM-n4-BbR"; */
+"zIM-n4-BbR.text" = "Subtitular";
+
+/* Class = "UITabBarItem"; title = "SignMail"; ObjectID = "ZnB-4C-qdi"; */
+"ZnB-4C-qdi.title" = "SignMail";
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="YelpResultTableViewCell" rowHeight="114" id="Wfw-Zi-ulK" customClass="YelpResultTableViewCell" customModule="ntouch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+            <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wfw-Zi-ulK" id="WxO-HM-w66">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YelpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="owq-Xa-9wV">
+                        <rect key="frame" x="20" y="13" width="62" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="L8z-Qp-Os4"/>
+                            <constraint firstAttribute="width" constant="62" id="TDZ-7q-SpT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="31"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cip-Qn-Xi5">
+                        <rect key="frame" x="97" y="13" width="189.5" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="8E0-Co-NpQ">
+                        <rect key="frame" x="97" y="35.5" width="268" height="15"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fkp-Cg-MxJ">
+                                <rect key="frame" x="0.0" y="0.0" width="86" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="11Z-92-0vw"/>
+                                    <constraint firstAttribute="width" constant="86" id="yyo-r9-Yci"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 review" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5Z-l3-rNd">
+                                <rect key="frame" x="93" y="0.0" width="175" height="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u5Z-l3-rNd" secondAttribute="bottom" id="few-su-2wG"/>
+                            <constraint firstItem="u5Z-l3-rNd" firstAttribute="top" secondItem="8E0-Co-NpQ" secondAttribute="top" id="rpn-Xn-9P6"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 fake street" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ye-dw-MGo">
+                        <rect key="frame" x="97" y="52.5" width="262" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="food" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwt-YP-ftK">
+                        <rect key="frame" x="97" y="75" width="268" height="19.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <color key="textColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="99 mi" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52k-yO-Ezn">
+                        <rect key="frame" x="291.5" y="13" width="73.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73.5" id="XFP-6L-rlw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vwt-YP-ftK" firstAttribute="trailing" secondItem="WxO-HM-w66" secondAttribute="trailing" constant="-10" id="1Uf-bX-Uyv"/>
+                    <constraint firstItem="cip-Qn-Xi5" firstAttribute="leading" secondItem="owq-Xa-9wV" secondAttribute="trailing" constant="15" id="4bh-Jd-N6y"/>
+                    <constraint firstItem="8E0-Co-NpQ" firstAttribute="top" secondItem="cip-Qn-Xi5" secondAttribute="bottom" constant="2" id="7Ki-uB-18v"/>
+                    <constraint firstItem="7ye-dw-MGo" firstAttribute="leading" secondItem="owq-Xa-9wV" secondAttribute="trailing" constant="15" id="B27-OD-vgg"/>
+                    <constraint firstAttribute="trailing" secondItem="8E0-Co-NpQ" secondAttribute="trailing" constant="10" id="B87-nK-iiT"/>
+                    <constraint firstItem="52k-yO-Ezn" firstAttribute="top" secondItem="owq-Xa-9wV" secondAttribute="top" id="FzU-OM-n6R"/>
+                    <constraint firstItem="Vwt-YP-ftK" firstAttribute="top" secondItem="7ye-dw-MGo" secondAttribute="bottom" constant="2" id="JJv-Mw-yaK"/>
+                    <constraint firstItem="owq-Xa-9wV" firstAttribute="top" secondItem="WxO-HM-w66" secondAttribute="top" constant="13" id="L5v-vk-Jzi"/>
+                    <constraint firstAttribute="trailing" secondItem="7ye-dw-MGo" secondAttribute="trailing" constant="16" id="Rjb-vu-vjU"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vwt-YP-ftK" secondAttribute="bottom" constant="10" id="Zn0-lE-McM"/>
+                    <constraint firstItem="Vwt-YP-ftK" firstAttribute="leading" secondItem="owq-Xa-9wV" secondAttribute="trailing" constant="15" id="but-Cc-SFz"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="52k-yO-Ezn" secondAttribute="bottom" constant="34" id="d6C-N7-gr8"/>
+                    <constraint firstItem="52k-yO-Ezn" firstAttribute="leading" secondItem="cip-Qn-Xi5" secondAttribute="trailing" constant="5" id="dGB-Hu-Ioh"/>
+                    <constraint firstItem="8E0-Co-NpQ" firstAttribute="leading" secondItem="owq-Xa-9wV" secondAttribute="trailing" constant="15" id="dVG-O1-c1a"/>
+                    <constraint firstItem="7ye-dw-MGo" firstAttribute="top" secondItem="8E0-Co-NpQ" secondAttribute="bottom" constant="2" id="m6u-UL-AFu"/>
+                    <constraint firstAttribute="trailing" secondItem="52k-yO-Ezn" secondAttribute="trailing" constant="10" id="mMw-CW-WfF"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="owq-Xa-9wV" secondAttribute="bottom" constant="28" id="tsm-u9-1aV"/>
+                    <constraint firstItem="owq-Xa-9wV" firstAttribute="leading" secondItem="WxO-HM-w66" secondAttribute="leading" constant="20" id="xt3-LJ-Mts"/>
+                    <constraint firstItem="cip-Qn-Xi5" firstAttribute="top" secondItem="owq-Xa-9wV" secondAttribute="top" id="z8e-Oo-CzS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="7ye-dw-MGo" id="7oe-1Q-xg7"/>
+                <outlet property="categories" destination="Vwt-YP-ftK" id="1OI-wr-wMm"/>
+                <outlet property="cellImageView" destination="owq-Xa-9wV" id="7I1-09-dAS"/>
+                <outlet property="distance" destination="52k-yO-Ezn" id="bAg-nf-pPc"/>
+                <outlet property="name" destination="cip-Qn-Xi5" id="h4R-rr-0IA"/>
+                <outlet property="rating" destination="Fkp-Cg-MxJ" id="gst-2K-jHJ"/>
+                <outlet property="reviewCount" destination="u5Z-l3-rNd" id="gVe-nc-036"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="-31.473214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="YelpIcon.png" width="16" height="16"/>
+    </resources>
+</document>

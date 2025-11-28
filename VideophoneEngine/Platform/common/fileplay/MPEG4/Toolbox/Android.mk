@@ -1,0 +1,13 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_CPP_EXTENSION := .cpp
+LOCAL_MODULE    := mpeg4_toolbox
+LOCAL_SRC_FILES := SMMemory.cpp
+
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../Toolbox
+
+LOCAL_STATIC_LIBRARIES := 
+
+include $(BUILD_STATIC_LIBRARY)

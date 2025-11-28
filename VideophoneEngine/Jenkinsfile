@@ -1,0 +1,46 @@
+def msbuild = 'UNSET'
+
+pipeline {
+	agent none
+	stages {
+		stage('Build Endpoints') {
+			parallel {
+				stage('Windows Pipeline') {
+					agent {
+						node {
+							label 'windows'
+							customWorkspace 'workspace\\VPE-Checks'
+						}
+					}
+					steps {
+						script {
+							def toolname = tool name: 'MSBuild - VS2022', type: 'hudson.plugins.msbuild.MsBuildInstallation'
+							msbuild = '"' + toolname + '"'
+						}
+						bat "echo %COMPUTERNAME%"
+						bat "${msbuild} /t:Clean /p:Configuration=Debug Tests/WindowsTests.sln"
+						bat 'xcopy /Y Tests\\WindowsTests\\packages.config . && "%NUGET%" restore Tests\\WindowsTests.sln && "%NUGET%" restore VideophoneEngine.vcxproj -SolutionDirectory ..\\BuildAll'
+						bat "${msbuild} /t:Build /p:Configuration=Debug Tests/WindowsTests.sln"
+						bat 'cd Tests\\WindowsTests\\bin\\Win32\\Debug\\ && WindowsTests.exe'
+					}
+					post {
+						success {
+							xunit (
+								thresholds: [skipped(failureThreshold: '0'), failed(failureThreshold: '0')],
+								tools: [
+									CppUnit(
+										deleteOutputFiles: true,
+										failIfNotNew: true,
+										pattern: 'Tests\\WindowsTests\\bin\\Win32\\Debug\\VideophoneEngineTests.xml',
+										skipNoTestFiles: true,
+										stopProcessingIfError: true
+									)
+								]
+							)
+						}
+					}
+				}
+			}
+		}
+	}
+}

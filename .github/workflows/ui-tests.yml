@@ -1,0 +1,791 @@
+name: UI Tests
+
+on:
+  push:
+    branches:
+      - master
+      - release/*
+
+jobs:
+  ntouch-iOS-Smoke-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Smoke Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"SmokeTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Smoke Test Results
+
+  ntouch-iOS-Account-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Account Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"AccountTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Account Test Results
+
+  ntouch-iOS-Add-Call-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Add Call Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"AddCallTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Add Call Test Results
+
+  # ntouch-iOS-Agreements-tests:
+  #   runs-on: ntouch-iOS-auto
+  #   timeout-minutes: 120
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #         submodules: recursive
+  #         token: ${{ secrets.REPO_ACCESS_TOKEN }}
+  #     - name: Build and run iOS Agreements Tests
+  #       run: |
+  #         ./copyUserConfig.sh
+  #         ./setupFastlane.sh
+  #         bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"AgreementsTests" number_of_retries:0
+  #     - name: Create Test Report
+  #       if: always()
+  #       run: |
+  #         bundle exec fastlane test_report
+  #     - name: Publish Test Results
+  #       uses: EnricoMi/publish-unit-test-result-action/macos@v2
+  #       if: always()
+  #       with:
+  #         files: |
+  #           fastlane/test_output/report.junit
+  #         check_name: iOS Agreements Test Results
+
+  ntouch-iOS-Block-Caller-Id-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Block Caller Id Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"BlockCallerIdTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Block Caller Id Test Results
+
+  ntouch-iOS-Blocked-List-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Blocked List Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"BlockedListTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Blocked List Test Results
+  
+  ntouch-iOS-Call-History-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Call History Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"CallHistoryTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Call History Test Results
+
+  ntouch-iOS-Call-Transfer-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Call Transfer Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"CallTransferTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Call Transfer Test Results
+
+  ntouch-iOS-Call-Waiting-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Call Waiting Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"CallWaitingTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Call Waiting Test Results
+
+  ntouch-iOS-CFilePlay-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS CFilePlay Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"CFilePlayTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS CFilePlay Test Results
+  
+  ntouch-iOS-Contact-Photo-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Contact Photo Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"ContactPhotoTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Contact Photo Test Results
+
+  ntouch-iOS-Contacts-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Contacts Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"ContactsTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Contacts Test Results
+
+  ntouch-iOS-Encryption-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Encryption Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"EncryptionTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Encryption Test Results
+
+  ntouch-iOS-Enhanced-SignMail-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Enhanced SignMail Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"EnhancedSignMailTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Enhanced SignMail Test Results
+
+  ntouch-iOS-ENS-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS ENS Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"ENSTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS ENS Test Results
+
+  ntouch-iOS-Favorites-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Favorites Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"FavoritesUITests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Favorites Test Results
+
+  ntouch-iOS-Hearing-Interface-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Hearing Interface Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"HearingInterfaceTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Hearing Interface Test Results
+
+  ntouch-iOS-P2P-Call-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS P2P Call Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"P2PCallTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS P2P Call Test Results
+
+  ntouch-iOS-PSMG-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS PSMG Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"PSMGTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS PSMG Test Results
+
+  ntouch-iOS-Search-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Search Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"SearchTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Search Test Results
+
+  ntouch-iOS-Settings-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Settings Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"SettingsTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Settings Test Results
+
+  ntouch-iOS-Share-Contact-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Share Contact Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"ShareContactTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Share Contact Test Results
+
+  ntouch-iOS-Share-Text-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Share Text Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"ShareTextTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Share Text Test Results
+
+  ntouch-iOS-SignMail-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS SignMail Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"SignMailTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS SignMail Test Results
+
+  ntouch-iOS-Single-Device-Calling-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Single Device Calling Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"SingleDeviceCallingTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Single Device Calling Test Results
+
+  ntouch-iOS-Spanish-Feature-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Spanish Feature Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"SpanishFeatureTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Spanish Feature Test Results
+
+  ntouch-iOS-Tunneling-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Tunneling Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"TunnelingTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Tunneling Test Results
+
+  ntouch-iOS-UI-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS UI Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"UiTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS UI Test Results
+
+  ntouch-iOS-Video-Center-tests:
+    runs-on: ntouch-iOS-auto
+    timeout-minutes: 120
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Video Center Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"VideoCenterTests" number_of_retries:0
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Video Center Test Results

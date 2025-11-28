@@ -1,0 +1,159 @@
+default_platform :ios
+xcversion(version: "~> 16.0")
+
+# # Import various keys from environment variables sent by the CI
+# if ENV["KEYCHAIN_PATH"]
+# 	unlock_keychain(
+# 		path: ENV["KEYCHAIN_PATH"],
+# 		password: ENV["KEYCHAIN_PASSWORD"],
+# 		add_to_search_list: :replace
+# 	)
+# end
+
+# if ENV["APP_STORE_KEY_FILE"]
+# 	app_store_connect_api_key(
+# 		key_id: ENV["APP_STORE_KEY_ID"],
+# 		key_filepath: ENV["APP_STORE_KEY_FILE"],
+# 		issuer_id: ENV["APP_STORE_KEY_ISSUER"],
+# 		in_house: false
+# 	)
+# end
+
+# app_identifiers = [
+# 	["com.sorenson.ntouch", "ntouch"], 
+# 	["com.sorenson.ntouch.directoryextension", "ntouch CallDirectoryExtension"],
+# 	["com.sorenson.ntouch.IntentsExtension", "ntouch IntentsExtension"], 
+# 	["com.sorenson.ntouch.NotificationExtension", "ntouch NotificationExtension"], 
+# 	["com.sorenson.ntouch.recent-calls-extension", "ntouch RecentCallsExtension"], 
+# 	["com.sorenson.ntouch.watchapp", "ntouch WatchApp"], 
+# 	["com.sorenson.ntouch.watchapp.watchextension", "ntouch WatchExtension"]
+# ]
+
+# desc "Builds the project and produces an .ipa."
+# lane :build do |options|
+# 	# The default build number
+# 	build_number = "0"
+# 	if options[:build_number]
+# 		build_number = options[:build_number]
+# 	end
+
+# 	version_number = get_version_number(target: "ntouch")
+# 	increment_build_number(build_number: "#{version_number}.#{build_number}")
+
+# 	build_app(
+# 		scheme: "ntouch",
+# 		clean: true,
+# 		output_name: "ntouch",
+# 		skip_package_ipa: true,
+# 		archive_path: "products/ntouch.xcarchive",
+# 		derived_data_path: "build",
+# 		buildlog_path: "logs",
+# 		xcargs: "-allowProvisioningUpdates"
+# 	)
+# end
+
+desc "Run test suite"
+lane :test do |options|
+	destination = nil
+	test_suite = nil
+	clean = true
+	number_of_retries = 1
+
+	if options[:destination]
+		destination = options[:destination]
+	end
+	if options[:test_suite]
+		test_suite = options[:test_suite]
+	end
+	if options[:number_of_retries]
+      number_of_retries = options[:number_of_retries]
+  end
+
+	sh("hostname")
+	Dir.chdir ".." do
+		# Disable Radvision logging to avoid issues with tests
+		sh("sed -i '' 's/#undef  RV_NOLOG/\\/\\/#undef  RV_NOLOG/' VideophoneEngine/smiConfig.h")
+	end
+	run_tests(
+		project: 'ntouch.xcodeproj',
+		number_of_retries: number_of_retries,
+		scheme: "ntouch",
+		clean: clean,
+		configuration: "Debug",
+		test_without_building: false,
+		only_testing: ["ntouch-UITests/" + test_suite],
+		result_bundle: true,
+		output_types: "junit",
+		derived_data_path: "build",
+		fail_build: true,
+		xcargs: "-allowProvisioningUpdates",
+		destination: destination
+	)
+	sh("hostname")
+end
+
+desc "Create a test report"
+lane :test_report do
+	sh("brew install xctesthtmlreport")
+	Dir.chdir "test_output" do
+		sh("xchtmlreport -j -r ntouch.xcresult")
+	end
+end
+
+# desc "Uploads the app to TestFlight"
+# lane :distribute_testflight do |options|
+# 	refresh_provisioning(appstore: true)
+
+# 	changelog = ""
+# 	if options[:changes]
+# 		changelog = changelog_from_git_commits(between: options[:changes])
+# 	end
+
+# 	provisioning_profiles = {}
+# 	for (identifier, name) in app_identifiers do
+# 		provisioning_profiles[identifier] = "#{name} AppStore"
+# 	end
+
+# 	build_app(
+# 		scheme: "ntouch",
+# 		skip_build_archive: true,
+# 		archive_path: "products/ntouch.xcarchive",
+# 		output_directory: "products_appstore",
+# 		output_name: "ntouch.ipa",
+# 		derived_data_path: "build",
+# 		export_options: {
+# 			teamID: "QYD2FRC8G5",
+# 			method: "app-store",
+# 			provisioningProfiles: provisioning_profiles,
+# 			manageAppVersionAndBuildNumber: false
+# 		}
+# 	)
+
+# 	upload_to_testflight(ipa: "products_appstore/ntouch.ipa", changelog: "Changelog:\n" + changelog)
+# 	download_dsyms(app_identifier: "com.sorenson.ntouch", wait_for_dsym_processing: true, version: get_version_number(target: "ntouch"), build_number: get_build_number)
+# 	upload_symbols_to_crashlytics(binary_path: ENV['UPLOAD_SYMBOLS_PATH'])
+# end
+
+# desc "Recreates all the provisioning profiles"
+# lane :refresh_provisioning do |options|
+# 	for (identifier, name) in app_identifiers do
+# 		if options[:adhoc]
+# 			get_provisioning_profile(
+# 				adhoc: true,
+# 				force: true,
+# 				app_identifier: identifier,
+# 				provisioning_name: "#{name} AdHoc",
+# 				cert_id: "FARJWHKMUS",
+# 			)
+# 		end
+
+# 		if options[:appstore]
+# 			get_provisioning_profile(
+# 				force: true,
+# 				app_identifier: identifier,
+# 				provisioning_name: "#{name} AppStore",
+# 				cert_id: "FARJWHKMUS",
+# 			)
+# 		end
+# 	end
+# end

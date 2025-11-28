@@ -1,0 +1,9 @@
+[submodule "VideophoneEngine"]
+	path = VideophoneEngine
+	url = ../VideophoneEngine.git
+[submodule "UICommon"]
+	path = UICommon
+	url = ../UICommon.git
+[submodule "Boost"]
+	path = Boost
+	url = https://github.com/sorenson-eng/Boost.git

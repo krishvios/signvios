@@ -1,0 +1,17 @@
+DESCRIPTION:
+Gives responses for changing a messages viewed and paused state.
+
+RULE: 
+XPathPattern=/MessageRequest/MessageViewed
+InnerResponseText=
+<MessageViewedResult Result="OK" />
+
+RULE: 
+XPathPattern=/MessageRequest/MessageListItemEdit
+InnerResponseText=
+<MessageListItemEdit Result="OK" />
+
+DelayMsec=000
+IsDelayOnly=false
+HttpResponseErrorCode=0
+IsRunOnce=false

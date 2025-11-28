@@ -1,0 +1,90 @@
+/* Class = "UIViewController"; title = "Dial"; ObjectID = "4ir-6j-Ton"; */
+"4ir-6j-Ton.title" = "Marcar";
+
+/* Class = "UITabBarItem"; title = "Dial"; ObjectID = "d0V-aL-vgD"; */
+"d0V-aL-vgD.title" = "Marcar";
+
+/* Class = "UIButton"; accessibilityLabel = "Backspace"; ObjectID = "DiM-gc-Ynx"; */
+"DiM-gc-Ynx.accessibilityLabel" = "Backspace";
+
+/* Class = "UIButton"; normalTitle = "Add Contact"; ObjectID = "Dkg-HB-vrX"; */
+"Dkg-HB-vrX.normalTitle" = "Agregar Contacto";
+
+/* Class = "UIButton"; accessibilityLabel = "9"; ObjectID = "HoT-lO-y1I"; */
+"HoT-lO-y1I.accessibilityLabel" = "9";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "HoT-lO-y1I"; */
+"HoT-lO-y1I.normalTitle" = "9";
+
+/* Class = "UIButton"; accessibilityLabel = "5"; ObjectID = "ieg-7U-zb3"; */
+"ieg-7U-zb3.accessibilityLabel" = "5";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "ieg-7U-zb3"; */
+"ieg-7U-zb3.normalTitle" = "5";
+
+/* Class = "UITextView"; text = "Service Outage"; ObjectID = "jH0-ZG-yxW"; */
+"jH0-ZG-yxW.text" = "Service Outage";
+
+/* Class = "UIButton"; accessibilityLabel = "1"; ObjectID = "JPj-hI-E4S"; */
+"JPj-hI-E4S.accessibilityLabel" = "1";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "JPj-hI-E4S"; */
+"JPj-hI-E4S.normalTitle" = "1";
+
+/* Class = "UIButton"; accessibilityLabel = "2"; ObjectID = "lwc-IY-1Fc"; */
+"lwc-IY-1Fc.accessibilityLabel" = "2";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "lwc-IY-1Fc"; */
+"lwc-IY-1Fc.normalTitle" = "2";
+
+/* Class = "UIButton"; accessibilityLabel = "Call"; ObjectID = "mFS-nU-7g7"; */
+"mFS-nU-7g7.accessibilityLabel" = "Call";
+
+/* Class = "UITextView"; text = "Phone Number"; ObjectID = "Ngl-aa-k65"; */
+"Ngl-aa-k65.text" = "Número de Teléfono";
+
+/* Class = "UIButton"; accessibilityLabel = "6"; ObjectID = "oY0-8c-REW"; */
+"oY0-8c-REW.accessibilityLabel" = "6";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "oY0-8c-REW"; */
+"oY0-8c-REW.normalTitle" = "6";
+
+/* Class = "UIButton"; accessibilityLabel = "0"; ObjectID = "q64-L0-qqv"; */
+"q64-L0-qqv.accessibilityLabel" = "0";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "q64-L0-qqv"; */
+"q64-L0-qqv.normalTitle" = "0";
+
+/* Class = "UIButton"; accessibilityLabel = "8"; ObjectID = "R5o-hP-Ls0"; */
+"R5o-hP-Ls0.accessibilityLabel" = "8";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "R5o-hP-Ls0"; */
+"R5o-hP-Ls0.normalTitle" = "8";
+
+/* Class = "UIButton"; accessibilityLabel = "3"; ObjectID = "vaj-jt-T3a"; */
+"vaj-jt-T3a.accessibilityLabel" = "3";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "vaj-jt-T3a"; */
+"vaj-jt-T3a.normalTitle" = "3";
+
+/* Class = "UIButton"; accessibilityLabel = "Search"; ObjectID = "VtL-Mm-VCN"; */
+"VtL-Mm-VCN.accessibilityLabel" = "Search";
+
+/* Class = "UILabel"; accessibilityLabel = "Phone Number"; ObjectID = "VUe-br-MXz"; */
+"VUe-br-MXz.accessibilityLabel" = "Phone Number";
+
+/* Class = "UILabel"; text = "1 (932) 333-1234"; ObjectID = "VUe-br-MXz"; */
+"VUe-br-MXz.text" = "1 (932) 333-1234";
+
+/* Class = "UIButton"; accessibilityLabel = "7"; ObjectID = "zix-RF-Hpt"; */
+"zix-RF-Hpt.accessibilityLabel" = "7";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "zix-RF-Hpt"; */
+"zix-RF-Hpt.normalTitle" = "7";
+
+/* Class = "UIButton"; accessibilityLabel = "4"; ObjectID = "zP1-Hx-2Mu"; */
+"zP1-Hx-2Mu.accessibilityLabel" = "4";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "zP1-Hx-2Mu"; */
+"zP1-Hx-2Mu.normalTitle" = "4";
+

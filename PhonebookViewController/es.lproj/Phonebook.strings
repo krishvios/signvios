@@ -1,0 +1,12 @@
+/* Class = "UINavigationItem"; title = "Contacts"; ObjectID = "2f3-JI-dXJ"; */
+"2f3-JI-dXJ.title" = "Contactos";
+
+/* Class = "UITabBarItem"; title = "Contacts"; ObjectID = "7Qj-Lt-Vrc"; */
+"7Qj-Lt-Vrc.title" = "Contactos";
+
+/* Class = "UISegmentedControl"; TSn-8P-7RF.segmentTitles[0] = "Favorites"; ObjectID = "TSn-8P-7RF"; */
+"TSn-8P-7RF.segmentTitles[0]" = "Favoritos";
+
+/* Class = "UISegmentedControl"; TSn-8P-7RF.segmentTitles[1] = "Contacts"; ObjectID = "TSn-8P-7RF"; */
+"TSn-8P-7RF.segmentTitles[1]" = "Contactos";
+

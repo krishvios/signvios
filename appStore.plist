@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>teamID</key>
+	<string>QYD2FRC8G5</string>
+	<key>method</key>
+	<string>app-store</string>
+	<key>uploadSymbols</key>
+	<true/>
+	<key>uploadBitcode</key>
+	<true/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.sorenson.ntouch</key>
+		<string>ntouch AppStore</string>
+		<key>com.sorenson.ntouch.directoryextension</key>
+		<string>ntouch CallDirectoryExtension AppStore</string>
+		<key>com.sorenson.ntouch.IntentsExtension</key>
+		<string>ntouch IntentsExtension AppStore</string>
+		<key>com.sorenson.ntouch.NotificationExtension</key>
+		<string>ntouch NotificationExtension AppStore</string>
+		<key>com.sorenson.ntouch.recent-calls-extension</key>
+		<string>ntouch RecentCallsExtension AppStore</string>
+		<key>com.sorenson.ntouch.watchapp</key>
+		<string>ntouch WatchApp AppStore</string>
+		<key>com.sorenson.ntouch.watchapp.watchextension</key>
+		<string>ntouch WatchExtension AppStore</string>
+	</dict>
+	<key>compileBitcode</key>
+	<false/>
+</dict>
+</plist>

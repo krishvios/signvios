@@ -1,0 +1,22 @@
+/* 
+  InfoPlist.strings
+  ntouch
+
+  Created by Kevin Selman on 2/2/22.
+  Copyright © 2022 Sorenson Communications. All rights reserved.
+*/
+
+//
+// Privacy Usage Dialogs
+//
+
+NSBluetoothAlwaysUsageDescription = "For use with Sorenson Pulse device.";
+NSBluetoothPeripheralUsageDescription = "For use with Bluetooth audio devices.";
+NSCameraUsageDescription = "For use with video calls.";
+NSContactsUsageDescription = "Place calls to device contacts.";
+NSLocationUsageDescription = "Performing local searches using Yelp";
+NSLocationWhenInUseUsageDescription = "If you need emergency/911 services, ntouch can help send them to your device location.";
+NSMicrophoneUsageDescription = "For use with VCO and audio calls.";
+NSPhotoLibraryAddUsageDescription = "Allows you to choose a photo from your device to set as your personal photo.";
+NSPhotoLibraryUsageDescription = "Select contact photo from Library.";
+

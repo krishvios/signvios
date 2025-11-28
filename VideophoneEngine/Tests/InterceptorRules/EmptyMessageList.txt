@@ -1,0 +1,33 @@
+FILEPATH:C:\Work\Interceptor\Tests\EmptyMessageList.txt
+FILEDATE:1/27/2012 11:41:58 PM
+FILEPATH:C:\Work\Interceptor\Tests\EmptyMessageList.txt
+FILEDATE:1/27/2012 9:14:39 PM
+DESCRIPTION:
+Empty Message list
+
+RULE:
+XPathPattern=/StateNotifyRequest/Heartbeat
+OuterResponseText=
+InnerResponseText=
+<HeartbeatResult Result="OK" />
+<TimeGetResult Result="OK">
+<Time>03/01/2012 19:06:46</Time>
+</TimeGetResult>
+<PublicIPGetResult Result="OK">
+<PublicIP>10.20.231.13</PublicIP>
+</PublicIPGetResult>
+<NewMessageReceived />
+
+RULE:
+XPathPattern=/MessageRequest/MessageListGet
+OuterResponseText=
+InnerResponseText=
+<MessageListGetResult Result="OK">
+    <MessageList BaseIndex="0" Count="0" SignMailCount="0" SignMailLimit="100" SortField="Time" SortDir="DESC">
+    </MessageList>
+</MessageListGetResult>
+
+DelayMsec=000
+IsDelayOnly=false
+HttpResponseErrorCode=0
+IsRunOnce=false

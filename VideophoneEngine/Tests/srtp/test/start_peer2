@@ -1,0 +1,6 @@
+#!/bin/bash
+
+prog=../../../../build-debug/subprojects/VideophoneEngine/Tests/srtptest
+
+$prog --local-port 10000 --local-key "NWBoGOD4KwCZ6MsvvONt9cmHid7CYmdTxYrWmCrI" --remote-host 127.0.0.1 --remote-port 9000 --remote-key "v4yQP2QdOxtMJru5c6oNBueCmS0ynYvn9lJrgRim"
+

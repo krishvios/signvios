@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsTests", "WindowsTests\WindowsTests.vcxproj", "{9B761448-AE21-4614-8DF3-B57F62C5E9BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideophoneEngine", "..\VideophoneEngine.vcxproj", "{7859F7D8-2080-4A14-A638-0432280C211D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B761448-AE21-4614-8DF3-B57F62C5E9BA}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B761448-AE21-4614-8DF3-B57F62C5E9BA}.Debug|x86.Build.0 = Debug|Win32
+		{9B761448-AE21-4614-8DF3-B57F62C5E9BA}.Release|x86.ActiveCfg = Release|Win32
+		{9B761448-AE21-4614-8DF3-B57F62C5E9BA}.Release|x86.Build.0 = Release|Win32
+		{7859F7D8-2080-4A14-A638-0432280C211D}.Debug|x86.ActiveCfg = Debug|Win32
+		{7859F7D8-2080-4A14-A638-0432280C211D}.Debug|x86.Build.0 = Debug|Win32
+		{7859F7D8-2080-4A14-A638-0432280C211D}.Release|x86.ActiveCfg = Release|Win32
+		{7859F7D8-2080-4A14-A638-0432280C211D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD1495DD-A33F-4D70-9775-884FA870A52A}
+	EndGlobalSection
+EndGlobal

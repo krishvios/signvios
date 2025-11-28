@@ -1,0 +1,57 @@
+//
+//  UserConfig.swift
+//  ntouch
+//
+//  Created by Mikael Leppanen on 1/25/16.
+//  Copyright © 2016 Sorenson Communications. All rights reserved.
+//
+
+import Foundation
+
+func UserConfig()-> Dictionary<String,String> {
+	let data = [
+		"Phone":"19323887000",
+		"Password":"1234",
+		"Name":"AutoiOS",
+		"Orientation":"Portrait", // Portrait, Right, Left
+		
+		"accountAltNum": "19323887001",
+		"addCallAltNum": "19323887002",
+		"bciAltNum": "19323887015",
+		"blockedListAltNum": "19323887003",
+		"blockedListAltNum2": "19323887016",
+		"cfilePlayAltNum": "19323887004",
+		"contactsAltNum": "19323887005",
+		"enhancedSignMailAltNum": "19323887006",
+		"favoritesAltNum": "19323887007",
+		"hearingInterfaceAltNum": "19323887008",
+		"psmgAltNum": "19323887009",
+		"settingsAltNum": "19323887010",
+		"shareTextAltNum": "19323887012",
+		"signMailAltNum": "19323887013",
+		"signMailAltNum2": "19323887011",
+		"smokeTestsAltNum": "19323887014",
+		
+		"CoreSystem":"C",
+		"CoreAPIHost": "10.20.129.21",
+		
+		"nvpNum": "17328725678",
+		"nvpIP": "10.10.160.107",
+		
+		"npcNum": "16326724000",
+		"npcIP": "10.20.133.109",
+		
+		"andNum": "18323882000",
+		"andIP": "10.20.7.222",
+		
+		"iosNum": "19324672000",
+		"iosIP": "10.20.7.220",
+		
+		"macNum": "15326221000",
+		"macIP": "10.20.178.18",
+		
+		"vpBlockedCallerID_Num": "16667778900",
+		"vpBlockedCallerID_IP": "10.20.133.209"
+	]
+	return data
+}

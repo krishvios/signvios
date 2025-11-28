@@ -1,0 +1,431 @@
+/*!
+\mainpage The Videophone Engine Application Programing Interface
+
+A videophone endpoint is comprised of three layers: the user interface, the videophone engine and the platform.
+
+\dot
+digraph Layers
+{
+	"User Interface" [shape=box width=2 URL="\ref UserInterfaceLayer"]
+	"Videophone Engine" [shape=box width=2 URL="\ref VideophoneEngineLayer"]
+	"Platform" [shape=box width=2 URL="\ref PlatformLayer"]
+
+	"User Interface" -> "Videophone Engine"
+	"User Interface" -> "Platform"
+	"Videophone Engine" -> "User Interface"
+	"Videophone Engine" -> "Platform"
+	"Platform" -> "User Interface"
+	"Platform" -> "Videophone Engine"
+}
+\enddot
+
+\ref UserInterfaceLayer
+
+The user interface layer is what is exposed to the user.  This layer will directly interact with the videophone engine and the platform layer to accomplish different tasks.
+
+\ref VideophoneEngineLayer
+
+The videophone engine layer is the layer that performs tasks that are common to most endpoints such as placing calls, receiving calls, holding and resuming calls, performing updates and sending or receiving data from Enterprise Services.
+
+\ref PlatformLayer
+
+The platform layer is a collection of classes used to represent common components that are expected to be present on most platforms.
+
+*/
+
+/*!
+\page InitializingVE Initializing the Videophone Engine
+
+The first thing that an application must do before using the videophone engine is to create an instance of the engine.  This is done by calling the CreateVideophonEngine function.
+
+\code
+IstiVideophoneEngine *pVE;
+
+pVE = ::CreateVideophoneEngine ("Sorenson Videophone VP", "VP-200", "1.0.0", false, true);
+\endcode
+
+Calling this function will create an instance of the videohpone engine and initialize the platform layer.
+
+The next step is to set the callback function.  Through the callback method the engine will send messages to the application when certain states are reached or events occur.
+
+\code
+pVE->AppNotifyCallBackSet (EngineCallBack, (size_t)this);
+\endcode 
+
+On devices where the network is managed through the applications user interface the network should be started.
+
+\code
+hResult = pVE->NetworkStartup ();
+\endcode
+
+Startup the services.  The services include the threads that communicate with Enterpise Services and the threads that are used to place and receive calls.  One can start up the threads that communicate with Enterprise Services separately from the the conferencing threads by calling ServicesStartup.  This is typically used during a setup wizard when communication with Enterprise Services is needed but the videophone is not ready for conferencing.  To startup all of the services, one calls Startup.
+
+\code
+hResult = pVE->ServicesStartup ();
+\endcode
+
+\code
+hResult = pVE->Startup ();
+\endcode
+
+Before the application exits it should call DestroyVideophoneEngine.  This will properly shutdown and terminate all threads and free all used memory allocated by the videophone engine.
+
+\code
+DestroyVideophoneEngine (pVE);
+pVE = NULL;
+\endcode
+
+*/
+
+/*!
+\page UserInterfaceLayer The User Interface Layer
+*/
+
+
+/*!
+\page VideophoneEngineLayer The Videophone Engine Layer
+
+\dot
+digraph CallStates
+{
+	size="12!,17"
+	node [shape=box]
+	subgraph
+	{
+		rank=same
+		CstiCCI [URL="\ref CstiCCI"];
+		IstiVideophoneEngine [URL="\ref IstiVideophoneEngine"]
+	}
+	PropertyManager
+	CstiConferenceManager
+	CstiCoreService
+	CstiStateNotifyService
+	CstiHTTPTask
+	CstiMessageService
+	CstiRadVisionAdapter
+	CstiH323Manager
+	CstiSipManager
+	subgraph
+	{
+		rank=same
+		CstiFilePlay
+		IstiMessageViewer [URL="\ref IstiMessageViewer"]
+	}
+	CstiCallStorage
+	subgraph
+	{
+		rank=same
+		CstiAudioRecord
+		CstiAudioPlayback
+		CstiVideoRecord
+		CstiVideoPlayback
+	}
+	subgraph
+	{
+		rank=same
+		CstiCall
+		IstiCall
+	}
+	
+	CstiCCI -> IstiVideophoneEngine [style=dashed]
+	CstiCCI -> CstiConferenceManager 
+	CstiCCI -> CstiCoreService
+	CstiCCI -> CstiStateNotifyService
+	CstiCCI -> CstiMessageService
+	CstiCCI -> CstiFilePlay
+	CstiCCI -> PropertyManager
+
+	CstiCoreService -> CstiHTTPTask
+	CstiStateNotifyService -> CstiHTTPTask
+	CstiMessageService -> CstiHTTPTask
+
+	CstiConferenceManager -> CstiRadVisionAdapter
+	CstiConferenceManager -> CstiCallStorage
+
+	CstiRadVisionAdapter -> CstiH323Manager
+	CstiRadVisionAdapter -> CstiSipManager
+
+	CstiH323Manager -> CstiCallStorage
+	CstiSipManager -> CstiCallStorage
+
+	CstiFilePlay -> IstiMessageViewer [style=dashed]
+
+	CstiH323Manager -> CstiH323AudioRecordChannel -> CstiAudioRecord
+	CstiH323Manager -> CstiH323AudioPlaybackChannel -> CstiAudioPlayback
+	CstiH323Manager -> CstiH323VideoRecordChannel -> CstiVideoRecord
+	CstiH323Manager -> CstiH323VideoPlaybackChannel -> CstiVideoPlayback
+
+	CstiSipManager -> CstiSipAudioRecordChannel -> CstiAudioRecord
+	CstiSipManager -> CstiSipAudioPlaybackChannel -> CstiAudioPlayback
+	CstiSipManager -> CstiSipVideoRecordChannel -> CstiVideoRecord
+	CstiSipManager -> CstiSipVideoPlaybackChannel -> CstiVideoPlayback
+
+	CstiCallStorage -> CstiCall
+
+	CstiCall -> IstiCall [style=dashed]
+}
+\enddot
+
+\section UsingTheEngine Using the Videophone Engine
+
+- \subpage InitializingVE
+- \subpage HowToMakeACall
+- \subpage AnsweringACall 
+- \subpage HowToHoldResume 
+- \subpage CommunicatingWithCore
+- \subpage CheckingForUpdates
+- \subpage ManagingContacts
+- \subpage ManagingBlockList
+- \subpage PlayingAndRecordingVideoMessages
+- \subpage UsingThePropertyManager
+- \subpage HandlingErrors
+- \subpage CallStates
+- \subpage PushingPhoneProperties
+*/
+
+
+/*!
+\page PlatformLayer The Platform Layer
+*/
+
+
+/*!
+\page HowToMakeACall How to Place and End a Call
+
+*/
+
+
+/*!
+\page AnsweringACall How to Answer a Call
+
+*/
+
+
+/*!
+\page HowToHoldResume How to Hold and Resume a Call
+
+*/
+
+/*!
+\page CommunicatingWithCore Communicating with Enterprise Services
+
+*/
+
+/*!
+\page CheckingForUpdates Checking for Updates
+
+*/
+
+/*!
+\page ManagingContacts Managing Contacts
+
+*/
+
+/*!
+\page ManagingBlockList Managing the Block List
+
+*/
+
+/*!
+\page PlayingAndRecordingVideoMessages Playing and Recording Video Messages
+
+\dot
+digraph FilePlay
+{
+	size="12!,17"
+	node [shape=box]
+	subgraph
+	{
+		rank=same
+		CFilePlay [URL="\ref CFilePlay"];
+		IstiMessageViewer [URL="\ref IstiMessageViewer"]
+	}
+
+	CFilePlay -> IstiMessageViewer [style=dashed]
+	CFilePlay -> MPEG4 
+
+	subgraph
+	{
+		rank=same
+		CServerDataHandler
+		CDataTransferHandler
+	}
+
+	MPEG4->CServerDataHandler
+	CServerDataHandler->CVMCircularBuffer
+	CServerDataHandler->CDataTransferHandler
+	CDataTransferHandler->CVMCircularBuffer
+}
+\enddot
+
+*/
+
+/*!
+\page UsingThePropertyManager Using the Property Manager
+
+*/
+
+
+/*!
+\page HandlingErrors Handling Errors
+
+*/
+
+/*!
+\page CallStates Call States
+
+\dot
+digraph CallStates
+{
+	size="12!,17"
+
+	node [ shape=rect, style=filled ];
+	
+	//
+	// Idle
+	//
+	"Idle" [ color="pink"];
+	
+	Idle -> "Connecting:Resolving" [color="blue"];
+	Idle -> "Connecting:Calling" [color="blue"];
+	Idle -> "Connecting:WaitingForLocalResponse" [color="red"]
+
+	//
+	// Connecting
+	//
+	"Connecting:Resolving" [ color="pink" ];
+	"Connecting:Calling" [color = "pink" ];
+	"Connecting:WaitingForRemoteResponse" [ color = "pink" ];
+	"Connecting:Answering" [color = "pink"];
+	"Connecting:WaitingForLocalResponse" [color = "pink"];
+	
+	"Connecting:Resolving" -> "Disconnecting:None" [color="blue"]
+//	"Connecting:Resolving" -> "Disconnected:None" [color="blue"]
+	"Connecting:Resolving" -> "Connecting:Calling" [color="blue"]
+	"Connecting:Calling" -> "Connecting:WaitingForRemoteResponse" [color="blue"]
+	"Connecting:Calling" -> "Disconnecting:None" [color="blue"]
+	"Connecting:Calling" -> "Disconnecting:LeaveMessage" [color="blue"]
+	"Connecting:WaitingForRemoteResponse" -> "Connected:Establishing" [color="blue"]
+	"Connecting:WaitingForRemoteResponse" -> "Disconnecting:None" [color="blue"]
+	"Connecting:WaitingForRemoteResponse" -> "Disconnecting:LeaveMessage" [color="blue"]
+	"Connecting:WaitingForLocalResponse" -> "Connecting:Answering" [color="red"]
+	"Connecting:Answering" -> "Connected:Establishing" [color="red"]
+	"Connecting:Answering" -> "Disconnecting:None" [color="red"]
+	"Connecting:WaitingForLocalResponse" -> "Disconnecting:None" [color="red"]
+
+	//
+	// Connected
+	//
+	"Connected:Establishing" [ color = "pink" ];
+	"Connected:Conferencing" [ color = "green" ];
+	"Connected:Negotiating Local Hold" [ color = "green" ];
+	"Connected:Negotiating Remote Hold" [ color = "green" ];
+	
+	"Connected:Establishing" -> "Connected:Conferencing";
+	"Connected:Establishing" -> "Disconnecting:None"
+	"Connected:Establishing" -> "Disconnecting:LeaveMessage" [color="blue"]
+	"Connected:Conferencing" -> "Disconnecting:None"
+	"Connected:Conferencing" -> "Connected:Negotiating Local Hold"
+	"Connected:Conferencing" -> "Connected:Negotiating Remote Hold"
+//	"Connected:Conferencing" -> "Connecting:WaitingForRemoteResponse"
+	"Connected:Negotiating Local Hold" -> "Hold Local:Held"
+	"Connected:Negotiating Remote Hold" -> "Hold Remote:Held"
+
+	//
+	// Hold local
+	//
+	"Hold Local:Held" [ color = "green" ];
+	"Hold Local:Negotiating Remote Hold" [ color = "green" ];
+	"Hold Local:Negotiating Local Resume" [ color = "green" ];
+	
+	"Hold Local:Held" -> "Hold Local:Negotiating Local Resume"
+	"Hold Local:Held" -> "Hold Local:Negotiating Remote Hold"
+//	"Hold Local:Held" -> "Connecting:WaitingForRemoteResponse"
+	"Hold Local:Held" -> "Disconnecting:None"
+	"Hold Local:Negotiating Remote Hold" -> "Hold Both:Held"
+	"Hold Local:Negotiating Local Resume" -> "Connected:Conferencing"
+
+	//
+	// Hold Remote
+	//
+	"Hold Remote:Held" [color = "green" ];
+	"Hold Remote:Negotiating Local Hold" [color = "green" ];
+	"Hold Remote:Negotiating Remote Resume" [color = "green"];
+	
+	"Hold Remote:Held" -> "Hold Remote:Negotiating Remote Resume"
+	"Hold Remote:Held" -> "Hold Remote:Negotiating Local Hold"
+//	"Hold Remote:Held" -> "Connecting:WaitingForRemoteResponse"
+	"Hold Remote:Held" -> "Disconnecting:None"
+	"Hold Remote:Negotiating Local Hold" -> "Hold Both:Held"
+	"Hold Remote:Negotiating Remote Resume" -> "Connected:Conferencing"
+
+	//
+	// Hold Both
+	//
+	"Hold Both:Held" [color = "green" ];
+	"Hold Both:Negotiating Local Resume" [color = "green" ];
+	"Hold Both:Negotiating Remote Resume" [color = "green" ];
+	
+	"Hold Both:Held" -> "Hold Both:Negotiating Local Resume"
+	"Hold Both:Negotiating Local Resume" -> "Hold Remote:Held"
+	"Hold Both:Held" -> "Hold Both:Negotiating Remote Resume"
+	"Hold Both:Negotiating Remote Resume" -> "Hold Local:Held"
+	"Hold Both:Held" -> "Disconnecting:None"
+
+	//
+	// Disconnecting
+	//
+	"Disconnecting:LeaveMessage" [ color = "pink" ];
+	
+	"Disconnecting:None" -> "Disconnected:None"
+	"Disconnecting:LeaveMessage" -> "Disconnected:LeaveMessage" [color="blue"]
+
+	//
+	// Disconnected
+	//
+	"Disconnected:LeaveMessage" [ color = "pink"];
+	"Disconnected:MessageComplete" [ color = "pink" ];
+	
+	"Disconnected:None"
+	"Disconnected:LeaveMessage" -> "Disconnected:MessageComplete" [color="blue"]
+
+}
+\enddot
+
+*/
+
+/*!
+\page PushingPhoneProperties How the Vidoephone Engine pushes phone settings to core
+
+Some phone settings are pushed to core in a specific manner to:
+- help avoid race conditions that can occur if core is trying to send the property to the videophone
+- have the videophone retrieve the setting after resetting to defaults
+- have the videophone push the setting to core when core does not have the setting
+
+The procedure:
+
+-# Read the property from the local property table
+-# If the property is present then do nothing more.
+-# If the property is not present then
+	-# Store the default value non-persistently in the property table
+	-# Request the property from core.
+	-# If the property is not found in core then push the property to core.  Otherwise, store the value from core.
+
+This procedure assumes two things:
+- If core wants the videophone to have a new property it will be signaled through an event
+- Properties are not stored in the default property table and thus not present after resetting to factory defaults
+
+*/
+
+/*!
+\defgroup VideophoneEngineLayer Videophone Engine Layer
+The videophone engine layer is a collection of classes that a user interface
+can use to make calls, manage contact lists, block calls, play or record video messages,
+communicate with core services, etc.
+*/
+
+/*!
+\defgroup VideophoneEngineMessage Videophone Engine Messages
+\ingroup VideophoneEngineLayer
+These messages are sent from the engine to the User Interface Layer.
+*/

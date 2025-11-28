@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "Information Needed"; ObjectID = "4"; */
+"4.text" = "Información Necesaria";
+
+/* Class = "UIButton"; normalTitle = "Call Later"; ObjectID = "6"; */
+"6.normalTitle" = "Llama Más Tarde";
+
+/* Class = "UITextView"; text = "Please call Sorenson Customer Care to update your information. "; ObjectID = "8"; */
+"8.text" = "Llame a Atención al Cliente de Sorenson para actualizar su información. ";
+
+/* Class = "UIButton"; normalTitle = "Call Customer Care"; ObjectID = "9"; */
+"9.normalTitle" = "Llamar a Atención al Cliente";
+

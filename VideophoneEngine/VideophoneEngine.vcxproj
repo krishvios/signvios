@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7859F7D8-2080-4A14-A638-0432280C211D}</ProjectGuid>
+    <RootNamespace>VideophoneEngine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>.\Libraries\observer_ptr;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>.\Libraries\observer_ptr;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\Libraries\win32\posix\dirent;.\pm;.\Libraries\Linux\libupnp-1.6.2\ixml\inc;.\Libraries\Linux\libupnp-1.6.2\ixml\src\inc;.\http;.\common;.\os;.\xmlmgr;.;.\BlockListMgr;.\CallHistoryMgr;.\Platform\ntouch-pc;.\Platform;.\cci;.\ConfMgr\DataTasks\DataCommon;.\ConfMgr\DataTasks\VideoPlayback;.\ConfMgr\DataTasks\VideoRecord;.\ConfMgr\DataTasks\AudioPlayback;.\ConfMgr\DataTasks\AudioRecord;.\ConfMgr\DataTasks\TextPlayback;.\ConfMgr\Session;.\ConfMgr\DataTasks\TextRecord;.\ConfMgr;.\ConfMgr\Nat;.\contacts;.\vrcl;.\Platform\common\callback;.\Platform\common\fileplay;.\Platform\common\fileplay\MPEG4;.\Platform\common\fileplay\MPEG4\Atoms;.\Platform\common\fileplay\MPEG4\Toolbox;.\Platform\common\wireless;.\ImageMgr;.\MsgMgr;.\RingGroupMgr;.\Libraries\win32\x265\include;.\Libraries\win32\x264\include;.\Platform\common\video;.\Platform\common\audio;.\Platform\common\network;.\Platform\common\platform;.\Platform\common;.\Libraries\win32\ffmpeg\include;.\Libraries\win32;.\RegistrationMgr;.\Serialization;.\services;.\services\Conference;.\services\Core;.\services\Message;.\services\RemoteLogger;.\services\ServiceOutage;.\services\StateNotify;.\UserAccountMgr;.\EndpointMonitor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_STRUCT_TIMESPEC;NOMINMAX;WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;PTW32_STATIC_LIB;UPNP_STATIC_LIB;APPLICATION=APP_NTOUCH_PC;RV_DNS_ENHANCED_FEATURES_SUPPORT;TSC_WINDOWS;TSC_REDUNDANCY;TSC_UIP;TSC_PCAP_CAPTURE;TSC_MONITOR;TSC_DDT;TSC_OPENSSL;VIDEX_EXPORT;AUDEX_EXPORT;_DEBUG;VPE_RV_LOGGING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>28182;28193;6001;6011;6031;6054;6246;6262;6293;6297;6313;6320;6322;6324;6330;6336;6340;6385;6386;6387;</DisableSpecificWarnings>
+      <ForcedIncludeFiles>winsock2.h;$(ProjectDir).\smiConfig.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatSpecificWarningsAsErrors>4457;</TreatSpecificWarningsAsErrors>
+      <EnablePREfast>false</EnablePREfast>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)VideophoneEngine.lib</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\Libraries\win32\posix\dirent;.\pm;.\Libraries\Linux\libupnp-1.6.2\ixml\inc;.\Libraries\Linux\libupnp-1.6.2\ixml\src\inc;.\http;.\common;.\os;.\xmlmgr;.;.\BlockListMgr;.\CallHistoryMgr;.\Platform\ntouch-pc;.\Platform;.\cci;.\ConfMgr\DataTasks\DataCommon;.\ConfMgr\DataTasks\VideoPlayback;.\ConfMgr\DataTasks\VideoRecord;.\ConfMgr\DataTasks\AudioPlayback;.\ConfMgr\DataTasks\AudioRecord;.\ConfMgr\DataTasks\TextPlayback;.\ConfMgr\Session;.\ConfMgr\DataTasks\TextRecord;.\ConfMgr;.\ConfMgr\Nat;.\contacts;.\vrcl;.\Platform\common\callback;.\Platform\common\fileplay;.\Platform\common\fileplay\MPEG4;.\Platform\common\fileplay\MPEG4\Atoms;.\Platform\common\fileplay\MPEG4\Toolbox;.\Platform\common\wireless;.\ImageMgr;.\MsgMgr;.\RingGroupMgr;.\Libraries\win32\x265\include;.\Libraries\win32\x264\include;.\Platform\common\video;.\Platform\common\audio;.\Platform\common\network;.\Platform\common\platform;.\Platform\common;.\Libraries\win32\ffmpeg\include;.\Libraries\win32;.\RegistrationMgr;.\Serialization;.\services;.\services\Conference;.\services\Core;.\services\Message;.\services\RemoteLogger;.\services\ServiceOutage;.\services\StateNotify;.\UserAccountMgr;.\EndpointMonitor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_STRUCT_TIMESPEC;NOMINMAX;WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;PTW32_STATIC_LIB;UPNP_STATIC_LIB;APPLICATION=APP_NTOUCH_PC;RV_DNS_ENHANCED_FEATURES_SUPPORT;TSC_WINDOWS;TSC_REDUNDANCY;TSC_UIP;TSC_PCAP_CAPTURE;TSC_MONITOR;TSC_DDT;TSC_OPENSSL;VIDEX_EXPORT;AUDEX_EXPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <ForcedIncludeFiles>winsock2.h;$(ProjectDir).\smiConfig.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatSpecificWarningsAsErrors>4457;</TreatSpecificWarningsAsErrors>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)VideophoneEngine.lib</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryItem.cpp" />
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryList.cpp" />
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryManager.cpp" />
+    <ClCompile Include="CallHistoryMgr\CstiCallHistoryMgrResponse.cpp" />
+    <ClCompile Include="common\CstiEventQueue.cpp" />
+    <ClCompile Include="common\CstiEventTimer.cpp" />
+    <ClCompile Include="common\CstiIpAddress.cpp" />
+    <ClCompile Include="common\CstiPhoneNumberValidator.cpp" />
+    <ClCompile Include="common\CstiRegEx.cpp" />
+    <ClCompile Include="common\CstiString.cpp" />
+    <ClCompile Include="common\CstiTimer.cpp" />
+    <ClCompile Include="common\CstiWatchDog.cpp" />
+    <ClCompile Include="common\FileEncryption.cpp" />
+    <ClCompile Include="common\OptString.cpp" />
+    <ClCompile Include="common\Random.cpp" />
+    <ClCompile Include="common\SelfSignedCert.cpp" />
+    <ClCompile Include="common\stiBase64.cpp" />
+    <ClCompile Include="common\stiMessages.cpp" />
+    <ClCompile Include="common\stiRemoteLogEvent.cpp" />
+    <ClCompile Include="common\TimeAccumulator.cpp" />
+    <ClCompile Include="ConfMgr\CstiSipResolver.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiAesEncryptionContext.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiRtpSession.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\DtlsContext.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RtpSender.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RtxSender.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\SDESKey.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\utf8EncodeDecode.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlayback.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlaybackRead.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\TextRecord\CstiTextRecord.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\PlaybackFlowControl.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\Packetization.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\RateHistoryManager.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\RecordFlowControl.cpp" />
+    <ClCompile Include="ConfMgr\DhvClient.cpp" />
+    <ClCompile Include="ConfMgr\Session\CstiSdp.cpp" />
+    <ClCompile Include="ConfMgr\Session\stiPayloadTypes.cpp" />
+    <ClCompile Include="ConfMgr\Sip\ContactHeader.cpp" />
+    <ClCompile Include="ConfMgr\Sip\Message.cpp" />
+    <ClCompile Include="ConfMgr\Sip\Transaction.cpp" />
+    <ClCompile Include="ConfMgr\stiSipStatistics.cpp" />
+    <ClCompile Include="contacts\FavoriteList.cpp" />
+    <ClCompile Include="EndpointMonitor\EndpointMonitor.cpp" />
+    <ClCompile Include="http\SslCertificateHandler.cpp" />
+    <ClCompile Include="ImageMgr\CstiImageDownloadService.cpp" />
+    <ClCompile Include="ImageMgr\CstiImageManager.cpp" />
+    <ClCompile Include="Libraries\win32\posix\dirent\dirent.c" />
+    <ClCompile Include="Platform\common\audio\BaseAudioInput.cpp" />
+    <ClCompile Include="Platform\common\audio\BaseAudioOutput.cpp" />
+    <ClCompile Include="Platform\common\audio\CstiAudioBridge.cpp" />
+    <ClCompile Include="Platform\common\audio\FFAudioDecoder.cpp" />
+    <ClCompile Include="Platform\common\fileplay\CFilePlay.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\Atom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\CttsAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\DinfAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\DrefAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\ElstAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\FtypAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\FullAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\HdlrAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\HmhdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MdatAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MdhdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MdiaAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MinfAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MoovAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\MvhdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\NmhdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\SmhdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StblAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StcoAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StscAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StsdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StssAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\StszAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\SttsAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\TkhdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\TrakAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\TrefAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UdtaAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UnknownAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UrlAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\UrnAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Atoms\VmhdAtom.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CDataTransferHandler.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CFileDataHandler.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CServerDataHandler.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\CVMCircularBuffer.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\DataHandler.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Common.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Handle.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Media.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Movie.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Optimize.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Parser.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Signals.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\MP4Track.cpp" />
+    <ClCompile Include="Platform\common\fileplay\MPEG4\Toolbox\SMMemory.cpp" />
+    <ClCompile Include="Platform\common\network\BaseNetwork.cpp" />
+    <ClCompile Include="Platform\common\platform\BasePlatform.cpp" />
+    <ClCompile Include="Platform\common\video\BaseVideoInput.cpp" />
+    <ClCompile Include="Platform\common\video\BaseVideoOutput.cpp" />
+    <ClCompile Include="Platform\common\video\CstiX265Encoder.cpp" />
+    <ClCompile Include="Platform\common\video\VideoPlaybackFrame.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\AvVideoDecoder.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\AvWorkerFrame.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiNativeAudioLink.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiNativeVideoLink.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiNetwork.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\IntelVideoDecoder.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\IntelWorkerFrame.cpp" />
+    <ClCompile Include="pm\CstiPropertySender.cpp" />
+    <ClCompile Include="pm\PropertyListItem.cpp" />
+    <ClCompile Include="pm\PropertyManager.cpp" />
+    <ClCompile Include="common\cmPropertyNameDef.cpp" />
+    <ClCompile Include="common\CstiEvent.cpp" />
+    <ClCompile Include="common\CstiExtendedEvent.cpp" />
+    <ClCompile Include="common\CstiHostNameResolver.cpp" />
+    <ClCompile Include="common\CstiItemId.cpp" />
+    <ClCompile Include="common\CstiOsTask.cpp" />
+    <ClCompile Include="common\CstiOsTaskMQ.cpp" />
+    <ClCompile Include="common\CstiTask.cpp" />
+    <ClCompile Include="common\CstiUniversalEvent.cpp" />
+    <ClCompile Include="common\stiAssert.cpp" />
+    <ClCompile Include="common\stiDebugTools.cpp" />
+    <ClCompile Include="common\stiError.cpp" />
+    <ClCompile Include="common\stiGUID.cpp" />
+    <ClCompile Include="common\stiSysUtilizationInfo.cpp" />
+    <ClCompile Include="common\stiTools.cpp" />
+    <ClCompile Include="common\stiTrace.cpp" />
+    <ClCompile Include="http\CstiHTTPService.cpp" />
+    <ClCompile Include="http\CstiHTTPTask.cpp" />
+    <ClCompile Include="http\CstiURLResolve.cpp" />
+    <ClCompile Include="http\stiHTTPServiceTools.cpp" />
+    <ClCompile Include="http\stiSSLTools.cpp" />
+    <ClCompile Include="os\stiOS.cpp" />
+    <ClCompile Include="os\stiOSWin32.cpp" />
+    <ClCompile Include="os\stiOSWin32Msg.cpp" />
+    <ClCompile Include="os\stiOSWin32Mutex.cpp" />
+    <ClCompile Include="os\stiOSWin32Net.cpp" />
+    <ClCompile Include="os\stiOSWin32Signal.cpp" />
+    <ClCompile Include="os\stiOSWin32Task.cpp" />
+    <ClCompile Include="os\stiOSWin32Wd.cpp" />
+    <ClCompile Include="RegistrationMgr\CstiRegistrationList.cpp" />
+    <ClCompile Include="RegistrationMgr\CstiRegistrationListItem.cpp" />
+    <ClCompile Include="RegistrationMgr\CstiRegistrationManager.cpp" />
+    <ClCompile Include="Serialization\JsonFileSerializer.cpp" />
+    <ClCompile Include="services\Conference\CstiConferenceRequest.cpp" />
+    <ClCompile Include="services\Conference\CstiConferenceResponse.cpp" />
+    <ClCompile Include="services\Conference\CstiConferenceService.cpp" />
+    <ClCompile Include="services\Core\CstiCallList.cpp" />
+    <ClCompile Include="services\Core\CstiCallListItem.cpp" />
+    <ClCompile Include="services\Core\CstiContactList.cpp" />
+    <ClCompile Include="services\Core\CstiContactListItem.cpp" />
+    <ClCompile Include="services\Core\CstiCoreRequest.cpp" />
+    <ClCompile Include="services\Core\CstiCoreResponse.cpp" />
+    <ClCompile Include="services\Core\CstiCoreService.cpp" />
+    <ClCompile Include="services\Core\CstiDirectoryResolveResult.cpp" />
+    <ClCompile Include="services\Core\CstiFavorite.cpp" />
+    <ClCompile Include="services\Core\CstiPhoneNumberList.cpp" />
+    <ClCompile Include="services\Core\CstiPhoneNumberListItem.cpp" />
+    <ClCompile Include="services\Core\OfflineCore.cpp" />
+    <ClCompile Include="services\CstiList.cpp" />
+    <ClCompile Include="services\CstiListItem.cpp" />
+    <ClCompile Include="services\CstiVPService.cpp" />
+    <ClCompile Include="services\CstiVPServiceRequest.cpp" />
+    <ClCompile Include="services\CstiVPServiceResponse.cpp" />
+    <ClCompile Include="services\Message\CstiMessageList.cpp" />
+    <ClCompile Include="services\Message\CstiMessageListItem.cpp" />
+    <ClCompile Include="services\Message\CstiMessageRequest.cpp" />
+    <ClCompile Include="services\Message\CstiMessageResponse.cpp" />
+    <ClCompile Include="services\Message\CstiMessageService.cpp" />
+    <ClCompile Include="services\RemoteLogger\CstiRemoteLoggerRequest.cpp" />
+    <ClCompile Include="services\RemoteLogger\CstiRemoteLoggerService.cpp" />
+    <ClCompile Include="services\ServiceOutage\ServiceOutageClient.cpp" />
+    <ClCompile Include="services\StateNotify\CstiStateNotifyRequest.cpp" />
+    <ClCompile Include="services\StateNotify\CstiStateNotifyResponse.cpp" />
+    <ClCompile Include="services\StateNotify\CstiStateNotifyService.cpp" />
+    <ClCompile Include="UserAccountMgr\UserAccountListItem.cpp" />
+    <ClCompile Include="UserAccountMgr\UserAccountManager.cpp" />
+    <ClCompile Include="vrcl\ExternalConferenceData.cpp" />
+    <ClCompile Include="xmlmgr\XMLList.cpp" />
+    <ClCompile Include="xmlmgr\XMLListItem.cpp" />
+    <ClCompile Include="xmlmgr\XMLManager.cpp" />
+    <ClCompile Include="xmlmgr\XMLValue.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiAudibleRinger.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiAudioInput.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiAudioOutput.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiVideoOutput.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiPlatformInterface.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiStatusLED.cpp" />
+    <ClCompile Include="Platform\ntouch-pc\CstiVideoInput.cpp" />
+    <ClCompile Include="Platform\common\video\CstiFFMpegContext.cpp" />
+    <ClCompile Include="Platform\common\video\CstiFFMpegDecoder.cpp" />
+    <ClCompile Include="Platform\common\video\CstiVideoEncoder.cpp" />
+    <ClCompile Include="Platform\common\video\CstiX264Encoder.cpp" />
+    <ClCompile Include="cci\CstiCCI.cpp" />
+    <ClCompile Include="ConfMgr\CstiCall.cpp" />
+    <ClCompile Include="ConfMgr\CstiCallInfo.cpp" />
+    <ClCompile Include="ConfMgr\CstiCallStorage.cpp" />
+    <ClCompile Include="ConfMgr\CstiConferenceManager.cpp" />
+    <ClCompile Include="ConfMgr\CstiProtocolCall.cpp" />
+    <ClCompile Include="ConfMgr\CstiProtocolManager.cpp" />
+    <ClCompile Include="ConfMgr\CstiRoutingAddress.cpp" />
+    <ClCompile Include="ConfMgr\CstiSipCall.cpp" />
+    <ClCompile Include="ConfMgr\CstiSipCallLeg.cpp" />
+    <ClCompile Include="ConfMgr\CstiSipManager.cpp" />
+    <ClCompile Include="ConfMgr\CstiSipRegistration.cpp" />
+    <ClCompile Include="ConfMgr\CstiTunnelManager.cpp" />
+    <ClCompile Include="ConfMgr\stiSipTools.cpp" />
+    <ClCompile Include="ConfMgr\stiSystemInfo.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlayback.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlaybackRead.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\AudioRecord\CstiAudioRecord.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiDataTaskCommonP.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiRtpHeaderLength.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\CstiSyncManager.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RTCPFlowControl.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\DataCommon\RtpPayloadAddon.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlayback.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlaybackRead.cpp" />
+    <ClCompile Include="ConfMgr\DataTasks\VideoRecord\CstiVideoRecord.cpp" />
+    <ClCompile Include="ConfMgr\Nat\CstiIceManager.cpp" />
+    <ClCompile Include="ConfMgr\Nat\CstiIceSession.cpp" />
+    <ClCompile Include="vrcl\CstiCircularBuffer.cpp" />
+    <ClCompile Include="vrcl\CstiVRCLServer.cpp" />
+    <ClCompile Include="vrcl\CstiXML.cpp" />
+    <ClCompile Include="vrcl\CstiXMLCircularBuffer.cpp" />
+    <ClCompile Include="vrcl\stiClientValidate.cpp" />
+    <ClCompile Include="vrcl\stiVRCLCommon.cpp" />
+    <ClCompile Include="contacts\ContactListItem.cpp" />
+    <ClCompile Include="contacts\ContactManager.cpp" />
+    <ClCompile Include="BlockListMgr\CstiBlockListItem.cpp" />
+    <ClCompile Include="BlockListMgr\CstiBlockListManager.cpp" />
+    <ClCompile Include="BlockListMgr\CstiBlockListMgrResponse.cpp" />
+    <ClCompile Include="MsgMgr\CstiMessageInfo.cpp" />
+    <ClCompile Include="MsgMgr\CstiMessageManager.cpp" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\attr.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\document.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\element.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixml.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixmlmembuf.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\ixmlparser.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\namedNodeMap.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\node.c" />
+    <ClCompile Include="Libraries\Linux\libupnp-1.6.2\ixml\src\nodeList.c" />
+    <ClCompile Include="RingGroupMgr\CstiRingGroupManager.cpp" />
+    <ClCompile Include="RingGroupMgr\CstiRingGroupMgrResponse.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryItem.h" />
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryList.h" />
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryManager.h" />
+    <ClInclude Include="CallHistoryMgr\CstiCallHistoryMgrResponse.h" />
+    <ClInclude Include="CallHistoryMgr\IstiCallHistoryManager.h" />
+    <ClInclude Include="CallHistoryMgr\IstiCallHistoryMgrResponse.h" />
+    <ClInclude Include="common\AgentHistoryItem.h" />
+    <ClInclude Include="common\CstiEventQueue.h" />
+    <ClInclude Include="common\CstiEventTimer.h" />
+    <ClInclude Include="common\CstiIpAddress.h" />
+    <ClInclude Include="common\CstiPhoneNumberValidator.h" />
+    <ClInclude Include="common\CstiRegEx.h" />
+    <ClInclude Include="common\CstiSignal.h" />
+    <ClInclude Include="common\CstiString.h" />
+    <ClInclude Include="common\CstiTimer.h" />
+    <ClInclude Include="common\CstiWatchDog.h" />
+    <ClInclude Include="common\FileEncryption.h" />
+    <ClInclude Include="common\ISignal.h" />
+    <ClInclude Include="common\OptString.h" />
+    <ClInclude Include="common\Random.h" />
+    <ClInclude Include="common\SelfSignedCert.h" />
+    <ClInclude Include="common\stiBase64.h" />
+    <ClInclude Include="common\stiMessages.h" />
+    <ClInclude Include="common\stiRemoteLogEvent.h" />
+    <ClInclude Include="common\TimeAccumulator.h" />
+    <ClInclude Include="ConfMgr\CstiSipResolver.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiAesEncryptionContext.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiRtpSession.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiTextPacket.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\DtlsContext.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaPlayback.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaPlaybackRead.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\MediaRecord.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpPacket.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpSender.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpSendQueue.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtxSender.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\SDESKey.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\stiRtpChannelDefs.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\utf8EncodeDecode.h" />
+    <ClInclude Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlayback.h" />
+    <ClInclude Include="ConfMgr\DataTasks\TextPlayback\CstiTextPlaybackRead.h" />
+    <ClInclude Include="ConfMgr\DataTasks\TextRecord\CstiTextRecord.h" />
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\PlaybackFlowControl.h" />
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\Packetization.h" />
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\RateHistoryManager.h" />
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\RecordFlowControl.h" />
+    <ClInclude Include="ConfMgr\DhvClient.h" />
+    <ClInclude Include="ConfMgr\IVRCLCall.h" />
+    <ClInclude Include="ConfMgr\RadvisionLogging.h" />
+    <ClInclude Include="ConfMgr\Session\CstiMediaTransports.h" />
+    <ClInclude Include="ConfMgr\Session\CstiSdp.h" />
+    <ClInclude Include="ConfMgr\Session\MediaStream.h" />
+    <ClInclude Include="ConfMgr\Session\stiPayloadTypes.h" />
+    <ClInclude Include="ConfMgr\Session\videoDefs.h" />
+    <ClInclude Include="ConfMgr\Sip\ContactHeader.h" />
+    <ClInclude Include="ConfMgr\Sip\Message.h" />
+    <ClInclude Include="ConfMgr\Sip\Transaction.h" />
+    <ClInclude Include="ConfMgr\stiSipConstants.h" />
+    <ClInclude Include="ConfMgr\stiSipStatistics.h" />
+    <ClInclude Include="contacts\FavoriteList.h" />
+    <ClInclude Include="EndpointMonitor\EndpointMonitor.h" />
+    <ClInclude Include="http\SslCertificateHandler.h" />
+    <ClInclude Include="ImageMgr\CstiImageDownloadService.h" />
+    <ClInclude Include="ImageMgr\CstiImageManager.h" />
+    <ClInclude Include="ImageMgr\IstiImageManager.h" />
+    <ClInclude Include="Libraries\win32\posix\dirent\dirent.h" />
+    <ClInclude Include="Libraries\win32\x265\include\x265.h" />
+    <ClInclude Include="Libraries\win32\x265\include\x265_config.h" />
+    <ClInclude Include="Platform\common\audio\AudioStructures.h" />
+    <ClInclude Include="Platform\common\audio\BaseAudioInput.h" />
+    <ClInclude Include="Platform\common\audio\BaseAudioOutput.h" />
+    <ClInclude Include="Platform\common\audio\CstiAudioBridge.h" />
+    <ClInclude Include="Platform\common\audio\FFAudioDecoder.h" />
+    <ClInclude Include="Platform\common\audio\IAudioDecoder.h" />
+    <ClInclude Include="Platform\common\fileplay\CFilePlay.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\Atom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\CttsAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\DinfAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\DrefAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\ElstAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\FtypAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\FullAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\HdlrAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\HmhdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\IodsAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MdatAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MdhdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MdiaAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MinfAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MoovAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\MvhdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\NmhdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\SmhdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StblAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StcoAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StscAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StsdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StssAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\StszAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\SttsAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\TkhdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\TrakAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\TrefAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UdtaAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UnknownAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UrlAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\UrnAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Atoms\VmhdAtom.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CDataHandler.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CDataTransferHandler.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CFileDataHandler.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CServerDataHandler.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\CVMCircularBuffer.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\DataHandler.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Common.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Media.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Parser.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Signals.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\MP4Track.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\SorensonMP4.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SMCommon.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SMMemory.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SMTypes.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SorensonErrors.h" />
+    <ClInclude Include="Platform\common\fileplay\MPEG4\Toolbox\SorensonTypes.h" />
+    <ClInclude Include="Platform\common\network\BaseNetwork.h" />
+    <ClInclude Include="Platform\common\platform\BasePlatform.h" />
+    <ClInclude Include="Platform\common\video\BaseVideoInput.h" />
+    <ClInclude Include="Platform\common\video\BaseVideoOutput.h" />
+    <ClInclude Include="Platform\common\video\CstiX265Encoder.h" />
+    <ClInclude Include="Platform\common\video\IstiVideoDecoder.h" />
+    <ClInclude Include="Platform\common\video\VideoPlaybackFrame.h" />
+    <ClInclude Include="Platform\IstiMessageViewer.h" />
+    <ClInclude Include="Platform\IstiNetwork.h" />
+    <ClInclude Include="Platform\ntouch-pc\AvVideoDecoder.h" />
+    <ClInclude Include="Platform\ntouch-pc\AvWorkerFrame.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiNativeAudioLink.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiNativeVideoLink.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiNetwork.h" />
+    <ClInclude Include="Platform\ntouch-pc\ICameraInformation.h" />
+    <ClInclude Include="Platform\ntouch-pc\IntelVideoDecoder.h" />
+    <ClInclude Include="Platform\ntouch-pc\IntelWorkerFrame.h" />
+    <ClInclude Include="Platform\ntouch-pc\IPlatformAudioInput.h" />
+    <ClInclude Include="Platform\ntouch-pc\IPlatformAudioOutput.h" />
+    <ClInclude Include="Platform\ntouch-pc\IPlatformVideoInput.h" />
+    <ClInclude Include="Platform\ntouch-pc\IPlatformVideoOutput.h" />
+    <ClInclude Include="Platform\ntouch-pc\IVideoDecoder.h" />
+    <ClInclude Include="Platform\ntouch-pc\IVideoDisplayFrame.h" />
+    <ClInclude Include="Platform\VideoFrame.h" />
+    <ClInclude Include="pm\CstiPropertySender.h" />
+    <ClInclude Include="pm\PropertyListItem.h" />
+    <ClInclude Include="pm\PropertyManager.h" />
+    <ClInclude Include="common\CFifo.h" />
+    <ClInclude Include="common\cmPropertyNameDef.h" />
+    <ClInclude Include="common\CstiEvent.h" />
+    <ClInclude Include="common\CstiExtendedEvent.h" />
+    <ClInclude Include="common\CstiHostNameResolver.h" />
+    <ClInclude Include="common\CstiItemId.h" />
+    <ClInclude Include="common\CstiOsTask.h" />
+    <ClInclude Include="common\CstiOsTaskMQ.h" />
+    <ClInclude Include="common\CstiTask.h" />
+    <ClInclude Include="common\CstiUniversalEvent.h" />
+    <ClInclude Include="common\stiAssert.h" />
+    <ClInclude Include="common\stiDebugTools.h" />
+    <ClInclude Include="common\stiDefs.h" />
+    <ClInclude Include="common\stiDelegate.h" />
+    <ClInclude Include="common\stiError.h" />
+    <ClInclude Include="common\stiEventMap.h" />
+    <ClInclude Include="common\stiGUID.h" />
+    <ClInclude Include="common\stiMem.h" />
+    <ClInclude Include="common\stiProductCompatibility.h" />
+    <ClInclude Include="common\stiSVX.h" />
+    <ClInclude Include="common\stiSysUtilizationInfo.h" />
+    <ClInclude Include="common\stiTaskInfo.h" />
+    <ClInclude Include="common\stiTools.h" />
+    <ClInclude Include="common\stiTrace.h" />
+    <ClInclude Include="http\CstiHTTPService.h" />
+    <ClInclude Include="http\CstiHTTPTask.h" />
+    <ClInclude Include="http\CstiURLResolve.h" />
+    <ClInclude Include="http\stiHTTPServiceTools.h" />
+    <ClInclude Include="http\stiSSLTools.h" />
+    <ClInclude Include="os\stiOS.h" />
+    <ClInclude Include="os\stiOSMsg.h" />
+    <ClInclude Include="os\stiOSMutex.h" />
+    <ClInclude Include="os\stiOSNet.h" />
+    <ClInclude Include="os\stiOSSignal.h" />
+    <ClInclude Include="os\stiOSTask.h" />
+    <ClInclude Include="os\stiOSWd.h" />
+    <ClInclude Include="os\stiOSWin32.h" />
+    <ClInclude Include="os\stiOSWin32Msg.h" />
+    <ClInclude Include="os\stioswin32mutex.h" />
+    <ClInclude Include="os\stiOSWin32Net.h" />
+    <ClInclude Include="os\stiOSWin32Signal.h" />
+    <ClInclude Include="os\stiOSWin32Task.h" />
+    <ClInclude Include="os\stiOSWin32Wd.h" />
+    <ClInclude Include="RegistrationMgr\CstiRegistrationList.h" />
+    <ClInclude Include="RegistrationMgr\CstiRegistrationListItem.h" />
+    <ClInclude Include="RegistrationMgr\CstiRegistrationManager.h" />
+    <ClInclude Include="Serialization\ISerializable.h" />
+    <ClInclude Include="Serialization\ISerializer.h" />
+    <ClInclude Include="Serialization\JsonFileSerializer.h" />
+    <ClInclude Include="Serialization\JsonSerializer.h" />
+    <ClInclude Include="Serialization\SerializedProperty.h" />
+    <ClInclude Include="services\Conference\CstiConferenceRequest.h" />
+    <ClInclude Include="services\Conference\CstiConferenceResponse.h" />
+    <ClInclude Include="services\Conference\CstiConferenceService.h" />
+    <ClInclude Include="services\Core\Address.h" />
+    <ClInclude Include="services\Core\ClientAuthenticateResult.h" />
+    <ClInclude Include="services\Core\CstiCallList.h" />
+    <ClInclude Include="services\Core\CstiCallListItem.h" />
+    <ClInclude Include="services\Core\CstiContactList.h" />
+    <ClInclude Include="services\Core\CstiContactListItem.h" />
+    <ClInclude Include="services\Core\CstiCoreRequest.h" />
+    <ClInclude Include="services\Core\CstiCoreResponse.h" />
+    <ClInclude Include="services\Core\CstiCoreService.h" />
+    <ClInclude Include="services\Core\CstiDirectoryResolveResult.h" />
+    <ClInclude Include="services\Core\CstiFavorite.h" />
+    <ClInclude Include="services\Core\CstiPhoneNumberList.h" />
+    <ClInclude Include="services\Core\CstiPhoneNumberListItem.h" />
+    <ClInclude Include="services\Core\CstiUserAccountInfo.h" />
+    <ClInclude Include="services\Core\OfflineCore.h" />
+    <ClInclude Include="services\Core\SstiFavoriteList.h" />
+    <ClInclude Include="services\Core\SstiSettingItem.h" />
+    <ClInclude Include="services\CstiList.h" />
+    <ClInclude Include="services\CstiListItem.h" />
+    <ClInclude Include="services\CstiVPService.h" />
+    <ClInclude Include="services\CstiVPServiceRequest.h" />
+    <ClInclude Include="services\CstiVPServiceResponse.h" />
+    <ClInclude Include="services\Message\CstiMessageList.h" />
+    <ClInclude Include="services\Message\CstiMessageListItem.h" />
+    <ClInclude Include="services\Message\CstiMessageRequest.h" />
+    <ClInclude Include="services\Message\CstiMessageResponse.h" />
+    <ClInclude Include="services\Message\CstiMessageService.h" />
+    <ClInclude Include="services\RemoteLogger\CstiRemoteLoggerRequest.h" />
+    <ClInclude Include="services\RemoteLogger\CstiRemoteLoggerService.h" />
+    <ClInclude Include="services\ServiceCallbackContext.h" />
+    <ClInclude Include="services\ServiceOutage\ServiceOutageClient.h" />
+    <ClInclude Include="services\ServiceOutage\ServiceOutageMessage.h" />
+    <ClInclude Include="services\ServiceResponse.h" />
+    <ClInclude Include="services\StateNotify\CstiStateNotifyRequest.h" />
+    <ClInclude Include="services\StateNotify\CstiStateNotifyResponse.h" />
+    <ClInclude Include="services\StateNotify\CstiStateNotifyService.h" />
+    <ClInclude Include="services\stiCoreRequestDefines.h" />
+    <ClInclude Include="services\VPServiceRequestContext.h" />
+    <ClInclude Include="smiConfig.h" />
+    <ClInclude Include="UserAccountMgr\IUserAccountManager.h" />
+    <ClInclude Include="UserAccountMgr\UserAccountListItem.h" />
+    <ClInclude Include="UserAccountMgr\UserAccountManager.h" />
+    <ClInclude Include="vrcl\ExternalConferenceData.h" />
+    <ClInclude Include="xmlmgr\XMLList.h" />
+    <ClInclude Include="xmlmgr\XMLListItem.h" />
+    <ClInclude Include="xmlmgr\XMLManager.h" />
+    <ClInclude Include="xmlmgr\XMLValue.h" />
+    <ClInclude Include="Platform\AudioControl.h" />
+    <ClInclude Include="Platform\IstiAudibleRinger.h" />
+    <ClInclude Include="Platform\IstiAudioInput.h" />
+    <ClInclude Include="Platform\IstiAudioOutput.h" />
+    <ClInclude Include="Platform\IstiLightRing.h" />
+    <ClInclude Include="Platform\IstiStatusLED.h" />
+    <ClInclude Include="Platform\IstiVideoInput.h" />
+    <ClInclude Include="Platform\IstiVideoOutput.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiAudibleRinger.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiAudioInput.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiAudioOutput.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiVideoOutput.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiPlatformInterface.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiStatusLED.h" />
+    <ClInclude Include="Platform\ntouch-pc\CstiVideoInput.h" />
+    <ClInclude Include="Platform\IstiPlatform.h" />
+    <ClInclude Include="Platform\common\video\CstiFFMpegContext.h" />
+    <ClInclude Include="Platform\common\video\CstiFFMpegDecoder.h" />
+    <ClInclude Include="Platform\common\video\CstiVideoEncoder.h" />
+    <ClInclude Include="Platform\common\video\CstiX264Encoder.h" />
+    <ClInclude Include="Platform\common\video\IstiVideoEncoder.h" />
+    <ClInclude Include="cci\CstiCCI.h" />
+    <ClInclude Include="cci\IstiVideophoneEngine.h" />
+    <ClInclude Include="ConfMgr\CstiCall.h" />
+    <ClInclude Include="ConfMgr\CstiCallInfo.h" />
+    <ClInclude Include="ConfMgr\CstiCallStorage.h" />
+    <ClInclude Include="ConfMgr\CstiConferenceManager.h" />
+    <ClInclude Include="ConfMgr\CstiProtocolCall.h" />
+    <ClInclude Include="ConfMgr\CstiProtocolManager.h" />
+    <ClInclude Include="ConfMgr\CstiRoutingAddress.h" />
+    <ClInclude Include="ConfMgr\CstiSipCall.h" />
+    <ClInclude Include="ConfMgr\CstiSipCallLeg.h" />
+    <ClInclude Include="ConfMgr\CstiSipManager.h" />
+    <ClInclude Include="ConfMgr\CstiSipRegistration.h" />
+    <ClInclude Include="ConfMgr\CstiTunnelManager.h" />
+    <ClInclude Include="ConfMgr\ICallInfo.h" />
+    <ClInclude Include="ConfMgr\IstiCall.h" />
+    <ClInclude Include="ConfMgr\stiConfDefs.h" />
+    <ClInclude Include="ConfMgr\stiSipTools.h" />
+    <ClInclude Include="ConfMgr\stiSystemInfo.h" />
+    <ClInclude Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlayback.h" />
+    <ClInclude Include="ConfMgr\DataTasks\AudioPlayback\CstiAudioPlaybackRead.h" />
+    <ClInclude Include="ConfMgr\DataTasks\AudioRecord\CstiAudioRecord.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiAudioPacket.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiDataTaskCommonP.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiPacket.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiPacketQueue.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiRtpHeaderLength.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiSyncManager.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiVideoFrame.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\CstiVideoPacket.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RTCPFlowControl.h" />
+    <ClInclude Include="ConfMgr\DataTasks\DataCommon\RtpPayloadAddon.h" />
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlayback.h" />
+    <ClInclude Include="ConfMgr\DataTasks\VideoPlayback\CstiVideoPlaybackRead.h" />
+    <ClInclude Include="ConfMgr\DataTasks\VideoRecord\CstiVideoRecord.h" />
+    <ClInclude Include="ConfMgr\Nat\CstiIceManager.h" />
+    <ClInclude Include="ConfMgr\Nat\CstiIceSession.h" />
+    <ClInclude Include="vrcl\CstiCircularBuffer.h" />
+    <ClInclude Include="vrcl\CstiVRCLServer.h" />
+    <ClInclude Include="vrcl\CstiXML.h" />
+    <ClInclude Include="vrcl\CstiXMLCircularBuffer.h" />
+    <ClInclude Include="vrcl\IstiVRCLServer.h" />
+    <ClInclude Include="vrcl\stiClientValidate.h" />
+    <ClInclude Include="vrcl\stiVRCLCommon.h" />
+    <ClInclude Include="contacts\ContactListItem.h" />
+    <ClInclude Include="contacts\ContactManager.h" />
+    <ClInclude Include="contacts\IstiContact.h" />
+    <ClInclude Include="contacts\IstiContactManager.h" />
+    <ClInclude Include="BlockListMgr\CstiBlockListItem.h" />
+    <ClInclude Include="BlockListMgr\CstiBlockListManager.h" />
+    <ClInclude Include="BlockListMgr\CstiBlockListMgrResponse.h" />
+    <ClInclude Include="BlockListMgr\IstiBlockListManager.h" />
+    <ClInclude Include="BlockListMgr\IstiBlockListManager2.h" />
+    <ClInclude Include="BlockListMgr\IstiBlockListMgrResponse.h" />
+    <ClInclude Include="MsgMgr\CstiMessageInfo.h" />
+    <ClInclude Include="MsgMgr\CstiMessageManager.h" />
+    <ClInclude Include="MsgMgr\IstiMessageManager.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\avcodec.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\avfft.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\dxva2.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\vaapi.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\vda.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\vdpau.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\version.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libavcodec\xvmc.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libswscale\swscale.h" />
+    <ClInclude Include="Libraries\win32\ffmpeg\include\libswscale\version.h" />
+    <ClInclude Include="Libraries\win32\x264\include\x264.h" />
+    <ClInclude Include="Libraries\win32\x264\include\x264_config.h" />
+    <ClInclude Include="RingGroupMgr\CstiRingGroupManager.h" />
+    <ClInclude Include="RingGroupMgr\CstiRingGroupMgrResponse.h" />
+    <ClInclude Include="RingGroupMgr\IstiRingGroupManager.h" />
+    <ClInclude Include="RingGroupMgr\IstiRingGroupMgrResponse.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\BuildAll\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets" Condition="Exists('..\BuildAll\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets')" />
+    <Import Project="..\BuildAll\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets" Condition="Exists('..\BuildAll\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets')" />
+    <Import Project="..\BuildAll\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets" Condition="Exists('..\BuildAll\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets')" />
+    <Import Project="..\BuildAll\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets" Condition="Exists('..\BuildAll\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets')" />
+    <Import Project="..\BuildAll\packages\Sorenson.Radvision.v142.2.7.22.10\build\native\Sorenson.Radvision.v142.targets" Condition="Exists('..\BuildAll\packages\Sorenson.Radvision.v142.2.7.22.10\build\native\Sorenson.Radvision.v142.targets')" />
+    <Import Project="..\BuildAll\packages\boost.1.80.0\build\boost.targets" Condition="Exists('..\BuildAll\packages\boost.1.80.0\build\boost.targets')" />
+    <Import Project="..\BuildAll\packages\Sorenson.pthreads-win32.2.9.1\build\native\Sorenson.pthreads-win32.targets" Condition="Exists('..\BuildAll\packages\Sorenson.pthreads-win32.2.9.1\build\native\Sorenson.pthreads-win32.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  Make sure you have added a package source at http://eng-a-slc-bld01.corp.srelay.com/NugetServer/nuget. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\BuildAll\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildAll\packages\Sorenson.OpenSSL.1.1.1.7\build\native\Sorenson.OpenSSL.targets'))" />
+    <Error Condition="!Exists('..\BuildAll\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildAll\packages\Sorenson.Acme.v142.1.6.375.2\build\native\Sorenson.Acme.v142.targets'))" />
+    <Error Condition="!Exists('..\BuildAll\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildAll\packages\Sorenson.Poco.v142.1.10.1.1\build\native\Sorenson.Poco.v142.targets'))" />
+    <Error Condition="!Exists('..\BuildAll\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildAll\packages\Sorenson.Intel.MediaSDK.1.3.1\build\native\Sorenson.Intel.MediaSDK.targets'))" />
+    <Error Condition="!Exists('..\BuildAll\packages\Sorenson.Radvision.v142.2.7.22.10\build\native\Sorenson.Radvision.v142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildAll\packages\Sorenson.Radvision.v142.2.7.22.10\build\native\Sorenson.Radvision.v142.targets'))" />
+    <Error Condition="!Exists('..\BuildAll\packages\boost.1.80.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildAll\packages\boost.1.80.0\build\boost.targets'))" />
+    <Error Condition="!Exists('..\BuildAll\packages\Sorenson.pthreads-win32.2.9.1\build\native\Sorenson.pthreads-win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildAll\packages\Sorenson.pthreads-win32.2.9.1\build\native\Sorenson.pthreads-win32.targets'))" />
+  </Target>
+</Project>

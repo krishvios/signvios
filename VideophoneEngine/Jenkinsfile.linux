@@ -1,0 +1,48 @@
+pipeline {
+	agent any
+	stages {
+		stage('Build Engine') {
+			when {
+				changeRequest()
+			}
+			steps {
+				sh '''#!/bin/bash
+				find . -name "*.clang.out" -exec rm {} \\;
+				'''
+				
+				sh '''#!/bin/bash
+				MAXJOBS=`expr $(nproc) / 2`
+				export builddir=Build/ntouchvp2_x86/debug
+				make -j$MAXJOBS USE_CLANG_TIDY=true APPLICATION=APP_NTOUCH_VP2 DEVICE=DEV_X86 BUILD_DIR=${builddir} SMI_CONFIG_PATH=$PWD MODE=debug COVERAGE=true
+				'''
+
+				sh '''#!/bin/bash
+				find . -name "*.clang.out" -not -empty -exec grep "^.*:[0-9]\\+:[0-9]\\+:\\s*\\(warning\\|error\\)" {} \\; | sort --field-separator=: --key=1,1 --key=2,2g | uniq > clang.consolidated
+				cat clang.consolidated
+				'''
+			}
+			
+			post {
+				
+				always {
+					ViolationsToGitHub ([
+						commentOnlyChangedContent: false,
+						commentTemplate: '{{changedFile.filename}}: {{violation.startLine}}: {{violation.message}}',
+						createCommentWithAllSingleFileComments: true,
+						createSingleFileComments: false,
+						credentialsId: 'e731dbd7-7b04-4b03-89de-6ca15ef33bc7',
+						gitHubUrl: 'https://engv-git.sorenson.com',
+						oAuth2Token: '',
+						pullRequestId: "$env.CHANGE_ID",
+						repositoryName: 'VideophoneEngine',
+						repositoryOwner: 'sorenson',
+						violationConfigs: [
+							[ parser: 'CLANG', pattern: '.*/clang.consolidated$', reporter: 'GCC' ]
+						]
+					])
+					cleanWs notFailBuild: true
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+
+vpe_platform_includes = include_directories(
+  '.',
+  'network',
+  'bluetooth',
+)
+
+vpe_libs += static_library('stiDeviceController',
+  'CstiBSPInterface.cpp',
+  'CstiStatusLED.cpp',
+  'CstiLightRing.cpp',
+  'CstiDisplay.cpp',
+  'CstiAudioInput.cpp',
+  'CstiAudioOutput.cpp',
+  'CstiAudibleRinger.cpp',
+  'CstiUserInput.cpp',
+  'CstiSLICRinger.cpp',
+  'CstiBufferElement.cpp',
+  'CstiFileVideoInput.cpp',
+
+  #'CstiGstreamerBufferElement.cpp',
+  #'CstiGStreamerVideoInput.cpp',
+
+  #'CstiFFMpegDecoder.cpp',
+  #'CstiFFMpegEncoder.cpp',
+  #'CstiFFMpegVideoInput.cpp',
+  include_directories : [vpe_includes, vpe_platform_includes],
+  cpp_args : ['-DLINUX', '-DCONFIG_STA_SUPPORT'],
+)
+
+subdir('network')
+subdir('bluetooth')

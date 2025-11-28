@@ -1,0 +1,27 @@
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "09P-Yj-lte"; */
+"09P-Yj-lte.title" = "Historia";
+
+/* Class = "UINavigationItem"; title = "Call History"; ObjectID = "bX8-Oc-cn2"; */
+"bX8-Oc-cn2.title" = "Historial de Llamadas";
+
+/* Class = "UILabel"; text = "Firstname Lastname"; ObjectID = "Dan-fU-jr0"; */
+"Dan-fU-jr0.text" = "Nombre Apellido";
+
+/* Class = "UISegmentedControl"; O8e-AJ-c4i.segmentTitles[0] = "All"; ObjectID = "O8e-AJ-c4i"; */
+"O8e-AJ-c4i.segmentTitles[0]" = "Toda";
+
+/* Class = "UISegmentedControl"; O8e-AJ-c4i.segmentTitles[1] = "Missed"; ObjectID = "O8e-AJ-c4i"; */
+"O8e-AJ-c4i.segmentTitles[1]" = "Perdidas";
+
+/* Class = "UITableViewController"; title = "Call History"; ObjectID = "ouW-gb-PvU"; */
+"ouW-gb-PvU.title" = "Historial de Llamadas";
+
+/* Class = "UILabel"; text = "Yesterday"; ObjectID = "td1-fP-ZNx"; */
+"td1-fP-ZNx.text" = "Ayer";
+
+/* Class = "UILabel"; text = "1 (932) 333-1111"; ObjectID = "uN7-aV-FMh"; */
+"uN7-aV-FMh.text" = "1 (932) 333-1111";
+
+/* Class = "UINavigationController"; title = "Call History"; ObjectID = "ziu-Am-jGB"; */
+"ziu-Am-jGB.title" = "Historial de Llamadas";
+

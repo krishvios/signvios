@@ -1,0 +1,9 @@
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in the
+# branch this file resides in.. Unless a later match takes precedence.
+# They will be requested to review when someone opens a pull request.
+*      @kselman
+
+# iOS automation tests
+/ntouch-UITests/ @mleppanen-sorenson

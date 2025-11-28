@@ -1,0 +1,2 @@
+ABRecordRefs are not valid outside an open ABAddressBook, so I'm persisting an open addressBook in appDelegate
+SSession's account property requires an inverse relationship (service1), even though it's never used.

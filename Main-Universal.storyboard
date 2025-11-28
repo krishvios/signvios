@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aNS-Te-6Mk">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="D2m-Eg-Ieo">
+            <objects>
+                <tabBarController id="gDI-s1-r8A" customClass="MainTabBarController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4Zh-F3-Czc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rf8-Ra-tUr" kind="relationship" relationship="viewControllers" id="dLn-Fz-5AY"/>
+                        <segue destination="SfT-wx-cVZ" kind="relationship" relationship="viewControllers" id="uBO-j6-Kyw"/>
+                        <segue destination="RXH-ts-iDJ" kind="relationship" relationship="viewControllers" id="Gf7-uC-CKa"/>
+                        <segue destination="xTv-xi-wcI" kind="relationship" relationship="viewControllers" id="q0m-QE-Hoz"/>
+                        <segue destination="gNN-Sw-fwv" kind="relationship" relationship="viewControllers" id="lGs-UE-1Cz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qof-lc-H6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="zQj-ra-4ej" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="tabBarController" destination="gDI-s1-r8A" id="ycb-hX-VN1"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1079" y="6"/>
+        </scene>
+        <!--Camera Background View Controller-->
+        <scene sceneID="VoQ-Us-bI7">
+            <objects>
+                <viewController id="aNS-Te-6Mk" customClass="CameraBackgroundViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGl-tg-yPr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wz3-fS-9jg" customClass="VideoCameraBackgroundView" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <color key="backgroundColor" systemColor="darkTextColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="US2-pR-U0K">
+                                <rect key="frame" x="375" y="24" width="649" height="1322"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video and audio privacy enabled" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="W2M-xJ-983">
+                                        <rect key="frame" x="245.5" y="634" width="158.5" height="54.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="W2M-xJ-983" firstAttribute="centerY" secondItem="US2-pR-U0K" secondAttribute="centerY" id="8wc-6b-WWy"/>
+                                    <constraint firstItem="W2M-xJ-983" firstAttribute="centerX" secondItem="US2-pR-U0K" secondAttribute="centerX" id="j2X-oK-dW0">
+                                        <variation key="widthClass=compact" constant="20"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfP-UA-NlR" customClass="RecentSummaryView" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="415" y="0.0" width="569" height="1366"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="gXD-hf-CPH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTd-V7-pK8" userLabel="Audio Privacy" customClass="RoundedButton" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="892" y="48" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="H7K-EI-syw"/>
+                                    <constraint firstAttribute="height" constant="50" id="gWx-qW-Hts"/>
+                                </constraints>
+                                <state key="normal" image="audio-privacy-off"/>
+                                <state key="selected" image="audio-privacy-on"/>
+                                <connections>
+                                    <action selector="microphoneButtonTapped:" destination="aNS-Te-6Mk" eventType="primaryActionTriggered" id="9bw-ox-3In"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Os2-Fm-37K" userLabel="Video Privacy" customClass="RoundedButton" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="958" y="48" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="NmR-uS-gVZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Yzs-fc-yg6"/>
+                                </constraints>
+                                <state key="normal" image="video-privacy-off"/>
+                                <state key="selected" image="video-privacy-on"/>
+                                <connections>
+                                    <action selector="toggleCameraBackgroundEnabled:" destination="aNS-Te-6Mk" eventType="primaryActionTriggered" id="RdP-OG-vLv"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLo-u1-ek8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1366"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="DQ6-AY-9Zh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DQ6-AY-9Zh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="DQ6-AY-9Zh"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="gDI-s1-r8A" kind="embed" identifier="TabBarEmbed" id="uIF-bh-ErC"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="4" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="brm-MH-ZB7" customClass="HandlebarView" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="361" y="663" width="4" height="40"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0cC-aY-ias"/>
+                        <color key="backgroundColor" systemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="yLo-u1-ek8" firstAttribute="bottom" secondItem="xGl-tg-yPr" secondAttribute="bottom" id="720-OO-fQs"/>
+                            <constraint firstItem="Os2-Fm-37K" firstAttribute="leading" secondItem="aTd-V7-pK8" secondAttribute="trailing" constant="16" id="76K-en-qii"/>
+                            <constraint firstItem="US2-pR-U0K" firstAttribute="leading" secondItem="0cC-aY-ias" secondAttribute="leading" id="7VJ-2W-HN2"/>
+                            <constraint firstItem="brm-MH-ZB7" firstAttribute="centerY" secondItem="yLo-u1-ek8" secondAttribute="centerY" id="7YZ-0d-x1B"/>
+                            <constraint firstAttribute="bottom" secondItem="wz3-fS-9jg" secondAttribute="bottom" id="7iU-Yv-vXX"/>
+                            <constraint firstItem="yLo-u1-ek8" firstAttribute="width" secondItem="xGl-tg-yPr" secondAttribute="width" id="9Ck-Ca-C7h"/>
+                            <constraint firstItem="yLo-u1-ek8" firstAttribute="top" secondItem="xGl-tg-yPr" secondAttribute="top" id="BqN-qI-xBa"/>
+                            <constraint firstItem="US2-pR-U0K" firstAttribute="top" secondItem="0cC-aY-ias" secondAttribute="top" id="BtY-bG-dG1"/>
+                            <constraint firstAttribute="bottom" secondItem="yfP-UA-NlR" secondAttribute="bottom" id="DDX-Uu-yEo"/>
+                            <constraint firstItem="0cC-aY-ias" firstAttribute="trailing" secondItem="yfP-UA-NlR" secondAttribute="trailing" constant="40" id="DmW-Ka-xz3"/>
+                            <constraint firstItem="yLo-u1-ek8" firstAttribute="leading" secondItem="xGl-tg-yPr" secondAttribute="leading" id="HUk-TE-ubm"/>
+                            <constraint firstAttribute="trailing" secondItem="wz3-fS-9jg" secondAttribute="trailing" id="Jnu-3b-QSV"/>
+                            <constraint firstItem="yLo-u1-ek8" firstAttribute="trailing" secondItem="brm-MH-ZB7" secondAttribute="trailing" constant="10" id="TEU-63-nCV"/>
+                            <constraint firstItem="yfP-UA-NlR" firstAttribute="top" secondItem="xGl-tg-yPr" secondAttribute="top" id="VA3-NN-o3a"/>
+                            <constraint firstItem="aTd-V7-pK8" firstAttribute="top" secondItem="0cC-aY-ias" secondAttribute="top" constant="24" id="VRa-1L-0zv"/>
+                            <constraint firstItem="US2-pR-U0K" firstAttribute="leading" secondItem="yLo-u1-ek8" secondAttribute="trailing" id="YgW-sB-7Mt"/>
+                            <constraint firstItem="0cC-aY-ias" firstAttribute="trailing" secondItem="Os2-Fm-37K" secondAttribute="trailing" constant="16" id="aAG-Bs-Cud"/>
+                            <constraint firstItem="0cC-aY-ias" firstAttribute="trailing" secondItem="US2-pR-U0K" secondAttribute="trailing" id="ags-6m-4qu"/>
+                            <constraint firstItem="0cC-aY-ias" firstAttribute="bottom" secondItem="US2-pR-U0K" secondAttribute="bottom" id="hXo-Q1-svo"/>
+                            <constraint firstItem="yfP-UA-NlR" firstAttribute="leading" secondItem="xGl-tg-yPr" secondAttribute="leading" constant="415" id="mu2-nN-ABU"/>
+                            <constraint firstItem="wz3-fS-9jg" firstAttribute="top" secondItem="xGl-tg-yPr" secondAttribute="top" id="o5y-FK-qb8"/>
+                            <constraint firstItem="Os2-Fm-37K" firstAttribute="top" secondItem="0cC-aY-ias" secondAttribute="top" constant="24" id="oMy-eN-8HR"/>
+                            <constraint firstItem="wz3-fS-9jg" firstAttribute="leading" secondItem="xGl-tg-yPr" secondAttribute="leading" id="ywO-35-R1T"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YgW-sB-7Mt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="DmW-Ka-xz3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="9Ck-Ca-C7h"/>
+                                <exclude reference="7VJ-2W-HN2"/>
+                                <include reference="YgW-sB-7Mt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kpz-8B-Pit"/>
+                    <connections>
+                        <outlet property="audioAndVideoPrivacyLabel" destination="W2M-xJ-983" id="cQJ-Ym-P9t"/>
+                        <outlet property="backdropView" destination="US2-pR-U0K" id="Tmh-ik-t8A"/>
+                        <outlet property="cameraBackgroundView" destination="wz3-fS-9jg" id="yy2-vc-1qG"/>
+                        <outlet property="containerView" destination="yLo-u1-ek8" id="0Zn-fc-9GY"/>
+                        <outlet property="containerViewLeadingConstraint" destination="HUk-TE-ubm" id="tce-4Q-8rk"/>
+                        <outlet property="handlebarView" destination="brm-MH-ZB7" id="SVl-u2-9fg"/>
+                        <outlet property="microphoneButton" destination="aTd-V7-pK8" id="iIL-4c-LOv"/>
+                        <outlet property="recentsSummaryView" destination="yfP-UA-NlR" id="LPl-vw-gF7"/>
+                        <outlet property="videoPrivacyButton" destination="Os2-Fm-37K" id="xYX-Gm-358"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OG-F9-auD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.65885797950219" y="20.5078125"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="73S-ZW-4vP">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SettingsNavController" storyboardName="Settings" id="gNN-Sw-fwv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="fNO-hn-Awf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzN-1J-75J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="403"/>
+        </scene>
+        <!--Dialer-->
+        <scene sceneID="0NX-vV-CZf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ntouchKeypadViewController" storyboardName="Dialer" id="rf8-Ra-tUr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="1yj-6Z-HKn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byh-zw-4Cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="411"/>
+        </scene>
+        <!--Recents-->
+        <scene sceneID="jzn-b2-0GN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RecentsNavController" storyboardName="Recents" id="SfT-wx-cVZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UDw-RJ-m4s"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIN-r6-1D6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="424"/>
+        </scene>
+        <!--Phonebook-->
+        <scene sceneID="hKD-jm-Erd">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PhonebookNavController" storyboardName="Phonebook" id="RXH-ts-iDJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zEv-xU-rQQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aag-5u-HGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="415"/>
+        </scene>
+        <!--SignMail-->
+        <scene sceneID="qh9-TE-pIz">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MessageNavController" storyboardName="SignMail" id="xTv-xi-wcI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="I2r-Dc-Vtq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fin-s5-Ihc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="429"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="brm-MH-ZB7">
+            <size key="intrinsicContentSize" width="4" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="audio-privacy-off" width="19" height="35"/>
+        <image name="audio-privacy-on" width="27" height="35"/>
+        <image name="video-privacy-off" width="32" height="20"/>
+        <image name="video-privacy-on" width="32" height="27"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

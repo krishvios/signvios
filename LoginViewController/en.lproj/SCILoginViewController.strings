@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "24j-iU-37H"; */
+"24j-iU-37H.normalTitle" = "Forgot Password?";
+
+/* Class = "UITextView"; text = "Service Outage"; ObjectID = "8Kh-ZC-33j"; */
+"8Kh-ZC-33j.text" = "Service Outage";
+
+/* Class = "UITextField"; accessibilityLabel = "Password"; ObjectID = "GMj-uf-0v7"; */
+"GMj-uf-0v7.accessibilityLabel" = "Password";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "GMj-uf-0v7"; */
+"GMj-uf-0v7.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Support"; ObjectID = "Jki-1q-OBw"; */
+"Jki-1q-OBw.normalTitle" = "Support";
+
+/* Class = "UIButton"; normalTitle = "Call 911"; ObjectID = "Nrt-oD-TzF"; */
+"Nrt-oD-TzF.normalTitle" = "Call 911";
+
+/* Class = "UILabel"; text = "|"; ObjectID = "OPU-MT-IIE"; */
+"OPU-MT-IIE.text" = "|";
+
+/* Class = "UISwitch"; accessibilityLabel = "Remember Password"; ObjectID = "VX0-7Z-mix"; */
+"VX0-7Z-mix.accessibilityLabel" = "Remember Password";
+
+/* Class = "UITextField"; accessibilityLabel = "PhoneNumber"; ObjectID = "ZtU-aY-2kA"; */
+"ZtU-aY-2kA.accessibilityLabel" = "PhoneNumber";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "ZtU-aY-2kA"; */
+"ZtU-aY-2kA.placeholder" = "Phone Number";
+
+/* Class = "UIButton"; normalTitle = "Create New Account"; ObjectID = "u2e-DD-wyI"; */
+"u2e-DD-wyI.normalTitle" = "Create New Account";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "iod-EP-nT0"; */
+"iod-EP-nT0.normalTitle" = "Log In";
+
+/* Class = "UILabel"; text = "ntouch® Mobile for iOS version 9.0"; ObjectID = "lQG-P3-16S"; */
+"lQG-P3-16S.text" = "ntouch® Mobile for iOS version 9.0";
+
+/* Class = "UILabel"; text = "|"; ObjectID = "psy-PK-7TK"; */
+"psy-PK-7TK.text" = "|";
+
+/* Class = "UILabel"; text = "Remember Password"; ObjectID = "yuG-zn-WqY"; */
+"yuG-zn-WqY.text" = "Remember Password";

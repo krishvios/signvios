@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J5k-5A-xAe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z8C-6o-GVS">
+            <objects>
+                <navigationController storyboardIdentifier="DetailsNavController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0t9-jP-iCD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2fH-37-gVY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J5k-5A-xAe" kind="relationship" relationship="rootViewController" id="jCf-S7-C87"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcC-b3-3le" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4447" y="-493"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="6dC-GF-s7Q">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="J5k-5A-xAe" customClass="DetailsViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ox-Qv-vNM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hf-q3-WoN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="J5k-5A-xAe" id="eox-fP-hv6"/>
+                                    <outlet property="delegate" destination="J5k-5A-xAe" id="hcF-Ns-MTl"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="289.5" translatesAutoresizingMaskIntoConstraints="NO" id="KAx-Qs-Xi8" customClass="DetailsHeaderView" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="288.5"/>
+                                <viewLayoutGuide key="safeArea" id="5gJ-i5-y5B"/>
+                                <connections>
+                                    <outlet property="delegate" destination="J5k-5A-xAe" id="3NY-sS-JQ7"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="taC-fd-DKv"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Hf-q3-WoN" firstAttribute="leading" secondItem="5ox-Qv-vNM" secondAttribute="leading" id="0Gn-c6-AOM"/>
+                            <constraint firstAttribute="bottom" secondItem="2Hf-q3-WoN" secondAttribute="bottom" id="543-hg-Gvw"/>
+                            <constraint firstItem="KAx-Qs-Xi8" firstAttribute="leading" secondItem="5ox-Qv-vNM" secondAttribute="leading" id="8nm-pI-QHf"/>
+                            <constraint firstItem="KAx-Qs-Xi8" firstAttribute="top" secondItem="5ox-Qv-vNM" secondAttribute="top" id="CT2-Vb-ZnQ"/>
+                            <constraint firstItem="2Hf-q3-WoN" firstAttribute="top" secondItem="5ox-Qv-vNM" secondAttribute="top" id="O9Y-TW-iZ2"/>
+                            <constraint firstAttribute="trailing" secondItem="KAx-Qs-Xi8" secondAttribute="trailing" id="Ww9-Tw-Ik2"/>
+                            <constraint firstAttribute="trailing" secondItem="2Hf-q3-WoN" secondAttribute="trailing" id="lyU-ob-1of"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="RbH-9X-sOV"/>
+                    <connections>
+                        <outlet property="headerView" destination="KAx-Qs-Xi8" id="3kc-ja-Uw8"/>
+                        <outlet property="tableView" destination="2Hf-q3-WoN" id="zgb-Fx-RdL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ap-6r-VCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3614" y="-435"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="KAx-Qs-Xi8">
+            <size key="intrinsicContentSize" width="-1" height="289.5"/>
+        </designable>
+    </designables>
+</document>

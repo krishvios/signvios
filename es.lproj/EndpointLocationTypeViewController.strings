@@ -1,0 +1,18 @@
+/* Class = "UILabel"; text = "For an enterprise phone like yours, the FCC requires you to inform them where you use this videophone."; ObjectID = "bZg-VZ-LA2"; */
+"bZg-VZ-LA2.text" = "Para un teléfono empresarial como el suyo, la FCC requiere que les informe dónde usa este videoteléfono.";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "fEN-h8-ZTe"; */
+"fEN-h8-ZTe.text" = "Detalle";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "hUc-15-tST"; */
+"hUc-15-tST.normalTitle" = "Confirmar";
+
+/* Class = "UIButton"; normalTitle = "Call 911"; ObjectID = "IVO-T3-Jwz"; */
+"IVO-T3-Jwz.normalTitle" = "Llama al 911";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "SwS-VW-SzA"; */
+"SwS-VW-SzA.text" = "Título";
+
+/* Class = "UILabel"; text = "Where is this\nvideophone used?"; ObjectID = "xOT-Ln-lej"; */
+"xOT-Ln-lej.text" = "¿Dónde se usa\neste videoteléfono?";
+

@@ -1,0 +1,14 @@
+prefix=VideophoneEngine
+exec_prefix=${prefix}
+includedir=${prefix}/include
+rvlibdir=/Libraries/Radvision/${BUILDDIR}/binaries/Linux/Release/lib
+acmelibdir=/Libraries/Acme/tscf/${BUILDDIR}
+
+
+Name: vpe-uninstalled
+Description: The vpe library
+Version: 1.0.0 
+Cflags: -I${includedir}
+Libs: -L${rvlibdir} -lrvads  -lrvartp  -lrvcommon  -lrvice  -lrvofferanswer  -lrvsdp  -lrvsip  -lrvstun  -lrvturn -lrvads -lrvcommon \
+      -L${acmelibdir} -ltsc
+

@@ -1,0 +1,146 @@
+FILEPATH:C:\Work\Interceptor\Tests\NotifyNewMessage.txt
+FILEDATE:1/27/2012 11:51:49 PM
+DESCRIPTION:
+Empty Message list
+
+RULE:
+XPathPattern=/StateNotifyRequest/Heartbeat
+OuterResponseText=
+InnerResponseText=
+<HeartbeatResult Result="OK" />
+<TimeGetResult Result="OK">
+<Time>03/01/2012 19:06:46</Time>
+</TimeGetResult>
+<PublicIPGetResult Result="OK">
+<PublicIP>10.20.231.13</PublicIP>
+</PublicIPGetResult>
+<MessageListChanged />
+
+
+RULE:
+XPathPattern=/MessageRequest/MessageListGet
+OuterResponseText=
+InnerResponseText=
+<MessageListGetResult Result="OK">
+    <MessageList BaseIndex="0" Count="8" SignMailCount="4" SignMailLimit="100" SortField="Time" SortDir="DESC">
+        <MessageListItem>
+            <ItemId>1138313</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>Bob</Name>
+            <PlaybackTime>122</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/29/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>1</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+        <MessageListItem>
+            <ItemId>1138301</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>Bob</Name>
+            <PlaybackTime>60</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/27/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>1</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+        <MessageListItem>
+            <ItemId>1138302</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>3rd Party</Name>
+            <PlaybackTime>122</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/27/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>3</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+        <MessageListItem>
+            <ItemId>1138303</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>NEWS</Name>
+            <PlaybackTime>122</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/27/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>4</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+        <MessageListItem>
+            <ItemId>1138304</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>Tech Support</Name>
+            <PlaybackTime>122</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/27/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>5</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+        <MessageListItem>
+            <ItemId>1138305</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>Joe</Name>
+            <PlaybackTime>122</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/27/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>1</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+        <MessageListItem>
+            <ItemId>1138306</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>Bob's Brother</Name>
+            <PlaybackTime>122</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/27/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>1</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+        <MessageListItem>
+            <ItemId>1138309</ItemId>
+            <DialType>8</DialType>
+            <DialString></DialString>
+            <Name>DKN|Gone Fishing| Ice Fishing</Name>
+            <PlaybackTime>122</PlaybackTime>
+            <MessageLength>268</MessageLength>
+            <FileSize>13812485</FileSize>
+            <Time>01/27/2012 21:00:36</Time>
+            <Viewed>False</Viewed>
+            <MessageType>2</MessageType>
+            <ImageId></ImageId>
+        </MessageListItem>
+
+    </MessageList>
+</MessageListGetResult>
+
+
+
+DelayMsec=000
+IsDelayOnly=false
+HttpResponseErrorCode=0
+IsRunOnce=false

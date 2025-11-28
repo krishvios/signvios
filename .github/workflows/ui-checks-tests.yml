@@ -1,0 +1,41 @@
+name: UI Checks Tests
+
+on:
+  pull_request:
+    branches:
+      - master
+      - release/*
+
+permissions:
+  contents: read
+  issues: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  ntouch-iOS-checks-tests:
+    runs-on: ntouch-iOS-auto-checks
+    timeout-minutes: 60
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Build and run iOS Checks Tests
+        run: |
+          ./copyUserConfig.sh
+          ./setupFastlane.sh
+          bundle exec fastlane test destination:"platform=iOS,name=Auto-iPhone" test_suite:"ChecksTests"
+      - name: Create Test Report
+        if: always()
+        run: |
+          bundle exec fastlane test_report
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            fastlane/test_output/report.junit
+          check_name: iOS Checks Test Results

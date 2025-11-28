@@ -1,0 +1,6 @@
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "lWe-Nb-Cpb"; */
+"lWe-Nb-Cpb.text" = "Número de Teléfono";
+
+/* Class = "UITextField"; placeholder = "required"; ObjectID = "OHY-XX-NGT"; */
+"OHY-XX-NGT.placeholder" = "requerida";
+

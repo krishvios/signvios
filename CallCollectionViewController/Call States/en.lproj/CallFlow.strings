@@ -1,0 +1,123 @@
+
+/* Class = "UILabel"; text = "Incoming..."; ObjectID = "1hW-qM-05B"; */
+"1hW-qM-05B.text" = "Incoming...";
+
+/* Class = "UIButton"; accessibilityHint = "Opens Share Keyboard"; ObjectID = "2Al-zg-43t"; */
+"2Al-zg-43t.accessibilityHint" = "Opens Share Keyboard";
+
+/* Class = "UIButton"; accessibilityLabel = "Share"; ObjectID = "2Al-zg-43t"; */
+"2Al-zg-43t.accessibilityLabel" = "Share";
+
+/* Class = "UILabel"; text = "Share"; ObjectID = "3xY-yk-RRH"; */
+"3xY-yk-RRH.text" = "Share";
+
+/* Class = "UIButton"; accessibilityHint = "Opens Call Menu"; ObjectID = "3zF-50-FqM"; */
+"3zF-50-FqM.accessibilityHint" = "Opens Call Menu";
+
+/* Class = "UIButton"; accessibilityLabel = "Call Options"; ObjectID = "3zF-50-FqM"; */
+"3zF-50-FqM.accessibilityLabel" = "Call Options";
+
+/* Class = "UIButton"; accessibilityHint = "Switches Cameras"; ObjectID = "5L7-5t-K4C"; */
+"5L7-5t-K4C.accessibilityHint" = "Switches Cameras";
+
+/* Class = "UIButton"; accessibilityLabel = "Switch Camera"; ObjectID = "5L7-5t-K4C"; */
+"5L7-5t-K4C.accessibilityLabel" = "Switch Camera";
+
+/* Class = "UILabel"; text = "Uploading..."; ObjectID = "5Pu-wM-8QJ"; */
+"5Pu-wM-8QJ.text" = "Uploading...";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "6RD-eO-8qY"; */
+"6RD-eO-8qY.title" = "Cancel";
+
+/* Class = "UILabel"; text = "(555) 555-5555"; ObjectID = "7f5-rY-DzS"; */
+"7f5-rY-DzS.text" = "(555) 555-5555";
+
+/* Class = "UIButton"; normalTitle = "Hold & Answer"; ObjectID = "BHm-qg-95a"; */
+"BHm-qg-95a.normalTitle" = "Hold & Answer";
+
+/* Class = "UIBarButtonItem"; title = "Confirm"; ObjectID = "DFw-Y4-hT4"; */
+"DFw-Y4-hT4.title" = "Confirm";
+
+/* Class = "UIButton"; accessibilityLabel = "SeeMee"; ObjectID = "Ide-zu-Z8P"; */
+"Ide-zu-Z8P.accessibilityLabel" = "SeeMee";
+
+/* Class = "UIButton"; normalTitle = "Hangup & Answer"; ObjectID = "JNF-z0-wj0"; */
+"JNF-z0-wj0.normalTitle" = "Hangup & Answer";
+
+/* Class = "UILabel"; text = "1 (555) 555-8000"; ObjectID = "LKs-Cl-JsE"; */
+"LKs-Cl-JsE.text" = "1 (555) 555-8000";
+
+/* Class = "UILabel"; text = "Call Options"; ObjectID = "Nlt-lt-eJZ"; */
+"Nlt-lt-eJZ.text" = "Call Options";
+
+/* Class = "UILabel"; text = "Wavello"; ObjectID = "PvO-bU-UPw"; */
+"PvO-bU-UPw.text" = "Wavello";
+
+/* Class = "UILabel"; text = "Me"; ObjectID = "RLU-HE-Nt3"; */
+"RLU-HE-Nt3.text" = "Me";
+
+/* Class = "UIButton"; accessibilityLabel = "Skip"; ObjectID = "VvX-W9-ruz"; */
+"VvX-W9-ruz.accessibilityLabel" = "Skip";
+
+/* Class = "UIButton"; accessibilityLabel = "Switch Camera"; ObjectID = "Wrv-fb-cVI"; */
+"Wrv-fb-cVI.accessibilityLabel" = "Switch Camera";
+
+/* Class = "UILabel"; text = "Jon Snow"; ObjectID = "Y2q-do-rC9"; */
+"Y2q-do-rC9.text" = "Jon Snow";
+
+/* Class = "UILabel"; text = "Incoming Call From"; ObjectID = "YtB-tw-T8V"; */
+"YtB-tw-T8V.text" = "Incoming Call From";
+
+/* Class = "UIButton"; normalTitle = "Open settings to allow ntouch to access your location..."; ObjectID = "a3a-Xf-tXn"; */
+"a3a-Xf-tXn.normalTitle" = "Open settings to allow ntouch to access your location...";
+
+/* Class = "UITextView"; text = "Greeting Text"; ObjectID = "c9t-OY-XSu"; */
+"c9t-OY-XSu.text" = "Greeting Text";
+
+/* Class = "UIButton"; accessibilityHint = "Opens Caller Info"; ObjectID = "ehB-Fn-r5Q"; */
+"ehB-Fn-r5Q.accessibilityHint" = "Opens Caller Info";
+
+/* Class = "UIButton"; accessibilityLabel = "Caller Info"; ObjectID = "ehB-Fn-r5Q"; */
+"ehB-Fn-r5Q.accessibilityLabel" = "Caller Info";
+
+/* Class = "UILabel"; text = "Johnny Appleseed"; ObjectID = "f3j-SV-W9F"; */
+"f3j-SV-W9F.text" = "Johnny Appleseed";
+
+/* Class = "UIButton"; accessibilityHint = "Opens Caller Info"; ObjectID = "hDz-Ad-S38"; */
+"hDz-Ad-S38.accessibilityHint" = "Opens Caller Info";
+
+/* Class = "UIButton"; accessibilityLabel = "Caller Info"; ObjectID = "hDz-Ad-S38"; */
+"hDz-Ad-S38.accessibilityLabel" = "Caller Info";
+
+/* Class = "UIButton"; accessibilityLabel = "Answer"; ObjectID = "i60-E3-FaK"; */
+"i60-E3-FaK.accessibilityLabel" = "Answer";
+
+/* Class = "UILabel"; accessibilityLabel = "Recording"; ObjectID = "jbu-ge-1F2"; */
+"jbu-ge-1F2.accessibilityLabel" = "Recording";
+
+/* Class = "UILabel"; text = "● REC"; ObjectID = "jbu-ge-1F2"; */
+"jbu-ge-1F2.text" = "● REC";
+
+/* Class = "UIButton"; normalTitle = "Decline"; ObjectID = "jcS-b4-1OF"; */
+"jcS-b4-1OF.normalTitle" = "Decline";
+
+/* Class = "UILabel"; text = "Johnny Appleseed"; ObjectID = "leX-5a-Di0"; */
+"leX-5a-Di0.text" = "Johnny Appleseed";
+
+/* Class = "UILabel"; text = "Hang Up"; ObjectID = "okk-n3-g5i"; */
+"okk-n3-g5i.text" = "Hang Up";
+
+/* Class = "UILabel"; text = "02:00"; ObjectID = "tJG-ge-yYi"; */
+"tJG-ge-yYi.text" = "02:00";
+
+/* Class = "UITextView"; text = "Greeting Text"; ObjectID = "to6-Wy-dfp"; */
+"to6-Wy-dfp.text" = "Greeting Text";
+
+/* Class = "UILabel"; text = "Johnny Appleseed"; ObjectID = "u3E-Df-52s"; */
+"u3E-Df-52s.text" = "Johnny Appleseed";
+
+/* Class = "UILabel"; text = "1-801-234-5004"; ObjectID = "y7o-NZ-uFn"; */
+"y7o-NZ-uFn.text" = "1-801-234-5004";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "yR7-ap-ZZA"; */
+"yR7-ap-ZZA.text" = "00:00";

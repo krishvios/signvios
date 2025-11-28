@@ -1,0 +1,15 @@
+
+vpe_test = executable('Test',
+  'Test.cpp',
+  'PropertyManagerTest.cpp',
+  'PropertyManagerReadTest.cpp',
+  'stiToolsTest.cpp',
+  'CstiIpAddressTest.cpp',
+  'IstiVideophoneEngineTest.cpp',
+  'StringsTest.cpp',
+  'SignalTest.cpp',
+  'CstiListTest.cpp',
+  dependencies : [vpe_dep],
+  link_args : ['-lcppunit', '-lboost_program_options', '-lboost_filesystem', '-lboost_system'],
+  cpp_args : ['-fexceptions', '-frtti'],
+)

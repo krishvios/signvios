@@ -1,0 +1,26 @@
+Instructions (Updated 12/02/2004)
+
+The latest changes to PropertyManager necessitated changes
+to the .xml files and the location where they are stored.
+
+In short, the PropertyTable.xml file will no longer be delivered as part
+of the installed software.  Rather it will be generated automatically from
+the DefaultProperties.xml file the first time it starts up.  (FYI, 
+DefaultTempTable.xml has been renamed to DefaultProperties.xml.)
+
+The location where the PropertyManager's xml files will be stored is
+the /etc/pm directory.
+
+As root (su), execute these steps to prepare your Red Hat system:
+mkdir /etc/pm
+chown [insert your username here] /etc/pm
+
+Then, as yourself (not root), copy the pm/xml/DefaultProperties.xml
+file to the /etc/pm directory.
+
+Similarly, for your nfs mounted version, create the
+/arm926ejs/etc/pm directory, and copy DefaultProperties.xml file
+to it.
+
+For the rfs (root mounted) and flash mounted systems, the cypress
+build process will automatically take care of this change.

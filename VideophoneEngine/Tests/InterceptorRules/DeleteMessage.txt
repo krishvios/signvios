@@ -1,0 +1,13 @@
+DESCRIPTION:
+Message Delete
+
+RULE:
+XPathPattern=/MessageRequest/MessageDelete
+OuterResponseText=
+InnerResponseText=
+<MessageDeleteResult Result="OK" />
+
+DelayMsec=000
+IsDelayOnly=false
+HttpResponseErrorCode=0
+IsRunOnce=false

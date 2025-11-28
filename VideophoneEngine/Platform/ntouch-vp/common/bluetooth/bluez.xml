@@ -1,0 +1,221 @@
+<node>
+	<interface name="org.freedesktop.DBus.ObjectManager">
+		<method name="GetManagedObjects">
+			<arg name="managed_objects" type="a{oa{sa{sv}}}" direction="out"/>
+		</method>
+		<signal name="InterfacesAdded">
+			<arg name="object_path" type="o"/>
+	    	<arg name="interfaces" type="a{sa{sv}}"/>
+		</signal>
+		<signal name="InterfacesRemoved">
+			<arg name="object_path" type="o"/>
+			<arg name="interfaces" type="as"/>
+		</signal>
+	</interface>
+
+	<interface name="org.freedesktop.DBus.Properties">
+		<method name="Get">
+			<arg name="interface_name" type="s" direction="in"/>
+			<arg name="property_name" type="s" direction="in"/>
+			<arg name="value" type="v" direction="out"/>
+		</method>
+		<method name="Set">
+			<arg name="interface_name" type="s" direction="in"/>
+			<arg name="property_name" type="s" direction="in"/>
+			<arg name="value" type="v" direction="in"/>
+		</method>
+		<method name="GetAll">
+			<arg name="interface_name" type="s" direction="in"/>
+			<arg name="props" type="a{sv}" direction="out"/>
+		</method>
+		<signal name="PropertiesChanged">
+			<arg name="interface_name" type="s"/>
+			<arg name="changed_properties" type="a{sv}"/>
+			<arg name="invalidated_properties" type="as"/>
+		</signal>
+	</interface>
+
+	<interface name="org.bluez.Device1">
+		<method name="Connect"/>
+		<method name="Disconnect"/>
+		<method name="Pair"/>
+		<method name="CancelPairing"/>
+		<method name="ConnectProfile">
+			<arg name="uuid" type="s" direction="in"/>
+		</method>
+		<method name="DisconnectProfile">
+			<arg name="uuid" type="s" direction="in"/>
+		</method>
+		<property name="Address" type="s" access="read"/>
+		<property name="Name" type="s" access="read"/>
+		<property name="Icon" type="s" access="read"/>
+		<property name="Class" type="u" access="read"/>
+		<property name="Appearance" type="q" access="read"/>
+		<property name="UUIDs" type="as" access="read"/>
+		<property name="Paired" type="b" access="read"/>
+		<property name="Connected" type="b" access="read"/>
+		<property name="Trusted" type="b" access="readwrite"/>
+		<property name="Blocked" type="b" access="readwrite"/>
+		<property name="Alias" type="s" access="readwrite"/>
+		<property name="Adapter" type="o" access="read"/>
+		<property name="LegacyPairing" type="b" access="read"/>
+		<property name="Modalias" type="s" access="read"/>
+		<property name="RSSI" type="n" access="read"/>
+		<property name="TxPower" type="n" access="read"/>
+		<property name="ManufacturerData" type="a{qv}" access="read"/>
+		<property name="ServiceData" type="a{sv}" access="read"/>
+		<property name="ServicesResolved" type="b" access="read"/>
+	</interface>
+
+	<interface name="org.bluez.Adapter1">
+		<method name="StartDiscovery"/>
+		<method name="StopDiscovery"/>
+		<method name="RemoveDevice">
+			<arg name="object_path" type="o" direction="in"/>
+		</method>
+		<method name="ConnectDevice">
+			<arg name="properties" type="a{sv}" direction="in"/>
+			<arg name="object_path" type="o" direction="out"/>
+		</method>
+		<property name="Address" type="s" access="read"/>
+		<property name="Name" type="s" access="read"/>
+		<property name="Alias" type="s" access="readwrite"/>
+		<property name="Class" type="u" access="read"/>
+		<property name="Powered" type="b" access="readwrite"/>
+		<property name="Discoverable" type="b" access="readwrite"/>
+		<property name="DiscoverableTimeout" type="u" access="readwrite"/>
+		<property name="Pairable" type="b" access="readwrite"/>
+		<property name="PairableTimeout" type="u" access="readwrite"/>
+		<property name="Discovering" type="b" access="read"/>
+		<property name="UUIDs" type="as" access="read"/>
+		<property name="Modalias" type="s" access="read"/>
+	</interface>
+
+	<interface name="org.bluez.Alert1">
+		<method name="RegisterAlert" >
+			<arg name="category" type="s" direction="in" />
+			<arg name="agent" type="o" direction="in" />
+		</method>
+		<method name="NewAlert" >
+			<arg name="category" type="s" direction="in" />
+			<arg name="count" type="q" direction="in" />
+			<arg name="description" type="s" direction="in" />
+		</method>
+		<method name="UnreadAlert">
+			<arg name="category" type="s" direction="in"/>
+			<arg name="count" type="q" direction="in"/>
+		</method>
+	</interface>
+
+	<interface name="org.bluez.AgentManager1">
+		<method name="RegisterAgent">
+			<arg name="agent" direction="in" type="o"/>
+			<arg name="capability" direction="in" type="s"/>
+		</method>
+		<method name="UnregisterAgent">
+			<arg name="agent" direction="in" type="o"/>
+		</method>
+		<method name="RequestDefaultAgent">
+			<arg name="agent" direction="in" type="o"/>
+		</method>
+	</interface>
+			
+	<interface name="org.bluez.Agent1">
+		<method name="Release">
+		</method>
+		<method name="RequestPinCode">
+			<arg name="device" direction="in" type="o" />
+			<arg name="pincode" direction="out" type="s" />
+		</method>
+		<method name="RequestPasskey">
+			<arg name="device" direction="in" type="o" />
+			<arg name="passkey" direction="out" type="u" />
+		</method>
+		<method name="DisplayPasskey">
+			<arg name="device" direction="in" type="o" />
+			<arg name="passkey" direction="in" type="u" />
+			<arg name="entered" direction="in" type="q" />
+		</method>
+		<method name="DisplayPinCode" >
+			<arg name="device" direction="in" type="o" />
+			<arg name="pincode" direction="in" type="s" />
+		</method>
+		<method name="RequestConfirmation" >
+			<arg name="device" direction="in" type="o" />
+			<arg name="passkey" direction="in" type="u" />
+		</method>
+		<method name="RequestAuthorization">
+			<arg name="device" direction="in" type="o" />
+		</method>
+		<method name="AuthorizeService">
+			<arg name="device" direction="in" type="o" />
+			<arg name="uuid" direction="in" type="s" />
+		</method>
+		<method name="Cancel">
+		</method>
+	</interface>
+
+	<interface name="org.bluez.GattDescriptor1">
+		<method name="ReadValue" >
+			<arg name="value" direction="out" type="ay" >
+				<annotation name="org.gtk.GDBus.C.ForceGVariant" value="true" />
+			</arg>
+		</method>
+		<method name="WriteValue" >
+			<arg name="value" direction="in" type="ay" >
+				<annotation name="org.gtk.GDBus.C.ForceGVariant" value="true" />
+			</arg>
+		</method>
+		<property name="UUID" type="s" access="read"/>
+		<property name="Characteristic" type="o" access="read"/>
+		<property name="Value" type="ay" access="read">
+			<annotation name="org.gtk.GDBus.C.ForceGVariant" value="true"/>
+		</property>
+		<property name="Flags" type="as" access="read"/>
+	</interface>
+
+	<interface name="org.bluez.GattCharacteristic1">
+		<method name="ReadValue">
+			<arg name="options" direction="in" type="a{sv}" />
+			<arg name="value" direction="out" type="ay" >
+				<annotation name="org.gtk.GDBus.C.ForceGVariant" value="true" />
+			</arg>
+		</method>
+		<method name="WriteValue">
+			<arg name="value" direction="in" type="ay" >
+				<annotation name="org.gtk.GDBus.C.ForceGVariant" value="true" />
+			</arg>
+			<arg name="options" direction="in" type="a{sv}" />
+		</method>
+		<method name="StartNotify" />
+		<method name="StopNotify" />
+		<property name="UUID" type="s" access="read"/>
+		<property name="Service" type="o" access="read"/>
+		<property name="Value" type="ay" access="read">
+			<annotation name="org.gtk.GDBus.C.ForceGVariant" value="true"/>
+		</property>
+		<property name="Notifying" type="b" access="read"/>
+		<property name="Flags" type="as" access="read"/>
+	</interface>
+
+	<interface name="org.bluez.GattService1">
+		<property name="UUID" type="s" access="read"/>
+		<property name="Primary" type="b" access="read"/>
+		<property name="Device" type="o" access="read"/>
+	</interface>
+	
+	<interface name="org.bluez.GattProfile1">
+		<method name="Release" />
+		<property name="UUIDs" type="as" access="read"/>
+	</interface>
+
+	<interface name="org.bluez.GattManager1">
+		<method name="RegisterApplication">
+			<arg name="application" direction="in" type="o" />
+			<arg name="options" direction="in" type="a{sv}" />
+		</method>
+		<method name="UnregisterApplication">
+			<arg name="application" direction="in" type="o" />
+		</method>
+	</interface>
+</node>

@@ -1,0 +1,18 @@
+/* Class = "UILabel"; text = "First Last"; ObjectID = "3"; */
+"3.text" = "First Last";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "6"; */
+"6.text" = "Nombre:";
+
+/* Class = "UILabel"; text = "Local Number:"; ObjectID = "8"; */
+"8.text" = "Número Local:";
+
+/* Class = "UILabel"; text = "Toll-Free Number:"; ObjectID = "9"; */
+"9.text" = "Número Gratuito:";
+
+/* Class = "UILabel"; text = "(000) 111-2222"; ObjectID = "10"; */
+"10.text" = "(000) 111-2222";
+
+/* Class = "UILabel"; text = "None"; ObjectID = "11"; */
+"11.text" = "None";
+

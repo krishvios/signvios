@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ziu-Am-jGB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Call History-->
+        <scene sceneID="Fud-sv-UpN">
+            <objects>
+                <tableViewController storyboardIdentifier="RecentsViewController" title="Call History" id="ouW-gb-PvU" customClass="SCIRecentsViewController" customModule="ntouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="88" sectionHeaderHeight="18" sectionFooterHeight="18" id="B32-9e-w68">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="ntouch.SCIRecentsTableViewCell" rowHeight="88" id="Bo6-s2-jEc" customClass="SCIRecentsTableViewCell" customModule="ntouch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="32" width="414" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" tableViewCell="Bo6-s2-jEc" id="6rl-np-Bh1">
+                                    <rect key="frame" x="0.0" y="0.0" width="373.5" height="88"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sXl-zn-lR1">
+                                            <rect key="frame" x="20" y="11" width="345.5" height="66"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wy1-Yp-Ick">
+                                                    <rect key="frame" x="0.0" y="2" width="62" height="62"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Wy1-Yp-Ick" secondAttribute="height" id="ATK-vh-lHv"/>
+                                                        <constraint firstAttribute="height" constant="62" id="aHg-Zu-LXF"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="31"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dpg-En-BvR">
+                                                    <rect key="frame" x="74" y="6" width="271.5" height="54"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" text="Firstname Lastname" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dan-fU-jr0" userLabel="Name" customClass="RecentsContactNameLabel" customModule="ntouch" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="271.5" height="17"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="1 (932) 333-1111" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-aV-FMh" userLabel="Phone" customClass="RecentsPhoneTypeLabel" customModule="ntouch" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="21" width="271.5" height="14.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-cX-XEd">
+                                                            <rect key="frame" x="0.0" y="39.5" width="271.5" height="14.5"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="redraw" image="icon-outgoing-call" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNQ-Ix-wYm" userLabel="Call Indicator">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="14.5" height="14.5"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" priority="999" constant="14.5" id="Qp6-dC-L1E"/>
+                                                                        <constraint firstAttribute="width" secondItem="FNQ-Ix-wYm" secondAttribute="height" id="cAk-YM-TdB"/>
+                                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="15" id="xs9-HV-yvz"/>
+                                                                    </constraints>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="Qp6-dC-L1E"/>
+                                                                            <exclude reference="xs9-HV-yvz"/>
+                                                                        </mask>
+                                                                    </variation>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Yesterday" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td1-fP-ZNx" userLabel="Date">
+                                                                    <rect key="frame" x="21.5" y="0.0" width="250" height="14.5"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="FNQ-Ix-wYm" firstAttribute="height" relation="lessThanOrEqual" secondItem="td1-fP-ZNx" secondAttribute="height" id="b1C-4z-eNr"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sXl-zn-lR1" secondAttribute="trailing" id="MP3-Mb-HnY"/>
+                                        <constraint firstItem="sXl-zn-lR1" firstAttribute="top" secondItem="6rl-np-Bh1" secondAttribute="topMargin" id="ccW-gm-UGo"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="sXl-zn-lR1" secondAttribute="bottom" id="ob7-NW-Z63"/>
+                                        <constraint firstItem="sXl-zn-lR1" firstAttribute="leading" secondItem="6rl-np-Bh1" secondAttribute="leadingMargin" id="up6-CG-8Ig"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.73333333329999995" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="callImageView" destination="Wy1-Yp-Ick" id="Mgn-eU-90k"/>
+                                    <outlet property="callIndicator" destination="FNQ-Ix-wYm" id="V4B-Zx-FdD"/>
+                                    <outlet property="contactName" destination="Dan-fU-jr0" id="epK-cv-lBA"/>
+                                    <outlet property="date" destination="td1-fP-ZNx" id="EOp-5P-seP"/>
+                                    <outlet property="phoneNumberLabel" destination="uN7-aV-FMh" id="KCK-uN-pm4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ouW-gb-PvU" id="0AB-v9-5e2"/>
+                            <outlet property="delegate" destination="ouW-gb-PvU" id="hDa-SR-SIO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Call History" id="bX8-Oc-cn2"/>
+                    <connections>
+                        <outlet property="sectionBar" destination="O8e-AJ-c4i" id="von-Bo-Ltv"/>
+                        <segue destination="Kt9-tq-vCL" kind="show" identifier="CallHistoryToDetailsSegue" id="MRv-KC-IMv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA4-oq-SJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="O8e-AJ-c4i">
+                    <rect key="frame" x="0.0" y="-1" width="375" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="All"/>
+                        <segment title="Missed"/>
+                    </segments>
+                    <connections>
+                        <action selector="sectionDidChange" destination="ouW-gb-PvU" eventType="valueChanged" id="Wrc-4Q-gPx"/>
+                    </connections>
+                </segmentedControl>
+            </objects>
+            <point key="canvasLocation" x="-630" y="769"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="BES-hh-RSf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Details" id="Kt9-tq-vCL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oH4-MP-fu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="768"/>
+        </scene>
+        <!--Call History-->
+        <scene sceneID="aGT-ao-NGe">
+            <objects>
+                <navigationController storyboardIdentifier="RecentsNavController" title="Call History" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ziu-Am-jGB" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="History" image="HistoryTab" id="09P-Yj-lte"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="Pwa-4c-0H4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ouW-gb-PvU" kind="relationship" relationship="rootViewController" id="nqE-DK-GAF"/>
+                    </connections>
+                </navigationController>
+                <customObject id="3Nj-28-eNl" customClass="AppDelegate"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbC-Wk-pN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1390" y="763"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HistoryTab" width="25" height="25"/>
+        <image name="icon-outgoing-call" width="30" height="30"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

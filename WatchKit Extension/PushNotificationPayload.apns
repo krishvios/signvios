@@ -1,0 +1,18 @@
+{
+	"aps": {
+		"alert": {
+			"title": "New SignMail from Johnny Appleseed",
+			"body": "1 (932) 333-8888"
+		},
+		"sound": "default",
+		"badge": 1,
+		"mutable-content": 1,
+		"category": "SIGNMAIL_CATEGORY"
+
+	},
+	"dialstring": "19323338888",
+	"ntouch": {
+		"video-url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+		"image-url": ""
+	}
+}

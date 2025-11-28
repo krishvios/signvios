@@ -1,0 +1,995 @@
+//
+//  Localizable.strings
+//
+//
+//  Sorenson Communications Inc. Confidential. --  Do not distribute
+//  Copyright 2009 - 2011 Sorenson Communications, Inc. -- All rights reserved
+//
+
+
+// buttons
+"Cancel" = "Cancel";
+"Continue" = "Continue";
+"Delete" = "Delete";
+"Delete:" = "Delete:";
+"Accept" = "Accept";
+"Reject" = "Reject";
+"Close" = "Close";
+"Save" = "Save";
+"Login" = "Login";
+"Log Out" = "Log Out";
+"Logout" = "Logout";
+"Submit" = "Submit";
+
+/*
+ Similar to iOS system buttons,
+ "Done" is "OK" in Spanish localization.
+ */
+"Done" = "Done";
+
+// Agreement message
+"Agreement.Message" = "If you reject the agreement, you will no longer be able to place or receive calls.  Are you sure you want to reject the agreement?";
+
+// single word
+"Heartbeat" = "Heartbeat";
+"Enabled" = "Enabled";
+"Disabled" = "Disabled";
+"Attention" = "Attention";
+"Importing..." = "Importing...";
+"Help" = "Help";
+"No" = "No";
+"phone" = "phone";
+"Phone" = "Phone";
+"Today" = "Today";
+"Yes" = "Yes";
+"Yesterday" = "Yesterday";
+
+"at" = "at";
+"from" = "from";
+"required" = "required";
+"optional" = "optional";
+"Auto" = "Auto";
+"Ring" = "Ring";
+"Rings" = "Rings";
+"none" = "none";
+"None" = "None";
+"Personal" = "Personal";
+
+"Sending" = "Sending";
+"Accepting" = "Accepting";
+"Warning" = "Warning";
+"Resume" = "Resume";
+
+"Error" = "Error";
+"Complete" = "Complete";
+
+// menu
+"Dial" = "Dial";
+"History" = "History";
+"Contacts" = "Contacts";
+"SignMail" = "SignMail";
+"Settings" = "Settings";
+
+"Favorites" = "Favorites";
+"Device" = "Device";
+"Device Contacts" = "Device Contacts";
+"Phonebook" = "Phonebook";
+
+// log in screen
+"Logging In" = "Logging In";
+"%@® Mobile for iOS version %@" = "%@® Mobile for iOS version %@";
+
+"Can’t Log In" = "Can’t Log In";
+"Error connecting to server." = "Error connecting to server.";
+
+// login input
+"Invalid Phone Number" = "Invalid Phone Number";
+"login.err.number.blank" = "Your phone number cannot be blank.";
+"login.err.number.digits" = "Your assigned phone number must be 10 or 11 digits.";
+
+"Invalid Password" = "Invalid Password";
+"login.err.password.blank" = "Your password cannot be blank.";
+
+"Unable to Login" = "Unable to Login";
+"login.err.isLoggingOut" = "You are currently being logged out.  Please try again later.";
+
+// login service
+"Login Failed" = "Login Failed";
+"Cannot Log In" = "Cannot Log In";
+
+"login.err.offlineAuthentication" = "ntouch can't connect right now. Check your connection and try again.";
+"login.err.usernameOrPasswordInvalid" = "Phone number and/or password is incorrect.";
+"login.err.endpointMatchError" = "Endpoint types do not match";
+"login.err.generic" = "Unable to login, please try again.";
+
+// login alerts
+"Apply Now" = "Apply Now"; // button
+"Call Customer Care" = "Call Customer Care"; // button, label
+"Are you sure?" = "Are you sure?";
+"Call 911" = "Call 911"; // button
+"ready.to.call.help" = "Are you ready to call for help?";
+"Create New Account" = "Create New Account";
+"Apply Online" = "Apply Online";
+
+// login history
+"Account History" = "Account History";
+"Clear All" = "Clear All"; // button
+"No saved accounts." = "No saved accounts.";
+"Select account to use." = "Select account to use.";
+
+//
+"Auto-answer" = "Auto-answer";
+"Auto-answer Disabled." = "Auto-answer Disabled.";
+"Auto-answer after %@ rings." = "Auto-answer after %@ rings.";
+
+// language slider
+"Spanish" = "Spanish";
+"English" = "English";
+"Spanish Call" = "Spanish Call";
+"English Call" = "English Call";
+
+// dial codes
+"Key Codes Enabled" = "Key Codes Enabled";
+
+"Sending heartbeat request" = "Sending heartbeat request";
+"Debug Logging" = "Debug Logging";
+"trace.file.removed.log.disabled" = "Trace file was removed and logging disabled.";
+"unable.remove.trace.conf" = "Unable to remove trace.conf, it may not exist %@";
+"VRCL Enabled" = "VRCL Enabled";
+"VRCL Disabled" = "VRCL Disabled";
+"Toggling HUD" = "Toggling HUD";
+"HUD Enabled" = "HUD Enabled";
+"HUD Disabled" = "HUD Disabled";
+"Dialing By IP" = "Dialing By IP";
+"Enabled toolbar auto hide" = "Enabled toolbar auto hide";
+"Disabled toolbar auto hide" = "Disabled toolbar auto hide";
+"Tunnelling Toggle" = "Tunnelling Toggle";
+"Tunneling ON" = "Tunneling ON";
+"Tunneling OFF" = "Tunneling OFF";
+"Build Version" = "Build Version";
+"Enabled internet searches" = "Enabled internet searches";
+
+"Set Bitrate" = "Set Bitrate";
+"Bitrate: " = "Bitrate: ";
+
+// codecs
+"Setting.Encode.Decode.Codec" = "Setting Encode and Decode Codec to %@.";
+"Setting.Encode.Codec" = "Setting Encode Codec to %@.";
+"Setting.Decode.Codec" = "Setting Decode Codec to %@.";
+"Setting Codecs to Defaults." = "Setting Codecs to Defaults.";
+
+// calls
+"Logging in..." = "Logging in...";
+"do.not.disturb.calls" = "Do Not Disturb. You are not receiving calls.";
+"No Internet Connection" = "No Internet Connection";
+"Connecting to Server" = "Connecting to Server";
+
+"Can't Paste" = "Can't Paste";
+"valid.phone.number.not.copied" = "A valid phone number was not previously copied";
+"Please enter a phone number first." = "Please enter a phone number first.";
+
+"Failed to make call" = "Failed to make call";
+"No Caller ID" = "No Caller ID";
+"Anonymous" = "Anonymous";
+"anonymous" = "anonymous";
+"call.select.phone" = "Select a phone to call";
+
+// phone labels
+"home" = "home";
+"Home" = "Home";
+"work" = "work";
+"Work" = "Work";
+"mobile" = "mobile";
+"Cell" = "Cell";
+
+// SignMail
+"Cannot send SignMail" = "Cannot send SignMail";
+"can't.send.signmail.yourself" = "Sorry, you can’t send a SignMail to yourself.";
+
+"Channels" = "Channels";
+"You don't have any SignMails." = "You don't have any SignMails.";
+"Delete All SignMails" = "Delete All SignMails"; // button
+"signmail.compose.nonetwork" = "You must have network access to send a SignMail.";
+"Video Center" = "Video Center";
+"Video Center ●" = "Video Center ●";
+
+"Unknown" = "Unknown";
+"Video Unavailable" = "Video Unavailable";
+"signmail.video.failed" = "Request to play the video failed.  Please try again later.";
+"Can’t Play Video" = "Can’t Play Video";
+"Network not available." = "Network not available.";
+
+"Delete SignMail" = "Delete SignMail";
+"signmail.delete.confirm" = "Are you sure you want to delete this SignMail?";
+
+// SignMail - recording
+"Uploading..." = "Uploading...";
+"Preparing to Record" = "Preparing to Record";
+"Confirm SignMail Send" = "Confirm SignMail Send"; // title
+"Send" = "Send"; // button
+"Record Again" = "Record Again"; // button
+"Exit" = "Exit"; // button
+
+// SignMail - greeting settings
+"SignMail Greeting" = "SignMail Greeting";
+"Text Only" = "Text Only";
+"Uploading" = "Uploading";
+"Greeting Recorded" = "Greeting Recorded";
+"Preview" = "Preview";
+"Record" = "Record";
+"Record Greeting" = "Record Greeting";
+"Loading" = "Loading";
+"Pause" = "Pause";
+"Play" = "Play";
+"Greeting" = "Greeting";
+"Enter text here." = "Enter text here";
+
+// SignMail - greeting settings error
+"Upload Error" = "Upload Error";
+"signmail.err.upload" = "Unable to upload your greeting.";
+"signmail.err.record" = "Unable to record greeting";
+"signmail.err.characteristics" = "Recording characteristics could not be loaded.  Please try again later.";
+"No Greeting Text" = "No Greeting Text";
+"signmail.err.missingText" = "You must enter text for a Video and Text greeting.";
+"Greeting Text Too Long" = "Greeting Text Too Long";
+"signmail.err.textTooLong" = "The entered greeting text is too long, please shorten your message.";
+"signmail.select.phone" = "Select a phone to send a SignMail";
+// video center
+"videocenter.video.failed" = "Request to download video failed.  Please try again later.";
+
+// themes - theme names
+"Color Theme" = "Color Theme";
+"Dark (default)" = "Dark (default)";
+"Light" = "Light";
+"High Contrast" = "High Contrast";
+
+// blocked numbers
+"Blocked Numbers" = "Blocked Numbers";
+"Blocked Number" = "Blocked Number";
+"blocked.count" = "%lu Blocked";
+"Description" = "Description";
+"Delete Blocked" = "Delete Blocked";
+"View Call History" = "View Call History";
+"Block" = "Block";
+"blocked.delete.confirm" = "Are you sure you want to remove this blocked number?";
+"blocked.contact.confirm.title" = "Block %1$@'s %2$@ phone number?";
+"blocked.contact.confirm.message" = "%1$@ is presently associated to your contact %2$@ as the %3$@ phone number. Are you sure you want to block it?";
+
+// blocked - error
+"blocked.delete.err" = "This blocked number cannot be deleted at this time.  Please try again later.";
+"Contact cannot be blocked." = "Contact cannot be blocked.";
+"blocked.fixed.err" = "This built-in contact cannot be blocked.";
+"Number cannot be blocked" = "Number cannot be blocked";
+"blocked.myphone.err" = "%@ is in your myPhone group and cannot be blocked.";
+"blocked.full.err.title" = "No more numbers can be blocked.";
+"blocked.full.err" = "You have reached the limit of numbers which can be blocked. If you would like to block any additional numbers, you must first unblock a different number.";
+
+// blocked - add - error
+"Unable to Save" = "Unable to Save";
+"Name cannot be blank." = "Name cannot be blank.";
+"Phone number cannot be blank." = "Phone number cannot be blank.";
+"Number already blocked." = "Number already blocked.";
+"blocked.add.alreadyBlocked.err" = "The number you are trying to block has already been blocked.";
+"You cannot block %@." = "You cannot block %@.";
+
+// settings - help
+"Online Help" = "Online Help";
+"Call Customer Care" = "Call Customer Care";
+"User Guides" = "User Guides";
+"help.guide.url" = "https://www.sorensonvrs.com/user_guide";
+
+// call states
+"call.incoming" = "Incoming Call...";
+"call.dialing" = "Dialing...";
+"call.auth" = "Authenticating...";
+"call.wait" = "Please wait...";
+"call.calling" = "Calling...";
+"call.connect" = "Connecting...";
+"call.ended" = "The call has ended.";
+
+"Call Directly" = "Call Directly";
+"call.state.alert.awaiting.redirect" = "The phone number you have dialed has been changed to %@. To redirect your call to this new number, select \"Continue\". Otherwise select \"Hang Up\" to end this call.";
+
+"Problem connecting call" = "Problem connecting call";
+"call.state.alert.awaiting.vrs.prompt" = "If you were dialing an SVRS call, select \"SVRS\" to place the call.  Select \"Hang Up\" if you want to try redialing a point-to-point call.";
+
+"VRS Public Eligibility" = "VRS Public Eligibility";
+"call.state.alert.awaiting.self.cert" = "By clicking the \"Accept\" button, you hereby certify that you have a hearing or speech disability and need VRS to be able to communicate with other people.  You understand that the cost of VRS calls is paid for by contributions from other telecommunications users to the TRS Fund.\n\nYou further attest by clicking the \"Accept\" button that you are eligible to use VRS.";
+
+// call conferencing
+"Make Another Call" = "Make Another Call";
+"Switch Calls" = "Switch Calls";
+"Dialpad" = "Dialpad";
+"Transfer Call" = "Transfer Call";
+"Join Calls" = "Join Calls";
+
+"Add Call" = "Add Call";
+
+"call.conf.alert.AES128" = "This call is encrypted with 128-bit AES encryption.";
+"call.conf.alert.AES256" = "This call is encrypted with 256-bit AES encryption.";
+"call.conf.alert.none" = "Encryption is not available for this call.";
+
+"Your call is encrypted." = "Your call is encrypted.";
+"Couldn't Join Calls" = "Couldn't Join Calls";
+"Could not transfer call." = "Could not transfer call.";
+
+"Connecting" = "Connecting";
+"End Wavello" = "End Wavello";
+
+// camera background
+"Video and audio privacy enabled" = "Video and audio privacy enabled";
+"Video privacy enabled" = "Video privacy enabled";
+
+// share saved text
+"Saved Text" = "Saved Text";
+"Add Saved Text" = "Add Saved Text";
+"Max custom shared texts" = "Max custom shared texts";
+"share.save.text.max.text.reached" = "You've reached the maximum allowed number of custom shared texts. You must remove one before adding another.";
+
+"Share Location" = "Share Location";
+
+// CallError descriptions
+"call.err.requiresNetworkConnection" =  "You must have network access to place a call.";
+"call.err.requiresSipRegistration" = "Connecting to server, cannot place call at this time.";
+"call.err.maxCallsExceeded" 		= "There are too many calls already in progress.  Please allow for all calls to disconnect before dialing another number.";
+"call.err.requiresCanHoldCall" 		= "The current call cannot be placed on hold";
+"call.err.featureDisabled" 			= "Ask Sorenson Customer Care to enable this feature for you.";
+"call.err.requiresBlockCallerIdDisabled" = "Disable \"Hide My Caller ID\" to record this SignMail.";
+
+"call.err.invalidDialString" 	= "Invalid phone number.";
+"call.err.cannotDialSelf" 		= "You cannot call your own Sorenson phone number from this device.";
+"call.err.requiresCallCIR" 		= "Please call Sorenson Customer Care to discuss reactivating your service.";
+"call.err.requiresEulaAcceptance" = "User agreement must be accepted.";
+"call.err.requiresAuthentication" = "You must be logged in to dial this number.";
+
+"call.err.requiresCallObject" 		= "Please try again later.";
+"call.err.callNotInHoldableState" 	= "The current call cannot be held.";
+"call.err.onlyOneActiveCallAllowed" = "There are too many active calls going.";
+"call.err.cannotJoinCallWithItself" = "You cannot join a call with itself.";
+"call.err.notAvailableInPublicMode" = "This feature is not available in public mode.";
+
+"call.err.callsNotInJoinableState" = "These calls cannot currently be joined.";
+"call.err.callNotInTransferableState" = "This call cannot currently be transferred.";
+"call.err.callAlreadyInProgress" 	= "A call to this number is already in progress.";
+"call.err.callDisconnected" 		= "The call has already disconnected";
+"call.err.failedToAnswer" 			= "The call could not be answered at this time.";
+
+"call.err.failedToEnd" 	= "The call could not be rejected at this time.";
+"call.err.failedToHold" 	= "The call could not be held at this time.";
+"call.err.failedToResume" 	= "The call could not be resumed at this time.";
+"call.err.failedToJoin" 	= "The calls could not be joined at this time.";
+"call.err.failedToTransfer" = "The call could not be transferred at this time.";
+
+"call.err.failedToRecordSignMail" 	= "There was a problem recording your SignMail.";
+"call.err.mailboxFull" 			= "Sorry, that mailbox is full.";
+"call.err.failedDeliverSignMail" 	= "Your SignMail could not be delivered.  The video file was lost.  To record a new SignMail video, try your call again.";
+"call.err.endOfBackgroundTime" 	= "The app could not continue to run in the background.";
+
+"call.err.callTimedOut" = "The call timed out while connecting, try your call again.";
+//"call.err.callNotCreated" = "";
+"call.err.callFiltered" = "The incoming call was blocked by the iOS blocked caller list, or by iOS Do Not Disturb";
+
+// call ended statuses, alerts
+"Call Disconnected" = "Call Disconnected";
+
+"Call Requires Encryption" = "Call Requires Encryption";
+"call.end.reason.encryption.required" = "Sorry, the call could not be connected. The videophone you are calling requires encryption.";
+
+"Call Is Not Encrypted" = "Call Is Not Encrypted";
+"call.end.reason.security.inadequate" = "The videophone you are calling can’t support encrypted calls. Change your encryption settings or contact your IT administrator.";
+
+"Call With Encryption" = "Call With Encryption";
+"Send a SignMail" = "Send a SignMail";
+
+// call end reasons
+"call.end.remote.busy.skipSM" = "Your message cannot be sent at this time.";
+"%@ did not answer your call." = "%@ did not answer your call.";
+"Your call was not answered." = "Your call was not answered.";
+
+"call.end.notFoundInDirectory.skipSM.1" = "Unable to send message because the remote system was not listed in the directory.";
+"call.end.notFoundInDirectory.skipSM.0" = "Unable to make call because the remote system was not listed in the directory.";
+
+"call.end.directoryFindFailed" = "Unable to complete your call at this time, please try again later.";
+"call.end.remoteSystemUnregistered" = "The remote system is not registered with the registration service.";
+
+"call.end.remoteSystemBlocked.skipSM.1" = "The remote system has been blocked from receiving messages.";
+"call.end.remoteSystemBlocked.skipSM.0" = "The remote system has been blocked from receiving calls.";
+
+"call.end.dialingSelf" = "An attempt to dial one's self has been made.";
+"call.end.lostConnection" = "Please check your internet connection and try calling again.";
+"call.end.dialByNumberDisallowed" = "Premium service (dial by phone number) is not enabled on this phone.";
+"call.end.noAssociatedPhone" = "No Current or Associated phone ID for current user record.";
+
+"call.end.noP2PExtensions.skipSM.1" = "Extensions are not supported for SignMail messages.";
+"call.end.noP2PExtensions.skipSM.0" = "Extensions are not supported for point-to-point calls.";
+
+"call.end.remoteSystemOutOfNetwork" = "The remote system is out of network.";
+"call.end.vrsCallNotAllowed" = "Your account cannot make VRS calls.";
+"call.end.transferFailed" = "Your call could not be transferred to the specified phone number.";
+"call.end.anonymousCallNotAllowed" = "This call can't be connected because Caller ID is not displayed. Turn off Hide My Caller ID in settings and try the call again.";
+"call.end.anonymousDirectSignMailNotAllowed" = "This message can't be delivered because Caller ID is not displayed. Turn off Hide My Caller ID in settings and try sending again.";
+
+"call.end.directSignMailUnavailable" = "This number cannot receive SignMail messages.";
+
+// call history
+"Call History" = "Call History";
+
+"OUTGOING CALL" = "OUTGOING CALL";
+"INCOMING CALL" = "INCOMING CALL";
+"MISSED CALL" = "MISSED CALL";
+"BLOCKED CALL" = "BLOCKED CALL";
+"CALL IN PROGRESS" = "CALL IN PROGRESS";
+"SIGNMAIL" = "SIGNMAIL";
+
+"Outgoing Call" = "Outgoing Call";
+"Answered Call" = "Answered Call";
+"Missed Call" = "Missed Call";
+"Blocked Call" = "Blocked Call";
+"SignMail Message" = "SignMail Message";
+"Call In Progress" = "Call In Progress";
+
+// call recents
+"Search" = "Search";
+"You don't have any missed calls." = "You don't have any missed calls.";
+"You don't have any calls." = "You don't have any calls.";
+"Send\nSignMail" = "Send\nSignMail";
+"Clear All Call History" = "Clear All Call History";
+"Clear All Missed Calls" = "Clear All Missed Calls";
+"Clear Listed Calls" = "Clear Listed Calls";
+
+// contacts
+"Add Contact" = "Add Contact";
+"Create New Contact" = "Create New Contact";
+"Add to Existing Contact" = "Add to Existing Contact";
+"Add To Existing Contact" = "Add To Existing Contact";
+"Can’t Add Contact" = "Can’t Add Contact";
+"Unable to Add Contact" = "Unable to Add Contact";
+"max.allowed.contacts.reached" = "The maximum number of allowable contacts has been reached.";
+"Deleted all contacts" = "Deleted all contacts";
+
+"Search Contacts & Yelp" = "Search Contacts & Yelp";
+"Search Yelp" = "Search Yelp";
+
+"contacts.delete.confirm" = "Are you sure you want to remove this contact?";
+
+// contact details
+"No Name" = "No Name";
+"contact.choose.num.call" = "Choose a number to call";
+"contact.choose.num.signmail" = "Choose a number to send a SignMail";
+"contact.choose.num.fav" = "Choose a number to favorite";
+"contact.choose.num.rem.fav" = "Choose a number to remove from favorites";
+
+"Export Successful" = "Export Successful";
+
+"Unknown Caller" = "Unknown Caller";
+"No more numbers can be blocked." = "No more numbers can be blocked.";
+"contacts.block.all.list.full" = "You have reached the limit of numbers which can be blocked. If you would like to block any additional numbers, you must first unblock a different number.";
+
+"home: %@" = "home: %@";
+"work: %@" = "work: %@";
+"mobile: %@" = "mobile: %@";
+
+// contact details - destructiveActions
+"Import Contact" = "Import Contact";
+"Send SignMail" = "Send SignMail";
+"Add To Favorites" = "Add To Favorites";
+"Unblock Contact" = "Unblock Contact";
+"Unblock Caller" = "Unblock Caller";
+"Save Contact To My Device" = "Save Contact To My Device";
+
+// contact details - constructiveActions
+"Remove Favorite" = "Remove Favorite";
+"Block Contact" = "Block Contact";
+"Block Caller" = "Block Caller";
+
+// contacts datasource
+"SORENSON CONTACTS" = "SORENSON CONTACTS";
+"Loading..." = "Loading...";
+"No contacts" = "No contacts";
+"contacts.dsource.corp.authenticationFailed" = "Your %@ user name or password is incorrect. Try again or contact your Sorenson sales representative.";
+"contacts.dsource.corp.error" = "There was a problem loading your %@ directory. Contact your Sorenson sales representative.";
+
+"contacts.dsource.device.nopermission" = "ntouch does not have permission to access your device contacts";
+
+"contacts.dsource.fav.empty" = "Want to create a new Favorite?\n Click \"Add to Favorites\" while looking at a contact.";
+
+// contacts - composite details
+"Delete Contact" = "Delete Contact";
+"Spanish VRS" = "Spanish VRS";
+
+"Sorry!" = "Sorry!";
+"contacts.edit.updateContact.null" = "Something went wrong. Check your connection and try again.";
+
+"Name" = "Name";
+"Company Name" = "Company Name";
+
+// contacts - PhotoActionSheet
+"Take Photo" = "Take Photo";
+"Choose Photo" = "Choose Photo";
+"Use Device Contact Photo" = "Use Device Contact Photo";
+"Use Sorenson Photo" = "Use Sorenson Photo";
+"Edit Photo" = "Edit Photo";
+"Remove Photo" = "Remove Photo";
+
+"Something went wrong." = "Something went wrong.";
+"No Camera was found." = "No Camera was found.";
+"nTouch needs access to your camera." = "nTouch needs access to your camera.";
+"Visit your privacy settings." = "Visit your privacy settings.";
+"No Photo Library Found." = "No Photo Library Found.";
+
+// contacts search
+"Call " = "Call ";
+"Call" = "Call";
+"Phone number not available" = "Phone number not available";
+"See more on Yelp" = "See more on Yelp";
+
+"contacts.search.privacy.policy.alert" = "ntouch can share your location when you perform Yelp searches.  We have updated our privacy policy to reflect this new feature. To enable location sharing for this and all future Yelp searches, press \"Allow.\"";
+"Share Your Location" = "Share Your Location";
+"View Updated Privacy Policy" = "View Updated Privacy Policy";
+"Don't Allow" = "Don't Allow";
+"Allow" = "Allow";
+
+"CONTACTS" = "CONTACTS";
+"CORPORATE CONTACTS" = "CORPORATE CONTACTS";
+"DEVICE CONTACTS" = "DEVICE CONTACTS";
+"YELP RESULTS" = "YELP RESULTS";
+
+"Searching..." = "Searching...";
+"Yelp search failed: %@" = "Yelp search failed: %@";
+"No results found" = "No results found";
+
+"contacts.search.yelp.location" = "You must enable location services to search Yelp.";
+"contacts.search.yelp.location.restricted" = "ntouch cannot access your location, which is required to search Yelp.";
+
+"Reviews" = "Reviews";
+
+// Contacts - Settings
+"Import Cancelled" = "Import Cancelled";
+"contacts.settings.no.network" = "Unable to connect to network. Check your connection and try again.";
+
+"Import Videophone Contacts" = "Import Videophone Contacts";
+"contacts.settings.import.video.header" = "Enter the information for the videophone from which you want to import contacts.";
+
+"Import Photos" = "Import Photos";
+"Import/Export Contacts" = "Import/Export Contacts";
+
+"Import Photos From Contacts" = "Import Photos From Contacts";
+"Import Photos From Sorenson" = "Import Photos From Sorenson";
+"Export Contacts to Device" = "Export Contacts to Device";
+"Import Contact from Device" = "Import Contact from Device";
+"Import From Videophone Account" = "Import From Videophone Account";
+
+"Phone Number" = "Phone Number";
+"Username" = "Username";
+"Update Login Information" = "Update Login Information";
+
+"Enter login information" = "Enter login information";
+"Username cannot be blank." = "Username cannot be blank.";
+
+"Import completed." = "Import completed.";
+"Import cancelled." = "Import cancelled.";
+
+"Imported %zu contact photo." = "Imported %zu contact photo.";
+"Imported %zu contact photos." = "Imported %zu contact photos.";
+
+"Can't Import" = "Can't Import";
+"contacts.settings.no.valid.numbers" = "There are no valid phone numbers to import.";
+
+"Duplicate Contact" = "Duplicate Contact";
+"contacts.settings.duplicate.contact" = "This contact already exists in your Sorenson Contacts.";
+
+// Contacts - Settings - SCI notifs
+"Contacts imported." = "Contacts imported.";
+"%lu contacts were imported." = "%lu contacts were imported.";
+
+"Can't import contacts." = "Can't import contacts.";
+"contacts.settings.sci.import.error" = "Please verify the phone number and password.";
+
+"Directory Login Failed" = "Directory Login Failed";
+"contacts.settings.sci.invalid.creds" = "Your %@ user name or password is incorrect. Try again or contact your Sorenson sales representative.";
+
+"Directory Server Unavailable" = "Directory Server Unavailable";
+"contacts.settings.sci.no.DAP.server" = "There was a problem loading your %@ directory. Contact your Sorenson sales representative.";
+
+// notifs - customer care
+"Network Error" = "Network Error";
+"Customer Care" = "Customer Care";
+"notifs.customer.care.msg" = "Please call Sorenson Customer Care to update your information. ";
+
+// Device Location UI
+"Shared workspace" = "Shared workspace";
+"shared.workspace.detail" = "(Conference room, break room, reception desk)";
+"Private workspace" = "Private workspace";
+"private.workspace.detail" = "(Individual’s office or cubicle)";
+"Shared living space" = "Shared living space";
+"shared.living.space.detail" = "(Dormitory common room, emergency or homeless shelter, group home common room)";
+"Private living space" = "Private living space";
+"private.living.space.detail" = "(Individual room within an assisted living facility, patient room in a hospital)";
+"Work-issued mobile device" = "Work-issued mobile device";
+"work-issued.device.detail" = "(Mobile device issued by Entity)";
+"Other shared space" = "Other shared space";
+"other.shared.space.detail" = "(Any restricted-access space primarily used by multiple users, not previously covered by other categories)";
+"Other private space" = "Other private space";
+"other.private.space.detail" = "(Any restricted-access space primarily used by an individual, not previously covered by other categories)";
+"carceral.facility" = "Carceral Facility/Prison";
+"carceral.facility.detail" = "(Correctional or confinement center or facility and associated support services)";
+"restricted" = "Restricted";
+"restricted.detail" = "(Undisclosed or otherwise restricted location)";
+
+// FCC Registration
+"FCC Registration" = "FCC Registration";
+"Birthday" = "Birthday";
+"Logout now?" = "Logout now?";
+"fcc.logout.message" = "Please complete the form.  If you would prefer not to, you can logout. Do you want to logout now?";
+"fcc.network.error.msg" = "You must have network access to submit your data.";
+"fcc.submit.error.title" = "SSN and Birthday was not saved.";
+"fcc.submit.error.msg" = "SSN and Birthday could not be saved. Please Contact Customer Care.";
+"Invalid SSN" = "Invalid SSN";
+"fcc.error.invalid.ssn.msg" = "Please enter the last four digits of your Social Security Number (SSN) or select \"I do not have a SSN\"";
+"I do not have a SSN" = "I do not have a SSN"; // This statement must match quote above.
+"Birthday Invalid" = "Birthday Invalid";
+"fcc.error.invalid.bday" = "Please enter your correct birthday.";
+"fcc.prompt.lastfour" = "Last Four Digits of your SSN";
+
+// myPhone
+"myPhone" = "myPhone";
+"myphone.phone.select.problem" = "There was a problem selecting this phone";
+"Enter your myPhone password:" = "Enter your myPhone password:";
+
+"myPhone.edit.err.2" = "The password you entered is incorrect. (2)";
+"myPhone.edit.err.73" = "You are not a member of a myPhone Group. (73)";
+"myPhone.edit.err.99" = "Error authenticating myPhone Group. (99)";
+"myPhone.edit.err.100" = "You are not a member of this myPhone Group. (100)";
+
+"myPhone.edit.err.82" = "The phone number you entered could not be found. (82)";
+"myPhone.edit.err.86" = "Error removing phone from the myPhone Group. (86)";
+"myPhone.edit.err.87" = "The phone number you entered is not a member of your myPhone Group. (87)";
+"myPhone.edit.err.91" = "You cannot remove the last member of a myPhone Group. (91)";
+"myPhone.edit.err.105" = "You cannot remove the creator of a myPhone Group. (105)";
+
+"myPhone.edit.err.102" = "You must enter a valid phone number. (102)";
+"myPhone.edit.err.81" = "The description field must be 1 to 50 characters long. (81)";
+"myPhone.edit.err.103" = "Error saving the myPhone member information. (103)";
+
+"myPhone.edit.err.74" = "Error adding phone to this group. Check to make sure the phone is logged in and is not already a member of another group. (74)";
+"myPhone.edit.err.75" = "Error adding phone to the myPhone Group. (75)";
+
+"Active" = "Active";
+"Pending" = "Pending";
+"Status: %@" = "Status: %@";
+
+"example: Kitchen, Joe's Phone, etc." = "example: Kitchen, Joe's Phone, etc.";
+"Remove Phone" = "Remove Phone";
+"Change Description" = "Change Description";
+"toll-free" = "toll-free";
+
+"myPhone.edit.remove.confirm" = "Remove this phone from your myPhone Group?";
+
+"myPhone.auth.err" = "myPhone Authentication Error";
+"myPhone Group Error" = "myPhone Group Error";
+"Error Removing myPhone Member" = "Error Removing myPhone Member";
+"myPhone Member Error" = "myPhone Member Error";
+"Add Phone Error" = "Add Phone Error";
+"Edit Phone" = "Edit Phone";
+"Add Phone" = "Add Phone";
+
+// myPhone Invite/Remove
+"myphone.group.welcome.title" = "Welcome to Sorenson myPhone!";
+"myphone.group.welcome.msg" = "Your myPhone group has been created. You will be able to use this phone number on all of your Sorenson phones.  Your password has been reset to the myPhone group password. Next, go to your phones to add them to your group.";
+"myphone.group.phone.removed.title" = "Phone Removed from myPhone Group";
+"myphone.group.phone.removed.msg" = "This phone has been removed from the myPhone Group.";
+"Add to myPhone Group" = "Add to myPhone Group";
+"Add Phone to Group" = "Add Phone to Group";
+"myPhone Number" = "myPhone Number";
+"Phone Description" = "Phone Description";
+"myPhone Password" = "myPhone Password";
+"Confirm Password" = "Confirm Password";
+"myphone.welcome.title" = "Welcome to Sorenson myPhone!";
+"myphone.welcome.msg" = "Create a myPhone Group to use this phone number on all of your Sorenson phones.";
+"myphone.setup.msg" = "To begin, enter the information below.  Then select Create Group.  If you need help creating your group, select Call Customer Care.";
+"myphone.customercare.msg" = "You must select Call Customer Care to create your myPhone Group.";
+"myphone.error.create.title" = "Error Creating myPhone Group";
+"myphone.error.description.msg" = "The phone description you entered is invalid. (62)";
+"myphone.error.password.msg" = "The password you entered is invalid. (63)";
+"myphone.error.password.match.msg" = "The passwords do not match.";
+"Creating Group" = "Creating Group";
+"Learn More" = "Learn More";
+"OK" = "OK";
+
+// Core Errors
+"contact.edit.error.msg" = "An error occurred while editing this contact.";
+"contact.edit.error.title" = "Please edit the contact again.";
+"contact.delete.error.title" = "Error Deleting Contact";
+"contact.delete.error.msg" = "An error occurred while deleting this contact.";
+"blocked.add.error.title" = "Number cannot be blocked.";
+"blocked.add.error.msg" = "The phone number you attempted to block cannot be blocked.";
+"blocked.edit.error.title" = "Please edit the item again.";
+"blocked.edit.error.msg" = "An error occurred while editing this blocked list item.";
+"blocked.delete.error.title" = "Error Deleting Blocked Item";
+"blocked.delete.error.msg" = "An error occurred while deleting this blocked list item.";
+"Network Tunneling" = "Network Tunneling";
+"Unable to establish network tunnel." = "Unable to establish network tunnel.";
+"Favorites Full" = "Favorites Full";
+"favorites.full.error.msg" = "The maximum number of allowed favorites has been reached.";
+"Error updating favorites" = "Error updating favorites";
+"core.offline.error.title" = "Can't Save Changes or Settings";
+"core.offline.error.msg" = "ntouch can't save your changes right now. Please try again later.";
+"account.loggedin.other.device.title" = "You have been logged out. Your ntouch® account has been logged in on another device.";
+"Logged Out" = "Logged Out";
+"account.phone.number.changed.title" = "ntouch® Mobile";
+"account.phone.number.changed.msg" = "Your ntouch Mobile phone number has been changed. Your new number is ";
+"account.password.changed.title" = "Your password has changed. Please log in with your new password to avoid missing calls.";
+"Please review the provider agreement." = "Please review the provider agreement.";
+"Update Device Info" = "Update Device Info";
+"duplicate.mac.detected.msg" = "ntouch detected that it may be running on new hardware. Please re-start ntouch and sign in again to update device info.";
+
+// Settings
+"Search Settings" = "Search Settings";
+"Profile Settings" = "Profile Settings";
+"Call Options" = "Call Options";
+"Device Settings" = "Device Settings";
+"Pulse\u2122 Settings" = "Pulse\u2122 Settings";
+"Network Settings" = "Network Settings";
+"Support" = "Support";
+"Search Results" = "Search Results";
+
+"Not available." = "Not available.";
+"ntouch® Mobile" = "ntouch® Mobile";
+
+"settings.main.footer" = "Sorenson %@ Number:\n%@\n\n%@ for iOS Version %@ (%@)\n\nAll trademarks mentioned herein are the property of their respective owners.\n\nThis product may be covered by one or more patents listed on http://www.sorenson.com/patents.";
+
+"Do Not Disturb" = "Do Not Disturb";
+"settings.main.autoRejectCallsSwitch" = "You will not receive Missed Call notifications for rejected calls.";
+"Speed Changed" = "Speed Changed";
+"settings.main.speed.192" = "Network Speed setting increased to 192kbps for Audio";
+
+"Microphone Privacy" = "Microphone Privacy";
+"settings.main.micophone.noaccess" = "Microphone access is not allowed for ntouch. Allow ntouch to use the microphone in Settings to enable Use Voice.";
+
+"Open Settings" = "Open Settings";
+
+"Personal Information" = "Personal Information";
+"911 Location Information" = "911 Location Information";
+"Encrypt My Calls" = "Encrypt My Calls";
+"Call Waiting Enabled" = "Call Waiting Enabled";
+"Do Not Disturb (Reject Incoming Calls)" = "Do Not Disturb (Reject Incoming Calls)";
+"Integrated Calling Enabled" = "Integrated Calling Enabled";
+"Use voice" = "Use voice";
+"Use voice for VRS calls" = "Use voice for VRS calls";
+"Hide My Caller ID" = "Hide My Caller ID";
+"Block Anonymous Callers" = "Block Anonymous Callers";
+"Enable Spanish Features" = "Enable Spanish Features";
+"Enable Pulse Notifications" = "Enable Pulse Notifications";
+"Manage Pulse Devices" = "Manage Pulse Devices";
+"Play SignMail greeting after" = "Play SignMail greeting after";
+"Network Speed" = "Network Speed";
+"Tunneling Enabled" = "Tunneling Enabled";
+"Cellular Video Quality" = "Cellular Video Quality";
+"nVP IP Address" = "nVP IP Address";
+
+"Custom Greeting" = "Custom Greeting";
+"show change greeting type view." = "show change greeting type view.";
+
+"settings.main.shared.app.wavello" = "With Sorenson Relay’s Wavello, we can now see Deaf family and friends while chatting! Visit www.sorenson.com/getwavello";
+"settings.main.shared.app.ntouch" = "Let’s use ntouch next time we chat. See you soon! www.sorenson.com/ntouchmobile";
+
+"settings.main.myPhone.notloggedin" = "You need to be logged in to view myPhone settings.";
+"settings.main.myPhone.must.agreement" = "You must have accepted the provider agreement to view myPhone settings.";
+
+"Network Speed too low for Audio" = "Network Speed too low for Audio";
+"Audio will be disabled." = "Audio will be disabled.";
+
+"Good" = "Good";
+"Better" = "Better";
+"Best" = "Best";
+"Good (least data)" = "Good (least data)";
+"Better (more data)" = "Better (more data)";
+"Best (most data)" = "Best (most data)";
+
+// Settings - search rows
+"settings.search.personalInfoRow" = "Personal Information Phone myPhone Local Number Notify SignMail Contact Profile Photo Share";
+"settings.search.setupEmergencyRow" = "911 Emergency Location";
+"settings.search.myPhoneSettingsRow" = "myPhone group";
+"settings.search.importContactsRow" = "Import Export Device Photos Contacts LDAP Corporate Directory";
+"settings.search.ringsBeforeGreetingRow" = "SignMail Rings Before Greeting Count";
+"settings.search.signMailGreetingTypeRow" = "SignMail Greeting PSMG Video Only Sorenson No";
+"settings.search.shareTextRow" = "Share Saved Text Share Text";
+"settings.search.colorTheme" = "Color Theme High Contrast Dark Mode Light";
+"settings.search.blockedNumbers" = "Block Blocked Numbers Caller";
+
+"settings.search.secureCallModeRow" = "256-bit AES Encryption";
+"settings.search.callWaitingRow" = "Call Waiting";
+"settings.search.autoRejectCallsRow" = "DND Do Not Disturb Reject Incoming Calls";
+"settings.search.callKitRow" = "Integrated Calling Call Kit CallKit";
+"settings.search.audioRow" = "Audio Use Voice Microphone";
+"settings.search.vcoRow" = "Audio Use Voice With VRS Microphone";
+"settings.search.blockCallerIDRow" = "Hide Block My Caller ID Anonymous";
+"settings.search.blockAnonymousCallers" = "Block Anonymous Callers Caller ID";
+"settings.search.enableSpanishFeatures" = "español Spanish Features";
+
+"settings.search.pulseEnableRow" = "Pulse Notifications";
+"settings.search.pulseManageDevicesRow" = "Manage Pulse Devices Pair Scan";
+
+"settings.search.tunnelingRow" = "Tunneling Network";
+"settings.search.cellularVideoQualityRow" = "Cellular Video Quality Bitrate Speed Good Better Best Data";
+
+"settings.search.networkSpeedRow" = "Network Speed Legacy";
+"settings.search.networkSpeedReadOnlyRow" = "Network Speed Auto";
+"settings.search.helpRow" = "Help Customer Care Service CIR Tech Technical Support User Guide FAQs";
+
+// Personal Info
+"Share Profile Photo" = "Share Profile Photo";
+"Show Contact Photos" = "Show Contact Photos";
+"Notify me for SignMail" = "Notify me for SignMail";
+"Email address" = "Email address";
+"email" = "email";
+"Use Toll-Free number" = "Use Toll-Free number";
+"Hide Account Info" = "Hide Account Info";
+"Show Account Info" = "Show Account Info";
+"Change Password" = "Change Password";
+
+"Local Number" = "Local Number";
+"Contact Photos" = "Contact Photos";
+"Notifications" = "Notifications";
+"Caller ID" = "Caller ID";
+"Account Information" = "Account Information";
+"Password" = "Password";
+
+"Not logged in" = "Not logged in";
+"personal.info.require.login" = "You must be logged in to change your password.";
+
+"Supplied email too long." = "Supplied email too long.";
+"personal.info.save.email.long" = "Your email address must be no more than 255 characters.";
+
+"Invalid Email Address" = "Invalid Email Address";
+"personal.info.save.email.incalid" = "The email address you entered is invalid.  Please enter a valid email address.";
+
+"Missing email address" = "Missing email address";
+"personal.info.save.email.missing" = "An email address is required in order to be notified of new sign mails.  Please enter an email address.";
+
+"Info was not saved." = "Info was not saved.";
+"personal.info.save.failed" = "Unable to save your contact information.  Please try again later.";
+
+"Unsaved Changes" = "Unsaved Changes";
+"personal.info.save.unsaved.changes" = "You have unsaved changes, do you want to Save them now?";
+
+"Image Error" = "Image Error";
+"personal.info.image.error" = "There was an error selecting your image.";
+
+"No Contact Found" = "No Contact Found";
+"personal.info.contact.not.found" = "The Contacts app does not contain a record for your phone number: %@";
+
+"Photo Change Error" = "Photo Change Error";
+
+"Share with everyone" = "Share with everyone";
+"Share only with contacts in my Phonebook" = "Share only with contacts in my Phonebook";
+"Everyone" = "Everyone";
+"Not Set" = "Not Set";
+
+// change password
+"Old Password" = "Old Password";
+"New Password" = "New Password";
+
+"change.pass.old.incorrect" = "Old Password was incorrect.";
+"change.pass.new.blank" = "New Password field cannot be blank.";
+"change.pass.new.15.chars" = "New Password field can contain only 15 characters.";
+"change.pass.new.standard.chars" = "Only standard letters, numbers, and punctuation characters can be used.";
+"change.pass.conf.notmatch" = "New and Confirm Password fields do not match.";
+
+"change.pass.problem" = "There was a problem changing your password.";
+
+"New Password Saved" = "New Password Saved";
+"change.pass.new.saved" = "The new password you entered has been saved.";
+
+// 911 Location Info
+"911 Location Info" = "911 Location Info";
+
+"911 Location Info Changed" = "911 Location Info Changed";
+"Please accept or reject this update." = "Please accept or reject this update.";
+
+"Invalid Street Address" = "Invalid Street Address";
+"911.loc.street.blank" = "Your street address cannot be blank.";
+"911.loc.street.L1.invalid" = "Your street address line 1 contains invalid characters.";
+"911.loc.street.L2.invalid" = "Your street address line 2 contains invalid characters.";
+
+"Emergency Address Error" = "Emergency Address Error";
+"911.loc.PO.box.notallowed" = "PO Box addresses are not allowed in emergency address. Please update with street address only for emergency services.";
+
+"Invalid City" = "Invalid City";
+"911.loc.city.blank" = "Your city cannot be blank.";
+"911.loc.city.invalid.chars" = "Your city contains invalid characters.";
+
+"Invalid State" = "Invalid State";
+"911.loc.state.blank" = "Your state cannot be blank.";
+
+"Invalid ZIP Code" = "Invalid ZIP Code";
+"911.loc.zipcode.invalid" = "Your ZIP code must be in the format of ##### or #####-####";
+
+"Can't Provision Address" = "Can't Provision Address";
+"Error saving address." = "Error saving address.";
+
+"Error Connecting" = "Error Connecting";
+"911.loc.error.connect" = "Unable to connect to server, please try again later.";
+
+"Can't Accept Address" = "Can't Accept Address";
+"Address Rejected" = "Address Rejected";
+"911.loc.address.rejected" = "Please correct this address and then tap the Send button.";
+"911.loc.address.abort" = "This videophone's address is now invalid.\n\nYou must enter the correct address of this videophone for use in 911 emergency calls.\n\nSelect Resume to continue entering an address.";
+
+"Not Submitted" = "Not Submitted";
+"Submitted" = "Submitted";
+"Needs Verification" = "Needs Verification";
+"911.loc.section.bottom" = "All VRS devices must register an address for 911 emergency services.\n\nAddress Status: %@";
+
+"State" = "State";
+"Street 1" = "Street 1";
+"Street 2" = "Street 2";
+"City" = "City";
+"ZIP Code" = "ZIP Code";
+
+// SCIAccountManager
+"Password Changed" = "Password Changed";
+"sci.am.password.changed" = "Please log in with your new password to avoid missing calls.";
+
+// not used
+
+"CoreError3" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+"CoreError4" = "The phone number you entered is already in use. Please enter a different phone number.";
+"CoreError5" = "The phone number you entered is already in use. Please enter a different phone number.";
+"CoreError6" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+"CoreError7" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+"CoreError12" = "The account could not be associated. Are you sure you entered the correct phone number and password?";
+"CoreError14" = "There was a problem setting up your SignMail account. Please contact SVRS Technical Support or try again later.";
+"CoreError27" = "An error occurred while communicating with the number server. If this problem persists, please contact technical support.";
+"CoreError28" = "There is a problem with the account associated with this videophone. The videophone will now restart and will not be able to make or receive calls. Please contact Sorenson Technical Support for help to correct the problem.";
+"CoreError29" = "There is a problem with the account associated with this videophone. The videophone will now restart and will not be able to make or receive calls. Please contact Sorenson Technical Support for help to correct the problem.";
+"CoreError4294967291" = "An error occurred while submitting your address. Please submit your address later.";
+
+"The user's bound endpoint type group does not match the endpoint's" = "Endpoint types do not match!";
+
+// Notifications
+
+"You have a missed call from " = "You have a missed call from ";
+"Your call with " =  "Your call with ";
+" has disconnected" = " has disconnected";
+"Incoming call from " = "Incoming call from ";
+"911.notification.title" = "Your 911 Location Info may have changed. Please accept or reject this update.";
+"update.ntouch.title" = "Please update the ntouch Mobile application to avoid missing calls.";
+"Call Customer Care" = "Call Customer Care";
+"FCC.notification.title" = "FCC User Registration Required.";
+"Missed call from %@" = "Missed call from %@";
+
+"Answer Call" = "Answer Call";
+"Decline Call" = "Decline Call";
+"Return Call" = "Return Call";
+"View" = "View";
+
+"Answer Call" = "Answer Call";
+"Decline Call" = "Decline Call";
+"Return Call" = "Return Call";
+"View" = "View";
+
+// Fixed contact names
+"Emergency" = "Emergency";
+"Information" = "Information";
+"Technical Support" = "Technical Support";
+
+// MARK: Spanish VRS contact save
+
+"Spanish Contact?" = "Spanish Contact?";
+"Would you like to save %@ as a Spanish contact?" = "Would you like to save %@ as a Spanish contact?";
+"Not now" = "Not now";
+
+// MARK: Teaser view controller
+"Continue to ntouch" = "Continue to ntouch";
+
+// MARK: SignVideoUpdateRequiredViewController
+"update.required.title" = "ntouch is now Sorenson SignVideo!";
+"update.required.body.bold" = "The ntouch mobile app is now retired. ";
+"update.required.body.regular" = "Tap the yellow ‘Update now’ button to install Sorenson SignVideo™ and make sure to look for the new icon on your phone screen. (If you saved your password, your phone number and password will automatically transfer.)";
+"update.required.now.button" = "Update now";
+"update.required.cc.button" = "Call support";
+"update.required.911.button" = "Call 911";
+"update.required.911.alert.title" = "Are you sure you want to call 911 emergency?";
+"update.required.911.alert.cancel.button" = "Cancel";
+"update.required.911.alert.confirm.button" = "Call 911 Emergency";
