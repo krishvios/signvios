@@ -26,3 +26,6 @@ UserConfig.swift
 **/fastlane/screenshots
 **/fastlane/test_output
 **/fastlane/README.md
+
+# Secrets and sensitive configuration files
+GoogleService-Info.plist
